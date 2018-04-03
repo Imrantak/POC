@@ -25,6 +25,12 @@
       <relatedItems xmi:id="_pwvwADcyEei50Npc-g0ZOA" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_pwvwATcyEei50Npc-g0ZOA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_pwvwAjcyEei50Npc-g0ZOA" id="_gsGfoDcyEei50Npc-g0ZOA - SOVR_APAC_Metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_FPI7wDdUEei50Npc-g0ZOA" id="_YgYGQTcwEei50Npc-g0ZOA" version="Latest" type="report"/>
+      <relatedItems xmi:id="_FPI7wTdUEei50Npc-g0ZOA" id="_2KHPoDdOEei50Npc-g0ZOA" version="Latest" type="report"/>
+      <relatedItems xmi:id="_FPI7wjdUEei50Npc-g0ZOA" id="_YeWF8TcwEei50Npc-g0ZOA" version="Latest" type="report"/>
+      <relatedItems xmi:id="_FPI7wzdUEei50Npc-g0ZOA" id="_3eDKcDdTEei50Npc-g0ZOA" version="Latest" type="report"/>
+      <relatedItems xmi:id="_FPI7xDdUEei50Npc-g0ZOA" id="_YfmDITcwEei50Npc-g0ZOA" version="Latest" type="report"/>
+      <relatedItems xmi:id="_FPI7xTdUEei50Npc-g0ZOA" id="_gsGfoDcyEei50Npc-g0ZOA" version="Latest" type="report"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
