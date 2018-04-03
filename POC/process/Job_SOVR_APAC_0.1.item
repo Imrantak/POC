@@ -922,7 +922,7 @@
   <node componentName="tFindRegexlibExpressions" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFindRegexlibExpressions_1" show="false"/>
     <elementParameter field="TEXT" name="REGEXP_SUBSTRING" value="&quot;a-z&quot;"/>
-    <elementParameter field="TEXT" name="KEYWORD" value="&quot;email&quot;"/>
+    <elementParameter field="TEXT" name="KEYWORD" value="&quot;date&quot;"/>
     <elementParameter field="TEXT" name="MIN_RATE" value="&quot;1&quot;"/>
     <elementParameter field="TEXT" name="RELATIVE_PATH" value="&quot;regexlib&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
