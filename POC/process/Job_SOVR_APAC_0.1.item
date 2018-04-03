@@ -444,7 +444,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="fileout" expressionFilter="filedata.PO_Release_Indicator.equalsIgnoreCase(&quot;released&quot;) &amp;&amp;    (filedata.Release_Completed_On.equals(&quot;&quot;) || Relational.ISNULL(filedata.Release_Completed_On ))" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="fileout" expressionFilter="filedata.PO_Release_Indicator.equalsIgnoreCase(&quot;released&quot;) &amp;&amp;    (filedata.Release_Completed_On.equals(&quot;&quot;) || Relational.ISNULL(filedata.Release_Completed_On ))" columnNameFilter="">
         <mapperTableEntries name="PO_Release_Indicator" expression="filedata.PO_Release_Indicator " type="id_String" nullable="true"/>
         <mapperTableEntries name="Release_Completed_On" expression="filedata.Release_Completed_On " type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order" expression="filedata.Service_Order " type="id_Integer" nullable="true"/>
