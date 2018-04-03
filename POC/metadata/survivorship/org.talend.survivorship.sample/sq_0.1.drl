@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "sq"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "sqGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( service_order, "Service_Order", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "Service_Order", drools.getRule().getName());
+
+end
+
+
