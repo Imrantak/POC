@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_3eGNwDdTEei50Npc-g0ZOA" name="Pattern_Analysis_EVO_SOVR_APAC" creationDate="2018-04-03T20:59:57.797+0530">
+  <clientDependency href="../Analyses/Pattern_Analysis_EVO_SOVR_APAC_0.1.ana#_3eHb4DdTEei50Npc-g0ZOA"/>
+  <taggedValue xmi:id="_3eGNwTdTEei50Npc-g0ZOA" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_3eGNwjdTEei50Npc-g0ZOA" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_3eGNwzdTEei50Npc-g0ZOA" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_3eGNxDdTEei50Npc-g0ZOA" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_3eGNxTdTEei50Npc-g0ZOA" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_3eGNxjdTEei50Npc-g0ZOA" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_3eGNxzdTEei50Npc-g0ZOA" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_3eGNyDdTEei50Npc-g0ZOA" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_3eGNyTdTEei50Npc-g0ZOA" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
+  <taggedValue xmi:id="_3eGNyjdTEei50Npc-g0ZOA" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\talendstudio\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_3eGNyzdTEei50Npc-g0ZOA" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_3eGNzDdTEei50Npc-g0ZOA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_3eGNzTdTEei50Npc-g0ZOA" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_3eGNzjdTEei50Npc-g0ZOA" tag="Author" value="viral.patel@eval8082.talend.com"/>
+  <analysisMap xmi:id="_3eGNzzdTEei50Npc-g0ZOA" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Pattern_Analysis_EVO_SOVR_APAC_0.1.ana#_2Kj7kDdOEei50Npc-g0ZOA"/>
+  </analysisMap>
+</dataquality.reports:TdReport>

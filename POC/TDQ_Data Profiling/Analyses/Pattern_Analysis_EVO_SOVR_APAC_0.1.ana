@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_2Kj7kDdOEei50Npc-g0ZOA" name="Pattern_Analysis_EVO_SOVR_APAC" creationDate="2018-04-03T20:24:01.580+0530" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_2Kj7kDdOEei50Npc-g0ZOA" name="Pattern_Analysis_EVO_SOVR_APAC" supplierDependency="_3eHb4DdTEei50Npc-g0ZOA" creationDate="2018-04-03T20:24:01.580+0530" defaultContext="Default">
     <clientDependency href="../../metadata/fileDelimited/CSV_EVO_SOVR_APAC_0.1.item#_2tHPADdOEei50Npc-g0ZOA"/>
     <taggedValue xmi:id="_2Kj7kTdOEei50Npc-g0ZOA" tag="Status" value="development"/>
     <taggedValue xmi:id="_2Kj7kjdOEei50Npc-g0ZOA" tag="Author" value="viral.patel@eval8082.talend.com"/>
@@ -91,4 +91,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_3eHb4DdTEei50Npc-g0ZOA" kind="Usage" supplier="_2Kj7kDdOEei50Npc-g0ZOA">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/Pattern_Analysis_EVO_SOVR_APAC_0.1.rep#_3eGNwDdTEei50Npc-g0ZOA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
