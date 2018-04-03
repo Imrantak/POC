@@ -443,7 +443,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="fileout" expressionFilter=" filedata.PO_Release_Indicator.equalsIgnoreCase(&quot;released&quot;) &amp;&amp;    (filedata.Release_Completed_On.Relational.equals(&quot;&quot;) || Relational.ISNULL(filedata.Release_Completed_On ))" activateExpressionFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="fileout" expressionFilter="filedata.PO_Release_Indicator.equalsIgnoreCase(&quot;released&quot;) &amp;&amp;    (filedata.Release_Completed_On.equals(&quot;&quot;) || Relational.ISNULL(filedata.Release_Completed_On ))" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="Service_Order" expression="filedata.Service_Order " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Item_No" expression="filedata.SO_Item_No " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Type" expression="filedata.SO_Type " type="id_String" nullable="true"/>
