@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
   <TalendProperties:Project xmi:id="_NAtlATcwEei50Npc-g0ZOA" label="POC" language="java" technicalLabel="POC" author="_NAtlAjcwEei50Npc-g0ZOA" productVersion="Talend Integration Cloud Hybrid Edition-6.5.1.20180116_1512" url="{&quot;location&quot;:&quot;https://github.com/Imrantak/POC&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false">
+    <technicalStatus xmi:id="_NXUHIDcwEei50Npc-g0ZOA" label="development" code="DEV"/>
+    <technicalStatus xmi:id="_NXUHITcwEei50Npc-g0ZOA" label="testing" code="TEST"/>
+    <technicalStatus xmi:id="_NXUHIjcwEei50Npc-g0ZOA" label="production" code="PROD"/>
+    <documentationStatus xmi:id="_NXP1sDcwEei50Npc-g0ZOA" label="unchecked" code="UCK"/>
+    <documentationStatus xmi:id="_NXP1sTcwEei50Npc-g0ZOA" label="checked" code="CHK"/>
+    <documentationStatus xmi:id="_NXP1sjcwEei50Npc-g0ZOA" label="validated" code="VAL"/>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8jcwEei50Npc-g0ZOA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
@@ -22,4 +28,7 @@
     <migrationTask xmi:id="_NWiECjcwEei50Npc-g0ZOA" id="org.talend.repository.model.migration.AddProductValuesItemMigrationTask" breaks="6.5.0" version="6.5.0" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_NAtlAjcwEei50Npc-g0ZOA" login="jeanchristophefalaise@eval8082.talend.com" firstName="JeanChristophe" lastName="Falaise" type="DI"/>
+  <TalendProperties:User xmi:id="_NXYYkDcwEei50Npc-g0ZOA" login="viral.patel@eval8082.talend.com" firstName="Viral" lastName="Patel" type="DI">
+    <projectAuthorization href="../C:/talendstudio/#/0"/>
+  </TalendProperties:User>
 </xmi:XMI>
