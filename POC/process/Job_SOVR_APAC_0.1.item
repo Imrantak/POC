@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_String" value="&quot;CSV_EVO SOVR _APAC.csv&quot;"/>
+    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" type="id_String" value="&quot;CSV_EVO SOVR _APAC&quot;"/>
     <contextParameter comment="" name="root_filedirectory" prompt="root_filedirectory?" promptNeeded="false" type="id_String" value="&quot;C:/poc_data/&quot;"/>
   </context>
   <parameters>
@@ -116,7 +116,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.root_filedirectory+&quot;input/&quot;+context.filename"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.root_filedirectory+&quot;input/&quot;+context.filename+&quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -402,6 +402,8 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="fileout" name="fileout">
+      <column comment="" key="false" length="8" name="PO_Release_Indicator" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Release_Completed_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Service_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="SO_Item_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="SO_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -418,11 +420,9 @@
       <column comment="" key="false" length="22" name="PR_Creator_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="PO_Release_Indicator" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="PO_Subject_to_release" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="PO_Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="PO_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Release_Completed_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Approval_pending_with" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="SO_Item_Creation_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="PO_Item_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -445,6 +445,8 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="fileout" expressionFilter="filedata.PO_Release_Indicator.equalsIgnoreCase(&quot;released&quot;) &amp;&amp;    (filedata.Release_Completed_On.equals(&quot;&quot;) || Relational.ISNULL(filedata.Release_Completed_On ))" activateExpressionFilter="true" columnNameFilter="">
+        <mapperTableEntries name="PO_Release_Indicator" expression="filedata.PO_Release_Indicator " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Release_Completed_On" expression="filedata.Release_Completed_On " type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order" expression="filedata.Service_Order " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Item_No" expression="filedata.SO_Item_No " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Type" expression="filedata.SO_Type " type="id_String" nullable="true"/>
@@ -461,11 +463,9 @@
         <mapperTableEntries name="PR_Creator_Name" expression="filedata.PR_Creator_Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Number" expression="filedata.PO_Number " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" expression="filedata.Vendor " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Release_Indicator" expression="filedata.PO_Release_Indicator " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Subject_to_release" expression="filedata.PO_Subject_to_release " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Value" expression="filedata.PO_Value " type="id_Float" nullable="true"/>
         <mapperTableEntries name="PO_Currency" expression="filedata.PO_Currency " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Release_Completed_On" expression="filedata.Release_Completed_On " type="id_String" nullable="true"/>
         <mapperTableEntries name="Approval_pending_with" expression="filedata.Approval_pending_with " type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Item_Creation_Date" expression="filedata.SO_Item_Creation_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Item_Number" expression="filedata.PO_Item_Number " type="id_Integer" nullable="true"/>
@@ -530,7 +530,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.root_filedirectory+&quot;output/ReleasePOs_with_BlankReleasedOnDates_&quot;+context.filename"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.root_filedirectory+&quot;findings/ReleasePOs_with_BlankReleasedOnDates_&quot;+context.filename+ TalendDate.getDate(&quot;CCYY-MM-DD hh:mm:ss&quot;)+&quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -558,6 +558,8 @@
     <elementParameter field="TEXT" name="LABEL" value="ReleasedPOwithBlankReleasedOnDates"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="fileout" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="8" name="PO_Release_Indicator" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Release_Completed_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Service_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="SO_Item_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="SO_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -574,11 +576,9 @@
       <column comment="" key="false" length="22" name="PR_Creator_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="PO_Release_Indicator" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="PO_Subject_to_release" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="PO_Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="PO_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Release_Completed_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Approval_pending_with" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="SO_Item_Creation_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="PO_Item_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
