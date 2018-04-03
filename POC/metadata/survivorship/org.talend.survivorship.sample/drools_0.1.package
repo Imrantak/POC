@@ -1,0 +1,51 @@
+package org.talend.survivorship.sample 
+
+import java.util.Date
+import java.math.BigDecimal
+
+global org.talend.survivorship.model.DataSet dataset
+
+declare  RecordIn 
+
+    TALEND_INTERNAL_ID : int  
+    service_order : Integer  
+    so_item_no : Integer  
+    so_type : String  
+    so_header_status : String  
+    so_item_status : String  
+    so_created_on : Date  
+    so_created_by : String  
+    so_creator_name : String  
+    so_item_net_value : Float  
+    so_item_currency : String  
+    pr_number : Long  
+    pr_created_on : Date  
+    pr_created_by : String  
+    pr_creator_name : String  
+    po_number : String  
+    vendor : String  
+    po_release_indicator : String  
+    po_subject_to_release : String  
+    po_value : Float  
+    po_currency : String  
+    release_completed_on : String  
+    approval_pending_with : String  
+    so_item_creation_date : String  
+    po_item_number : Integer  
+    so_vendor_name : String  
+    so_customer_number : Long  
+    so_customer_name : String  
+    so_customer_npid : String  
+    so_requisitioner : String  
+    opsd : Date  
+    oped : Date  
+    po_deletion_status : String  
+    po_rejection_code : String  
+    person_responsible_vw : String  
+    company_code : String  
+    actual__vendor : String  
+    actual_po : String  
+    rejection_text : String  
+end
+
+
