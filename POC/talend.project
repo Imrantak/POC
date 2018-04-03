@@ -7,31 +7,6 @@
     <documentationStatus xmi:id="_NXP1sDcwEei50Npc-g0ZOA" label="unchecked" code="UCK"/>
     <documentationStatus xmi:id="_NXP1sTcwEei50Npc-g0ZOA" label="checked" code="CHK"/>
     <documentationStatus xmi:id="_NXP1sjcwEei50Npc-g0ZOA" label="validated" code="VAL"/>
-    <ItemsRelations xmi:id="_pwvv8DcyEei50Npc-g0ZOA">
-      <baseItem xmi:id="_pwvv8TcyEei50Npc-g0ZOA" id="_kwYNYDcyEei50Npc-g0ZOA" version="0.1" type="job"/>
-      <relatedItems xmi:id="_pwvv8zcyEei50Npc-g0ZOA" id="SQLike" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv9DcyEei50Npc-g0ZOA" id="Numeric" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv9TcyEei50Npc-g0ZOA" id="TalendString" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv9jcyEei50Npc-g0ZOA" id="DataMasking" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv9zcyEei50Npc-g0ZOA" id="DataOperation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv-DcyEei50Npc-g0ZOA" id="StringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv-TcyEei50Npc-g0ZOA" id="TalendDataGenerator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv-jcyEei50Npc-g0ZOA" id="DqStringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv-zcyEei50Npc-g0ZOA" id="TalendDate" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv_DcyEei50Npc-g0ZOA" id="DataQuality" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv_TcyEei50Npc-g0ZOA" id="Mathematical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv_jcyEei50Npc-g0ZOA" id="Relational" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvv_zcyEei50Npc-g0ZOA" id="DQTechnical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvwADcyEei50Npc-g0ZOA" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvwATcyEei50Npc-g0ZOA" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_pwvwAjcyEei50Npc-g0ZOA" id="_gsGfoDcyEei50Npc-g0ZOA - SOVR_APAC_Metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_FPI7wDdUEei50Npc-g0ZOA" id="_YgYGQTcwEei50Npc-g0ZOA" version="Latest" type="report"/>
-      <relatedItems xmi:id="_FPI7wTdUEei50Npc-g0ZOA" id="_2KHPoDdOEei50Npc-g0ZOA" version="Latest" type="report"/>
-      <relatedItems xmi:id="_FPI7wjdUEei50Npc-g0ZOA" id="_YeWF8TcwEei50Npc-g0ZOA" version="Latest" type="report"/>
-      <relatedItems xmi:id="_FPI7wzdUEei50Npc-g0ZOA" id="_3eDKcDdTEei50Npc-g0ZOA" version="Latest" type="report"/>
-      <relatedItems xmi:id="_FPI7xDdUEei50Npc-g0ZOA" id="_YfmDITcwEei50Npc-g0ZOA" version="Latest" type="report"/>
-      <relatedItems xmi:id="_FPI7xTdUEei50Npc-g0ZOA" id="_gsGfoDcyEei50Npc-g0ZOA" version="Latest" type="report"/>
-    </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8jcwEei50Npc-g0ZOA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
