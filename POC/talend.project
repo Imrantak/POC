@@ -31,9 +31,6 @@
       <relatedItems xmi:id="_FPI7wzdUEei50Npc-g0ZOA" id="_3eDKcDdTEei50Npc-g0ZOA" version="Latest" type="report"/>
       <relatedItems xmi:id="_FPI7xDdUEei50Npc-g0ZOA" id="_YfmDITcwEei50Npc-g0ZOA" version="Latest" type="report"/>
       <relatedItems xmi:id="_FPI7xTdUEei50Npc-g0ZOA" id="_gsGfoDcyEei50Npc-g0ZOA" version="Latest" type="report"/>
-      <relatedItems xmi:id="_RAB6cDdVEei50Npc-g0ZOA" id="_IgneIDdVEei50Npc-g0ZOA" version="Latest" type="survivorshipRuleRelation"/>
-      <relatedItems xmi:id="_RAB6cTdVEei50Npc-g0ZOA" id="_Ib7LYDdVEei50Npc-g0ZOA" version="Latest" type="survivorshipRuleRelation"/>
-      <relatedItems xmi:id="_RAB6cjdVEei50Npc-g0ZOA" id="_Ik6vUDdVEei50Npc-g0ZOA" version="Latest" type="survivorshipRuleRelation"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
