@@ -25,6 +25,9 @@
           <matchKeys xmi:id="_5hkBoDgUEeiFBblx5C46YA" name="b" column="Purchasing_Document" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
             <algorithm xmi:id="_5hkBoTgUEeiFBblx5C46YA" algorithmType="EXACT" algorithmParameters=""/>
           </matchKeys>
+          <matchKeys xmi:id="_E7qesDgbEeiFBblx5C46YA" name="n" column="Item" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+            <algorithm xmi:id="_E7qesTgbEeiFBblx5C46YA" algorithmType="EXACT" algorithmParameters=""/>
+          </matchKeys>
         </matchRules>
       </builtInMatchRuleDefinition>
     </indicators>
