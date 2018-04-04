@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_mz0wIDgUEeiFBblx5C46YA" name="Match_Analysis" creationDate="2018-04-04T19:59:38.784+0530">
+  <taggedValue xmi:id="_mz0wITgUEeiFBblx5C46YA" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_mz0wIjgUEeiFBblx5C46YA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_mz0wIzgUEeiFBblx5C46YA" tag="Author" value="viral.patel@eval8082.talend.com"/>
+  <taggedValue xmi:id="_mz0wJDgUEeiFBblx5C46YA" tag="Purpose"/>
+  <taggedValue xmi:id="_mz0wJTgUEeiFBblx5C46YA" tag="Description"/>
+  <taggedValue xmi:id="_mz0wJjgUEeiFBblx5C46YA" tag="Version" value="0.1"/>
+  <context xmi:id="_mz0wJzgUEeiFBblx5C46YA"/>
+  <results xmi:id="_mz0wKDgUEeiFBblx5C46YA">
+    <resultMetadata xmi:id="_mz0wKTgUEeiFBblx5C46YA"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_mz96EDgUEeiFBblx5C46YA"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_mz96ETgUEeiFBblx5C46YA">
+      <builtInMatchRuleDefinition xmi:id="_mz96EjgUEeiFBblx5C46YA"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_mz96EzgUEeiFBblx5C46YA" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
