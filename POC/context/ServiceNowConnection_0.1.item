@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
   <talendfile:ContextType xmi:id="_HNp2oDfzEeiFBblx5C46YA" confirmationNeeded="false" name="Default">
     <contextParameter xmi:id="_HNp2oTfzEeiFBblx5C46YA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
-    <contextParameter xmi:id="_HNp2ojfzEeiFBblx5C46YA" comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" type="id_String" value="talend.integration.user@vodafone.com"/>
+    <contextParameter xmi:id="_HNp2ojfzEeiFBblx5C46YA" comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" type="id_String" value="talend.integration.user"/>
     <contextParameter xmi:id="_HNqdsDfzEeiFBblx5C46YA" comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_jp500DfzEeiFBblx5C46YA" confirmationNeeded="false" name="local">
