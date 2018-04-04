@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
   <TalendMetadata:DelimitedFileConnection xmi:id="_fDvfADgUEeiFBblx5C46YA" name="CSV_EVO_ME2N_PO" supplierDependency="_247LcDgUEeiFBblx5C46YA" dataPackage="_fDvfATgUEeiFBblx5C46YA" Server="Localhost 127.0.0.1" FilePath="C:/Users/VRAJ/Documents/vodafone/DF_POC/files/Data factory use case/CSV_EVO ME2N PO.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_fDvfATgUEeiFBblx5C46YA" name="default" dataManager="_fDvfADgUEeiFBblx5C46YA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_fDvfAjgUEeiFBblx5C46YA" id="_NZ-zADgUEeiFBblx5C46YA" label="CSV_EVO_ME2N_PO">
@@ -40,7 +40,5 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fDvfJTgUEeiFBblx5C46YA" id="Contract_Spend_Type" label="Contract_Spend_Type" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
-  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_247LcDgUEeiFBblx5C46YA" kind="Usage" supplier="_fDvfADgUEeiFBblx5C46YA">
-    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Match_Analysis_0.1.ana#_mz0wIDgUEeiFBblx5C46YA"/>
-  </orgomg.cwm.objectmodel.core:Dependency>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_247LcDgUEeiFBblx5C46YA" kind="Usage" supplier="_fDvfADgUEeiFBblx5C46YA"/>
 </xmi:XMI>
