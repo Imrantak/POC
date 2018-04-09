@@ -401,6 +401,7 @@
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -428,6 +429,7 @@
         <mapperTableEntries name="Service_Notification_Description" expression="grn.Service_Notification_Description " type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" expression="grn.Service_Order_ID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" expression="grn.Operation_ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" expression="grn.Service_Order_ID + &quot;-&quot;+grn.Operation_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Number" expression="grn.PO_Number " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Line_Item" expression="grn.PO_Line_Item " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="OPSD" expression="grn.OPSD " type="id_Date" nullable="true"/>
@@ -963,6 +965,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Operation_ID"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unique_SO"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PO_Number"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item"/>
@@ -1009,6 +1013,7 @@
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
@@ -1540,6 +1545,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="AML_NPID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Unique_SO"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
