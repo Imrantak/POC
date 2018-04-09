@@ -418,7 +418,7 @@
         <mapperTableEntries name="Code_Group___Coding___CWW_Prime_Product" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coding___CWW_Prime_Product_ID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Code_Description" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID_ID_in_SO" expression="" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID_Name_in_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="Main_Work_Center" type="id_String" nullable="true"/>
         <mapperTableEntries name="Main_Work_Center_Description" type="id_String" nullable="true"/>
@@ -467,8 +467,6 @@
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_QRre8DvwEeiSndQzlxS5Cg - metadata" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_QRre8DvwEeiSndQzlxS5Cg - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/talendstudio/workspace&quot;" show="false"/>
@@ -757,7 +755,7 @@
       <column comment="" key="false" length="5" name="Code_Group___Coding___CWW_Prime_Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Coding___CWW_Prime_Product_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Code_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="NPID_Name_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Main_Work_Center" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="34" name="Main_Work_Center_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
