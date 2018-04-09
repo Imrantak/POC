@@ -379,7 +379,7 @@
         <mapperTableEntries name="Order_Type_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="grn" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="grn" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Select_Operation" type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" type="id_Integer" nullable="true"/>
