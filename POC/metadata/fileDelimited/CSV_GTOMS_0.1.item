@@ -13,7 +13,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxUjvoEeiSndQzlxS5Cg" label="GSOS_Ref" length="47" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxUzvoEeiSndQzlxS5Cg" label="GSR_Ref" length="54" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxVDvoEeiSndQzlxS5Cg" label="COMS_Ref" length="31" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxVTvoEeiSndQzlxS5Cg" label="Msp_Order" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxVTvoEeiSndQzlxS5Cg" label="Msp_Order" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxVjvoEeiSndQzlxS5Cg" label="Status" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxVzvoEeiSndQzlxS5Cg" label="DPC_Owner" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxWDvoEeiSndQzlxS5Cg" label="Carrier" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
