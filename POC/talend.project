@@ -161,13 +161,12 @@
       <relatedItems xmi:id="_5_MtsTvqEeiSndQzlxS5Cg" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_5_MtsjvqEeiSndQzlxS5Cg" id="_nS54gDvoEeiSndQzlxS5Cg - GTOMS_Metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_r2rFADvwEeiSndQzlxS5Cg" id="_QRre8DvwEeiSndQzlxS5Cg" version="Latest" type="property"/>
-      <relatedItems xmi:id="_r2rFATvwEeiSndQzlxS5Cg" id="_zGYUUDvtEeiSndQzlxS5Cg" version="Latest" type="property"/>
-      <relatedItems xmi:id="_r2rFAjvwEeiSndQzlxS5Cg" id="_zGYUUDvtEeiSndQzlxS5Cg - CSV_SOVR" version="Latest" type="schema"/>
       <relatedItems xmi:id="_r2rFAzvwEeiSndQzlxS5Cg" id="_QRre8DvwEeiSndQzlxS5Cg - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_zfl10Dv-EeiSndQzlxS5Cg" id="_2VZXkDv5EeiSndQzlxS5Cg" version="Latest" type="property"/>
       <relatedItems xmi:id="_zfl10Tv-EeiSndQzlxS5Cg" id="_2VZXkDv5EeiSndQzlxS5Cg - CSV_EVO_NPIDS_AML_NPIDS" version="Latest" type="schema"/>
       <relatedItems xmi:id="_-9jPcDwVEeiSndQzlxS5Cg" id="_o6YTMDwVEeiSndQzlxS5Cg" version="Latest" type="property"/>
       <relatedItems xmi:id="_-9jPcTwVEeiSndQzlxS5Cg" id="_o6YTMDwVEeiSndQzlxS5Cg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_S4gIcDy6EeiVX6SBnj6RPA" id="_gsGfoDcyEei50Npc-g0ZOA - SOVR_APAC_Metadata" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
