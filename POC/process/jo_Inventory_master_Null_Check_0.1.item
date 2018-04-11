@@ -1127,7 +1127,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="active" expressionFilter="(out.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; (out.Status.equalsIgnoreCase(&quot;completed&quot;)||out.Status.equalsIgnoreCase(&quot;delivered&quot;)))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="active" expressionFilter="(out.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; (out.Status.equalsIgnoreCase(&quot;completed&quot;)||out.Status.equalsIgnoreCase(&quot;delivered&quot;))) &amp;&amp; !out.Cctid.equals(&quot;&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="Cctid" expression="out.Cctid" type="id_String"/>
         <mapperTableEntries name="Cct_Thirdparty" expression="out.Cct_Thirdparty" type="id_String"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="out.Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
