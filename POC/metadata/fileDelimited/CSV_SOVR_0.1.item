@@ -4,8 +4,8 @@
   <orgomg.cwm.resource.record:RecordFile xmi:id="_zGaJgDvtEeiSndQzlxS5Cg" name="default" dataManager="_zGZicDvtEeiSndQzlxS5Cg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_zGaJgTvtEeiSndQzlxS5Cg" id="_lwXVcDvtEeiSndQzlxS5Cg" label="CSV_SOVR">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJgjvtEeiSndQzlxS5Cg" label="Select_Operation" length="5" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJgzvtEeiSndQzlxS5Cg" label="Service_Order_ID" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJhDvtEeiSndQzlxS5Cg" label="Operation_ID" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJgzvtEeiSndQzlxS5Cg" label="Service_Order_ID" length="12" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJhDvtEeiSndQzlxS5Cg" label="Operation_ID" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJhTvtEeiSndQzlxS5Cg" label="Related_Operation_ID" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJhjvtEeiSndQzlxS5Cg" label="Company_Code" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJhzvtEeiSndQzlxS5Cg" label="Work_Center_ID" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
@@ -17,7 +17,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJjTvtEeiSndQzlxS5Cg" label="Recurring" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJjjvtEeiSndQzlxS5Cg" label="Number_of_Recurring" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJjzvtEeiSndQzlxS5Cg" label="PO_Vendor" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJkDvtEeiSndQzlxS5Cg" label="PO_Number" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJkDvtEeiSndQzlxS5Cg" label="PO_Number" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJkTvtEeiSndQzlxS5Cg" label="PO_Line_Item" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJkjvtEeiSndQzlxS5Cg" label="PO_Line_Item_Material_ID" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zGaJkzvtEeiSndQzlxS5Cg" label="PO_Line_Item_Material_Description" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
