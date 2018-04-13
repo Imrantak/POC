@@ -416,7 +416,7 @@
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="Cctid" expression="gtoms.Cctid " type="id_String" nullable="true"/>
@@ -1224,7 +1224,7 @@
         <mapperTableEntries name="Release_Completed_On" type="id_String" nullable="true"/>
         <mapperTableEntries name="Approval_pending_with" type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Item_Creation_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Item_Number" expression="out.PO_Line_Item " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Item_Number" expression="out.PO_Line_Item +&quot;0&quot;" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Vendor_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Customer_Number" type="id_Long" nullable="true"/>
         <mapperTableEntries name="SO_Customer_Name" type="id_String" nullable="true"/>
