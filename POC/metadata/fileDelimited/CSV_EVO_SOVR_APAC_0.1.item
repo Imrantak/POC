@@ -3,10 +3,10 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_gsWXQDcyEei50Npc-g0ZOA" name="CSV_EVO_SOVR_APAC" supplierDependency="_2tHPADdOEei50Npc-g0ZOA" dataPackage="_gssVgDcyEei50Npc-g0ZOA" Server="Localhost 127.0.0.1" FilePath="C:/Users/VRAJ/Documents/vodafone/DF_POC/files/Data factory use case/CSV_EVO SOVR _APAC.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_gssVgDcyEei50Npc-g0ZOA" name="default" dataManager="_gsWXQDcyEei50Npc-g0ZOA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_gssVgTcyEei50Npc-g0ZOA" id="_xiJFIDcxEei50Npc-g0ZOA" label="SOVR_APAC_Metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gssVgjcyEei50Npc-g0ZOA" id="Service_Order" label="Service_Order" length="7" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gssVgjcyEei50Npc-g0ZOA" id="Service_Order" label="Service_Order" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_2tHPATdOEei50Npc-g0ZOA" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gss8kDcyEei50Npc-g0ZOA" id="SO_Item_No" label="SO_Item_No" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gss8kDcyEei50Npc-g0ZOA" id="SO_Item_No" label="SO_Item_No" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_2tHPCjdOEei50Npc-g0ZOA" tag="Content Type" value="Interval"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gss8kTcyEei50Npc-g0ZOA" id="SO_Type" label="SO_Type" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
@@ -72,7 +72,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gss8pTcyEei50Npc-g0ZOA" id="SO_Item_Creation_Date" label="SO_Item_Creation_Date" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_2tHPxzdOEei50Npc-g0ZOA" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gss8pjcyEei50Npc-g0ZOA" id="PO_Item_Number" label="PO_Item_Number" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gss8pjcyEei50Npc-g0ZOA" id="PO_Item_Number" label="PO_Item_Number" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_2tHP0DdOEei50Npc-g0ZOA" tag="Content Type" value="Interval"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gss8pzcyEei50Npc-g0ZOA" id="SO_Vendor_Name" label="SO_Vendor_Name" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
