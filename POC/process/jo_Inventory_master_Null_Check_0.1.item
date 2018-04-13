@@ -1960,7 +1960,7 @@
     <elementParameter field="TEXT" name="LABEL" value="CSV_SOVR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="SOVR_APAC_Metadata" name="tFileInputDelimited_2">
-      <column comment="" key="false" length="7" name="Service_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="Service_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="Content Type" value="Interval"/>
       </column>
       <column comment="" key="false" length="2" name="SO_Item_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true">
@@ -2076,7 +2076,7 @@
       </column>
     </metadata>
     <metadata connector="REJECT" label="SOVR_APAC_Metadata" name="REJECT">
-      <column comment="" key="false" length="7" name="Service_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="Service_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="Content Type" value="Interval"/>
       </column>
       <column comment="" key="false" length="2" name="SO_Item_No" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true">
