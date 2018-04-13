@@ -1009,6 +1009,102 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cctid"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cct_Thirdparty"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Clarify_Reference_Msp_Order"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GSR_Ref"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GTOMS_Ref"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Circuit_Speed"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Product"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="A_End_City"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="A_End_Country"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Tail_Ordered"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_Description"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Operation_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unique_SO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Number"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPSD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPED"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_COVER"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NPID_Name_in_SO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NPID_ID_in_SO"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Functional_Location_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Order_Type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out" name="tLogRow_1">
+      <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="NPID_Name_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -1090,65 +1186,65 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="active" expressionFilter="(out.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; (out.Status.equalsIgnoreCase(&quot;completed&quot;)||out.Status.equalsIgnoreCase(&quot;delivered&quot;)))" activateExpressionFilter="true">
-        <mapperTableEntries name="Cctid" expression="out.Cctid" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cct_Thirdparty" expression="out.Cct_Thirdparty" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="out.Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" expression="out.GSR_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS_Ref" expression="out.GTOMS_Ref" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Circuit_Speed" expression="out.Circuit_Speed" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Product" expression="out.Product" type="id_String" nullable="true"/>
-        <mapperTableEntries name="A_End_City" expression="out.A_End_City" type="id_String" nullable="true"/>
-        <mapperTableEntries name="A_End_Country" expression="out.A_End_Country" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" expression="out.Date_Tail_Ordered" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Service_Notification_Description" expression="out.Service_Notification_Description" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Service_Order_ID" expression="out.Service_Order_ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Operation_ID" expression="out.Operation_ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Unique_SO" expression="out.Unique_SO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" expression="out.PO_Number" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Line_Item" expression="out.PO_Line_Item" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="OPSD" expression="out.OPSD" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OPED" expression="out.OPED" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PO_COVER" expression="out.PO_COVER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID_Name_in_SO" expression="out.NPID_Name_in_SO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID_ID_in_SO" expression="out.NPID_ID_in_SO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Functional_Location_ID" expression="out.Functional_Location_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AML_NPID" expression="out.AML_NPID" type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="active" expressionFilter="(row1.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; (row1.Status.equalsIgnoreCase(&quot;completed&quot;)||row1.Status.equalsIgnoreCase(&quot;delivered&quot;)))" activateExpressionFilter="true">
+        <mapperTableEntries name="Cctid" expression="row1.Cctid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" expression="row1.Cct_Thirdparty" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row1.Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="row1.GSR_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="row1.GTOMS_Ref" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Circuit_Speed" expression="row1.Circuit_Speed" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product" expression="row1.Product" type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_City" expression="row1.A_End_City" type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_Country" expression="row1.A_End_Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Ordered" expression="row1.Date_Tail_Ordered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Description" expression="row1.Service_Notification_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_ID" expression="row1.Service_Order_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Operation_ID" expression="row1.Operation_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" expression="row1.Unique_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="row1.PO_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" expression="row1.PO_Line_Item" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OPSD" expression="row1.OPSD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPED" expression="row1.OPED" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PO_COVER" expression="row1.PO_COVER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_Name_in_SO" expression="row1.NPID_Name_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" expression="row1.NPID_ID_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_ID" expression="row1.Functional_Location_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AML_NPID" expression="row1.AML_NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billing.Start_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billing.End_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" expression="sovr.Vendor " type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Ceases" expressionFilter="(out.Order_Type.equalsIgnoreCase(&quot;cease&quot;) &amp;&amp; (out.Status.equalsIgnoreCase(&quot;completed&quot;)||out.Status.equalsIgnoreCase(&quot;delivered&quot;)))" activateExpressionFilter="true">
-        <mapperTableEntries name="Cctid" expression="out.Cctid " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cct_Thirdparty" expression="out.Cct_Thirdparty " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="out.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" expression="out.GSR_Ref " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS_Ref" expression="out.GTOMS_Ref " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Circuit_Speed" expression="out.Circuit_Speed " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Product" expression="out.Product " type="id_String" nullable="true"/>
-        <mapperTableEntries name="A_End_City" expression="out.A_End_City " type="id_String" nullable="true"/>
-        <mapperTableEntries name="A_End_Country" expression="out.A_End_Country " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" expression="out.Date_Tail_Ordered " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Service_Notification_Description" expression="out.Service_Notification_Description " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Service_Order_ID" expression="out.Service_Order_ID " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Operation_ID" expression="out.Operation_ID " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Unique_SO" expression="out.Unique_SO " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" expression="out.PO_Number " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Line_Item" expression="out.PO_Line_Item " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="OPSD" expression="out.OPSD " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OPED" expression="out.OPED " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PO_COVER" expression="out.PO_COVER " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID_Name_in_SO" expression="out.NPID_Name_in_SO " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID_ID_in_SO" expression="out.NPID_ID_in_SO " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Functional_Location_ID" expression="out.Functional_Location_ID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AML_NPID" expression="out.AML_NPID " type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="Ceases" expressionFilter="(row1.Order_Type.equalsIgnoreCase(&quot;cease&quot;) &amp;&amp; (row1.Status.equalsIgnoreCase(&quot;completed&quot;)||row1.Status.equalsIgnoreCase(&quot;delivered&quot;)))" activateExpressionFilter="true">
+        <mapperTableEntries name="Cctid" expression="row1.Cctid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" expression="row1.Cct_Thirdparty " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row1.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="row1.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="row1.GTOMS_Ref " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Circuit_Speed" expression="row1.Circuit_Speed " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product" expression="row1.Product " type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_City" expression="row1.A_End_City " type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_Country" expression="row1.A_End_Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Ordered" expression="row1.Date_Tail_Ordered " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Description" expression="row1.Service_Notification_Description " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_ID" expression="row1.Service_Order_ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Operation_ID" expression="row1.Operation_ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" expression="row1.Unique_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="row1.PO_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" expression="row1.PO_Line_Item " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OPSD" expression="row1.OPSD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPED" expression="row1.OPED " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PO_COVER" expression="row1.PO_COVER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_Name_in_SO" expression="row1.NPID_Name_in_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" expression="row1.NPID_ID_in_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_ID" expression="row1.Functional_Location_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AML_NPID" expression="row1.AML_NPID " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billing.Start_Date  " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billing.End_Date  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" expression="sovr.Vendor " type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="out" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
@@ -1178,7 +1274,7 @@
       <inputTables sizeState="INTERMEDIATE" name="billing" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="GCID" type="id_String" nullable="true"/>
         <mapperTableEntries name="CID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="GSR" expression="out.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR" expression="row1.GSR_Ref " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Account_Id" type="id_Integer" nullable="true"/>
@@ -1203,8 +1299,8 @@
         <mapperTableEntries name="Site_Country" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="sovr" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Service_Order" expression="out.Service_Order_ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="SO_Item_No" expression="Integer.parseInt(out.Operation_ID.toString()+&quot;0&quot; ) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Service_Order" expression="row1.Service_Order_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SO_Item_No" expression="Integer.parseInt(row1.Operation_ID.toString()+&quot;0&quot; ) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Header_Status" type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Item_Status" type="id_String" nullable="true"/>
@@ -1217,7 +1313,7 @@
         <mapperTableEntries name="PR_Created_On" type="id_Date" nullable="true"/>
         <mapperTableEntries name="PR_Created_By" type="id_String" nullable="true"/>
         <mapperTableEntries name="PR_Creator_Name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" expression="out.PO_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="row1.PO_Number " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Release_Indicator" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Subject_to_release" type="id_String" nullable="true"/>
@@ -1226,7 +1322,7 @@
         <mapperTableEntries name="Release_Completed_On" type="id_String" nullable="true"/>
         <mapperTableEntries name="Approval_pending_with" type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Item_Creation_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Item_Number" expression="out.PO_Line_Item " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Item_Number" expression="row1.PO_Line_Item " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Vendor_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Customer_Number" type="id_Long" nullable="true"/>
         <mapperTableEntries name="SO_Customer_Name" type="id_String" nullable="true"/>
@@ -1968,7 +2064,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="gtoms" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="PO_Number"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -2029,6 +2125,10 @@
   <connection connectorName="FLOW" label="aml_npid" lineStyle="8" metaname="tFileInputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_4" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="aml_npid" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="active" lineStyle="0" metaname="active" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tFileOutputExcel_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
