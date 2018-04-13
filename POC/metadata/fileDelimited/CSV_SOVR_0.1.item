@@ -17,7 +17,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7D8IEeiwgfY1n8UrXg" label="PR_Created_On" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7T8IEeiwgfY1n8UrXg" label="PR_Created_By" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7j8IEeiwgfY1n8UrXg" label="PR_Creator_Name" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7z8IEeiwgfY1n8UrXg" label="PO_Number" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7z8IEeiwgfY1n8UrXg" label="PO_Number" length="12" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod8D8IEeiwgfY1n8UrXg" label="Vendor" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod8T8IEeiwgfY1n8UrXg" label="PO_Release_Indicator" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod8j8IEeiwgfY1n8UrXg" label="PO_Subject_to_release" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
