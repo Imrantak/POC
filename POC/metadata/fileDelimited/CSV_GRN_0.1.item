@@ -39,7 +39,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstGzvwEeiSndQzlxS5Cg" label="Code_Group___Coding___CWW_Prime_Product" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstHDvwEeiSndQzlxS5Cg" label="Coding___CWW_Prime_Product_ID" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstHTvwEeiSndQzlxS5Cg" label="Code_Description" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstHjvwEeiSndQzlxS5Cg" label="NPID_ID_in_SO" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstHjvwEeiSndQzlxS5Cg" label="NPID_ID_in_SO" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstHzvwEeiSndQzlxS5Cg" label="NPID_Name_in_SO" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstIDvwEeiSndQzlxS5Cg" label="Main_Work_Center" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstITvwEeiSndQzlxS5Cg" label="Main_Work_Center_Description" length="34" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
