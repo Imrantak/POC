@@ -500,7 +500,7 @@
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row1">
         <mapperTableEntries name="Cctid" expression="gtoms.Cctid " type="id_String" nullable="true"/>
@@ -553,7 +553,7 @@
         <mapperTableEntries name="Order_Type_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="grn" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="grn" expressionFilter="grn.Recurring.equalsIgnoreCase(&quot;MRC&quot;)" activateExpressionFilter="true" activateCondensedTool="true" columnNameFilter="" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Select_Operation" type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" type="id_Integer" nullable="true"/>
@@ -563,7 +563,7 @@
         <mapperTableEntries name="Work_Center_ID_Description" type="id_String" nullable="true"/>
         <mapperTableEntries name="Operation_User_Status" type="id_String" nullable="true"/>
         <mapperTableEntries name="Operation_User_Status_Description" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPSD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPSD" expression="" type="id_Date" nullable="true"/>
         <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Recurring" type="id_String" nullable="true"/>
         <mapperTableEntries name="Number_of_Recurring" type="id_Integer" nullable="true"/>
@@ -1205,7 +1205,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="active_and_po_cover" expressionFilter="row1.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; row1.PO_COVER.equalsIgnoreCase(&quot;PO Cover&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="Cctid" expression="row1.Cctid" type="id_String" nullable="true"/>
