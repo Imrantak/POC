@@ -606,7 +606,7 @@
         <mapperTableEntries name="Service_Order_Basic_Start_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Service_Order_Basic_End_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="GSR__External_System_Reference_" expression="gtoms.GSR_Ref " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS__External_System_Reference_" expression="gtoms.GTOMS_Ref " type="id_String" nullable="true"/>
         <mapperTableEntries name="Mozart__External_System_Reference_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify__External_System_Reference_" type="id_String" nullable="true"/>
         <mapperTableEntries name="SPT__External_System_Reference_" expression="" type="id_Integer" nullable="true"/>
