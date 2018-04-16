@@ -1105,7 +1105,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out" name="active">
+    <metadata connector="FLOW" label="out" name="active_and_po_cover">
       <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1172,9 +1172,9 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="active" expressionFilter="(row1.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; (row1.Status.equalsIgnoreCase(&quot;completed&quot;)||row1.Status.equalsIgnoreCase(&quot;delivered&quot;)))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="active_and_po_cover" expressionFilter="row1.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; row1.PO_COVER.equalsIgnoreCase(&quot;PO Cover&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="Cctid" expression="row1.Cctid" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" expression="row1.Cct_Thirdparty" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row1.Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
@@ -1203,7 +1203,7 @@
         <mapperTableEntries name="Vendor" expression="sovr.Vendor " type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="Ceases" expressionFilter="(row1.Order_Type.equalsIgnoreCase(&quot;cease&quot;) &amp;&amp; (row1.Status.equalsIgnoreCase(&quot;completed&quot;)||row1.Status.equalsIgnoreCase(&quot;delivered&quot;)))" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="Ceases" expressionFilter="row1.Order_Type.equalsIgnoreCase(&quot;cease&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="Cctid" expression="row1.Cctid " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" expression="row1.Cct_Thirdparty " type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row1.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
@@ -1296,7 +1296,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="128">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -2109,7 +2109,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="aml_npid" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="active" lineStyle="0" metaname="active" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tFileOutputExcel_1">
+  <connection connectorName="FLOW" label="active_and_po_cover" lineStyle="0" metaname="active_and_po_cover" offsetLabelX="14" offsetLabelY="1" outputId="1" source="tMap_2" target="tFileOutputExcel_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Start_Date"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -2125,7 +2125,7 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="active" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="active_and_po_cover" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Ceases" lineStyle="0" metaname="Ceases" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tFileOutputExcel_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
