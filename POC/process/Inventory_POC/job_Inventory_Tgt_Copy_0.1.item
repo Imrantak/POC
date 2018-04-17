@@ -2034,12 +2034,7 @@
   <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_13" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
-    <elementParameter field="TABLE" name="CONDITIONS">
-      <elementValue elementRef="INPUT_COLUMN" value="Custname"/>
-      <elementValue elementRef="FUNCTION" value=""/>
-      <elementValue elementRef="OPERATOR" value="=="/>
-      <elementValue elementRef="RVALUE" value=""/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
     <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
     <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.Custname.equalsIgnoreCase(&quot;sprint&quot;)||input_row.Custname.equalsIgnoreCase(&quot;sfr&quot;)||input_row.Custname.equalsIgnoreCase(&quot;sap&quot;)||input_row.Custname.equalsIgnoreCase(&quot;SYBASE EUROPE B.V&quot;)&#xA;||input_row.Custname.equalsIgnoreCase(&quot;Level 3 Communications Ltd&quot;)||input_row.Custname.equalsIgnoreCase(&quot;QWEST HONG KONG TELECOMMUNICATIONS&quot;)||input_row.Custname.equalsIgnoreCase(&quot;SingTel Europe&quot;)||input_row.Custname.equalsIgnoreCase(&quot;T-MOBILE&quot;)&#xA;||input_row.Custname.equalsIgnoreCase(&quot;GOOGLE&quot;)||input_row.Custname.equalsIgnoreCase(&quot;DAISY COMMUNICATIONS LTD&quot;)||input_row.Custname.equalsIgnoreCase(&quot;AMDOCS DEVELOPMENT CENTRE INDIA PRIVATE LTD&quot;)||input_row.Custname.equalsIgnoreCase(&quot;BRADKEN LTD&quot;)||input_row.Custname.equalsIgnoreCase(&quot;DOU YEE ENTERPRISES (S) PTE LTD&quot;)||input_row.Custname.equalsIgnoreCase(&quot;NEXON ASIA PACIFIC PTY LTD&quot;)||input_row.Custname.equalsIgnoreCase(&quot;SCHREIBER FOODS&quot;)"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
