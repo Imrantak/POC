@@ -1562,7 +1562,7 @@
       <column comment="" key="false" length="0" name="CDB_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Clarify_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="GSR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="GTOMS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GTOMS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SN_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SN_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Prime_Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1712,7 +1712,7 @@
         <mapperTableEntries name="CDB_Ref" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Ref" expression="row1.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR" expression="row1.GSR_Ref " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS" expression="row1.GTOMS_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS" expression="row1.GTOMS_Ref " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SN_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="SN_Description" expression="row1.Service_Notification_Description " type="id_String" nullable="true"/>
         <mapperTableEntries name="Prime_Product" type="id_String" nullable="true"/>
@@ -2067,7 +2067,7 @@
       <column comment="" key="false" length="0" name="CDB_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Clarify_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="GSR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="GTOMS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GTOMS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SN_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="SN_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Prime_Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
