@@ -769,7 +769,6 @@
       <column comment="" key="false" length="17" name="NPID_Name_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Cust_name" nullable="true" pattern="" precision="0" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -800,7 +799,6 @@
         <mapperTableEntries name="NPID_Name_in_SO" expression="grn.NPID_Name_in_SO " type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID_ID_in_SO" expression="grn.NPID_ID_in_SO " type="id_String" nullable="true"/>
         <mapperTableEntries name="Functional_Location_ID" expression="grn.Functional_Location_ID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AML_NPID" expression="aml_npid.AML_NPID " type="id_String" nullable="true"/>
         <mapperTableEntries name="Order_Type" expression="gtoms.Order_Type " type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="gtoms.Status " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cust_name" expression="gtoms.Customer " type="id_String" nullable="true"/>
@@ -1701,7 +1699,6 @@
         <mapperTableEntries name="NPID_Name_in_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID_ID_in_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="Functional_Location_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Order_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cust_name" type="id_String" nullable="true"/>
