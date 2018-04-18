@@ -58,8 +58,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstLjvwEeiSndQzlxS5Cg" label="GTOMS__External_System_Reference_" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstLzvwEeiSndQzlxS5Cg" label="Mozart__External_System_Reference_" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMDvwEeiSndQzlxS5Cg" label="Clarify__External_System_Reference_" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMTvwEeiSndQzlxS5Cg" label="SPT__External_System_Reference_" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMjvwEeiSndQzlxS5Cg" label="GRN_processor" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMTvwEeiSndQzlxS5Cg" label="SPT__External_System_Reference_" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMjvwEeiSndQzlxS5Cg" label="GRN_processor" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>
