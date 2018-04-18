@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -112,7 +112,7 @@
     <routinesParameter id="_NhQGQDcwEei50Npc-g0ZOA" name="TalendStringUtil"/>
     <routinesParameter id="_NhKmsDcwEei50Npc-g0ZOA" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="320">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/225081/Desktop/Inventory Mangement PoC/18042018/CSV/Gtoms Dump 16Apr2018.csv&quot;"/>
@@ -272,7 +272,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="8" offsetLabelY="13" posX="192" posY="320">
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="8" offsetLabelY="13" posX="256" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="||"/>
     <elementParameter field="TABLE" name="CONDITIONS"/>
@@ -345,7 +345,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="8" offsetLabelY="13" posX="352" posY="320">
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="8" offsetLabelY="13" posX="416" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_2" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
@@ -420,7 +420,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/225081/Desktop/Inventory Mangement PoC/18042018/CSV/SO Verificatoin Report.csv&quot;"/>
@@ -706,7 +706,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="-9" offsetLabelY="0" posX="512" posY="192">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="-9" offsetLabelY="0" posX="576" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/225081/Desktop/Inventory Mangement PoC/csvfiles/CSV_EVO_NPIDS_AML_NPIDS.csv&quot;"/>
@@ -784,7 +784,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -930,7 +930,7 @@
         <mapperTableEntries name="GTOMS__External_System_Reference_" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Mozart__External_System_Reference_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify__External_System_Reference_" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SPT__External_System_Reference_" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SPT__External_System_Reference_" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="GRN_processor" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="aml_npid" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
@@ -942,7 +942,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="544">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/225081/Desktop/Inventory Mangement PoC/18042018/CSV/GRN Cockpit Report 16 April.csv&quot;"/>
@@ -1265,21 +1265,21 @@
       <column comment="" defaultValue="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Mozart__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Clarify__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="GRN_processor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" defaultValue="" key="false" length="5" name="Select_Operation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Related_Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Company_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Work_Center_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="39" name="Work_Center_ID_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Operation_User_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="Operation_User_Status_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Recurring" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="2" name="Number_of_Recurring" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="PO_Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1305,7 +1305,7 @@
       <column comment="" key="false" length="5" name="Code_Group___Coding___CWW_Prime_Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="4" name="Coding___CWW_Prime_Product_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Code_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="35" name="NPID_Name_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="Main_Work_Center" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="34" name="Main_Work_Center_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1324,13 +1324,13 @@
       <column comment="" defaultValue="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Mozart__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Clarify__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="GRN_processor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1405,7 +1405,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="320">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1771,7 +1771,7 @@
         <mapperTableEntries name="Unit_Quantity" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Charge_Description" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer_Ref_" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Product_Type" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Product_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="C2_Ref" type="id_String" nullable="true"/>
         <mapperTableEntries name="Annual_Rental" type="id_Float" nullable="true"/>
         <mapperTableEntries name="Annual_Rental_Currency" type="id_String" nullable="true"/>
@@ -1790,7 +1790,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/225081/Desktop/Inventory Mangement PoC/18042018/CSV/Billing Data - 170418.csv&quot;"/>
@@ -1947,7 +1947,7 @@
       <column comment="" key="false" length="1" name="Unit_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="97" name="Charge_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="34" name="Customer_Ref_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Product_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Product_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="C2_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Annual_Rental" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Annual_Rental_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1974,7 +1974,7 @@
       <column comment="" key="false" length="1" name="Unit_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="97" name="Charge_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="34" name="Customer_Ref_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Product_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Product_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="C2_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="Annual_Rental" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Annual_Rental_Currency" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1986,7 +1986,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="320">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
