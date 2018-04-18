@@ -635,8 +635,8 @@
       <column comment="" key="false" length="8" name="PR_Created_By" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="27" name="PR_Creator_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="9" name="Vendor1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Vendor1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="PO_Release_Indicator" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="PO_Subject_to_release" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="8" name="PO_Value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
@@ -1379,8 +1379,8 @@
         <mapperTableEntries name="PR_Created_By" type="id_String" nullable="true"/>
         <mapperTableEntries name="PR_Creator_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Vendor" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Vendor1" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Vendor1" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Release_Indicator" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Subject_to_release" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Value" type="id_Float" nullable="true"/>
