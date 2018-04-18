@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_mBo9QUIwEei-uvRPwbqQgQ" name="rules" dataPackage="_mBo9QkIwEei-uvRPwbqQgQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/609560707/Desktop/Rules.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Sheet1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Sheet1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_mBo9QkIwEei-uvRPwbqQgQ" name="default" dataManager="_mBo9QUIwEei-uvRPwbqQgQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_mBo9Q0IwEei-uvRPwbqQgQ" id="_fKJhAEIwEei-uvRPwbqQgQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mBo9REIwEei-uvRPwbqQgQ" label="Rule_ID" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mBo9RUIwEei-uvRPwbqQgQ" label="Rule_Description" length="58" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

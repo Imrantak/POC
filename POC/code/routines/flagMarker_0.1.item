@@ -1,0 +1,271 @@
+package routines;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+public class flagMarker {
+
+	public static String extractName(String args){
+
+		  String line = args;
+	      String pattern = ".*ru";
+
+	      Pattern r = Pattern.compile(pattern);
+
+	      Matcher m = r.matcher(line);
+	      if (m.find( )) {
+	         return m.group(0).substring(0, m.group(0).length()-3);
+	      }else {
+	         return "*";
+	      }
+	}
+	
+	
+	public static String extractIt(String args){
+
+		  String line = args;
+	      String pattern = "rule([0-9]{1,10})$";
+
+	      Pattern r = Pattern.compile(pattern);
+
+	      Matcher m = r.matcher(line);
+	      if (m.find( )) {
+	         return m.group(0);
+	      }else {
+	         return "*";
+	      }
+		
+	}
+	
+    public static String markFlag(String Unique_SO_rule001,
+    		String Vendor_Name_rule001,
+    		String EVO_Vendor_Number_rule001,
+    		String EVO_Vendor_Number_rule002,
+    		String EVO_Vendor_Number_rule004,
+    		String EVO_Vendor_Number_rule026,
+    		String Carrier_Billing_account_rule001,
+    		String Carrier_reference_rule001,
+    		String Carrier_reference_2_rule001,
+    		String Circuit_Reference_in_GTOM_s_rule001,
+    		String Third_Party_Circuit_Reference_in_GTOM_rule001,
+    		String Legacy_PO_rule001,
+    		String Legacy_PO_rule002,
+    		String Legacy_PO_rule004,
+    		String Mozart_rule001,
+    		String Mozart_rule016,
+    		String Mozart_rule023,
+    		String PPI_rule001,
+    		String PPI_rule004,
+    		String PPI_rule010,
+    		String CDB_Ref_rule001,
+    		String CDB_Ref_rule004,
+    		String CDB_Ref_rule011,
+    		String Clarify_Ref_rule001,
+    		String Clarify_Ref_rule012,
+    		String GSR_rule001,
+    		String GSR_rule021,
+    		String GTOMS_rule001,
+    		String GTOMS_rule005,
+    		String GTOMS_rule002,
+    		String SN_Type_rule001,
+    		String SN_Description_rule001,
+    		String Prime_Product_rule001,
+    		String Coding_rule001,
+    		String Coding_rule002,
+    		String Coding_rule005,
+    		String Main_Work_Center_rule001,
+    		String Plant_rule001,
+    		String Plant_rule020,
+    		String Material_Group_rule001,
+    		String Purchasing_Group_rule001,
+    		String Purchasing_Organization_rule001,
+    		String SN_rule001,
+    		String SN_rule002,
+    		String SN_rule005,
+    		String SN_rule013,
+    		String SO_rule001,
+    		String SO_rule005,
+    		String SO_rule002,
+    		String SO_rule014,
+    		String So_Line___rule001,
+    		String So_Line___rule002,
+    		String So_Line___rule017,
+    		String UNIQUE_SO__rule001,
+    		String UNIQUE_SO__rule002,
+    		String UNIQUE_SO__rule022,
+    		String PO_Number_rule001,
+    		String PO_Number_rule002,
+    		String PO_Number_rule005,
+    		String PO_Number_rule015,
+    		String PO_Line___rule001,
+    		String PO_Line___rule002,
+    		String PO_Line___rule005,
+    		String PO_Amount_rule001,
+    		String PO_Amount_rule002,
+    		String PO_quantity_rule001,
+    		String PO_quantity_rule002,
+    		String PO_Currency_rule001,
+    		String PO_Currency_rule004,
+    		String PO_Currency_rule003,
+    		String Invoice_frequency__MRC_ARC_NRC__rule001,
+    		String Invoice_frequency__MRC_ARC_NRC__rule003,
+    		String Invoice_frequency__MRC_ARC_NRC__rule004,
+    		String Invoice_frequency__MRC_ARC_NRC__rule007,
+    		String OPSD_rule001,
+    		String OPSD_rule019,
+    		String OPED_rule001,
+    		String OPED_rule019,
+    		String PO_Cover_Status_rule001,
+    		String PO_Cover_Status_rule003,
+    		String PO_Cover_Status_rule009,
+    		String Company_Code_rule001,
+    		String Company_Code_rule004,
+    		String Customer_Name_rule001,
+    		String Customer_Name_rule024,
+    		String Customer_NPID_rule001,
+    		String Customer_NPID_rule002,
+    		String Customer_NPID_rule025,
+    		String Circuit_Speed_Bandwidth_rule001,
+    		String Unit_of_Measure_rule001,
+    		String Vendor_Product_rule001,
+    		String _B__end_Address_rule001,
+    		String _B__End_Country_rule001,
+    		String _B__End_Country_rule003,
+    		String Functional_Location_rule001,
+    		String Functional_Location_rule002,
+    		String Functional_Location_rule018,
+    		String Circuit_status_rule001,
+    		String Circuit_status_rule008,
+    		String Cease_Delivered_Date_rule001,
+    		String Provide__Tail_delivered_date_rule001,
+    		String Account_Number_rule001,
+    		String Billing_Account_Status_rule001,
+    		String Billing_Account_Status_rule003,
+    		String GCB_Account_Number_rule001,
+    		String Billing_Line_Item__Service_ID_rule001,
+    		String MRC_rule001,
+    		String MRC_rule002,
+    		String Currency_rule001,
+    		String Currency_rule004,
+    		String Currency_rule003,
+    		String Billing_Start_Date_rule001,
+    		String Billing_End_Date_rule001) {
+    	String temp = " ";
+    	if (Unique_SO_rule001.equalsIgnoreCase("F") ) {temp += "Unique_SO_rule001" +";"; }
+    	if (Vendor_Name_rule001.equalsIgnoreCase("F") ) {temp += "Vendor_Name_rule001" +";"; }
+    	if (EVO_Vendor_Number_rule001.equalsIgnoreCase("F") ) {temp += "EVO_Vendor_Number_rule001" +";"; }
+    	if (EVO_Vendor_Number_rule002.equalsIgnoreCase("F") ) {temp += "EVO_Vendor_Number_rule002" +";"; }
+    	if (EVO_Vendor_Number_rule004.equalsIgnoreCase("F") ) {temp += "EVO_Vendor_Number_rule004" +";"; }
+    	if (EVO_Vendor_Number_rule026.equalsIgnoreCase("F") ) {temp += "EVO_Vendor_Number_rule026" +";"; }
+    	if (Carrier_Billing_account_rule001.equalsIgnoreCase("F") ) {temp += "Carrier_Billing_account_rule001" +";"; }
+    	if (Carrier_reference_rule001.equalsIgnoreCase("F") ) {temp += "Carrier_reference_rule001" +";"; }
+    	if (Carrier_reference_2_rule001.equalsIgnoreCase("F") ) {temp += "Carrier_reference_2_rule001" +";"; }
+    	if (Circuit_Reference_in_GTOM_s_rule001.equalsIgnoreCase("F") ) {temp += "Circuit_Reference_in_GTOM_s_rule001" +";"; }
+    	if (Third_Party_Circuit_Reference_in_GTOM_rule001.equalsIgnoreCase("F") ) {temp += "Third_Party_Circuit_Reference_in_GTOM_rule001" +";"; }
+    	if (Legacy_PO_rule001.equalsIgnoreCase("F") ) {temp += "Legacy_PO_rule001" +";"; }
+    	if (Legacy_PO_rule002.equalsIgnoreCase("F") ) {temp += "Legacy_PO_rule002" +";"; }
+    	if (Legacy_PO_rule004.equalsIgnoreCase("F") ) {temp += "Legacy_PO_rule004" +";"; }
+    	if (Mozart_rule001.equalsIgnoreCase("F") ) {temp += "Mozart_rule001" +";"; }
+    	if (Mozart_rule016.equalsIgnoreCase("F") ) {temp += "Mozart_rule016" +";"; }
+    	if (Mozart_rule023.equalsIgnoreCase("F") ) {temp += "Mozart_rule023" +";"; }
+    	if (PPI_rule001.equalsIgnoreCase("F") ) {temp += "PPI_rule001" +";"; }
+    	if (PPI_rule004.equalsIgnoreCase("F") ) {temp += "PPI_rule004" +";"; }
+    	if (PPI_rule010.equalsIgnoreCase("F") ) {temp += "PPI_rule010" +";"; }
+    	if (CDB_Ref_rule001.equalsIgnoreCase("F") ) {temp += "CDB_Ref_rule001" +";"; }
+    	if (CDB_Ref_rule004.equalsIgnoreCase("F") ) {temp += "CDB_Ref_rule004" +";"; }
+    	if (CDB_Ref_rule011.equalsIgnoreCase("F") ) {temp += "CDB_Ref_rule011" +";"; }
+    	if (Clarify_Ref_rule001.equalsIgnoreCase("F") ) {temp += "Clarify_Ref_rule001" +";"; }
+    	if (Clarify_Ref_rule012.equalsIgnoreCase("F") ) {temp += "Clarify_Ref_rule012" +";"; }
+    	if (GSR_rule001.equalsIgnoreCase("F") ) {temp += "GSR_rule001" +";"; }
+    	if (GSR_rule021.equalsIgnoreCase("F") ) {temp += "GSR_rule021" +";"; }
+    	if (GTOMS_rule001.equalsIgnoreCase("F") ) {temp += "GTOMS_rule001" +";"; }
+    	if (GTOMS_rule005.equalsIgnoreCase("F") ) {temp += "GTOMS_rule005" +";"; }
+    	if (GTOMS_rule002.equalsIgnoreCase("F") ) {temp += "GTOMS_rule002" +";"; }
+    	if (SN_Type_rule001.equalsIgnoreCase("F") ) {temp += "SN_Type_rule001" +";"; }
+    	if (SN_Description_rule001.equalsIgnoreCase("F") ) {temp += "SN_Description_rule001" +";"; }
+    	if (Prime_Product_rule001.equalsIgnoreCase("F") ) {temp += "Prime_Product_rule001" +";"; }
+    	if (Coding_rule001.equalsIgnoreCase("F") ) {temp += "Coding_rule001" +";"; }
+    	if (Coding_rule002.equalsIgnoreCase("F") ) {temp += "Coding_rule002" +";"; }
+    	if (Coding_rule005.equalsIgnoreCase("F") ) {temp += "Coding_rule005" +";"; }
+    	if (Main_Work_Center_rule001.equalsIgnoreCase("F") ) {temp += "Main_Work_Center_rule001" +";"; }
+    	if (Plant_rule001.equalsIgnoreCase("F") ) {temp += "Plant_rule001" +";"; }
+    	if (Plant_rule020.equalsIgnoreCase("F") ) {temp += "Plant_rule020" +";"; }
+    	if (Material_Group_rule001.equalsIgnoreCase("F") ) {temp += "Material_Group_rule001" +";"; }
+    	if (Purchasing_Group_rule001.equalsIgnoreCase("F") ) {temp += "Purchasing_Group_rule001" +";"; }
+    	if (Purchasing_Organization_rule001.equalsIgnoreCase("F") ) {temp += "Purchasing_Organization_rule001" +";"; }
+    	if (SN_rule001.equalsIgnoreCase("F") ) {temp += "SN_rule001" +";"; }
+    	if (SN_rule002.equalsIgnoreCase("F") ) {temp += "SN_rule002" +";"; }
+    	if (SN_rule005.equalsIgnoreCase("F") ) {temp += "SN_rule005" +";"; }
+    	if (SN_rule013.equalsIgnoreCase("F") ) {temp += "SN_rule013" +";"; }
+    	if (SO_rule001.equalsIgnoreCase("F") ) {temp += "SO_rule001" +";"; }
+    	if (SO_rule005.equalsIgnoreCase("F") ) {temp += "SO_rule005" +";"; }
+    	if (SO_rule002.equalsIgnoreCase("F") ) {temp += "SO_rule002" +";"; }
+    	if (SO_rule014.equalsIgnoreCase("F") ) {temp += "SO_rule014" +";"; }
+    	if (So_Line___rule001.equalsIgnoreCase("F") ) {temp += "So_Line___rule001" +";"; }
+    	if (So_Line___rule002.equalsIgnoreCase("F") ) {temp += "So_Line___rule002" +";"; }
+    	if (So_Line___rule017.equalsIgnoreCase("F") ) {temp += "So_Line___rule017" +";"; }
+    	if (UNIQUE_SO__rule001.equalsIgnoreCase("F") ) {temp += "UNIQUE_SO__rule001" +";"; }
+    	if (UNIQUE_SO__rule002.equalsIgnoreCase("F") ) {temp += "UNIQUE_SO__rule002" +";"; }
+    	if (UNIQUE_SO__rule022.equalsIgnoreCase("F") ) {temp += "UNIQUE_SO__rule022" +";"; }
+    	if (PO_Number_rule001.equalsIgnoreCase("F") ) {temp += "PO_Number_rule001" +";"; }
+    	if (PO_Number_rule002.equalsIgnoreCase("F") ) {temp += "PO_Number_rule002" +";"; }
+    	if (PO_Number_rule005.equalsIgnoreCase("F") ) {temp += "PO_Number_rule005" +";"; }
+    	if (PO_Number_rule015.equalsIgnoreCase("F") ) {temp += "PO_Number_rule015" +";"; }
+    	if (PO_Line___rule001.equalsIgnoreCase("F") ) {temp += "PO_Line___rule001" +";"; }
+    	if (PO_Line___rule002.equalsIgnoreCase("F") ) {temp += "PO_Line___rule002" +";"; }
+    	if (PO_Line___rule005.equalsIgnoreCase("F") ) {temp += "PO_Line___rule005" +";"; }
+    	if (PO_Amount_rule001.equalsIgnoreCase("F") ) {temp += "PO_Amount_rule001" +";"; }
+    	if (PO_Amount_rule002.equalsIgnoreCase("F") ) {temp += "PO_Amount_rule002" +";"; }
+    	if (PO_quantity_rule001.equalsIgnoreCase("F") ) {temp += "PO_quantity_rule001" +";"; }
+    	if (PO_quantity_rule002.equalsIgnoreCase("F") ) {temp += "PO_quantity_rule002" +";"; }
+    	if (PO_Currency_rule001.equalsIgnoreCase("F") ) {temp += "PO_Currency_rule001" +";"; }
+    	if (PO_Currency_rule004.equalsIgnoreCase("F") ) {temp += "PO_Currency_rule004" +";"; }
+    	if (PO_Currency_rule003.equalsIgnoreCase("F") ) {temp += "PO_Currency_rule003" +";"; }
+    	if (Invoice_frequency__MRC_ARC_NRC__rule001.equalsIgnoreCase("F") ) {temp += "Invoice_frequency__MRC_ARC_NRC__rule001" +";"; }
+    	if (Invoice_frequency__MRC_ARC_NRC__rule003.equalsIgnoreCase("F") ) {temp += "Invoice_frequency__MRC_ARC_NRC__rule003" +";"; }
+    	if (Invoice_frequency__MRC_ARC_NRC__rule004.equalsIgnoreCase("F") ) {temp += "Invoice_frequency__MRC_ARC_NRC__rule004" +";"; }
+    	if (Invoice_frequency__MRC_ARC_NRC__rule007.equalsIgnoreCase("F") ) {temp += "Invoice_frequency__MRC_ARC_NRC__rule007" +";"; }
+    	if (OPSD_rule001.equalsIgnoreCase("F") ) {temp += "OPSD_rule001" +";"; }
+    	if (OPSD_rule019.equalsIgnoreCase("F") ) {temp += "OPSD_rule019" +";"; }
+    	if (OPED_rule001.equalsIgnoreCase("F") ) {temp += "OPED_rule001" +";"; }
+    	if (OPED_rule019.equalsIgnoreCase("F") ) {temp += "OPED_rule019" +";"; }
+    	if (PO_Cover_Status_rule001.equalsIgnoreCase("F") ) {temp += "PO_Cover_Status_rule001" +";"; }
+    	if (PO_Cover_Status_rule003.equalsIgnoreCase("F") ) {temp += "PO_Cover_Status_rule003" +";"; }
+    	if (PO_Cover_Status_rule009.equalsIgnoreCase("F") ) {temp += "PO_Cover_Status_rule009" +";"; }
+    	if (Company_Code_rule001.equalsIgnoreCase("F") ) {temp += "Company_Code_rule001" +";"; }
+    	if (Company_Code_rule004.equalsIgnoreCase("F") ) {temp += "Company_Code_rule004" +";"; }
+    	if (Customer_Name_rule001.equalsIgnoreCase("F") ) {temp += "Customer_Name_rule001" +";"; }
+    	if (Customer_Name_rule024.equalsIgnoreCase("F") ) {temp += "Customer_Name_rule024" +";"; }
+    	if (Customer_NPID_rule001.equalsIgnoreCase("F") ) {temp += "Customer_NPID_rule001" +";"; }
+    	if (Customer_NPID_rule002.equalsIgnoreCase("F") ) {temp += "Customer_NPID_rule002" +";"; }
+    	if (Customer_NPID_rule025.equalsIgnoreCase("F") ) {temp += "Customer_NPID_rule025" +";"; }
+    	if (Circuit_Speed_Bandwidth_rule001.equalsIgnoreCase("F") ) {temp += "Circuit_Speed_Bandwidth_rule001" +";"; }
+    	if (Unit_of_Measure_rule001.equalsIgnoreCase("F") ) {temp += "Unit_of_Measure_rule001" +";"; }
+    	if (Vendor_Product_rule001.equalsIgnoreCase("F") ) {temp += "Vendor_Product_rule001" +";"; }
+    	if (_B__end_Address_rule001.equalsIgnoreCase("F") ) {temp += "_B__end_Address_rule001" +";"; }
+    	if (_B__End_Country_rule001.equalsIgnoreCase("F") ) {temp += "_B__End_Country_rule001" +";"; }
+    	if (_B__End_Country_rule003.equalsIgnoreCase("F") ) {temp += "_B__End_Country_rule003" +";"; }
+    	if (Functional_Location_rule001.equalsIgnoreCase("F") ) {temp += "Functional_Location_rule001" +";"; }
+    	if (Functional_Location_rule002.equalsIgnoreCase("F") ) {temp += "Functional_Location_rule002" +";"; }
+    	if (Functional_Location_rule018.equalsIgnoreCase("F") ) {temp += "Functional_Location_rule018" +";"; }
+    	if (Circuit_status_rule001.equalsIgnoreCase("F") ) {temp += "Circuit_status_rule001" +";"; }
+    	if (Circuit_status_rule008.equalsIgnoreCase("F") ) {temp += "Circuit_status_rule008" +";"; }
+    	if (Cease_Delivered_Date_rule001.equalsIgnoreCase("F") ) {temp += "Cease_Delivered_Date_rule001" +";"; }
+    	if (Provide__Tail_delivered_date_rule001.equalsIgnoreCase("F") ) {temp += "Provide__Tail_delivered_date_rule001" +";"; }
+    	
+    	if (Account_Number_rule001.equalsIgnoreCase("F") ) {temp += "Account_Number_rule001" +";"; }
+    	if (Billing_Account_Status_rule001.equalsIgnoreCase("F") ) {temp += "Billing_Account_Status_rule001" +";"; }
+    	if (Billing_Account_Status_rule003.equalsIgnoreCase("F") ) {temp += "Billing_Account_Status_rule003" +";"; }
+    	if (GCB_Account_Number_rule001.equalsIgnoreCase("F") ) {temp += "GCB_Account_Number_rule001" +";"; }
+    	if (Billing_Line_Item__Service_ID_rule001.equalsIgnoreCase("F") ) {temp += "Billing_Line_Item__Service_ID_rule001" +";"; }
+    	if (MRC_rule001.equalsIgnoreCase("F") ) {temp += "MRC_rule001" +";"; }
+    	if (MRC_rule002.equalsIgnoreCase("F") ) {temp += "MRC_rule002" +";"; }
+    	if (Currency_rule001.equalsIgnoreCase("F") ) {temp += "Currency_rule001" +";"; }
+    	if (Currency_rule004.equalsIgnoreCase("F") ) {temp += "Currency_rule004" +";"; }
+    	if (Currency_rule003.equalsIgnoreCase("F") ) {temp += "Currency_rule003" +";"; }
+    	if (Billing_Start_Date_rule001.equalsIgnoreCase("F") ) {temp += "Billing_Start_Date_rule001" +";"; }
+    	if (Billing_End_Date_rule001.equalsIgnoreCase("F") ) {temp += "Billing_End_Date_rule001" +";"; }
+    	return temp;
+    }
+}
