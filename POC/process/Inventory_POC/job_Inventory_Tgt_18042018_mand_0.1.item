@@ -404,7 +404,7 @@
     <elementParameter field="TEXT" name="LABEL" value="CSV_GTOMS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="GTOMS_Metadata" name="tFileInputDelimited_1">
-      <column comment="" key="false" length="2" name="GTOMS_ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="GTOMS_ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="COMS_ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="34" name="Clarify_ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Division" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -594,7 +594,7 @@
         <mapperTableEntries name="Customer" expression="filedata.Customer  " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="filedata" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="GTOMS_ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_ref" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="COMS_ref" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_ref" type="id_String" nullable="true"/>
         <mapperTableEntries name="Division" type="id_String" nullable="true"/>
