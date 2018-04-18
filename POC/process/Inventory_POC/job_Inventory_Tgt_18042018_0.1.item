@@ -896,9 +896,9 @@
         <mapperTableEntries name="PO_Line_Item_Quantity" type="id_Float" nullable="true"/>
         <mapperTableEntries name="PO_Line_Item_UOM" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Line_Item_Final_Delivery" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Received_Quantity" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="Outstanding_Quantity" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="GRN_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Received_Quantity" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Outstanding_Quantity" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GRN_Quantity" type="id_String" nullable="true"/>
         <mapperTableEntries name="Traffic_Light" type="id_String" nullable="true"/>
         <mapperTableEntries name="Reason_for_Traffic_Light" type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_Type" type="id_String" nullable="true"/>
@@ -1231,9 +1231,9 @@
       <column comment="" defaultValue="" key="false" length="6" name="PO_Line_Item_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="PO_Line_Item_UOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="PO_Line_Item_Final_Delivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="Received_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="Outstanding_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="GRN_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Received_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Outstanding_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="GRN_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="67" name="Reason_for_Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Service_Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1290,9 +1290,9 @@
       <column comment="" defaultValue="" key="false" length="6" name="PO_Line_Item_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="PO_Line_Item_UOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="PO_Line_Item_Final_Delivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="Received_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="Outstanding_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="GRN_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Received_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Outstanding_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="GRN_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="67" name="Reason_for_Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="Service_Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
