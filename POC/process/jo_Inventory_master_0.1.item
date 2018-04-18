@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="C:/poc_data"/>
+    <contextParameter comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
+    <contextParameter comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="https://vodafonedev7.service-now.com/"/>
+    <contextParameter comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="talend.integration.user"/>
+  </context>
+  <context confirmationNeeded="false" name="local">
+    <contextParameter comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="C:/poc_data"/>
+    <contextParameter comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_Password" value=""/>
+    <contextParameter comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="https://vodafonedev7.service-now.com/"/>
+    <contextParameter comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="viral.patel2@vodafone.com"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="128" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
@@ -1363,7 +1374,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/poc_data/output/Active_Interim_Dataset.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.root_file_path+ &quot;/output/Active_Interim_Dataset.xlsx&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Interim_Dataset&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
@@ -1682,7 +1693,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/poc_data/output/Ceases_Interim_Dataset.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.root_file_path+ &quot;/output/Ceases_Interim_Dataset.xlsx&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Interim_Dataset&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
@@ -2152,7 +2163,7 @@
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/poc_data/output/Active_PO_Expired_Interim_Dataset.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.root_file_path+ &quot;/output/Active_PO_Expired_Interim_Dataset.xlsx&quot;"/>
     <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Interim_Dataset&quot;"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
