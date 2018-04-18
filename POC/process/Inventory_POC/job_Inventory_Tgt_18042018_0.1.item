@@ -927,7 +927,7 @@
         <mapperTableEntries name="Service_Order_Basic_Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_Basic_End_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR__External_System_Reference_" expression="gtoms.GSR_Ref " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS__External_System_Reference_" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="GTOMS__External_System_Reference_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Mozart__External_System_Reference_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify__External_System_Reference_" type="id_String" nullable="true"/>
         <mapperTableEntries name="SPT__External_System_Reference_" expression="" type="id_String" nullable="true"/>
@@ -1262,7 +1262,7 @@
       <column comment="" key="false" length="10" name="Service_Order_Basic_Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_Basic_End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="GSR__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Mozart__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Clarify__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
@@ -1321,7 +1321,7 @@
       <column comment="" key="false" length="10" name="Service_Order_Basic_Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_Basic_End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="GSR__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Mozart__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Clarify__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
