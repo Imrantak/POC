@@ -20,7 +20,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o6hdMTwVEeiSndQzlxS5Cg" label="Unit_Quantity" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o6hdMjwVEeiSndQzlxS5Cg" label="Charge_Description" length="97" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o6hdMzwVEeiSndQzlxS5Cg" label="Customer_Ref_" length="34" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o6hdNDwVEeiSndQzlxS5Cg" label="Product_Type" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o6hdNDwVEeiSndQzlxS5Cg" label="Product_Type" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o6hdNTwVEeiSndQzlxS5Cg" label="C2_Ref" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o6hdNjwVEeiSndQzlxS5Cg" label="Annual_Rental" length="7" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_o6hdNzwVEeiSndQzlxS5Cg" label="Annual_Rental_Currency" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
