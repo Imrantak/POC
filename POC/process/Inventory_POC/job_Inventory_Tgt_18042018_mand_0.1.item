@@ -667,11 +667,11 @@
       <elementValue elementRef="INPUT_COLUMN" value="Order_Type"/>
       <elementValue elementRef="FUNCTION" value=""/>
       <elementValue elementRef="OPERATOR" value="!="/>
-      <elementValue elementRef="RVALUE" value="''"/>
+      <elementValue elementRef="RVALUE" value="&quot;&quot;"/>
       <elementValue elementRef="INPUT_COLUMN" value="Status"/>
       <elementValue elementRef="FUNCTION" value=""/>
       <elementValue elementRef="OPERATOR" value="!="/>
-      <elementValue elementRef="RVALUE" value="''"/>
+      <elementValue elementRef="RVALUE" value="&quot;&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
     <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;(input_row.Order_Type.equalsIgnoreCase(&quot;cease&quot;) &amp;&amp; (input_row.Status.equalsIgnoreCase(&quot;completed&quot;)||input_row.Status.equalsIgnoreCase(&quot;delivered&quot;))) ||(input_row.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; (input_row.Status.equalsIgnoreCase(&quot;completed&quot;)||input_row.Status.equalsIgnoreCase(&quot;delivered&quot;)))&#xA;&#x9;&#x9;"/>
