@@ -16,8 +16,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxVTvoEeiSndQzlxS5Cg" label="Msp_Order" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxVjvoEeiSndQzlxS5Cg" label="Status" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxWDvoEeiSndQzlxS5Cg" label="Carrier" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxWTvoEeiSndQzlxS5Cg" label="Date_Tail_Ordered" length="10" talendType="id_Date" pattern="&quot;MM/dd/yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxWjvoEeiSndQzlxS5Cg" label="Date_Tail_Delivered" length="10" talendType="id_Date" pattern="&quot;MM/dd/yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxWTvoEeiSndQzlxS5Cg" label="Date_Tail_Ordered" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy HH:mm&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxWjvoEeiSndQzlxS5Cg" label="Date_Tail_Delivered" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy HH:mm&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxXDvoEeiSndQzlxS5Cg" label="Cctid" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxXTvoEeiSndQzlxS5Cg" label="Cct_Thirdparty" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nVAxXjvoEeiSndQzlxS5Cg" label="Circuit_Speed" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
