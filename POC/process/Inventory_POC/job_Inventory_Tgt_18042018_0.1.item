@@ -274,6 +274,8 @@
   </node>
   <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="8" offsetLabelY="13" posX="256" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="||"/>
     <elementParameter field="TABLE" name="CONDITIONS"/>
     <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
