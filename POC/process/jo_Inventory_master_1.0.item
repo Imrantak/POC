@@ -527,7 +527,7 @@
       <column comment="" key="false" length="50" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="filedata">
         <mapperTableEntries name="GTOMS_Ref" expression="row3.GTOMS_ref" type="id_Integer" nullable="true"/>
@@ -1309,6 +1309,8 @@
       <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -1342,6 +1344,8 @@
       <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -1375,6 +1379,8 @@
       <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -1385,7 +1391,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="active_and_po_cover" expressionFilter="row1.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; row1.PO_COVER.equalsIgnoreCase(&quot;PO Cover&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="Cctid" expression="row1.Cctid" type="id_String" nullable="true"/>
@@ -1411,6 +1417,8 @@
         <mapperTableEntries name="NPID_ID_in_SO" expression="row1.NPID_ID_in_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="Functional_Location_ID" expression="row1.Functional_Location_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" expression="row1.AML_NPID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account_Id" expression="billing.Account_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Billing_Item_service_ID" expression="billing.GSR " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billing.Start_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billing.End_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" expression="sovr.Vendor " type="id_String" nullable="true"/>
@@ -1440,39 +1448,43 @@
         <mapperTableEntries name="NPID_ID_in_SO" expression="row1.NPID_ID_in_SO " type="id_String" nullable="true"/>
         <mapperTableEntries name="Functional_Location_ID" expression="row1.Functional_Location_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" expression="row1.AML_NPID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account_Id" expression="billing.Account_Id  " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Billing_Item_service_ID" expression="billing.GSR  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billing.Start_Date  " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billing.End_Date  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Vendor" expression="sovr.Vendor " type="id_String" nullable="true"/>
-        <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Vendor" expression="sovr.Vendor  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name  " type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="active_po_expired" expressionFilter="row1.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; row1.PO_COVER.equalsIgnoreCase(&quot;PO Expired&quot;)" activateExpressionFilter="true">
-        <mapperTableEntries name="Cctid" expression="row1.Cctid" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cct_Thirdparty" expression="row1.Cct_Thirdparty" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row1.Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" expression="row1.GSR_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS_Ref" expression="row1.GTOMS_Ref" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Circuit_Speed" expression="row1.Circuit_Speed" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Product" expression="row1.Product" type="id_String" nullable="true"/>
-        <mapperTableEntries name="A_End_City" expression="row1.A_End_City" type="id_String" nullable="true"/>
-        <mapperTableEntries name="A_End_Country" expression="row1.A_End_Country" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" expression="row1.Date_Tail_Ordered" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Service_Notification_Description" expression="row1.Service_Notification_Description" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Service_Order_ID" expression="row1.Service_Order_ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Operation_ID" expression="row1.Operation_ID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Unique_SO" expression="row1.Unique_SO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" expression="row1.PO_Number" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Line_Item" expression="row1.PO_Line_Item" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="OPSD" expression="row1.OPSD" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="OPED" expression="row1.OPED" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PO_COVER" expression="row1.PO_COVER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID_Name_in_SO" expression="row1.NPID_Name_in_SO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID_ID_in_SO" expression="row1.NPID_ID_in_SO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Functional_Location_ID" expression="row1.Functional_Location_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AML_NPID" expression="row1.AML_NPID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Start_Date" expression="billing.Start_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="End_Date" expression="billing.End_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Vendor" expression="sovr.Vendor" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid" expression="row1.Cctid  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" expression="row1.Cct_Thirdparty  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row1.Clarify_Reference_Msp_Order  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="row1.GSR_Ref  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="row1.GTOMS_Ref  " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Circuit_Speed" expression="row1.Circuit_Speed  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product" expression="row1.Product  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_City" expression="row1.A_End_City  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_Country" expression="row1.A_End_Country  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Ordered" expression="row1.Date_Tail_Ordered  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Description" expression="row1.Service_Notification_Description  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_ID" expression="row1.Service_Order_ID  " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Operation_ID" expression="row1.Operation_ID  " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" expression="row1.Unique_SO  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="row1.PO_Number  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" expression="row1.PO_Line_Item  " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OPSD" expression="row1.OPSD  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPED" expression="row1.OPED  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PO_COVER" expression="row1.PO_COVER  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_Name_in_SO" expression="row1.NPID_Name_in_SO  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" expression="row1.NPID_ID_in_SO  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_ID" expression="row1.Functional_Location_ID  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AML_NPID" expression="row1.AML_NPID  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account_Id" expression="billing.Account_Id   " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Billing_Item_service_ID" expression="billing.GSR   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Start_Date" expression="billing.Start_Date   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="End_Date" expression="billing.End_Date   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Vendor" expression="sovr.Vendor   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name   " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
@@ -1601,6 +1613,10 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Account_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Item_service_ID"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Start_Date"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="End_Date"/>
@@ -1647,6 +1663,8 @@
       <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -1918,6 +1936,10 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Account_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Item_service_ID"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Start_Date"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="End_Date"/>
@@ -1964,6 +1986,8 @@
       <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -2386,6 +2410,10 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Account_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Item_service_ID"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Start_Date"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="End_Date"/>
@@ -2432,6 +2460,8 @@
       <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -2487,6 +2517,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="Vendor"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Account_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_Item_service_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="active_and_po_cover" show="false"/>
@@ -2499,11 +2535,25 @@
       <elementValue elementRef="TRACE_COLUMN" value="Vendor"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Account_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_Item_service_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Ceases" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="active_po_expired" lineStyle="0" metaname="active_po_expired" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_2" target="tFileOutputExcel_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Account_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Billing_Item_service_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="active_po_expired" show="false"/>
   </connection>
