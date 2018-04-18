@@ -4,12 +4,12 @@
     <contextParameter xmi:id="_HNp2oTfzEeiFBblx5C46YA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
     <contextParameter xmi:id="_HNp2ojfzEeiFBblx5C46YA" comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" type="id_String" value="talend.integration.user"/>
     <contextParameter xmi:id="_HNqdsDfzEeiFBblx5C46YA" comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
-    <contextParameter xmi:id="_80xWkELPEeiSc4ZVDlkk2A" comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_80xWkELPEeiSc4ZVDlkk2A" comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" type="id_String" value="C:/poc_data"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_jp500DfzEeiFBblx5C46YA" confirmationNeeded="false" name="local">
     <contextParameter xmi:id="_jp500TfzEeiFBblx5C46YA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
     <contextParameter xmi:id="_jp500jfzEeiFBblx5C46YA" comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" type="id_String" value="viral.patel2@vodafone.com"/>
     <contextParameter xmi:id="_jp500zfzEeiFBblx5C46YA" comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" type="id_Password" value=""/>
-    <contextParameter xmi:id="_80xWkULPEeiSc4ZVDlkk2A" comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_80xWkULPEeiSc4ZVDlkk2A" comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" type="id_String" value="C:/poc_data"/>
   </talendfile:ContextType>
 </xmi:XMI>
