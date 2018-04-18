@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_CqRGIELXEeic1fYyq24fkw" name="CSV_SOVR_N" label="CSV_SOVR_N" dataPackage="_AIn20T8IEeiwgfY1n8UrXg" Server="Localhost 127.0.0.1" FilePath="C:/Users/VRAJ/Documents/vodafone/DF_POC/files/DF/Enterprise_Inventory_Programme__workshop/CSV_SOVR- Poc_10042018.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_AIn20T8IEeiwgfY1n8UrXg" name="default" dataManager="_CqRGIELXEeic1fYyq24fkw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_AIod4D8IEeiwgfY1n8UrXg" id="_lsG7wD8HEeiwgfY1n8UrXg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod4T8IEeiwgfY1n8UrXg" label="Service_Order" length="12" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod4j8IEeiwgfY1n8UrXg" label="SO_Item_No" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod4z8IEeiwgfY1n8UrXg" label="SO_Type" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod5D8IEeiwgfY1n8UrXg" label="SO_Header_Status" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod5T8IEeiwgfY1n8UrXg" label="SO_Item_Status" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod5j8IEeiwgfY1n8UrXg" label="SO_Created_On" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod5z8IEeiwgfY1n8UrXg" label="SO_Created_By" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod6D8IEeiwgfY1n8UrXg" label="SO_Creator_Name" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod6T8IEeiwgfY1n8UrXg" label="SO_Item_Net_Value" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod6j8IEeiwgfY1n8UrXg" label="SO_Item_Currency" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod6z8IEeiwgfY1n8UrXg" label="PR_Number" length="10" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7D8IEeiwgfY1n8UrXg" label="PR_Created_On" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7T8IEeiwgfY1n8UrXg" label="PR_Created_By" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7j8IEeiwgfY1n8UrXg" label="PR_Creator_Name" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod7z8IEeiwgfY1n8UrXg" label="PO_Number" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod8D8IEeiwgfY1n8UrXg" label="Vendor" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod8T8IEeiwgfY1n8UrXg" label="PO_Release_Indicator" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod8j8IEeiwgfY1n8UrXg" label="PO_Subject_to_release" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod8z8IEeiwgfY1n8UrXg" label="PO_Value" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod9D8IEeiwgfY1n8UrXg" label="PO_Currency" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod9T8IEeiwgfY1n8UrXg" label="Release_Completed_On" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod9j8IEeiwgfY1n8UrXg" label="Approval_pending_with" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod9z8IEeiwgfY1n8UrXg" label="SO_Item_Creation_Date" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod-D8IEeiwgfY1n8UrXg" label="PO_Item_Number" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod-T8IEeiwgfY1n8UrXg" label="SO_Vendor_Name" length="35" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod-j8IEeiwgfY1n8UrXg" label="SO_Customer_Number" length="10" talendType="id_Long" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod-z8IEeiwgfY1n8UrXg" label="SO_Customer_Name" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod_D8IEeiwgfY1n8UrXg" label="SO_Customer_NPID" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod_T8IEeiwgfY1n8UrXg" label="SO_Requisitioner" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod_j8IEeiwgfY1n8UrXg" label="OPSD" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIod_z8IEeiwgfY1n8UrXg" label="OPED" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIoeAD8IEeiwgfY1n8UrXg" label="PO_Deletion_Status" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIoeAT8IEeiwgfY1n8UrXg" label="PO_Rejection_Code" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIoeAj8IEeiwgfY1n8UrXg" label="Person_Responsible_VW" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIoeAz8IEeiwgfY1n8UrXg" label="Company_Code" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIoeBD8IEeiwgfY1n8UrXg" label="Actual__Vendor" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIoeBT8IEeiwgfY1n8UrXg" label="Actual_PO" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_AIoeBj8IEeiwgfY1n8UrXg" label="Rejection_Text" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
