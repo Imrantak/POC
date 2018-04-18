@@ -573,23 +573,23 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="filedata1">
-        <mapperTableEntries name="GTOMS_Ref" expression="filedata.GTOMS_Ref " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="A_End_City" expression="filedata.A_End_City " type="id_String" nullable="true"/>
-        <mapperTableEntries name="A_End_Country" expression="filedata.A_End_Country  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="B_End_City" expression="filedata.B_End_City  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="B_End_Country" expression="filedata.B_End_Country  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="filedata.GTOMS_ref " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="A_End_City" expression="filedata.AEndCity " type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_Country" expression="filedata.AEndCountry " type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_End_City" expression="filedata.BEndCity " type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_End_Country" expression="filedata.BEndCounty " type="id_String" nullable="true"/>
         <mapperTableEntries name="Product" expression="filedata.Product  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Order_Type" expression="filedata.Order_Type  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSOS_Ref" expression="filedata.GSOS_Ref  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" expression="filedata.GSR_Ref  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="COMS_Ref" expression="filedata.COMS_Ref  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Msp_Order" expression="filedata.Msp_Order  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Status" expression="filedata.Status  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSOS_Ref" expression="filedata.GSOS_ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="filedata.GSR_ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMS_Ref" expression="filedata.COMS_ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Msp_Order" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Carrier" expression="filedata.Carrier  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Date_Tail_Ordered" expression="filedata.Date_Tail_Ordered  " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Date_Tail_Delivered" expression="filedata.Date_Tail_Delivered  " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Cctid" expression="filedata.Cctid  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cct_Thirdparty" expression="filedata.Cct_Thirdparty  " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid" expression="filedata.CCTid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" expression=" filedata.CCT_ThirdParty " type="id_String" nullable="true"/>
         <mapperTableEntries name="Circuit_Speed" expression="filedata.Circuit_Speed  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" expression="filedata.Customer  " type="id_String" nullable="true"/>
       </outputTables>
