@@ -659,7 +659,7 @@
         <mapperTableEntries name="Latest_comment" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row5" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="Country" expression="filedata.AEndCounty " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="Country" expression="filedata.AEndCountry " type="id_String" nullable="true" operator="="/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row6" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Product" expression="filedata.Product " type="id_String" nullable="true" operator="="/>
