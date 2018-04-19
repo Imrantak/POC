@@ -2478,7 +2478,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="billing" expressionFilter="billreport.Charge_Type.equalsIgnoreCase(&quot;Recurring Charge&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="CID" expression="billreport.CID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="GSR" expression="billreport.GSR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR" expression="StringHandling.TRIM(billreport.GSR).replace(&quot;.&quot;,&quot;&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billreport.Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billreport.End_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Account_Id" expression="billreport.Account_Id" type="id_Integer" nullable="true"/>
