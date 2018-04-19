@@ -527,7 +527,7 @@
       <column comment="" key="false" length="50" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="filedata">
         <mapperTableEntries name="GTOMS_Ref" expression="row3.GTOMS_ref" type="id_Integer" nullable="true"/>
@@ -571,6 +571,9 @@
         <mapperTableEntries name="Date_Tail_Ordered" type="id_Date" nullable="true"/>
         <mapperTableEntries name="GSOS_ref" type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_ref" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="europe" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="country" expression="row3.AEndCountry.toLowerCase() " type="id_String" nullable="true" operator="="/>
       </inputTables>
     </nodeData>
   </node>
@@ -2513,6 +2516,26 @@
       </inputTables>
     </nodeData>
   </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="austria&#xD;&#xA;belgium&#xD;&#xA;bulgaria&#xD;&#xA;croatia&#xD;&#xA;republic of cyprus&#xD;&#xA;czech republic&#xD;&#xA;denmark&#xD;&#xA;estonia&#xD;&#xA;finland&#xD;&#xA;france&#xD;&#xA;germany&#xD;&#xA;greece&#xD;&#xA;hungary&#xD;&#xA;ireland&#xD;&#xA;italy&#xD;&#xA;latvia&#xD;&#xA;lithuania&#xD;&#xA;luxembourg&#xD;&#xA;malta&#xD;&#xA;netherlands&#xD;&#xA;poland&#xD;&#xA;portugal&#xD;&#xA;romania&#xD;&#xA;slovakia&#xD;&#xA;slovenia&#xD;&#xA;spain&#xD;&#xA;sweden&#xD;&#xA;uk&#xD;&#xA;united kingdom&#xD;&#xA;unitedkingdom&#xD;&#xA;amsterdam&#xD;&#xA;armenia&#xD;&#xA;azerbaijan&#xD;&#xA;belarus&#xD;&#xA;belguim&#xD;&#xA;berlin&#xD;&#xA;bosnia &amp; herzegovina&#xD;&#xA;bosnia and herzegovina&#xD;&#xA;bosnia-herzegovina&#xD;&#xA;budapest&#xD;&#xA;cypros&#xD;&#xA;cyprus&#xD;&#xA;dublin&#xD;&#xA;europe&#xD;&#xA;england&#xD;&#xA;great britain&#xD;&#xA;georgia&#xD;&#xA;holland&#xD;&#xA;iceland&#xD;&#xA;kasakhstan&#xD;&#xA;kazachstan&#xD;&#xA;kazakhstan&#xD;&#xA;kosovo&#xD;&#xA;luxemburg&#xD;&#xA;macedonia (former yug. rep.)&#xD;&#xA;macedonia [former yugoslav repulic of]&#xD;&#xA;moldova&#xD;&#xA;monaco&#xD;&#xA;netherland&#xD;&#xA;netherlands antilles&#xD;&#xA;netherlands, antille&#xD;&#xA;northern ireland&#xD;&#xA;norway&#xD;&#xA;stockholm sweden&#xD;&#xA;the netherlands&#xD;&#xA;turkey&#xD;&#xA;u.k&#xD;&#xA;uik&#xD;&#xA;uk/iom&#xD;&#xA;ukraine"/>
+    <elementParameter field="TEXT" name="LABEL" value="european_country_list"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputProperties_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputProperties_1" target="tContextLoad_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
@@ -2619,6 +2642,10 @@
   <connection connectorName="FLOW" label="billing" lineStyle="8" metaname="billing" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="billing" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="europe" lineStyle="8" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="europe" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
