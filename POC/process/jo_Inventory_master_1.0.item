@@ -669,7 +669,7 @@
       <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -687,7 +687,7 @@
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row1">
         <mapperTableEntries name="Cctid" expression="gtoms.Cctid " type="id_String" nullable="true"/>
@@ -699,7 +699,7 @@
         <mapperTableEntries name="Product" expression="gtoms.Product " type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_City" expression="gtoms.A_End_City " type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" expression="gtoms.A_End_Country " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" expression="gtoms.Date_Tail_Ordered " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" expression="gtoms.Date_Tail_Delivered " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Service_Notification_Description" expression="grn.Service_Notification_Description " type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" expression="grn.Service_Order_ID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" expression="grn.Operation_ID " type="id_Integer" nullable="true"/>
@@ -1295,7 +1295,7 @@
       <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1330,7 +1330,7 @@
       <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1365,7 +1365,7 @@
       <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1403,7 +1403,7 @@
         <mapperTableEntries name="Product" expression="row1.Product" type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_City" expression="row1.A_End_City" type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" expression="row1.A_End_Country" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" expression="row1.Date_Tail_Ordered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" expression="row1.Date_Tail_Delivered" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Service_Notification_Description" expression="row1.Service_Notification_Description" type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" expression="row1.Service_Order_ID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" expression="row1.Operation_ID" type="id_Integer" nullable="true"/>
@@ -1434,7 +1434,7 @@
         <mapperTableEntries name="Product" expression="row1.Product " type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_City" expression="row1.A_End_City " type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" expression="row1.A_End_Country " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" expression="row1.Date_Tail_Ordered " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" expression="row1.Date_Tail_Delivered" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Service_Notification_Description" expression="row1.Service_Notification_Description " type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" expression="row1.Service_Order_ID " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" expression="row1.Operation_ID " type="id_Integer" nullable="true"/>
@@ -1465,7 +1465,7 @@
         <mapperTableEntries name="Product" expression="row1.Product  " type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_City" expression="row1.A_End_City  " type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" expression="row1.A_End_Country  " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" expression="row1.Date_Tail_Ordered  " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" expression="row1.Date_Tail_Delivered" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Service_Notification_Description" expression="row1.Service_Notification_Description  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" expression="row1.Service_Order_ID  " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" expression="row1.Operation_ID  " type="id_Integer" nullable="true"/>
@@ -1496,7 +1496,7 @@
         <mapperTableEntries name="Product" type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_City" type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Service_Notification_Description" type="id_String" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" type="id_Integer" nullable="true"/>
@@ -1566,7 +1566,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A_End_Country"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Tail_Ordered"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Tail_Delivered"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_Description"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
@@ -1630,7 +1630,7 @@
       <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -1691,7 +1691,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A_End_Country"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Tail_Ordered"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Tail_Delivered"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_Description"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
@@ -1755,7 +1755,7 @@
       <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -2165,7 +2165,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="A_End_Country"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Tail_Ordered"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Date_Tail_Delivered"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_Description"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
@@ -2229,7 +2229,7 @@
       <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
