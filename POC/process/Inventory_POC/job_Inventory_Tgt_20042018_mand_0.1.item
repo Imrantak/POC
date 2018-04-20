@@ -2198,7 +2198,7 @@
         <mapperTableEntries name="Charge___Credit_End_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Country" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row4" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Column1" type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR" expression="row1.GSR_Ref " type="id_String" nullable="true" operator="="/>
