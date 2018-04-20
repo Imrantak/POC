@@ -7,7 +7,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iVdOA0OyEeiJ099RjA0Omg" label="site" length="92" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iVdOBEOyEeiJ099RjA0Omg" label="custname" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iVdOBUOyEeiJ099RjA0Omg" label="status" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iVdOBkOyEeiJ099RjA0Omg" label="ClarifyRef" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iVdOBkOyEeiJ099RjA0Omg" label="ClarifyRef" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iVdOB0OyEeiJ099RjA0Omg" label="GSR" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iVdOCEOyEeiJ099RjA0Omg" label="OLO" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iVdOCUOyEeiJ099RjA0Omg" label="OLO_CCT" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
