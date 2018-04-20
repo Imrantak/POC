@@ -527,7 +527,7 @@
       <column comment="" key="false" length="50" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="filedata">
         <mapperTableEntries name="GTOMS_Ref" expression="row3.GTOMS_ref" type="id_Integer" nullable="true"/>
@@ -1329,7 +1329,7 @@
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="processed_data" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name   " type="id_String" nullable="true"/>
@@ -2174,7 +2174,7 @@
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="po_cover" expressionFilter="processed_data.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; processed_data.PO_COVER.equalsIgnoreCase(&quot;PO Cover&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="processed_data.SO_Vendor_Name" type="id_String" nullable="true"/>
