@@ -1328,7 +1328,7 @@
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="processed_data" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name   " type="id_String" nullable="true"/>
@@ -2301,7 +2301,7 @@
         <mapperTableEntries name="Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="cmdb_cct" expressionFilter="processed_data.Cctid.contains(cmdb_cct.circuit)" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="RELOAD">
+      <inputTables sizeState="INTERMEDIATE" name="cmdb_cct" expressionFilter="processed_data.Cctid.toLowerCase().contains(cmdb_cct.circuit.toLowerCase())" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="RELOAD">
         <mapperTableEntries name="circuit" type="id_String" nullable="true"/>
         <mapperTableEntries name="site" type="id_String" nullable="true"/>
         <mapperTableEntries name="custname" type="id_String" nullable="true"/>
