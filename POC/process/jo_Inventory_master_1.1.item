@@ -1326,9 +1326,10 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="processed_data" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name   " type="id_String" nullable="true"/>
@@ -1361,6 +1362,7 @@
         <mapperTableEntries name="Billing_Item_service_ID" expression="billing.GSR   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billing.Start_Date   " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billing.End_Date   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" expression="row1.Status " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
@@ -2100,6 +2102,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" label="out" name="po_expired">
       <column comment="" key="false" length="35" name="SO_Vendor_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -2135,6 +2138,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="ceased">
       <column comment="" key="false" length="35" name="SO_Vendor_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -2170,6 +2174,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -2204,8 +2209,9 @@
         <mapperTableEntries name="Billing_Item_service_ID" expression="processed_data.Billing_Item_service_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="processed_data.Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="processed_data.End_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Type" expression="processed_data.Order_Type " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="po_expired" minimized="true" expressionFilter="processed_data.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; processed_data.PO_COVER.equalsIgnoreCase(&quot;PO Expired&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="po_expired" expressionFilter="processed_data.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; processed_data.PO_COVER.equalsIgnoreCase(&quot;PO Expired&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="processed_data.SO_Vendor_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" expression="processed_data.Vendor" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cctid" expression="processed_data.Cctid" type="id_String" nullable="true"/>
@@ -2235,8 +2241,9 @@
         <mapperTableEntries name="Billing_Item_service_ID" expression="processed_data.Billing_Item_service_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="processed_data.Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="processed_data.End_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Type" expression="processed_data.Order_Type " type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="ceased" expressionFilter="processed_data.Order_Type.equalsIgnoreCase(&quot;cease&quot;)">
+      <outputTables sizeState="INTERMEDIATE" name="ceased" expressionFilter="processed_data.Order_Type.equalsIgnoreCase(&quot;cease&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="processed_data.SO_Vendor_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" expression="processed_data.Vendor" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cctid" expression="processed_data.Cctid" type="id_String" nullable="true"/>
@@ -2266,6 +2273,7 @@
         <mapperTableEntries name="Billing_Item_service_ID" expression="processed_data.Billing_Item_service_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="processed_data.Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="processed_data.End_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Type" expression="processed_data.Order_Type " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="processed_data" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SO_Vendor_Name" type="id_String" nullable="true"/>
@@ -2298,6 +2306,7 @@
         <mapperTableEntries name="Billing_Item_service_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="cmdb_cct" expressionFilter="processed_data.Cctid.toLowerCase().contains(cmdb_cct.circuit.toLowerCase())" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="RELOAD">
         <mapperTableEntries name="circuit" type="id_String" nullable="true"/>
@@ -2387,6 +2396,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="End_Date"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Order_Type"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
@@ -2435,6 +2446,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="288">
@@ -2512,6 +2524,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="End_Date"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Order_Type"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
@@ -2560,6 +2574,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="480">
@@ -2637,6 +2652,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="End_Date"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Order_Type"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
@@ -2685,6 +2702,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="544">
@@ -2849,6 +2867,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="Order_Type"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="processed_data" show="false"/>
@@ -2882,15 +2903,28 @@
       <elementValue elementRef="TRACE_COLUMN" value="circuit_status"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Order_Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="po_cover" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="po_expired" lineStyle="0" metaname="po_expired" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_6" target="tFileOutputExcel_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Order_Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="po_expired" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="ceased" lineStyle="0" metaname="ceased" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_6" target="tFileOutputExcel_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Order_Type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="ceased" show="false"/>
   </connection>
