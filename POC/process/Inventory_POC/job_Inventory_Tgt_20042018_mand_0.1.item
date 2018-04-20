@@ -1227,13 +1227,13 @@
       <column comment="" key="false" length="66" name="AEndAddress" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row1">
         <mapperTableEntries name="Cctid" expression="gtoms.Cctid " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" expression="gtoms.Cct_Thirdparty " type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="gtoms.Msp_Order " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" expression="gtoms.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="Relational.ISNULL(gtoms.GSR_Ref) ?&quot;Reject&quot; : gtoms.GSR_Ref " type="id_String" nullable="true"/>
         <mapperTableEntries name="GTOMS_Ref" expression="gtoms.GTOMS_Ref " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Circuit_Speed" expression="gtoms.Circuit_Speed " type="id_String" nullable="true"/>
         <mapperTableEntries name="Product" expression="gtoms.Product " type="id_String" nullable="true"/>
@@ -2201,7 +2201,7 @@
       <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Column1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR" expression="row1.GSR_Ref " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="GSR" expression="Relational.isNull(row1.GSR_Ref) " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="Status" type="id_String" nullable="true"/>
         <mapperTableEntries name="Subscriber" type="id_String" nullable="true"/>
         <mapperTableEntries name="Build_Order_Reference" type="id_String" nullable="true"/>
