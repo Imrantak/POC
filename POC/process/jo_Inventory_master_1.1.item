@@ -1330,7 +1330,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="processed_data" expressionFilter="row1.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; row1.PO_COVER.equalsIgnoreCase(&quot;PO Cover&quot;)" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="processed_data" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" expression="sovr.Vendor   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cctid" expression="row1.Cctid  " type="id_String" nullable="true"/>
