@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_HNp2oDfzEeiFBblx5C46YA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_HNp2oTfzEeiFBblx5C46YA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
+    <contextParameter xmi:id="_HNp2ojfzEeiFBblx5C46YA" comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" type="id_String" value="talend.integration.user"/>
+    <contextParameter xmi:id="_HNqdsDfzEeiFBblx5C46YA" comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
+    <contextParameter xmi:id="_80xWkELPEeiSc4ZVDlkk2A" comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" type="id_String" value="C:/poc_data"/>
+    <contextParameter xmi:id="_kI-80ELQEeiSc4ZVDlkk2A" comment="" name="gtoms_file_name" prompt="gtoms_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_kI-80ULQEeiSc4ZVDlkk2A" comment="" name="grn_file_name" prompt="grn_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_kI-80kLQEeiSc4ZVDlkk2A" comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_kI-800LQEeiSc4ZVDlkk2A" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_kI-81ELQEeiSc4ZVDlkk2A" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_jp500DfzEeiFBblx5C46YA" confirmationNeeded="false" name="local">
+    <contextParameter xmi:id="_jp500TfzEeiFBblx5C46YA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
+    <contextParameter xmi:id="_jp500jfzEeiFBblx5C46YA" comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" type="id_String" value="viral.patel2@vodafone.com"/>
+    <contextParameter xmi:id="_jp500zfzEeiFBblx5C46YA" comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_80xWkULPEeiSc4ZVDlkk2A" comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" type="id_String" value="C:/poc_data"/>
+    <contextParameter xmi:id="_kI-81ULQEeiSc4ZVDlkk2A" comment="" name="gtoms_file_name" prompt="gtoms_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_kI-81kLQEeiSc4ZVDlkk2A" comment="" name="grn_file_name" prompt="grn_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_kI-810LQEeiSc4ZVDlkk2A" comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_kI-82ELQEeiSc4ZVDlkk2A" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_kI-82ULQEeiSc4ZVDlkk2A" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:DelimitedFileConnection xmi:id="_QRsGADvwEeiSndQzlxS5Cg" name="CSV_GRN" dataPackage="_QRsGATvwEeiSndQzlxS5Cg" Server="Localhost 127.0.0.1" FilePath="C:/Users/VRAJ/Documents/vodafone/DF_POC/files/DF/Enterprise_Inventory_Programme__workshop/CSV_GRN.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
-  <orgomg.cwm.resource.record:RecordFile xmi:id="_QRsGATvwEeiSndQzlxS5Cg" name="default" dataManager="_QRsGADvwEeiSndQzlxS5Cg">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_0W8VAELXEeic1fYyq24fkw" name="CSV_GRN_N" label="CSV_GRN_N" dataPackage="_QRsGATvwEeiSndQzlxS5Cg" Server="Localhost 127.0.0.1" FilePath="C:/Users/VRAJ/Documents/vodafone/DF_POC/files/DF/Enterprise_Inventory_Programme__workshop/CSV_GRN.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_QRsGATvwEeiSndQzlxS5Cg" name="default" dataManager="_0W8VAELXEeic1fYyq24fkw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QRsGAjvwEeiSndQzlxS5Cg" id="_FL3oIDvwEeiSndQzlxS5Cg" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRsGAzvwEeiSndQzlxS5Cg" label="Select_Operation" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRsGBDvwEeiSndQzlxS5Cg" label="Service_Order_ID" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
@@ -58,8 +58,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstLjvwEeiSndQzlxS5Cg" label="GTOMS__External_System_Reference_" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstLzvwEeiSndQzlxS5Cg" label="Mozart__External_System_Reference_" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMDvwEeiSndQzlxS5Cg" label="Clarify__External_System_Reference_" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMTvwEeiSndQzlxS5Cg" label="SPT__External_System_Reference_" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMjvwEeiSndQzlxS5Cg" label="GRN_processor" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMTvwEeiSndQzlxS5Cg" label="SPT__External_System_Reference_" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRstMjvwEeiSndQzlxS5Cg" label="GRN_processor" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>
