@@ -2171,10 +2171,10 @@
         <mapperTableEntries name="PO_Item_Number" expression="row1.PO_Line_Item " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Vendor_Name" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="billing" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="billing" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="GCID" type="id_String" nullable="true"/>
         <mapperTableEntries name="CID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="GSR" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR" expression="row1.GSR_Ref " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Account_Id" type="id_Integer" nullable="true"/>
@@ -2201,7 +2201,7 @@
       <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Column1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR" expression="Relational.isNull(row1.GSR_Ref) " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="GSR" expression="row1.GSR_Ref " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="Status" type="id_String" nullable="true"/>
         <mapperTableEntries name="Subscriber" type="id_String" nullable="true"/>
         <mapperTableEntries name="Build_Order_Reference" type="id_String" nullable="true"/>
