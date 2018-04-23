@@ -2754,7 +2754,7 @@
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;Product&quot;"/>
-      <elementValue elementRef="USE_REGEX" value="false"/>
+      <elementValue elementRef="USE_REGEX" value="true"/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="0"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
@@ -2809,7 +2809,7 @@
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;Customer&quot;"/>
-      <elementValue elementRef="USE_REGEX" value="false"/>
+      <elementValue elementRef="USE_REGEX" value="true"/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="0"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
