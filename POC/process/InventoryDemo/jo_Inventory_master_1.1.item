@@ -2839,7 +2839,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="billreport" lineStyle="0" metaname="tFileInputDelimited_5" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_5" target="tMap_5">
+  <connection connectorName="FLOW" label="billreport" lineStyle="0" metaname="tFileInputDelimited_5" offsetLabelX="-27" offsetLabelY="-50" source="tFileInputDelimited_5" target="tMap_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="billreport" show="false"/>
   </connection>
