@@ -121,5 +121,6 @@
   </orgomg.cwm.resource.record:RecordFile>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_2tHPADdOEei50Npc-g0ZOA" kind="Usage" supplier="_gsWXQDcyEei50Npc-g0ZOA">
     <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Pattern_Analysis_EVO_SOVR_APAC_0.1.ana#_2Kj7kDdOEei50Npc-g0ZOA"/>
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/pfe_0.1.ana#_EGfHMEbiEeisxsxhv_-1mw"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
