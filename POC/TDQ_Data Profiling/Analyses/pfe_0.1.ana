@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="_EGfHMEbiEeisxsxhv_-1mw" name="pfe" creationDate="2018-04-23T16:05:38.645+0530" defaultContext="Default">
+    <clientDependency href="../../metadata/fileDelimited/CSV_GRN_0.1.item#_oG2-IEbiEeisxsxhv_-1mw"/>
     <taggedValue xmi:id="_EGfHMUbiEeisxsxhv_-1mw" tag="Status" value="development"/>
     <taggedValue xmi:id="_EGfHMkbiEeisxsxhv_-1mw" tag="Author" value="ishita.hazra@eval8082.talend.com"/>
     <taggedValue xmi:id="_EGfHM0biEeisxsxhv_-1mw" tag="Purpose" value=""/>
@@ -10,9 +11,17 @@
     <taggedValue xmi:id="_FJmxEkbiEeisxsxhv_-1mw" tag="PREVIEW_ROW_NUMBER" value="50"/>
     <taggedValue xmi:id="_FJmxE0biEeisxsxhv_-1mw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
     <taggedValue xmi:id="_FJqbcEbiEeisxsxhv_-1mw" tag="Is Use Sample Data" value="false"/>
-    <context xmi:id="_EGfHNkbiEeisxsxhv_-1mw"/>
+    <context xmi:id="_EGfHNkbiEeisxsxhv_-1mw">
+      <connection href="../../metadata/fileDelimited/CSV_GRN_0.1.item#_QRsGADvwEeiSndQzlxS5Cg"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_GRN_0.1.item#_QRstHzvwEeiSndQzlxS5Cg"/>
+    </context>
     <results xmi:id="_EGfHN0biEeisxsxhv_-1mw">
       <resultMetadata xmi:id="_EGfHOEbiEeisxsxhv_-1mw"/>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_vxOo0EbiEeisxsxhv_-1mw">
+        <parameters xmi:id="_vxOo0UbiEeisxsxhv_-1mw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_GRN_0.1.item#_QRstHzvwEeiSndQzlxS5Cg"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
     </results>
     <parameters xmi:id="_EGfHOUbiEeisxsxhv_-1mw" dataFilter="_FJrpkEbiEeisxsxhv_-1mw" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
     <contextType xmi:id="_FJmxEEbiEeisxsxhv_-1mw" confirmationNeeded="false" name="Default"/>
