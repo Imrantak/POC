@@ -2753,7 +2753,7 @@
     <elementParameter field="FILE" name="FILENAME" value="&quot;D:/inventory/input/Product.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
-      <elementValue elementRef="SHEETNAME" value="Product"/>
+      <elementValue elementRef="SHEETNAME" value="&quot;Product&quot;"/>
       <elementValue elementRef="USE_REGEX" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="0"/>
@@ -2808,7 +2808,7 @@
     <elementParameter field="FILE" name="FILENAME" value="&quot;D:/inventory/input/Customer.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
-      <elementValue elementRef="SHEETNAME" value="Customer"/>
+      <elementValue elementRef="SHEETNAME" value="&quot;Customer&quot;"/>
       <elementValue elementRef="USE_REGEX" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="0"/>
