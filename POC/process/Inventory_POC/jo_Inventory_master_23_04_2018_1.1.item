@@ -2895,32 +2895,32 @@
       <column comment="" key="false" length="-1" name="u_vendor" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="snow_output">
-        <mapperTableEntries name="u_customer_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_customer_id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_product" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_bandwidth" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_location_city" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_location_country" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_functional_location" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_third_part_circuit_ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_clarify_ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_gsr" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_gtoms" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="u_tail_delivered_date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="u_so_number" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="u_so_line" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="u_unique_so" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_po_number" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_po_line" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="u_opsd" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="u_oped" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="u_po_status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_vendor_number" type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_vendor" type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_customer_name" expression="row4.NPID_Name_in_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_customer_id" expression="row4.NPID_ID_in_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_product" expression="row4.Product " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_bandwidth" expression="row4.Circuit_Speed " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_location_city" expression="row4.A_End_Address " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_location_country" expression="row4.A_End_Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_functional_location" expression="row4.Functional_Location_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_name" expression="row4.Cctid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_third_part_circuit_ref" expression="row4.Cct_Thirdparty " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_clarify_ref" expression="row4.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_gsr" expression="row4.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_gtoms" expression="row4.GTOMS_Ref " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="u_tail_delivered_date" expression="row4.Date_Tail_Delivered " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="u_so_number" expression="row4.Service_Order_ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="u_so_line" expression="row4.Operation_ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="u_unique_so" expression="row4.Unique_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_po_number" expression="row4.PO_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_po_line" expression="row4.PO_Line_Item " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="u_opsd" expression="row4.OPSD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="u_oped" expression="row4.OPED " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="u_po_status" expression="row4.PO_COVER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_vendor_number" expression="row4.Vendor " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_vendor" expression="row4.SO_Vendor_Name " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SO_Vendor_Name" type="id_String" nullable="true"/>
