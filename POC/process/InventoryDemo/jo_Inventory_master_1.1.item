@@ -2768,7 +2768,7 @@
       <elementValue elementRef="OUTPUT_COLUMN" value="AML_NPID"/>
       <elementValue elementRef="INPUT_COLUMN" value="AML_NPID"/>
       <elementValue elementRef="OUTPUT_COLUMN" value="NPID_Name_in_SO"/>
-      <elementValue elementRef="INPUT_COLUMN" value="SO_Vendor_Name"/>
+      <elementValue elementRef="INPUT_COLUMN" value="NPID_Name_in_SO"/>
     </elementParameter>
     <elementParameter field="TABLE" name="OPERATIONS">
       <elementValue elementRef="OUTPUT_COLUMN" value="Operation_ID"/>
