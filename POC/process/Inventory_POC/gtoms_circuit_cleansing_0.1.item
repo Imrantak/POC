@@ -350,10 +350,10 @@
       <column comment="" key="false" length="34" name="GSR_ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="norm" activateExpressionFilter="true">
-        <mapperTableEntries name="CCTid" expression="StringHandling.EREPLACE(row3.CCTid ,&quot;[&amp;, ,*,**]&quot;,&quot;,&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CCTid" expression="StringHandling.EREPLACE(row3.CCTid ,&quot;[ ,*,**]&quot;,&quot;,&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_ref" expression="row3.GSR_ref " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
