@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_pO-VgEfOEeiBYPqxOcBlfQ" name="Col_Analysis" creationDate="2018-04-24T20:19:08.964+0530">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_pO-VgEfOEeiBYPqxOcBlfQ" name="Col_Analysism" creationDate="2018-04-24T20:19:08.964+0530" defaultContext="Default">
   <clientDependency href="../Analyses/Col_Analysis_0.1.ana#_pPAKsEfOEeiBYPqxOcBlfQ"/>
-  <taggedValue xmi:id="_pO-VgUfOEeiBYPqxOcBlfQ" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_pO-VgUfOEeiBYPqxOcBlfQ" tag="OutputFolder" value="C:\Users\VRAJ\Desktop"/>
   <taggedValue xmi:id="_pO-VgkfOEeiBYPqxOcBlfQ" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
   <taggedValue xmi:id="_pO-Vg0fOEeiBYPqxOcBlfQ" tag="REP_DBINFO_DBVERSION" value=""/>
   <taggedValue xmi:id="_pO-VhEfOEeiBYPqxOcBlfQ" tag="REP_DBINFO_HOST" value=""/>
@@ -10,12 +10,21 @@
   <taggedValue xmi:id="_pO-Vh0fOEeiBYPqxOcBlfQ" tag="REP_DBINFO_SCHEMA" value=""/>
   <taggedValue xmi:id="_pO-ViEfOEeiBYPqxOcBlfQ" tag="REP_DBINFO_USER" value="sa"/>
   <taggedValue xmi:id="_pO-ViUfOEeiBYPqxOcBlfQ" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
-  <taggedValue xmi:id="_pO-VikfOEeiBYPqxOcBlfQ" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\talendstudio\workspace\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_pO-VikfOEeiBYPqxOcBlfQ" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:/C:\talendstudio\workspace\TDQ_reporting_db\talend_dq"/>
   <taggedValue xmi:id="_pO-Vi0fOEeiBYPqxOcBlfQ" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
   <taggedValue xmi:id="_pO-VjEfOEeiBYPqxOcBlfQ" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
   <taggedValue xmi:id="_pO-VjUfOEeiBYPqxOcBlfQ" tag="REP_PASSWORD_CONTEXT" value="false"/>
   <taggedValue xmi:id="_pO-VjkfOEeiBYPqxOcBlfQ" tag="Author" value="viral.patel@eval8082.talend.com"/>
+  <taggedValue xmi:id="_58Z8IEfOEeiBYPqxOcBlfQ" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_58Z8IUfOEeiBYPqxOcBlfQ" tag="Description" value=""/>
+  <taggedValue xmi:id="_58Z8IkfOEeiBYPqxOcBlfQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_58bKQEfOEeiBYPqxOcBlfQ" tag="OutputFileName" value="Column_analysis"/>
+  <taggedValue xmi:id="_58bKQUfOEeiBYPqxOcBlfQ" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_58bKQkfOEeiBYPqxOcBlfQ" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_58bKQ0fOEeiBYPqxOcBlfQ" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_58c_cEfOEeiBYPqxOcBlfQ" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
   <analysisMap xmi:id="_pO-Vj0fOEeiBYPqxOcBlfQ" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/Col_Analysis_0.1.ana#_NzwWgEfOEeiBYPqxOcBlfQ"/>
   </analysisMap>
+  <context xmi:id="_58cYYEfOEeiBYPqxOcBlfQ" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
