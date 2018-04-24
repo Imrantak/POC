@@ -326,7 +326,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="filtered" activateExpressionFilter="true" activateColumnNameFilter="true" columnNameFilter="StringHandling.LEN(row2.CCTid)&lt;5">
+      <outputTables sizeState="INTERMEDIATE" name="filtered" activateColumnNameFilter="true" columnNameFilter="StringHandling.LEN(row2.CCTid)>5">
         <mapperTableEntries name="CCTid" expression="row2.CCTid " type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_ref" expression="row2.GSR_ref " type="id_String" nullable="true"/>
       </outputTables>
