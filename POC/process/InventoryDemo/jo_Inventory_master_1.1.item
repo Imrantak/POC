@@ -3,7 +3,7 @@
   <context confirmationNeeded="false" name="Default"/>
   <context confirmationNeeded="false" name="local"/>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="353" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="352" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -1278,7 +1278,7 @@
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="(!Relational.ISNULL(billing.Account_Name) &amp;&amp;!billing.Account_Name.isEmpty() &amp;&amp; billing.Account_Name.equalsIgnoreCase(&quot;Dummy&quot;)) ?  &quot;Dummy_&quot;+billing.GSR:billing.GSR " type="id_String" nullable="true"/>
       </varTables>
@@ -1526,7 +1526,7 @@
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value=" IP-VPN QoS&#xD;&#xA;Bandwidth Connect&#xD;&#xA;Bandwidth Connect (BWC)&#xD;&#xA;Bandwidth Connect-BWC&#xD;&#xA;EWL&#xD;&#xA;EWL (Ethernet wire line)&#xD;&#xA;IP VPN&#xD;&#xA;IP VPN QoS&#xD;&#xA;IP- VPN QoS&#xD;&#xA;IP_VPN QoS&#xD;&#xA;IP-VP QoS&#xD;&#xA;IPVPN&#xD;&#xA;IP-VPN&#xD;&#xA;IPVPN Connectivity&#xD;&#xA;IP-VPN Connectivity&#xD;&#xA;IP-VPN -Cross connect only&#xD;&#xA;IPVPN QOS&#xD;&#xA;IP-VPN QoS&#xD;&#xA;IP-VPN QoS  Back up&#xD;&#xA;IP-VPN QoS (back up)&#xD;&#xA;IP-VPN QoS (Primary)&#xD;&#xA;IP-VPN QoS + ISDN&#xD;&#xA;IP-VPN QoS Back up&#xD;&#xA;IP-VPN QoS Primary&#xD;&#xA;IP-VPN QoS with DSL&#xD;&#xA;IPVPN QoS with MDA&#xD;&#xA;IP-VPN QoS with MDA&#xD;&#xA;IPVPN Quos&#xD;&#xA;IP-VPN Quos&#xD;&#xA;IP-VPN Trunking&#xD;&#xA;IPVPNQos&#xD;&#xA;IPVPN-QoS&#xD;&#xA;IP-VPN-Qos"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value=" IP-VPN QoS&#xD;&#xA;Bandwidth Connect&#xD;&#xA;Bandwidth Connect (BWC)&#xD;&#xA;Bandwidth Connect-BWC&#xD;&#xA;EWL&#xD;&#xA;EWL (Ethernet wire line)&#xD;&#xA;IP VPN&#xD;&#xA;IP VPN QoS&#xD;&#xA;IP- VPN QoS&#xD;&#xA;IP_VPN QoS&#xD;&#xA;IP-VP QoS&#xD;&#xA;IPVPN&#xD;&#xA;IP-VPN&#xD;&#xA;IPVPN Connectivity&#xD;&#xA;IP-VPN Connectivity&#xD;&#xA;IPVPN QOS&#xD;&#xA;IP-VPN QoS&#xD;&#xA;IP-VPN QoS  Back up&#xD;&#xA;IP-VPN QoS (back up)&#xD;&#xA;IP-VPN QoS (Primary)&#xD;&#xA;IP-VPN QoS Back up&#xD;&#xA;IP-VPN QoS Primary&#xD;&#xA;IPVPN Quos&#xD;&#xA;IP-VPN Quos&#xD;&#xA;IPVPNQos&#xD;&#xA;IPVPN-QoS&#xD;&#xA;IP-VPN-Qos"/>
     <elementParameter field="TEXT" name="LABEL" value="product"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFixedFlowInput_2">
@@ -2109,7 +2109,7 @@
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="po_cover" expressionFilter="processed_data.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; processed_data.PO_COVER.equalsIgnoreCase(&quot;PO Cover&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="Vendor" expression="processed_data.Vendor" type="id_String" nullable="true"/>
