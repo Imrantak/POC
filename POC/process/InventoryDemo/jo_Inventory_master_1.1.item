@@ -1278,7 +1278,7 @@
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="processed_data" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name   " type="id_String" nullable="true"/>
@@ -1308,7 +1308,7 @@
         <mapperTableEntries name="Functional_Location_ID" expression="row1.Functional_Location_ID  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Date_Tail_Delivered" expression="row1.Date_Tail_Delivered " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Account_Id" expression="billing.Account_Id   " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Billing_Item_service_ID" expression="billing.GSR   " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Billing_Item_service_ID" expression="billing.Account_Name.equalsIgnoreCase(&quot;dummy&quot;) ?  &quot;Dummy_&quot;+billing.GSR   :billing.GSR " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billing.Start_Date   " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billing.End_Date   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="row1.Status " type="id_String" nullable="true"/>
