@@ -710,7 +710,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="GTOMSDUMP" name="GTOMSDUMP">
+    <metadata connector="FLOW" label="GTOMSDUMP" name="row8">
       <column comment="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -755,7 +755,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="GTOMSDUMP">
+      <outputTables sizeState="INTERMEDIATE" name="row8">
         <mapperTableEntries name="GTOMS_Ref" expression="gtoms.GTOMS_Ref" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="A_End_City" expression="gtoms.A_End_City" type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" expression="gtoms.A_End_Country" type="id_String" nullable="true"/>
@@ -860,7 +860,7 @@
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row1">
         <mapperTableEntries name="Cctid" expression="row8.Cctid " type="id_String" nullable="true"/>
@@ -889,7 +889,7 @@
         <mapperTableEntries name="Order_Type" expression="row8.Order_Type " type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="row8.Status " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="GTOMSDUMP" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="A_End_City" type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" type="id_String" nullable="true"/>
@@ -3336,9 +3336,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="GTOMSDUMP" lineStyle="0" metaname="GTOMSDUMP" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_8" target="tMap_1">
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="row8" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_8" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="GTOMSDUMP" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="newGTOMSdump" lineStyle="0" metaname="newGTOMSdump" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_8" target="tFileOutputExcel_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
