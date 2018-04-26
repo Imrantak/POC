@@ -1475,7 +1475,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="billing" activateExpressionFilter="true">
-        <mapperTableEntries name="CID" expression="billreport.CID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CID" expression="" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="GSR" expression="StringHandling.TRIM(billreport.GSR).replace(&quot;.&quot;,&quot;&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billreport.Charge_Start_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billreport.Charge_End_Date " type="id_String" nullable="true"/>
