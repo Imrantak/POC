@@ -38,6 +38,26 @@
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_GCB_2604_0.1.item#_YF7gt0kdEeiHqqIzmSc5vA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
       </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_rxu88EkdEeiHqqIzmSc5vA">
+        <parameters xmi:id="_rxu88UkdEeiHqqIzmSc5vA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_GCB_2604_0.1.item#_YF7gvUkdEeiHqqIzmSc5vA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_rxvkAEkdEeiHqqIzmSc5vA">
+        <parameters xmi:id="_rxvkAUkdEeiHqqIzmSc5vA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_GCB_2604_0.1.item#_YF7gvUkdEeiHqqIzmSc5vA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_rxvkAkkdEeiHqqIzmSc5vA">
+        <parameters xmi:id="_rxvkA0kdEeiHqqIzmSc5vA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_GCB_2604_0.1.item#_YF7gvUkdEeiHqqIzmSc5vA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_rxvkBEkdEeiHqqIzmSc5vA">
+        <parameters xmi:id="_rxvkBUkdEeiHqqIzmSc5vA"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_GCB_2604_0.1.item#_YF7gvUkdEeiHqqIzmSc5vA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
     </results>
     <parameters xmi:id="_fvKi-UkdEeiHqqIzmSc5vA" dataFilter="_gYvrcEkdEeiHqqIzmSc5vA" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
     <contextType xmi:id="_gYWC0EkdEeiHqqIzmSc5vA" confirmationNeeded="false" name="Default"/>
