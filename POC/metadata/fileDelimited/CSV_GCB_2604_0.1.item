@@ -1,24 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:DelimitedFileConnection xmi:id="_YF7gsEkdEeiHqqIzmSc5vA" name="CSV_GCB_2604" dataPackage="_YF7gsUkdEeiHqqIzmSc5vA" Server="Localhost 127.0.0.1" FilePath="D:/inventory/input/CSV_GCB - A to L and M to Z.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_YF7gsEkdEeiHqqIzmSc5vA" name="CSV_GCB_2604" supplierDependency="_gYl6cEkdEeiHqqIzmSc5vA" dataPackage="_YF7gsUkdEeiHqqIzmSc5vA" Server="Localhost 127.0.0.1" FilePath="D:/inventory/input/CSV_GCB - A to L and M to Z.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_YF7gsUkdEeiHqqIzmSc5vA" name="default" dataManager="_YF7gsEkdEeiHqqIzmSc5vA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_YF7gskkdEeiHqqIzmSc5vA" id="_GrBJAEkdEeiHqqIzmSc5vA" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gs0kdEeiHqqIzmSc5vA" label="GCID" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gtEkdEeiHqqIzmSc5vA" label="Customer_Name" length="29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gtUkdEeiHqqIzmSc5vA" label="Account_Name" length="38" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gtkkdEeiHqqIzmSc5vA" label="Account_No" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gt0kdEeiHqqIzmSc5vA" label="GSR" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7guEkdEeiHqqIzmSc5vA" label="Charge_Id" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7guUkdEeiHqqIzmSc5vA" label="Charge_Type" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gukkdEeiHqqIzmSc5vA" label="Charge_Description" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gu0kdEeiHqqIzmSc5vA" label="Charge_Currency" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gvEkdEeiHqqIzmSc5vA" label="Net_Charge_Amount" length="8" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gvUkdEeiHqqIzmSc5vA" label="Charge_Frequency" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gvkkdEeiHqqIzmSc5vA" label="Site_Id" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gv0kdEeiHqqIzmSc5vA" label="Site_Name" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gwEkdEeiHqqIzmSc5vA" label="Charge_Start_Date" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gwUkdEeiHqqIzmSc5vA" label="Charge_End_Date" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gwkkdEeiHqqIzmSc5vA" label="Customer_Reference" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gs0kdEeiHqqIzmSc5vA" id="GCID" label="GCID" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYl6cUkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gtEkdEeiHqqIzmSc5vA" id="Customer_Name" label="Customer_Name" length="29" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYmhiEkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gtUkdEeiHqqIzmSc5vA" id="Account_Name" label="Account_Name" length="38" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYmhkUkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gtkkdEeiHqqIzmSc5vA" id="Account_No" label="Account_No" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnIkEkdEeiHqqIzmSc5vA" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gt0kdEeiHqqIzmSc5vA" id="GSR" label="GSR" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnImUkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7guEkdEeiHqqIzmSc5vA" id="Charge_Id" label="Charge_Id" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnIokkdEeiHqqIzmSc5vA" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7guUkdEeiHqqIzmSc5vA" id="Charge_Type" label="Charge_Type" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnIq0kdEeiHqqIzmSc5vA" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gukkdEeiHqqIzmSc5vA" id="Charge_Description" label="Charge_Description" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnItEkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gu0kdEeiHqqIzmSc5vA" id="Charge_Currency" label="Charge_Currency" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnIvUkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gvEkdEeiHqqIzmSc5vA" id="Net_Charge_Amount" label="Net_Charge_Amount" length="8" precision="5" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnIxkkdEeiHqqIzmSc5vA" tag="Content Type" value="Interval"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gvUkdEeiHqqIzmSc5vA" id="Charge_Frequency" label="Charge_Frequency" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnvp0kdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gvkkdEeiHqqIzmSc5vA" id="Site_Id" label="Site_Id" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnvsEkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gv0kdEeiHqqIzmSc5vA" id="Site_Name" label="Site_Name" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnvuUkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gwEkdEeiHqqIzmSc5vA" id="Charge_Start_Date" label="Charge_Start_Date" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnvwkkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gwUkdEeiHqqIzmSc5vA" id="Charge_End_Date" label="Charge_End_Date" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnvy0kdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YF7gwkkdEeiHqqIzmSc5vA" id="Customer_Reference" label="Customer_Reference" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_gYnv1EkdEeiHqqIzmSc5vA" tag="Content Type" value="Nominal"/>
+      </feature>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_gYl6cEkdEeiHqqIzmSc5vA" kind="Usage" supplier="_YF7gsEkdEeiHqqIzmSc5vA">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../TDQ_Data Profiling/Analyses/Pattern_analysis_0.1.ana#_fvKi8EkdEeiHqqIzmSc5vA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
