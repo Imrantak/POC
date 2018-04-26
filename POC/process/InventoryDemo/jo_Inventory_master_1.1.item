@@ -1280,7 +1280,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" expression="billing.Account_Name.equalsIgnoreCase(&quot;Dummy&quot;) ?  &quot;Dummy_&quot;+billing.GSR:billing.GSR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="var1" expression="(!Relational.ISNULL(billing.Account_Name) &amp;&amp;!billing.Account_Name.isEmpty() &amp;&amp; billing.Account_Name.equalsIgnoreCase(&quot;Dummy&quot;)) ?  &quot;Dummy_&quot;+billing.GSR:billing.GSR " type="id_String" nullable="true"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="processed_data" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name   " type="id_String" nullable="true"/>
