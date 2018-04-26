@@ -1291,7 +1291,7 @@
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1327,7 +1327,7 @@
         <mapperTableEntries name="A_End_Country" expression="row1.A_End_Country  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Functional_Location_ID" expression="row1.Functional_Location_ID  " type="id_String" nullable="true"/>
         <mapperTableEntries name="Date_Tail_Delivered" expression="row1.Date_Tail_Delivered " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Account_Id" expression="billing.Account_Id   " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Account_Id" expression="billing.Account_Id   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" expression="billing.GSR   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billing.Start_Date   " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billing.End_Date   " type="id_String" nullable="true"/>
@@ -1365,7 +1365,7 @@
         <mapperTableEntries name="GSR" expression="row1.GSR_Ref " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Account_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Account_Id" type="id_String" nullable="true"/>
         <mapperTableEntries name="Account_Name" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="sovr" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -1468,7 +1468,7 @@
       <column comment="" key="false" length="17" name="GSR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Account_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -1479,7 +1479,7 @@
         <mapperTableEntries name="GSR" expression="StringHandling.TRIM(billreport.GSR).replace(&quot;.&quot;,&quot;&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="billreport.Charge_Start_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="billreport.Charge_End_Date " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Account_Id" expression=" billreport.Account_No " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Account_Id" expression=" billreport.Account_No " type="id_String" nullable="true"/>
         <mapperTableEntries name="Account_Name" expression="billreport.Account_Name" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="billreport" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -1860,7 +1860,7 @@
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1936,7 +1936,7 @@
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="po_cover" expressionFilter="processed_data.Order_Type.equalsIgnoreCase(&quot;provide&quot;) &amp;&amp; processed_data.PO_COVER.equalsIgnoreCase(&quot;PO Cover&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="processed_data.SO_Vendor_Name" type="id_String" nullable="true"/>
@@ -1964,7 +1964,7 @@
         <mapperTableEntries name="A_End_Country" expression="processed_data.A_End_Country" type="id_String" nullable="true"/>
         <mapperTableEntries name="Functional_Location_ID" expression="processed_data.Functional_Location_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Date_Tail_Delivered" expression="processed_data.Date_Tail_Delivered" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Account_Id" expression="processed_data.Account_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Account_Id" expression="processed_data.Account_Id" type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" expression="processed_data.Billing_Item_service_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" expression="processed_data.Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" expression="processed_data.End_Date" type="id_String" nullable="true"/>
@@ -2058,7 +2058,7 @@
         <mapperTableEntries name="A_End_Country" type="id_String" nullable="true"/>
         <mapperTableEntries name="Functional_Location_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Date_Tail_Delivered" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Account_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Account_Id" type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Start_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="End_Date" type="id_String" nullable="true"/>
@@ -2196,7 +2196,7 @@
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
