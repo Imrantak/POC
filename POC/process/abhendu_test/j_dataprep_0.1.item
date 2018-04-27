@@ -180,7 +180,7 @@
       <column comment="" key="false" length="-1" name="u_vendor" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="outprep">
         <mapperTableEntries name="u_customer_name" expression="row1.u_customer_name" type="id_String"/>
