@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_E1EV4E0AEeihBPD6I1_SrQ" name="CSV_DS3_BILLING" dataPackage="_E1EV4U0AEeihBPD6I1_SrQ" Server="Localhost 127.0.0.1" FilePath="D:/inventory/input/CSV_DS3_BILLING.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_E1EV4U0AEeihBPD6I1_SrQ" name="default" dataManager="_E1EV4E0AEeihBPD6I1_SrQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_E1EV4k0AEeihBPD6I1_SrQ" id="_AdLvoE0AEeihBPD6I1_SrQ" label="CSV_DS3_BILLING">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E1EV400AEeihBPD6I1_SrQ" label="GSR" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E1EV5E0AEeihBPD6I1_SrQ" label="Account_Number" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E1EV5U0AEeihBPD6I1_SrQ" label="Billing_Account_Status" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E1EV5k0AEeihBPD6I1_SrQ" label="Circuit_Reference" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E1EV500AEeihBPD6I1_SrQ" label="Service_Billing_Status" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E1EV6E0AEeihBPD6I1_SrQ" label="MRC" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E1EV6U0AEeihBPD6I1_SrQ" label="Currency" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
