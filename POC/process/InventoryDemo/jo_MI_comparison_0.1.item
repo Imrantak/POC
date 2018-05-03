@@ -506,7 +506,7 @@
         <mapperTableEntries name="PO_COVER" expression="&quot;PO Cover&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" expression="row2.Customer_NPID.toString() " type="id_String" nullable="true"/>
         <mapperTableEntries name="Account_Id" expression="row2.Account_Number " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Billing_Item_service_ID" expression="row2.GSR " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Billing_Item_service_ID" expression="row2.Circuit_Reference " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Unique_SO1" type="id_String" nullable="true"/>
@@ -610,7 +610,7 @@
       <column comment="" key="false" length="2" name="Billing_Item_service_ID_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="GSR_Ref_1" expression="out1.GSR_Ref " type="id_String" nullable="true"/>
@@ -927,7 +927,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="output">
         <mapperTableEntries name="GSR_Reference" expression="out3.GSR_Ref_1 " type="id_String" nullable="true"/>
