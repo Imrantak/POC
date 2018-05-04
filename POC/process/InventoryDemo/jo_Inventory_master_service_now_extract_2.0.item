@@ -2658,7 +2658,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Vendor" expression="row4.Vendor " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cctid" expression="StringHandling.EREPLACE(row1.Cctid,&quot;[:,;,*,**, ]&quot;,&quot;,&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid" expression="StringHandling.EREPLACE(row4.Cctid,&quot;[:,;,*,**, ]&quot;,&quot;,&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" expression="row4.Cct_Thirdparty " type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row4.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_Ref" expression="row4.GSR_Ref " type="id_String" nullable="true"/>
