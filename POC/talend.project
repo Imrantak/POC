@@ -805,6 +805,28 @@
       <relatedItems xmi:id="_qhYjxk-REeiuULah490njg" id="_reQeoEz_EeihBPD6I1_SrQ - CSV_DS3_SOVR" version="Latest" type="schema"/>
       <relatedItems xmi:id="_qhYjx0-REeiuULah490njg" id="_2VZXkDv5EeiSndQzlxS5Cg - CSV_EVO_NPIDS_AML_NPIDS" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_uvewQE-bEeiuULah490njg">
+      <baseItem xmi:id="_uvewQU-bEeiuULah490njg" id="_ujHIME-bEeiuULah490njg" version="2.0" type="job"/>
+      <relatedItems xmi:id="_uvewQk-bEeiuULah490njg" id="_Xuhl8E4CEeinV71uDKQkBA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_uvewQ0-bEeiuULah490njg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewRE-bEeiuULah490njg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewRU-bEeiuULah490njg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewRk-bEeiuULah490njg" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewR0-bEeiuULah490njg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewSE-bEeiuULah490njg" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewSU-bEeiuULah490njg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewSk-bEeiuULah490njg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewS0-bEeiuULah490njg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewTE-bEeiuULah490njg" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewTU-bEeiuULah490njg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewTk-bEeiuULah490njg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewT0-bEeiuULah490njg" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewUE-bEeiuULah490njg" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewUU-bEeiuULah490njg" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewUk-bEeiuULah490njg" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_uvewU0-bEeiuULah490njg" id="__OiyQEz_EeihBPD6I1_SrQ - CSV_DS3_GTOMS" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_uvewVE-bEeiuULah490njg" id="_Xuhl8E4CEeinV71uDKQkBA - metadata" version="Latest" type="schema"/>
+    </ItemsRelations>
     <deletedFolders>process/abhendu_test/abhendu_test</deletedFolders>
     <deletedFolders>process/InventoryDemo/InventoryDemo</deletedFolders>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
