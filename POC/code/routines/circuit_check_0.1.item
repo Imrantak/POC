@@ -1,9 +1,11 @@
 package routines;
+
 import java.util.StringTokenizer;
 
 public class circuit_check {
 
-    /**
+    /*
+     * 
      * circuit_check: Compare MI spreadsheet's Cctid field with Talend generated dataset's Cctid field.
      * 
      * 
