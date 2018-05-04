@@ -690,7 +690,7 @@
     <elementParameter field="FILE" name="FILENAME" value="&quot;D:/inventory/output/Active_Interim_Dataset_Cleansed 4-May.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
-      <elementValue elementRef="SHEETNAME" value="1"/>
+      <elementValue elementRef="SHEETNAME" value="0"/>
       <elementValue elementRef="USE_REGEX" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
