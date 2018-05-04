@@ -3093,7 +3093,7 @@
         <mapperTableEntries name="Customer_Name" expression="row8.Customer_Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="SO_Number" expression="row8.SO_Number " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="SO_Line_Number" expression="row8.SO_Line_Number " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="C72_Val" expression="row8.C72_val.endsWith(&quot;,&quot;)?row8.C72_val.substring(0,row8.C72_val.length()-1):&#xD;&#xA;row8.C72_val.startsWith(&quot;,&quot;)?row8.C72_val.substring(1,row8.C72_val.length()):row8.C72_val " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C72_Val" expression="row8.C72_Val.endsWith(&quot;,&quot;)?row8.C72_Val.substring(0,row8.C72_Val.length()-1):&#xD;&#xA;row8.C72_Val.startsWith(&quot;,&quot;)?row8.C72_Val.substring(1,row8.C72_Val.length()):row8.C72_Val " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
