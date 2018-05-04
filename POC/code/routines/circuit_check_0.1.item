@@ -35,7 +35,7 @@ public class circuit_check {
      * {example} helloExemple("world") # hello world !.
      */
 	
-	public static String CircuitCheck(String mi_circuit, String ds_circuit)
+	public static String Check(String mi_circuit, String ds_circuit)
 	{
 		
 		StringTokenizer s = new StringTokenizer(ds_circuit, ",");
