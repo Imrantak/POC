@@ -613,7 +613,7 @@
       <column comment="" key="false" length="2" name="Billing_Item_service_ID_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="out1.Cctid.equalsIgnoreCase(out2.Cctid)?&quot;Y&quot;:&quot;N (&quot; +out1.Cctid+&quot;&lt;->&quot;+out2.Cctid +&quot;)&quot; " type="id_String"/>
       </varTables>
@@ -636,7 +636,7 @@
         <mapperTableEntries name="Account_Id" expression="out1.Account_Id.equalsIgnoreCase(out2.Account_Id)?&quot;Y&quot;:&quot;N (&quot; +out1.Account_Id+&quot;&lt;->&quot;+out2.Account_Id +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" expression="out1.Billing_Item_service_ID.equalsIgnoreCase(out2.Billing_Item_service_ID)?&quot;Y&quot;:&quot;N (&quot; +out1.Billing_Item_service_ID+&quot;&lt;->&quot;+out2.Billing_Item_service_ID +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor_flag" expression="out1.Vendor.equalsIgnoreCase(out2.Vendor)?1:0 " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Cctid_flag" expression="out1.Cctid.equalsIgnoreCase(out2.Cctid)?1:0 " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Cctid_flag" expression="circuit_check.Check(out1.Cctid, out2.Cctid!=null?out2.Cctid:&quot;&quot;) ==&quot;Y&quot;?1:0 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty_flag" expression="out1.Cct_Thirdparty.equalsIgnoreCase(out2.Cct_Thirdparty)?1:0 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order_flag" expression="out1.Clarify_Reference_Msp_Order.equalsIgnoreCase(out2.Clarify_Reference_Msp_Order)?1:0 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="GSR_Ref_flag" expression="out1.GSR_Ref.equalsIgnoreCase(out2.GSR_Ref)?1:0 " type="id_Integer" nullable="true"/>
