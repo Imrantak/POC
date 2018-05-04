@@ -194,9 +194,9 @@
   </node>
   <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_1" show="false"/>
-    <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
-    <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
-    <elementParameter field="TABLE" name="CHECKCOLS" show="false">
+    <elementParameter field="RADIO" name="CHECK_ALL" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOMER" value="true"/>
+    <elementParameter field="TABLE" name="CHECKCOLS">
       <elementValue elementRef="SCHEMA_COLUMN" value="Num"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
@@ -223,7 +223,7 @@
       <elementValue elementRef="NULLABLE" value="false"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
     </elementParameter>
-    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema." show="false"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema."/>
     <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
     <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema" show="false"/>
     <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
@@ -231,7 +231,7 @@
     <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#xA;(1) Type discrepancy (include wrong date pattern): 2&#xA;(2) Empty or NULL: 4&#xA;(3) Length/Precision Error: 8"/>
     <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
-    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false"/>
     <elementParameter field="CHECK" name="EMPTY_IS_NULL" value="false" show="false"/>
     <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
     <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
