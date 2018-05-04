@@ -585,6 +585,7 @@
       <relatedItems xmi:id="_sbojcE6gEeiqC7aFUAzi7A" id="_h2_b4E0fEeihBPD6I1_SrQ - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_BD5KkE7SEeiqC7aFUAzi7A" id="DataMasking" version="Latest" type="routine"/>
       <relatedItems xmi:id="_BD5KkU7SEeiqC7aFUAzi7A" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_efFeME-LEeiFipGoF46OKg" id="circuit_check" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
