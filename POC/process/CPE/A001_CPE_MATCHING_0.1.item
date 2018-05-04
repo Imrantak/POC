@@ -226,7 +226,7 @@
     <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema." show="false"/>
     <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
     <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema" show="false"/>
-    <elementParameter field="CHECK" name="SUB_STRING" value="true"/>
+    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
     <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
     <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#xA;(1) Type discrepancy (include wrong date pattern): 2&#xA;(2) Empty or NULL: 4&#xA;(3) Length/Precision Error: 8"/>
     <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
