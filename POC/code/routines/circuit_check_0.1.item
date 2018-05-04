@@ -40,21 +40,31 @@ public class circuit_check {
 		
 		StringTokenizer s = new StringTokenizer(ds_circuit, ",");
 		Integer token= s.countTokens();
-		
+		Integer match = 0;
 		for(int i=0;i<token;i++)
 		{
 			if (s.hasMoreTokens())
 			{
-			
+				if( mi_circuit.contains(s.nextToken()))
+				{
+					match++;
+				}
 			}
 		}
-		return "Y";
+		
+		
+		if(token==match)
+			{	
+			return "Y";
+			}
+		if(match<token)
+			{
+			return "Patial Match";
+			}
+		else 
+			return "N";
+		
 	}
 	
-    public static void helloExample(String message) {
-        if (message == null) {
-            message = "World"; //$NON-NLS-1$
-        }
-        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
-    }
+   
 }
