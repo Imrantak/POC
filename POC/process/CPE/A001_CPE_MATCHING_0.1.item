@@ -561,7 +561,7 @@
         <mapperTableEntries name="Prorated_Date" expression="NCR.Prorated_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="New_renewal_amount" expression="NCR.New_renewal_amount " type="id_Float" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="NCR_NON_USED">
+      <outputTables sizeState="INTERMEDIATE" name="NCR_NON_USED" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="SN_" expression="NCR.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="NCR.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="NCR.eol " type="id_String" nullable="true"/>
