@@ -1226,7 +1226,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Mapping" show="false"/>
   </connection>
-  <note opaque="true" posX="896" posY="0" sizeHeight="224" sizeWidth="224" text="use context&#xA;use "/>
+  <note opaque="false" posX="896" posY="0" sizeHeight="224" sizeWidth="224" text="use context&#xA;use cloud version&#xA;Datastewardship"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
