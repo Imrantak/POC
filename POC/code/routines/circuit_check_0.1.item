@@ -1,0 +1,54 @@
+package routines;
+
+import java.util.StringTokenizer;
+
+public class circuit_check {
+
+    /*
+     * 
+     * circuit_check: Compare MI spreadsheet's Cctid field with Talend generated dataset's Cctid field.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string(out1.Cctid) input: MI Circuit Id.
+     * {param} string(out2.Cctid) input: Talend Dataset Circuit Id.
+     * 
+     * {example} circuit_check.Check(out1.Cctid,out2.Cctid).
+     */
+	
+	public static String Check(String mi_circuit, String ds_circuit)
+	{
+		
+		StringTokenizer s = new StringTokenizer(ds_circuit, ",");
+		Integer token= s.countTokens();
+		Integer match = 0;
+		for(int i=0;i<token;i++)
+		{
+			if (s.hasMoreTokens())
+			{
+				if( mi_circuit.contains(s.nextToken()))
+				{
+					match++;
+				}
+			}
+		}
+		
+		
+		if(token==match && token != 0)
+			{	
+			return "Y";
+			}
+		if(match<token)
+			{
+			return "Patial Match";
+			}
+		else 
+			return "N";
+		
+	}
+	
+   
+}
