@@ -3267,8 +3267,8 @@
         <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
         <mapperTableEntries name="C72_Reference" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS_Ref" expression="interim.GSR_Ref " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="GSR_Ref" expression="interim.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Unique_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Line_Item" type="id_Integer" nullable="true"/>
