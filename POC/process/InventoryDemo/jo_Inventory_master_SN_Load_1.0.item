@@ -377,8 +377,8 @@
         <additionalField key="Content Type" value="Nominal"/>
       </column>
       <column comment="" key="false" length="10" name="u_customer_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="u_billing_accont_number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="u_billing_line_item_service" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="u_billing_account_number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="u_billing_line_item_service_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="u_vendor" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="u_customer_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="u_location_city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -407,8 +407,8 @@
         <mapperTableEntries name="u_functional_location" expression="row4.Functional_Location_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_vendor_number" expression="row4.Vendor " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_customer_id" expression="row4.AML_NPID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_billing_accont_number" expression="row4.Account_Id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="u_billing_line_item_service" expression="row4.Billing_Item_service_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_billing_account_number" expression="row4.Account_Id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_billing_line_item_service_id" expression="row4.Billing_Item_service_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_vendor" expression="row4.Vendor_Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_customer_name" expression="row4.Customer_Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_location_city" expression="row4.A_End_Address " type="id_String" nullable="true"/>
@@ -477,8 +477,8 @@
         <additionalField key="Content Type" value="Nominal"/>
       </column>
       <column comment="" key="false" length="10" name="u_customer_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="u_billing_accont_number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="u_billing_line_item_service" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="u_billing_account_number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="u_billing_line_item_service_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="u_vendor" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="u_customer_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="u_location_city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -506,8 +506,8 @@
         <additionalField key="Content Type" value="Nominal"/>
       </column>
       <column comment="" key="false" length="10" name="u_customer_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="u_billing_accont_number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="u_billing_line_item_service" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="u_billing_account_number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="u_billing_line_item_service_id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="u_vendor" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="u_customer_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="u_location_city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -623,7 +623,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="u_tail_delivered_date"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="u_billing_line_item_service"/>
+      <elementValue elementRef="TRACE_COLUMN" value="u_billing_line_item_service_id"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="SO_Line_Number"/>
@@ -651,6 +651,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="u_activity_reference"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="u_billing_account_number"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
