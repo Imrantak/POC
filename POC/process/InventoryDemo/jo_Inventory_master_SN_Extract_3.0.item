@@ -324,9 +324,10 @@
       <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="filedata">
         <mapperTableEntries name="GTOMS_Ref" expression="row3.GTOMS_Ref" type="id_Integer" nullable="true"/>
@@ -348,6 +349,7 @@
         <mapperTableEntries name="Cct_Thirdparty" expression="row3.Cct_Thirdparty" type="id_String" nullable="true"/>
         <mapperTableEntries name="Circuit_Speed" expression="row3.Circuit_Speed" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" expression="row3.Customer" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" expression="product.sn_product " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
@@ -378,6 +380,7 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="product" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="product" expression="row3.Product " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="sn_product" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -409,6 +412,7 @@
       <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <metadata connector="FILTER" label="GTOMS_Metadata" name="FILTER">
       <column comment="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -430,6 +434,7 @@
       <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="GTOMS_Metadata" name="REJECT">
       <column comment="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -451,6 +456,7 @@
       <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -492,9 +498,10 @@
       <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row1">
         <mapperTableEntries name="Cctid" expression="gtoms.Cctid " type="id_String" nullable="true"/>
@@ -522,6 +529,7 @@
         <mapperTableEntries name="AML_NPID" expression="aml_npid.AML_NPID " type="id_String" nullable="true"/>
         <mapperTableEntries name="Order_Type" expression="gtoms.Order_Type " type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="gtoms.Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" expression="gtoms.sn_product " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="gtoms" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
@@ -543,6 +551,7 @@
         <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
         <mapperTableEntries name="Circuit_Speed" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="grn" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Select_Operation" type="id_Boolean" nullable="true"/>
@@ -658,9 +667,10 @@
       <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="processed_data" activateExpressionFilter="true">
         <mapperTableEntries name="SO_Vendor_Name" expression="sovr.SO_Vendor_Name   " type="id_String" nullable="true"/>
@@ -692,6 +702,7 @@
         <mapperTableEntries name="Account_Id" expression="billing.Account_Id   " type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" expression=" billing.Circuit_Reference " type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="row1.Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" expression="row1.sn_product " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
@@ -719,6 +730,7 @@
         <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Order_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="billing" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="GSR" expression="StringHandling.EREPLACE(row1.GSR_Ref ,&quot;_updated&quot;,&quot;&quot;) " type="id_String" nullable="true"/>
@@ -871,17 +883,20 @@
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="product"/>
       <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sn_product"/>
+      <elementValue elementRef="VALUE" value=""/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
     <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value=" IP-VPN QoS&#xD;&#xA;Bandwidth Connect&#xD;&#xA;Bandwidth Connect (BWC)&#xD;&#xA;Bandwidth Connect-BWC&#xD;&#xA;EWL&#xD;&#xA;EWL (Ethernet wire line)&#xD;&#xA;IP-VPN QoS LLine Acc&#xD;&#xA;IP VPN&#xD;&#xA;IP VPN QoS&#xD;&#xA;IP- VPN QoS&#xD;&#xA;IP_VPN QoS&#xD;&#xA;IP-VP QoS&#xD;&#xA;IPVPN&#xD;&#xA;IP-VPN&#xD;&#xA;IPVPN Connectivity&#xD;&#xA;IP-VPN Connectivity&#xD;&#xA;IPVPN QOS&#xD;&#xA;IP-VPN QoS&#xD;&#xA;IP-VPN QoS  Back up&#xD;&#xA;IP-VPN QoS (back up)&#xD;&#xA;IP-VPN QoS (Primary)&#xD;&#xA;IP-VPN QoS Back up&#xD;&#xA;IP-VPN QoS Primary&#xD;&#xA;IPVPN Quos&#xD;&#xA;IP-VPN Quos&#xD;&#xA;IPVPNQos&#xD;&#xA;IPVPN-QoS&#xD;&#xA;IP-VPN-Qos&#xD;&#xA;Secure Internet Site Access (SISA)&#xD;&#xA;Carrier MSP&#xD;&#xA;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value=" IP-VPN QoS,IP-VPN&#xD;&#xA;Bandwidth Connect,Bandwidth Connect (BWC)&#xD;&#xA;Bandwidth Connect (BWC),Bandwidth Connect (BWC)&#xD;&#xA;Bandwidth Connect-BWC,Bandwidth Connect (BWC)&#xD;&#xA;EWL,Ethernet Wireline (EWL)&#xD;&#xA;EWL (Ethernet wire line),Ethernet Wireline (EWL)&#xD;&#xA;IP-VPN QoS LLine Acc,IP-VPN&#xD;&#xA;IP VPN,IP-VPN&#xD;&#xA;IP VPN QoS,IP-VPN&#xD;&#xA;IP- VPN QoS,IP-VPN&#xD;&#xA;IP_VPN QoS,IP-VPN&#xD;&#xA;IP-VP QoS,IP-VPN&#xD;&#xA;IPVPN,IP-VPN&#xD;&#xA;IP-VPN,IP-VPN&#xD;&#xA;IPVPN Connectivity,IP-VPN&#xD;&#xA;IP-VPN Connectivity,IP-VPN&#xD;&#xA;IPVPN QOS,IP-VPN&#xD;&#xA;IP-VPN QoS,IP-VPN&#xD;&#xA;IP-VPN QoS  Back up,IP-VPN&#xD;&#xA;IP-VPN QoS (back up),IP-VPN&#xD;&#xA;IP-VPN QoS (Primary),IP-VPN&#xD;&#xA;IP-VPN QoS Back up,IP-VPN&#xD;&#xA;IP-VPN QoS Primary,IP-VPN&#xD;&#xA;IPVPN Quos,IP-VPN&#xD;&#xA;IP-VPN Quos,IP-VPN&#xD;&#xA;IPVPNQos,IP-VPN&#xD;&#xA;IPVPN-QoS,IP-VPN&#xD;&#xA;IP-VPN-Qos,IP-VPN&#xD;&#xA;Secure Internet Site Access (SISA),SISA&#xD;&#xA;Carrier MSP,Carrier MSP&#xD;&#xA;IPVPNQos,IP-VPN&#xD;&#xA;IPVPN-QoS,IP-VPN&#xD;&#xA;IP-VPN-Qos,IP-VPN"/>
     <elementParameter field="TEXT" name="LABEL" value="product"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFixedFlowInput_2">
       <column comment="" key="false" length="50" name="product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="384">
@@ -923,6 +938,7 @@
       <column comment="" key="false" length="9" name="A_End_Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -952,6 +968,7 @@
         <mapperTableEntries name="A_End_Address" expression="processed_data.A_End_Address " type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" expression="processed_data.A_End_Country " type="id_String" nullable="true"/>
         <mapperTableEntries name="Functional_Location_ID" expression="processed_data.Functional_Location_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" expression="processed_data.sn_product " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="processed_data" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SO_Vendor_Name" type="id_String" nullable="true"/>
@@ -983,6 +1000,7 @@
         <mapperTableEntries name="Account_Id" type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1051,6 +1069,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Functional_Location_ID"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sn_product"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
@@ -1092,6 +1112,7 @@
       <column comment="" key="false" length="9" name="A_End_Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
@@ -2364,7 +2385,7 @@
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Vendor" expression="row4.Vendor " type="id_String" nullable="true"/>
@@ -2590,7 +2611,7 @@
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="Vendor" expression="row6.Vendor " type="id_String" nullable="true"/>
@@ -2841,7 +2862,7 @@
       <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="Vendor" expression="row8.Vendor " type="id_String" nullable="true"/>
@@ -3015,6 +3036,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="filedata" lineStyle="0" metaname="filedata" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tFilterRow_7">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="sn_product"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="filedata" show="false"/>
   </connection>
@@ -3023,6 +3049,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="gtoms" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="row1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="sn_product"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
@@ -3055,6 +3086,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="Status"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn_product"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="processed_data" show="false"/>
@@ -3077,6 +3111,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="europe" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="product" lineStyle="8" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="sn_product"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="product" show="false"/>
   </connection>
@@ -3119,6 +3158,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="Functional_Location_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="sn_product"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
