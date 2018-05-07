@@ -651,18 +651,18 @@
         <mapperTableEntries name="SPT__External_System_Reference_" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="GRN_processor" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="aml_npid" activateCondensedTool="true" matchingMode="FIRST_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="aml_npid" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Customer_Number" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer_Name_1" type="id_String" nullable="true"/>
         <mapperTableEntries name="PID" type="id_String" nullable="true"/>
         <mapperTableEntries name="EVO_NPID" expression="grn.NPID_ID_in_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row10" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row10" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Customer_Number" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer_Name_1" type="id_String" nullable="true"/>
         <mapperTableEntries name="PID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EVO_NPID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EVO_NPID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="copyOfgrn" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
