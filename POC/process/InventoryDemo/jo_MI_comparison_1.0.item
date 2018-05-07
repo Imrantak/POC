@@ -613,7 +613,7 @@
       <column comment="" key="false" length="2" name="Billing_Item_service_ID_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="out1.Cctid.equalsIgnoreCase(out2.Cctid)?&quot;Y&quot;:&quot;N (&quot; +out1.Cctid+&quot;&lt;->&quot;+out2.Cctid +&quot;)&quot; " type="id_String"/>
       </varTables>
@@ -624,7 +624,7 @@
         <mapperTableEntries name="Vendor" expression="out1.Vendor.equalsIgnoreCase(out2.Vendor)?&quot;Y&quot;:&quot;N (&quot; +out1.Vendor+&quot;&lt;->&quot;+out2.Vendor +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cctid" expression="circuit_check.Check(out1.Cctid, out2.Cctid!=null?out2.Cctid:&quot;&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" expression="out1.Cct_Thirdparty.equalsIgnoreCase(out2.Cct_Thirdparty)?&quot;Y&quot;:&quot;N (&quot; +out1.Cct_Thirdparty+&quot;&lt;->&quot;+out2.Cct_Thirdparty +&quot;)&quot; " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="out1.Clarify_Reference_Msp_Order.equalsIgnoreCase(out2.Clarify_Reference_Msp_Order)?&quot;Y&quot;:&quot;N (&quot; +out1.Clarify_Reference_Msp_Order+&quot;&lt;->&quot;+out2.Clarify_Reference_Msp_Order +&quot;)&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="out1.Clarify_Reference_Msp_Order.equalsIgnoreCase(out2.Clarify_Reference_Msp_Order)?&quot;Y&quot;:out1.Clarify_Reference_Msp_Order.contains(out2.Clarify_Reference_Msp_Order)?&quot;Partial match&quot;:&#xD;&#xA;&quot;N (&quot; +out1.Clarify_Reference_Msp_Order+&quot;&lt;->&quot;+out2.Clarify_Reference_Msp_Order +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_Ref" expression="out1.GSR_Ref.equalsIgnoreCase(out2.GSR_Ref)?&quot;Y&quot;:&quot;N (&quot; +out1.GSR_Ref+&quot;&lt;->&quot;+out2.GSR_Ref +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="GTOMS_Ref" expression="out1.GTOMS_Ref.equalsIgnoreCase(out2.GTOMS_Ref)?&quot;Y&quot;:&quot;N (&quot; +out1.GTOMS_Ref+&quot;&lt;->&quot;+out2.GTOMS_Ref +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Unique_SO" expression="out1.Unique_SO.equalsIgnoreCase(out2.Unique_SO)?&quot;Y&quot;:&quot;N (&quot; +out1.Unique_SO+&quot;&lt;->&quot;+out2.Unique_SO +&quot;)&quot; " type="id_String" nullable="true"/>
@@ -799,10 +799,10 @@
       <column comment="" key="false" length="-1" name="C72_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -885,10 +885,10 @@
         <mapperTableEntries name="C72_Reference" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" type="id_String" nullable="true"/>
         <mapperTableEntries name="Unique_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Line_Item" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" type="id_String" nullable="true"/>
         <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
         <mapperTableEntries name="PO_COVER" type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
