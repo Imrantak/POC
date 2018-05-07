@@ -112,6 +112,7 @@
     <routinesParameter id="_da5S8DMXEeOTIuq5eWZPow" name="TalendString"/>
     <routinesParameter id="_NhZ3QDcwEei50Npc-g0ZOA" name="DataMasking"/>
     <routinesParameter id="_NhjoQDcwEei50Npc-g0ZOA" name="DataQualityDependencies"/>
+    <routinesParameter id="_MrLmcE-FEeiFipGoF46OKg" name="circuit_check"/>
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
@@ -490,7 +491,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Vendor" expression="row2.EVO_Vendor_Number " type="id_String" nullable="true"/>
@@ -575,6 +576,8 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out3">
+      <column comment="" key="false" length="50" name="Cctid_1" nullable="true" originalDbColumnName="Cctid" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cctid_2" nullable="true" originalDbColumnName="Cctid" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="54" name="GSR_Ref_1" nullable="true" originalDbColumnName="GSR_Ref" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
         <additionalField key="Content Type" value="Nominal"/>
@@ -610,12 +613,16 @@
       <column comment="" key="false" length="2" name="Billing_Item_service_ID_flag" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="var1" expression="out1.Cctid.equalsIgnoreCase(out2.Cctid)?&quot;Y&quot;:&quot;N (&quot; +out1.Cctid+&quot;&lt;->&quot;+out2.Cctid +&quot;)&quot; " type="id_String"/>
+      </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out3">
+        <mapperTableEntries name="Cctid_1" expression="out1.Cctid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid_2" expression="out2.Cctid " type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_Ref_1" expression="out1.GSR_Ref " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" expression="out1.Vendor.equalsIgnoreCase(out2.Vendor)?&quot;Y&quot;:&quot;N (&quot; +out1.Vendor+&quot;&lt;->&quot;+out2.Vendor +&quot;)&quot; " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cctid" expression="out1.Cctid.equalsIgnoreCase(out2.Cctid)?&quot;Y&quot;:&quot;N (&quot; +out1.Cctid+&quot;&lt;->&quot;+out2.Cctid +&quot;)&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid" expression="circuit_check.Check(out1.Cctid, out2.Cctid!=null?out2.Cctid:&quot;&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" expression="out1.Cct_Thirdparty.equalsIgnoreCase(out2.Cct_Thirdparty)?&quot;Y&quot;:&quot;N (&quot; +out1.Cct_Thirdparty+&quot;&lt;->&quot;+out2.Cct_Thirdparty +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="out1.Clarify_Reference_Msp_Order.equalsIgnoreCase(out2.Clarify_Reference_Msp_Order)?&quot;Y&quot;:&quot;N (&quot; +out1.Clarify_Reference_Msp_Order+&quot;&lt;->&quot;+out2.Clarify_Reference_Msp_Order +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_Ref" expression="out1.GSR_Ref.equalsIgnoreCase(out2.GSR_Ref)?&quot;Y&quot;:&quot;N (&quot; +out1.GSR_Ref+&quot;&lt;->&quot;+out2.GSR_Ref +&quot;)&quot; " type="id_String" nullable="true"/>
@@ -927,7 +934,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="output">
         <mapperTableEntries name="GSR_Reference" expression="out3.GSR_Ref_1 " type="id_String" nullable="true"/>
@@ -948,6 +955,8 @@
         <mapperTableEntries name="Billing_Item_service_ID" expression="out3.Billing_Item_service_ID" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Cctid_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_Ref_1" type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
@@ -1202,6 +1211,12 @@
       <elementValue elementRef="TRACE_COLUMN" value="GSR_Ref_1"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Cctid_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Cctid_2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
@@ -1220,6 +1235,12 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="GSR_Reference"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Cctid_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Cctid_2"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
