@@ -592,7 +592,7 @@
         <mapperTableEntries name="Circuit_Speed" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="grn" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="grn" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Select_Operation" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" type="id_Integer" nullable="true"/>
@@ -645,7 +645,7 @@
         <mapperTableEntries name="Service_Order_Basic_Start_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Service_Order_Basic_End_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="GSR__External_System_Reference_" expression="gtoms.GSR_Ref " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS__External_System_Reference_" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="GTOMS__External_System_Reference_" expression="gtoms.GTOMS_Ref " type="id_Integer" nullable="true" operator="="/>
         <mapperTableEntries name="Mozart__External_System_Reference_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Clarify__External_System_Reference_" type="id_String" nullable="true"/>
         <mapperTableEntries name="SPT__External_System_Reference_" type="id_Integer" nullable="true"/>
@@ -665,7 +665,7 @@
         <mapperTableEntries name="EVO_NPID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="copyOfgrn" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="copyOfgrn" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Select_Operation" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="Service_Order_ID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Operation_ID" type="id_Integer" nullable="true"/>
