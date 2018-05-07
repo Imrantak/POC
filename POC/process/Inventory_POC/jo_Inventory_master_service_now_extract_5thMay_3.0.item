@@ -373,7 +373,7 @@
         <mapperTableEntries name="Circuit_Speed" expression="row3.Circuit_Speed" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" expression="row3.Customer" type="id_String" nullable="true"/>
       </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="out4" expressionFilter="Relational.ISNULL( row3.GSR_Ref)" activateExpressionFilter="true" activateColumnNameFilter="true" columnNameFilter="">
+      <outputTables sizeState="INTERMEDIATE" name="out4" activateExpressionFilter="true" activateColumnNameFilter="true" columnNameFilter="Relational.ISNULL( row3.GSR_Ref)">
         <mapperTableEntries name="GTOMS_Ref" expression="row3.GTOMS_Ref " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Product" expression="row3.Product " type="id_String" nullable="true"/>
         <mapperTableEntries name="Order_Type" expression="row3.Order_Type " type="id_String" nullable="true"/>
