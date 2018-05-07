@@ -542,7 +542,7 @@
       <column comment="" key="false" length="16" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="NCR_used">
         <mapperTableEntries name="SN_" expression="NCR.SN_ " type="id_String" nullable="true"/>
@@ -999,7 +999,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata name="Mapping">
+    <metadata connector="FLOW" name="Mapping">
       <column comment="" key="false" length="-1" name="Attribute" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Contract_no" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SLACoverage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1042,11 +1042,11 @@
         <mapperTableEntries name="Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="SupplierID" type="id_String" nullable="true"/>
         <mapperTableEntries name="POnumber" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SN" expression="row6.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="SiteID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Model" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Model" expression="row6.Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="EOL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EOL" expression="row6.eol" type="id_String" nullable="true"/>
         <mapperTableEntries name="InstanceNo" type="id_String" nullable="true"/>
         <mapperTableEntries name="ParentSerialNo" type="id_String" nullable="true"/>
         <mapperTableEntries name="AssetInstallationDate" type="id_String" nullable="true"/>
@@ -1163,6 +1163,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
+  <note opaque="true" posX="896" posY="0" sizeHeight="224" sizeWidth="224" text="use context&#xA;use "/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
