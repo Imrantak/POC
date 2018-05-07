@@ -337,7 +337,7 @@
         <mapperTableEntries name="Product" expression="row3.Product" type="id_String" nullable="true"/>
         <mapperTableEntries name="Order_Type" expression="row3.Order_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="GSOS_Ref" expression="row3.GSOS_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" expression="Relational.ISNULL(row3.GSR_Ref)?row3.GSOS_Ref:&#xD;&#xA;StringHandling.EREPLACE(row3.GSR_Ref ,&quot;_updated&quot;,&quot;&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="Relational.ISNULL(StringHandling.EREPLACE(row3.GSR_Ref ,&quot;_updated&quot;,&quot;&quot;))?row3.GSOS_Ref:&#xD;&#xA;StringHandling.EREPLACE(row3.GSR_Ref ,&quot;_updated&quot;,&quot;&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="COMS_Ref" expression="row3.COMS_Ref" type="id_String" nullable="true"/>
         <mapperTableEntries name="Msp_Order" expression="row3.Msp_Order" type="id_String" nullable="true"/>
         <mapperTableEntries name="Status" expression="row3.Status" type="id_String" nullable="true"/>
