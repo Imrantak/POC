@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_mDcSUFK-Eeiqcee2aIGzEA" name="ANIMAL_RIZZO.csv" dataPackage="_mDcSUVK-Eeiqcee2aIGzEA" Server="Localhost 127.0.0.1" FilePath="/home/amh/Dropbox/Companies/Vodafone/DataSource/2016_ANIMAL_RIZZO.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_mDcSUVK-Eeiqcee2aIGzEA" name="default" dataManager="_mDcSUFK-Eeiqcee2aIGzEA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_mDcSUlK-Eeiqcee2aIGzEA" id="_qXog0FK9Eeiqcee2aIGzEA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mDcSU1K-Eeiqcee2aIGzEA" label="SMARTS_DOMAIN" length="33" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mDcSVFK-Eeiqcee2aIGzEA" label="ROUTER_HOSTNAME" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mDcSVVK-Eeiqcee2aIGzEA" label="SUPPLIER" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mDcSVlK-Eeiqcee2aIGzEA" label="MODEL" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mDcSV1K-Eeiqcee2aIGzEA" label="IOS" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mDcSWFK-Eeiqcee2aIGzEA" label="SERIAL_NUMBER" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
