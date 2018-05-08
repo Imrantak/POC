@@ -21,7 +21,7 @@
     <contextParameter comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
     <contextParameter comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="https://vodafonedev7.service-now.com/"/>
     <contextParameter comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="talend.integration.user"/>
-    <contextParameter comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="/home/amh/Dropbox/Companies/Vodafone/DataSource/"/>
+    <contextParameter comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="/home/amh/Dropbox/Companies/Vodafone/"/>
     <contextParameter comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="local">
