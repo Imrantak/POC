@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_e76x4E-QEeiBKdkx6n_nTQ" name="RIZZO" dataPackage="_e76x4U-QEeiBKdkx6n_nTQ" Server="Localhost 127.0.0.1" FilePath="/home/amh/Dropbox/Companies/Vodafone/DataSource/SRC_RIZZO.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FooterValue="0" LimitValue="" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_e76x4U-QEeiBKdkx6n_nTQ" name="default" dataManager="_e76x4E-QEeiBKdkx6n_nTQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_e76x4k-QEeiBKdkx6n_nTQ" id="_7NQWAE-PEeiBKdkx6n_nTQ" label="Rizzo">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_e76x40-QEeiBKdkx6n_nTQ" label="Num" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_e76x5E-QEeiBKdkx6n_nTQ" label="Hostname" length="25" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_e76x5U-QEeiBKdkx6n_nTQ" label="Customer" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_e76x5k-QEeiBKdkx6n_nTQ" label="Column" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_e76x50-QEeiBKdkx6n_nTQ" label="value" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
