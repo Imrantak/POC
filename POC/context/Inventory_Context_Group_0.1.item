@@ -22,4 +22,15 @@
     <contextParameter xmi:id="_kI-82ELQEeiSc4ZVDlkk2A" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-82ULQEeiSc4ZVDlkk2A" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_uPk4AFKXEeiqcee2aIGzEA" confirmationNeeded="false" name="Local_linux">
+    <contextParameter xmi:id="_uPk4AVKXEeiqcee2aIGzEA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
+    <contextParameter xmi:id="_uPk4AlKXEeiqcee2aIGzEA" comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" type="id_String" value="talend.integration.user"/>
+    <contextParameter xmi:id="_uPk4A1KXEeiqcee2aIGzEA" comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
+    <contextParameter xmi:id="_uPlfEFKXEeiqcee2aIGzEA" comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" type="id_String" value="C:/poc_data"/>
+    <contextParameter xmi:id="_uPlfEVKXEeiqcee2aIGzEA" comment="" name="gtoms_file_name" prompt="gtoms_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uPlfElKXEeiqcee2aIGzEA" comment="" name="grn_file_name" prompt="grn_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uPlfE1KXEeiqcee2aIGzEA" comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uPlfFFKXEeiqcee2aIGzEA" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_uPlfFVKXEeiqcee2aIGzEA" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
 </xmi:XMI>
