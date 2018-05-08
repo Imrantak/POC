@@ -43,7 +43,7 @@ public class circuit_check {
 			}
 		if(match<token)
 			{
-			return "Patial Match";
+			return "Partial Match";
 			}
 		else 
 			return "N";
