@@ -631,7 +631,7 @@
         <mapperTableEntries name="OPED" expression="out2.OPED != null &amp;&amp; out1.OPED.compareTo(out2.OPED)==0?&quot;Y&quot;:&quot;N (&quot; +out1.OPED+&quot;&lt;->&quot;+out2.OPED +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_COVER" expression="out1.PO_COVER.equalsIgnoreCase(out2.PO_COVER)?&quot;Y&quot;:&quot;N (&quot; +out1.PO_COVER+&quot;&lt;->&quot;+out2.PO_COVER +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" expression="out1.AML_NPID.equalsIgnoreCase(out2.AML_NPID)?&quot;Y&quot;:&quot;N (&quot; +out1.AML_NPID+&quot;&lt;->&quot;+out2.AML_NPID +&quot;)&quot; " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Account_Id" expression="(circuit_check.isInteger(out1.Account_Id) &amp;&amp; circuit_check.isInteger(out2.Account_Id)) &amp;&amp; Integer.parseInt(out1.Account_Id)==Integer.parseInt(out2.Account_Id)?&quot;Y&quot;:&quot;N (&quot; +out1.Account_Id+&quot;&lt;->&quot;+out2.Account_Id +&quot;)&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account_Id" expression="circuit_check.isInteger(out1.Account_Id) &amp;&amp; circuit_check.isInteger(out2.Account_Id) &amp;&amp; Integer.parseInt(out1.Account_Id)==Integer.parseInt(out2.Account_Id)?&quot;Y&quot;:&quot;N (&quot; +out1.Account_Id+&quot;&lt;->&quot;+out2.Account_Id +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" expression="out1.Billing_Item_service_ID.equalsIgnoreCase(out2.Billing_Item_service_ID)?&quot;Y&quot;:&quot;N (&quot; +out1.Billing_Item_service_ID+&quot;&lt;->&quot;+out2.Billing_Item_service_ID +&quot;)&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Vendor_flag" expression="out1.Vendor.equalsIgnoreCase(out2.Vendor)?1:0 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Cctid_flag" expression="circuit_check.Check(out1.Cctid, out2.Cctid!=null?out2.Cctid:&quot;&quot;) ==&quot;Y&quot;?1:0 " type="id_Integer" nullable="true"/>
@@ -645,7 +645,7 @@
         <mapperTableEntries name="OPED_flag" expression="out2.OPED != null &amp;&amp; out1.OPED.compareTo(out2.OPED)==0?1:0" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="PO_COVER_flag" expression="out1.PO_COVER.equalsIgnoreCase(out2.PO_COVER)?1:0 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="AML_NPID_flag" expression="out1.AML_NPID.equalsIgnoreCase(out2.AML_NPID)?1:0 " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Account_Id_flag" expression="(circuit_check.isInteger(out1.Account_Id) &amp;&amp; circuit_check.isInteger(out2.Account_Id)) &amp;&amp; Integer.parseInt(out1.Account_Id)==Integer.parseInt(out2.Account_Id)?1:0 " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Account_Id_flag" expression="circuit_check.isInteger(out1.Account_Id) &amp;&amp; circuit_check.isInteger(out2.Account_Id) &amp;&amp; Integer.parseInt(out1.Account_Id)==Integer.parseInt(out2.Account_Id)?1:0 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID_flag" expression="out1.Billing_Item_service_ID.equalsIgnoreCase(out2.Billing_Item_service_ID)?1:0 " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
