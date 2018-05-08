@@ -10,6 +10,7 @@
     <contextParameter xmi:id="_kI-80kLQEeiSc4ZVDlkk2A" comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-800LQEeiSc4ZVDlkk2A" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-81ELQEeiSc4ZVDlkk2A" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_dDi-8FKZEeiqcee2aIGzEA" comment="" name="SourceDataFolder" prompt="SourceDataFolder?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_jp500DfzEeiFBblx5C46YA" confirmationNeeded="false" name="local">
     <contextParameter xmi:id="_jp500TfzEeiFBblx5C46YA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
@@ -21,6 +22,7 @@
     <contextParameter xmi:id="_kI-810LQEeiSc4ZVDlkk2A" comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-82ELQEeiSc4ZVDlkk2A" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-82ULQEeiSc4ZVDlkk2A" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_dDi-8VKZEeiqcee2aIGzEA" comment="" name="SourceDataFolder" prompt="SourceDataFolder?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_uPk4AFKXEeiqcee2aIGzEA" confirmationNeeded="false" name="Local_linux">
     <contextParameter xmi:id="_uPk4AVKXEeiqcee2aIGzEA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
@@ -32,5 +34,6 @@
     <contextParameter xmi:id="_uPlfE1KXEeiqcee2aIGzEA" comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_uPlfFFKXEeiqcee2aIGzEA" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_uPlfFVKXEeiqcee2aIGzEA" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_dDi-8lKZEeiqcee2aIGzEA" comment="" name="SourceDataFolder" prompt="SourceDataFolder?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>
