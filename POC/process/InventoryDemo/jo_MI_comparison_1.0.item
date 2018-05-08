@@ -671,8 +671,8 @@
         <mapperTableEntries name="Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_Ref" expression="out1.GSR_Ref " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="GTOMS_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Unique_SO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" expression="out1.Unique_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Line_Item" type="id_String" nullable="true"/>
         <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
         <mapperTableEntries name="PO_COVER" type="id_String" nullable="true"/>
