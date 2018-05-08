@@ -666,7 +666,7 @@
         <mapperTableEntries name="Account_Id" type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
@@ -674,8 +674,8 @@
         <mapperTableEntries name="GSR_Ref" expression="out1.GSR_Ref " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="GTOMS_Ref" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Unique_SO" expression="out1.Unique_SO " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" expression="out1.PO_Number " type="id_String" nullable="true" operator="="/>
-        <mapperTableEntries name="PO_Line_Item" expression="out1.PO_Line_Item " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
         <mapperTableEntries name="PO_COVER" type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
