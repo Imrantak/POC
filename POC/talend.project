@@ -496,8 +496,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_1QoVD0RqEei8pa3JW0NO-Q">
       <baseItem xmi:id="_1QoVEERqEei8pa3JW0NO-Q" id="_9ebpYERVEeiLvpwMbipUCQ" version="0.1" type="job"/>
-      <relatedItems xmi:id="_1QoVEURqEei8pa3JW0NO-Q" id="_lwFf4EMEEeiLjtbiC_DVNw" version="Latest" type="property"/>
-      <relatedItems xmi:id="_1QoVEkRqEei8pa3JW0NO-Q" id="_iVFakEOyEeiJ099RjA0Omg" version="Latest" type="property"/>
       <relatedItems xmi:id="_1QoVE0RqEei8pa3JW0NO-Q" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1QoVFERqEei8pa3JW0NO-Q" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1QoVFURqEei8pa3JW0NO-Q" id="TalendString" version="Latest" type="routine"/>
@@ -513,11 +511,11 @@
       <relatedItems xmi:id="_1QoVH0RqEei8pa3JW0NO-Q" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1QoVIERqEei8pa3JW0NO-Q" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1QoVIURqEei8pa3JW0NO-Q" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_1QoVIkRqEei8pa3JW0NO-Q" id="_lwFf4EMEEeiLjtbiC_DVNw - metadata" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_1QoVI0RqEei8pa3JW0NO-Q" id="_iVFakEOyEeiJ099RjA0Omg - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_86GN4FKmEeiOHKHBkABX9A" id="__OiyQEz_EeihBPD6I1_SrQ - CSV_DS3_GTOMS" version="Latest" type="schema"/>
       <relatedItems xmi:id="_iFefYFKnEeiOHKHBkABX9A" id="_zNbw0Ez_EeihBPD6I1_SrQ - CSV_DS3_GRN" version="Latest" type="schema"/>
       <relatedItems xmi:id="_iFefYVKnEeiOHKHBkABX9A" id="_2VZXkDv5EeiSndQzlxS5Cg - CSV_EVO_NPIDS_AML_NPIDS" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_MvSvgFKoEeiOHKHBkABX9A" id="_E1Du0E0AEeihBPD6I1_SrQ - CSV_DS3_BILLING" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_MvSvgVKoEeiOHKHBkABX9A" id="_reQeoEz_EeihBPD6I1_SrQ - CSV_DS3_SOVR" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_sbnVQE6gEeiqC7aFUAzi7A">
       <baseItem xmi:id="_sbnVQU6gEeiqC7aFUAzi7A" id="_8XJrMEz7Eeivhs12XqiO2A" version="1.1" type="job"/>
