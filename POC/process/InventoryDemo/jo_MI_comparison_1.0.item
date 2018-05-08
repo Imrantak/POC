@@ -666,7 +666,7 @@
         <mapperTableEntries name="Account_Id" type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" matchingMode="FIRST_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="out2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
