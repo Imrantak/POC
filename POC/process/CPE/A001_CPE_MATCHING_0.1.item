@@ -9,6 +9,7 @@
     <contextParameter comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
     <contextParameter comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="https://vodafonedev7.service-now.com/"/>
     <contextParameter comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="talend.integration.user"/>
+    <contextParameter comment="" name="SourceDataFolder" prompt="SourceDataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
     <contextParameter comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="Local_linux">
@@ -20,6 +21,7 @@
     <contextParameter comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
     <contextParameter comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="https://vodafonedev7.service-now.com/"/>
     <contextParameter comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="talend.integration.user"/>
+    <contextParameter comment="" name="SourceDataFolder" prompt="SourceDataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="/home/amh/Dropbox/Companies/Vodafone/DataSource/"/>
     <contextParameter comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="local">
@@ -31,6 +33,7 @@
     <contextParameter comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_Password" value=""/>
     <contextParameter comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="https://vodafonedev7.service-now.com/"/>
     <contextParameter comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="viral.patel2@vodafone.com"/>
+    <contextParameter comment="" name="SourceDataFolder" prompt="SourceDataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
     <contextParameter comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
   </context>
   <parameters>
@@ -146,10 +149,8 @@
   </parameters>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tyFKUE-PEeiBKdkx6n_nTQ" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/amh/Dropbox/Companies/Vodafone/DataSource/SRC_NCR_BAU.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.SourceDataFolder + &quot;SRC_NCR_BAU.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -642,10 +643,8 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_e76K0E-QEeiBKdkx6n_nTQ" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/amh/Dropbox/Companies/Vodafone/DataSource/SRC_RIZZO.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.SourceDataFolder + &quot;SRC_RIZZO.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
