@@ -496,7 +496,7 @@
       <column comment="" key="false" length="10" name="Order_status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;D:/inventory/input/CSV_DS3_GTOMS.csv&quot;"/>
@@ -674,7 +674,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
@@ -697,7 +697,7 @@
       <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="352">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -789,7 +789,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="544">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
@@ -809,7 +809,7 @@
       <column comment="" key="false" length="50" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="8" offsetLabelY="13" posX="992" posY="352">
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="8" offsetLabelY="13" posX="832" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_4" show="false"/>
     <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="||"/>
     <elementParameter field="TABLE" name="CONDITIONS"/>
@@ -885,6 +885,825 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="-9" offsetLabelY="0" posX="992" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/inventory/input/CSV_EVO_NPIDS_AML_NPIDS.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_2VZXkDv5EeiSndQzlxS5Cg - CSV_EVO_NPIDS_AML_NPIDS" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/talendstudio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Number"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Name_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EVO_NPID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Number"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Name_1"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EVO_NPID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CSV_EVO_NPIDS_AML_NPIDS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CSV_EVO_NPIDS_AML_NPIDS" name="tFileInputDelimited_4">
+      <column comment="" key="false" length="10" name="Customer_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="Customer_Name_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="EVO_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CSV_EVO_NPIDS_AML_NPIDS" name="REJECT">
+      <column comment="" key="false" length="10" name="Customer_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="Customer_Name_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="EVO_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zexacFHLEeiNO6O3Zyk5fw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out" name="copyOfrow1">
+      <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="21" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Date_Tail_Delivered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="NPID_Name_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfrow1">
+        <mapperTableEntries name="Cctid" expression="gtoms.Cctid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" expression="gtoms.Cct_Thirdparty " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="gtoms.Msp_Order " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="StringHandling.EREPLACE(gtoms.GSR_Ref ,&quot;_updated&quot;,&quot;&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="gtoms.GTOMS_Ref " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Circuit_Speed" expression="gtoms.Circuit_Speed " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product" expression="gtoms.Product " type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_City" expression="gtoms.A_End_City " type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_Country" expression="gtoms.A_End_Country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" expression="gtoms.Date_Tail_Delivered " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Description" expression="grn.Service_Notification_Description " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_ID" expression="grn.Service_Order_ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Operation_ID" expression="grn.Operation_ID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" expression="grn.Service_Order_ID + &quot;-&quot;+grn.Operation_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="grn.PO_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" expression="grn.PO_Line_Item " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OPSD" expression="grn.OPSD " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPED" expression="grn.OPED " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PO_COVER" expression="Relational.ISNULL(grn.PO_Number) ?&quot;No PO Cover&quot; : grn.PO_Number.toString()!=&quot;&quot;&amp;&amp;TalendDate.compareDate(grn.OPED,TalendDate.getCurrentDate())>0?&quot;PO Cover&quot;:grn.PO_Number.toString()==&quot;&quot;&amp;&amp;TalendDate.compareDate(grn.OPED,TalendDate.getCurrentDate())>0?&quot;Extension WIP&quot;:grn.PO_Number.toString()!=&quot;&quot;&amp;&amp;TalendDate.compareDate(grn.OPED,TalendDate.getCurrentDate())&lt;0?&quot;PO Expired&quot;:&quot;No PO Cover&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_Name_in_SO" expression="grn.NPID_Name_in_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" expression="grn.NPID_ID_in_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_ID" expression="grn.Functional_Location_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AML_NPID" expression="aml_npid.AML_NPID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Type" expression="gtoms.Order_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" expression="gtoms.Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" expression="gtoms.sn_product " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="gtoms" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="A_End_City" type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_End_City" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_End_Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSOS_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMS_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Msp_Order" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Carrier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Ordered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Circuit_Speed" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
+        <mapperTableEntries name="sn_product" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="grn" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="Select_Operation" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="Service_Order_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Operation_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Related_Operation_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Company_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Work_Center_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Work_Center_ID_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Operation_User_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Operation_User_Status_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPSD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Recurring" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Number_of_Recurring" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Vendor" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Material_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Material_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Final_Delivery" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Received_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Outstanding_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="GRN_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Traffic_Light" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reason_for_Traffic_Light" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code_Group___Coding___CWW_Prime_Product" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coding___CWW_Prime_Product_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Code_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_Name_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Main_Work_Center" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Main_Work_Center_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Maintenance_Planning_Plant" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Header_User_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Header_User_Status_Descrip" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_On" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_By" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_By__Mail_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_On" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_By" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_By__Mail_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Basic_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Basic_End_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GSR__External_System_Reference_" expression="gtoms.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS__External_System_Reference_" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Mozart__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPT__External_System_Reference_" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="GRN_processor" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="aml_npid" activateCondensedTool="true" matchingMode="FIRST_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="Customer_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Name_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EVO_NPID" expression="grn.NPID_ID_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/inventory/input/CSV_DS3_GRN.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_zNbw0Ez_EeihBPD6I1_SrQ - CSV_DS3_GRN" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/talendstudio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Select_Operation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Operation_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Related_Operation_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Company_Code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Work_Center_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Work_Center_ID_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Operation_User_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Operation_User_Status_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPSD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recurring"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Number_of_Recurring"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Vendor"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Number"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_Material_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_Material_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_Quantity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_UOM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_Final_Delivery"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Received_Quantity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Outstanding_Quantity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRN_Quantity"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Traffic_Light"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reason_for_Traffic_Light"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_Type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Functional_Location_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Functional_Location_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Group___Coding___CWW_Prime_Product"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Coding___CWW_Prime_Product_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NPID_ID_in_SO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NPID_Name_in_SO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Main_Work_Center"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Main_Work_Center_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Maintenance_Planning_Plant"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Header_User_Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Header_User_Status_Descrip"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Created_On"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Created_By"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Created_By__Mail_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Changed_On"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Changed_By"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Changed_By__Mail_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Basic_Start_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Basic_End_Date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GSR__External_System_Reference_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GTOMS__External_System_Reference_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mozart__External_System_Reference_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Clarify__External_System_Reference_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SPT__External_System_Reference_"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRN_processor"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Select_Operation"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Operation_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Related_Operation_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Company_Code"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Work_Center_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Work_Center_ID_Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Operation_User_Status"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Operation_User_Status_Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPSD"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPED"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Recurring"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Number_of_Recurring"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Vendor"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Number"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_Material_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_Material_Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_Quantity"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_UOM"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item_Final_Delivery"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Received_Quantity"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Outstanding_Quantity"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRN_Quantity"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Traffic_Light"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reason_for_Traffic_Light"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_Type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Notification_Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Functional_Location_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Functional_Location_Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Group___Coding___CWW_Prime_Product"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Coding___CWW_Prime_Product_ID"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NPID_ID_in_SO"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NPID_Name_in_SO"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Main_Work_Center"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Main_Work_Center_Description"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Maintenance_Planning_Plant"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Header_User_Status"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Header_User_Status_Descrip"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Created_On"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Created_By"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Created_By__Mail_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Changed_On"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Changed_By"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Changed_By__Mail_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Basic_Start_Date"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_Order_Basic_End_Date"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GSR__External_System_Reference_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GTOMS__External_System_Reference_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mozart__External_System_Reference_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Clarify__External_System_Reference_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SPT__External_System_Reference_"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRN_processor"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="CSV_GRN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CSV_DS3_GRN" name="tFileInputDelimited_5">
+      <column comment="" key="false" length="5" name="Select_Operation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Related_Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Company_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Work_Center_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="39" name="Work_Center_ID_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Operation_User_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Operation_User_Status_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Recurring" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Number_of_Recurring" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PO_Line_Item_Material_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="PO_Line_Item_Material_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="PO_Line_Item_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PO_Line_Item_UOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PO_Line_Item_Final_Delivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Received_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Outstanding_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="GRN_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="62" name="Reason_for_Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Service_Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Service_Notification_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Service_Notification_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Functional_Location_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Code_Group___Coding___CWW_Prime_Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Coding___CWW_Prime_Product_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Code_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="NPID_Name_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Main_Work_Center" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="Main_Work_Center_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Maintenance_Planning_Plant" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Service_Order_Header_User_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Service_Order_Header_User_Status_Descrip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Created_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Service_Order_Created_By" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Service_Order_Created_By__Mail_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Changed_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Service_Order_Changed_By" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Service_Order_Changed_By__Mail_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Basic_Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Basic_End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="GSR__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Mozart__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Clarify__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GRN_processor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="CSV_DS3_GRN" name="REJECT">
+      <column comment="" key="false" length="5" name="Select_Operation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Related_Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Company_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Work_Center_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="39" name="Work_Center_ID_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Operation_User_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Operation_User_Status_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Recurring" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Number_of_Recurring" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PO_Line_Item_Material_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="PO_Line_Item_Material_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="PO_Line_Item_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PO_Line_Item_UOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PO_Line_Item_Final_Delivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Received_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Outstanding_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="GRN_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="62" name="Reason_for_Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Service_Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Service_Notification_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Service_Notification_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Functional_Location_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Code_Group___Coding___CWW_Prime_Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Coding___CWW_Prime_Product_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Code_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="NPID_Name_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Main_Work_Center" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="Main_Work_Center_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Maintenance_Planning_Plant" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Service_Order_Header_User_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Service_Order_Header_User_Status_Descrip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Created_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Service_Order_Created_By" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Service_Order_Created_By__Mail_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Changed_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Service_Order_Changed_By" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Service_Order_Changed_By__Mail_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Basic_Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Basic_End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="GSR__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Mozart__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Clarify__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GRN_processor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_zexacFHLEeiNO6O3Zyk5fw-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="grna" name="grn">
+      <column comment="" key="false" length="5" name="Select_Operation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Related_Operation_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Company_Code" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Work_Center_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="39" name="Work_Center_ID_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Operation_User_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="Operation_User_Status_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPSD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Recurring" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Number_of_Recurring" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="PO_Line_Item_Material_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="PO_Line_Item_Material_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="PO_Line_Item_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PO_Line_Item_UOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="PO_Line_Item_Final_Delivery" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Received_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="Outstanding_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="GRN_Quantity" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="62" name="Reason_for_Traffic_Light" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Service_Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Service_Notification_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Service_Notification_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Notification_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Functional_Location_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Functional_Location_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Code_Group___Coding___CWW_Prime_Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Coding___CWW_Prime_Product_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Code_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="NPID_ID_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="NPID_Name_in_SO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Main_Work_Center" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="Main_Work_Center_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Maintenance_Planning_Plant" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Service_Order_Header_User_Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="Service_Order_Header_User_Status_Descrip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Created_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Service_Order_Created_By" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Service_Order_Created_By__Mail_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Changed_On" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Service_Order_Changed_By" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Service_Order_Changed_By__Mail_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Basic_Start_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Service_Order_Basic_End_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="GSR__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GTOMS__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Mozart__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Clarify__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SPT__External_System_Reference_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="GRN_processor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="grn" expressionFilter="(grnfiledata.Recurring.equalsIgnoreCase(&quot;MRC&quot;) &amp;&amp;  (grnfiledata.Operation_User_Status.equalsIgnoreCase(&quot;DEL&quot;) ||grnfiledata.Operation_User_Status.equalsIgnoreCase(&quot;REV&quot;)) &amp;&amp;  grnfiledata.PO_Line_Item !=0)" activateExpressionFilter="true">
+        <mapperTableEntries name="Select_Operation" expression="grnfiledata.Select_Operation" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="Service_Order_ID" expression="grnfiledata.Service_Order_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Operation_ID" expression="grnfiledata.Operation_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Related_Operation_ID" expression="grnfiledata.Related_Operation_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Company_Code" expression="grnfiledata.Company_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Work_Center_ID" expression="grnfiledata.Work_Center_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Work_Center_ID_Description" expression="grnfiledata.Work_Center_ID_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Operation_User_Status" expression="grnfiledata.Operation_User_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Operation_User_Status_Description" expression="grnfiledata.Operation_User_Status_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPSD" expression="grnfiledata.OPSD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPED" expression="grnfiledata.OPED" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Recurring" expression="grnfiledata.Recurring" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Number_of_Recurring" expression="grnfiledata.Number_of_Recurring" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Vendor" expression="grnfiledata.PO_Vendor" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="grnfiledata.PO_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" expression="grnfiledata.PO_Line_Item" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Material_ID" expression="grnfiledata.PO_Line_Item_Material_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Material_Description" expression="grnfiledata.PO_Line_Item_Material_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Quantity" expression="grnfiledata.PO_Line_Item_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_UOM" expression="grnfiledata.PO_Line_Item_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Final_Delivery" expression="grnfiledata.PO_Line_Item_Final_Delivery" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Received_Quantity" expression="grnfiledata.Received_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Outstanding_Quantity" expression="grnfiledata.Outstanding_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="GRN_Quantity" expression="grnfiledata.GRN_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Traffic_Light" expression="grnfiledata.Traffic_Light" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reason_for_Traffic_Light" expression="grnfiledata.Reason_for_Traffic_Light" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Type" expression="grnfiledata.Service_Order_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Description" expression="grnfiledata.Service_Order_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Type" expression="grnfiledata.Service_Notification_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_ID" expression="grnfiledata.Service_Notification_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Description" expression="grnfiledata.Service_Notification_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_ID" expression="grnfiledata.Functional_Location_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_Description" expression="grnfiledata.Functional_Location_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code_Group___Coding___CWW_Prime_Product" expression="grnfiledata.Code_Group___Coding___CWW_Prime_Product" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coding___CWW_Prime_Product_ID" expression="grnfiledata.Coding___CWW_Prime_Product_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Code_Description" expression="grnfiledata.Code_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" expression="grnfiledata.NPID_ID_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_Name_in_SO" expression="grnfiledata.NPID_Name_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Main_Work_Center" expression="grnfiledata.Main_Work_Center" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Main_Work_Center_Description" expression="grnfiledata.Main_Work_Center_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Maintenance_Planning_Plant" expression="grnfiledata.Maintenance_Planning_Plant" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Header_User_Status" expression="grnfiledata.Service_Order_Header_User_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Header_User_Status_Descrip" expression="grnfiledata.Service_Order_Header_User_Status_Descrip" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_On" expression="grnfiledata.Service_Order_Created_On" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_By" expression="grnfiledata.Service_Order_Created_By" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_By__Mail_" expression="grnfiledata.Service_Order_Created_By__Mail_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_On" expression="grnfiledata.Service_Order_Changed_On" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_By" expression="grnfiledata.Service_Order_Changed_By" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_By__Mail_" expression="grnfiledata.Service_Order_Changed_By__Mail_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Basic_Start_Date" expression="grnfiledata.Service_Order_Basic_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Basic_End_Date" expression="grnfiledata.Service_Order_Basic_End_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GSR__External_System_Reference_" expression="grnfiledata.GSR__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS__External_System_Reference_" expression="grnfiledata.GTOMS__External_System_Reference_" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Mozart__External_System_Reference_" expression="grnfiledata.Mozart__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify__External_System_Reference_" expression="grnfiledata.Clarify__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPT__External_System_Reference_" expression="grnfiledata.SPT__External_System_Reference_" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="GRN_processor" expression="grnfiledata.GRN_processor" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="grnfiledata" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Select_Operation" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="Service_Order_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Operation_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Related_Operation_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Company_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Work_Center_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Work_Center_ID_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Operation_User_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Operation_User_Status_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPSD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Recurring" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Number_of_Recurring" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Vendor" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Material_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Material_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item_Final_Delivery" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Received_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Outstanding_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="GRN_Quantity" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Traffic_Light" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reason_for_Traffic_Light" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Code_Group___Coding___CWW_Prime_Product" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coding___CWW_Prime_Product_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Code_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_Name_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Main_Work_Center" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Main_Work_Center_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Maintenance_Planning_Plant" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Header_User_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Header_User_Status_Descrip" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_On" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_By" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Created_By__Mail_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_On" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_By" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Changed_By__Mail_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Basic_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Order_Basic_End_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GSR__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS__External_System_Reference_" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Mozart__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify__External_System_Reference_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SPT__External_System_Reference_" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="GRN_processor" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -905,29 +1724,35 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
-        <mapperTableEntries name="GTOMS_Ref" expression="row4.GTOMS_Ref " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" expression="row4.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="copyOfrow1.GTOMS_Ref" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="copyOfrow1.GSR_Ref" type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="A_End_City" type="id_String" nullable="true"/>
-        <mapperTableEntries name="A_End_Country" type="id_String" nullable="true"/>
-        <mapperTableEntries name="B_End_City" type="id_String" nullable="true"/>
-        <mapperTableEntries name="B_End_Country" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Product" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Order_Type" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSOS_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="COMS_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Msp_Order" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Carrier" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Ordered" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="Date_Tail_Delivered" type="id_Date" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="copyOfrow1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
         <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Circuit_Speed" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product" type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_City" type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Service_Notification_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Service_Order_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Operation_ID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="OPSD" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PO_COVER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_Name_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID_ID_in_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Functional_Location_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
         <mapperTableEntries name="sn_product" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -1029,9 +1854,25 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="europe" show="false"/>
   </connection>
-  <connection connectorName="FILTER" label="row4" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_4" target="tMap_3">
+  <connection connectorName="FILTER" label="gtoms" lineStyle="0" metaname="tFilterRow_4" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_4" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="gtoms" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="aml_npid" lineStyle="8" metaname="tFileInputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_4" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="aml_npid" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfrow1" lineStyle="0" metaname="copyOfrow1" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfrow1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="grnfiledata" lineStyle="0" metaname="tFileInputDelimited_5" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_5" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="grnfiledata" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="grn" lineStyle="8" metaname="grn" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="grn" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tFileOutputExcel_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
