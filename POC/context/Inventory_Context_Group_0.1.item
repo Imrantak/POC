@@ -34,6 +34,6 @@
     <contextParameter xmi:id="_uPlfE1KXEeiqcee2aIGzEA" comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_uPlfFFKXEeiqcee2aIGzEA" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_uPlfFVKXEeiqcee2aIGzEA" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_dDi-8lKZEeiqcee2aIGzEA" comment="" name="SourceDataFolder" prompt="SourceDataFolder?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_dDi-8lKZEeiqcee2aIGzEA" comment="" name="SourceDataFolder" prompt="SourceDataFolder?" promptNeeded="false" type="id_String" value="/home/amh/Dropbox/Companies/Vodafone/DataSource/"/>
   </talendfile:ContextType>
 </xmi:XMI>
