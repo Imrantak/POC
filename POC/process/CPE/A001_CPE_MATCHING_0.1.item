@@ -432,7 +432,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="New_renewal_amount"/>
       <elementValue elementRef="EMPTY_NULL" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="SchemaCompliance"/>
+    <elementParameter field="TEXT" name="LABEL" value="SchemaComplianceCheck"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="NCR_BAU.xlsx" name="tSchemaComplianceCheck_5">
       <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -773,7 +773,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
       <elementValue elementRef="EMPTY_NULL" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="SchemaCompliance"/>
+    <elementParameter field="TEXT" name="LABEL" value="SchemaComplianceCheck"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Rizzo" name="tSchemaComplianceCheck_1">
       <column comment="" key="false" length="2" name="Num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -822,7 +822,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SchemaNotCompliance"/>
+    <elementParameter field="TEXT" name="LABEL" value="SchemaNotCompliant"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Rizzo" name="tFileOutputDelimited_1">
       <column comment="" key="false" length="2" name="Num" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
