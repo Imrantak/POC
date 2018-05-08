@@ -674,8 +674,8 @@
         <mapperTableEntries name="GSR_Ref" expression="out1.GSR_Ref " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="GTOMS_Ref" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Unique_SO" expression="out1.Unique_SO " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Line_Item" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="out1.PO_Number " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="PO_Line_Item" expression="out1.PO_Line_Item " type="id_String" nullable="true"/>
         <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
         <mapperTableEntries name="PO_COVER" type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
@@ -931,7 +931,7 @@
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="output">
         <mapperTableEntries name="GSR_Reference" expression="out3.GSR_Ref_1 " type="id_String" nullable="true"/>
