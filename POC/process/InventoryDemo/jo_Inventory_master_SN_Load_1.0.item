@@ -383,7 +383,7 @@
         <mapperTableEntries name="u_unique_so" expression="row4.Unique_SO " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_po_number" expression="row4.PO_Number " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_po_line" expression="row4.PO_Line_Item " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="u_bill_oped" expression="TalendDate.formatDate(&quot;dd-MM-yyyy&quot;, row4.OPED) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="u_bill_oped" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;, row4.OPED) " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_po_status" expression="row4.PO_COVER " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_functional_location" expression="row4.Functional_Location_ID " type="id_String" nullable="true"/>
         <mapperTableEntries name="u_vendor_number" expression="row4.Vendor " type="id_String" nullable="true"/>
