@@ -838,7 +838,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="32">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -901,7 +901,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="NOT_FOUND"/>
+    <elementParameter field="TEXT" name="LABEL" value="NOT_FOUND1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputExcel_2">
       <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -923,7 +923,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
+  <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tReplicate_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tReplicate_1">
@@ -946,7 +946,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="256">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -1031,7 +1031,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="448">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1121,7 +1121,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="448">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_3" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -1150,7 +1150,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="RESULTS_MAPPING"/>
+    <elementParameter field="TEXT" name="LABEL" value="RESULTS_MAPPING1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputDelimited_3">
       <column comment="" key="false" length="-1" name="Attribute" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1178,6 +1178,405 @@
       <column comment="" key="false" length="-1" name="CustomerNPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustomerBillingAccountNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_vk5oQE-OEeiBKdkx6n_nTQ-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="MATCH">
+      <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Model" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="eol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="eol_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="Renewal_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Coverage" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Site_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="43" name="Site_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="Site_Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ServiceID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Location_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="Previous_PO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="28" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="MATCH">
+        <mapperTableEntries name="SN_" expression="row7.SN_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Model" expression="row7.Model " type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol" expression="row7.eol " type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" expression="row7.eol_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Maintenance_value" expression="row7.Maintenance_value " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Renewal_Date" expression="row7.Renewal_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SLA" expression="row7.SLA " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coverage" expression="row7.Coverage " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_ID" expression="row7.Site_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Name" expression="row7.Site_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Address" expression="row7.Site_Address " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ServiceID" expression="row7.ServiceID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Location_A" expression="row7.Location_A " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Previous_PO" expression="row7.Previous_PO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Prorated_Date" expression="row7.Prorated_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="New_renewal_amount" expression="row7.New_renewal_amount " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Customer" expression="row9.SMARTS_DOMAIN" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Model" type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol" type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Maintenance_value" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Renewal_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SLA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coverage" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ServiceID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Location_A" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Previous_PO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="New_renewal_amount" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row9" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="SMARTS_DOMAIN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ROUTER_HOSTNAME" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SUPPLIER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MODEL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IOS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SERIAL_NUMBER" expression="row7.SN_ " type="id_String" operator="="/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_vk5oQE-OEeiBKdkx6n_nTQ-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfMapping">
+      <column comment="" key="false" length="-1" name="Attribute" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Contract_no" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLACoverage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherInventoryID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Warrantystartdate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WarrantyEnddate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MaintenanceStartDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SoftwareTypeVersion" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LicenseType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SupplierID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POnumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SiteID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EOL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InstanceNo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ParentSerialNo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AssetInstallationDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GlobalSrvReference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingLineItem" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CustomerNPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CustomerBillingAccountNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfMapping">
+        <mapperTableEntries name="Attribute" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Contract_no" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SLACoverage" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OtherInventoryID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warrantystartdate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WarrantyEnddate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MaintenanceStartDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SoftwareTypeVersion" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LicenseType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SupplierID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="POnumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SN" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SiteID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Model" expression="MATCH.Model" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EOL" expression="MATCH.eol" type="id_String" nullable="true"/>
+        <mapperTableEntries name="InstanceNo" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ParentSerialNo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AssetInstallationDate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GlobalSrvReference" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BillingLineItem" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerNPID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerBillingAccountNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContractNumber" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="MATCH" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Model" type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol" type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Maintenance_value" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Renewal_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SLA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coverage" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ServiceID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Location_A" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Previous_PO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="New_renewal_amount" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_4" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.DataFolder + &quot;/DataTarget/Results.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="RESULTS_MAPPING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_4">
+      <column comment="" key="false" length="-1" name="Attribute" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Contract_no" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLACoverage" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OtherInventoryID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Warrantystartdate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WarrantyEnddate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MaintenanceStartDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SoftwareTypeVersion" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LicenseType" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SupplierID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POnumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SN" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SiteID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EOL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InstanceNo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ParentSerialNo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AssetInstallationDate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GlobalSrvReference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BillingLineItem" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CustomerNPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CustomerBillingAccountNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="0" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mDZ2EFK-Eeiqcee2aIGzEA" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/amh/Dropbox/Companies/Vodafone/DataSource/2016_ANIMAL_RIZZO.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_mDZ2EFK-Eeiqcee2aIGzEA - metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_mDZ2EFK-Eeiqcee2aIGzEA - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;/home/amh/Dropbox/Companies/Vodafone/RemoteWorkspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SMARTS_DOMAIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROUTER_HOSTNAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUPPLIER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IOS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIAL_NUMBER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SMARTS_DOMAIN"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROUTER_HOSTNAME"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUPPLIER"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODEL"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IOS"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIAL_NUMBER"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="ANIMAL_RIZZO.csv"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="33" name="SMARTS_DOMAIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="ROUTER_HOSTNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="SUPPLIER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="MODEL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="IOS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="SERIAL_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="33" name="SMARTS_DOMAIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="ROUTER_HOSTNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="SUPPLIER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="MODEL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="IOS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="SERIAL_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_2" show="false"/>
+    <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
+    <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
+    <elementParameter field="TABLE" name="CHECKCOLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SMARTS_DOMAIN"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROUTER_HOSTNAME"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUPPLIER"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODEL"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IOS"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIAL_NUMBER"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema." show="false"/>
+    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema" show="false"/>
+    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
+    <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#xA;(1) Type discrepancy (include wrong date pattern): 2&#xA;(2) Empty or NULL: 4&#xA;(3) Length/Precision Error: 8"/>
+    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
+    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EMPTY_IS_NULL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
+    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SMARTS_DOMAIN"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROUTER_HOSTNAME"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUPPLIER"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODEL"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IOS"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERIAL_NUMBER"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tSchemaComplianceCheck_2">
+      <column comment="" key="false" length="33" name="SMARTS_DOMAIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="ROUTER_HOSTNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="SUPPLIER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="MODEL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="IOS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="SERIAL_NUMBER" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OTHER" name="OTHER"/>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="33" name="SMARTS_DOMAIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="24" name="ROUTER_HOSTNAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="SUPPLIER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="MODEL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="IOS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="SERIAL_NUMBER" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tSchemaComplianceCheck_5">
@@ -1267,6 +1666,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tFileOutputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputExcel_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tReplicate_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tReplicate_1" target="tFileOutputExcel_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
@@ -1278,6 +1681,22 @@
   <connection connectorName="FLOW" label="Mapping" lineStyle="0" metaname="Mapping" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Mapping" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="MATCH" lineStyle="0" metaname="MATCH" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="MATCH" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfMapping" lineStyle="0" metaname="copyOfMapping" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tFileOutputDelimited_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfMapping" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tSchemaComplianceCheck_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tSchemaComplianceCheck_2" offsetLabelX="0" offsetLabelY="0" source="tSchemaComplianceCheck_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
