@@ -22,8 +22,8 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ow2yYlOQEei0dpJ9XJkirw" id="_kiJLsFOPEei0dpJ9XJkirw" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yY1OQEei0dpJ9XJkirw" label="SN_" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZFOQEei0dpJ9XJkirw" label="Model" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZVOQEei0dpJ9XJkirw" label="Maintenance_value" length="7" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZlOQEei0dpJ9XJkirw" label="NPID" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZVOQEei0dpJ9XJkirw" label="Maintenance_value" length="-1" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZlOQEei0dpJ9XJkirw" label="NPID" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZ1OQEei0dpJ9XJkirw" label="PO_Type" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yaFOQEei0dpJ9XJkirw" label="Renewal_Date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yaVOQEei0dpJ9XJkirw" label="Equipment___EoL" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
@@ -33,8 +33,8 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ybVOQEei0dpJ9XJkirw" label="Site_Name" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yblOQEei0dpJ9XJkirw" label="Site_Address" length="172" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yb1OQEei0dpJ9XJkirw" label="Prorated_Date" length="44" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ycFOQEei0dpJ9XJkirw" label="Renew_before_30_APR_2017" length="18" precision="15" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ycVOQEei0dpJ9XJkirw" label="Renew_after_30_APR_2017" length="18" precision="15" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ycFOQEei0dpJ9XJkirw" label="Renew_before_30_APR_2017" length="-1" precision="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ycVOQEei0dpJ9XJkirw" label="Renew_after_30_APR_2017" length="-1" precision="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yclOQEei0dpJ9XJkirw" label="Column15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
