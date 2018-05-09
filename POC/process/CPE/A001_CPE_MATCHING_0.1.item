@@ -37,7 +37,7 @@
     <contextParameter comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="224" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -4175,7 +4175,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfcopyOfcopyOfMapping" show="false"/>
   </connection>
-  <note opaque="true" posX="0" posY="896" sizeHeight="225" sizeWidth="225" text="all columns in source trimmed&#xA;&#xA;all network data without SN is rejected&#xA;"/>
+  <note opaque="true" posX="-96" posY="928" sizeHeight="225" sizeWidth="225" text="all columns in source trimmed&#xA;&#xA;all network data without SN is rejected&#xA;"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
