@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendMetadata:DelimitedFileConnection xmi:id="_t0kPwFODEeir1LPP4jZHSw" name="HDSUMMARY" dataPackage="_t0kPwVODEeir1LPP4jZHSw" Server="Localhost 127.0.0.1" FilePath="/home/amh/Dropbox/Companies/Vodafone/DataSource/2017_hwsummary.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma" splitRecord="true"/>
+  <TalendMetadata:DelimitedFileConnection xmi:id="_t0kPwFODEeir1LPP4jZHSw" name="HDSUMMARY" dataPackage="_t0kPwVODEeir1LPP4jZHSw _c2004FOGEeir1LPP4jZHSw" Server="Localhost 127.0.0.1" FilePath="/home/amh/Dropbox/Companies/Vodafone/DataSource/2017_hwsummary.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma" splitRecord="true"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_t0kPwVODEeir1LPP4jZHSw" name="default" dataManager="_t0kPwFODEeir1LPP4jZHSw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_t0kPwlODEeir1LPP4jZHSw" id="_SoLW8FODEeir1LPP4jZHSw" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPw1ODEeir1LPP4jZHSw" label="THUS_QUBIC_LTD_NGN01" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
@@ -11,6 +11,18 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPyFODEeir1LPP4jZHSw" label="_0_237_220_182" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPyVODEeir1LPP4jZHSw" label="LBADVA71160400897" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPylODEeir1LPP4jZHSw" label="Column7" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_c2004FOGEeir1LPP4jZHSw" name="default" dataManager="_t0kPwFODEeir1LPP4jZHSw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_c2004VOGEeir1LPP4jZHSw" id="_Y5s4AFOGEeir1LPP4jZHSw" label="metadata1">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c2004lOGEeir1LPP4jZHSw" label="SMARTS_DOMAIN" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c20041OGEeir1LPP4jZHSw" label="HOSTNAME" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c2005FOGEeir1LPP4jZHSw" label="TYPE" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c2005VOGEeir1LPP4jZHSw" label="MODEL" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c2005lOGEeir1LPP4jZHSw" label="SOFTWARE_VERSION" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c20051OGEeir1LPP4jZHSw" label="IP_ADDRESS" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c2006FOGEeir1LPP4jZHSw" label="SERIAL_NUMBER" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_c2006VOGEeir1LPP4jZHSw" label="Column7" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>
