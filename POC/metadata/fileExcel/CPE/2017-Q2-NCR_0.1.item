@@ -32,7 +32,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ybFOQEei0dpJ9XJkirw" label="Coverage" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ybVOQEei0dpJ9XJkirw" label="Site_Name" length="39" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yblOQEei0dpJ9XJkirw" label="Site_Address" length="172" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yb1OQEei0dpJ9XJkirw" label="Prorated_Date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yb1OQEei0dpJ9XJkirw" label="Prorated_Date" length="44" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ycFOQEei0dpJ9XJkirw" label="Renew_before_30_APR_2017" length="18" precision="15" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2ycVOQEei0dpJ9XJkirw" label="Renew_after_30_APR_2017" length="18" precision="15" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yclOQEei0dpJ9XJkirw" label="Column15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
