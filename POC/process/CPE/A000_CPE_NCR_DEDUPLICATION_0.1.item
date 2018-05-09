@@ -765,7 +765,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
-        <mapperTableEntries name="SN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SN" expression="row3.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="FileName" expression="&quot;2017-Q4-NCR&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
