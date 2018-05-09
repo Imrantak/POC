@@ -223,7 +223,7 @@
       <column comment="" key="false" length="-1" name="FileName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="SN" expression="row11.SN " type="id_String" nullable="true"/>
@@ -234,7 +234,7 @@
         <mapperTableEntries name="SN" type="id_String" nullable="true"/>
         <mapperTableEntries name="Count" type="id_Integer" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row12" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row12" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SN" expression="row11.SN " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="FileName" type="id_String" nullable="true"/>
       </inputTables>
