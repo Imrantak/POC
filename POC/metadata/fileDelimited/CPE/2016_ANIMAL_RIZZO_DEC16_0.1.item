@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_q_hGkFLFEeiqcee2aIGzEA" name="2016_ANIMAL_RIZZO_DEC16" dataPackage="_q_hGkVLFEeiqcee2aIGzEA" Server="Localhost 127.0.0.1" FilePath="/home/amh/Dropbox/Companies/Vodafone/DataSource/2016_ANIMAL_RIZZO_DEC16.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_q_hGkVLFEeiqcee2aIGzEA" name="default" dataManager="_q_hGkFLFEeiqcee2aIGzEA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_q_hGklLFEeiqcee2aIGzEA" id="_SHxw8FLFEeiqcee2aIGzEA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_q_hGk1LFEeiqcee2aIGzEA" label="SMARTS_DOMAIN" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_q_hGlFLFEeiqcee2aIGzEA" label="ROUTER_HOSTNAME" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_q_hGlVLFEeiqcee2aIGzEA" label="DESCRIPTION" length="83" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_q_hGllLFEeiqcee2aIGzEA" label="MODEL" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_q_hGl1LFEeiqcee2aIGzEA" label="SERIAL_NUMBER" length="24" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_q_hGmFLFEeiqcee2aIGzEA" label="DATE_COLLECTED" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
