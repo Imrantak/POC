@@ -38,7 +38,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kL1OTEeiLrKqt0XAikA" label="ServiceID" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kMFOTEeiLrKqt0XAikA" label="LocationA" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kMVOTEeiLrKqt0XAikA" label="Previous_POs" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kMlOTEeiLrKqt0XAikA" label="Prorated_Date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kMlOTEeiLrKqt0XAikA" label="Prorated_Date" length="44" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kM1OTEeiLrKqt0XAikA" label="New_renewal_amount" length="18" precision="14" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kNFOTEeiLrKqt0XAikA" label="Found_during_cleanse" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kNVOTEeiLrKqt0XAikA" label="Searched_not_found" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
