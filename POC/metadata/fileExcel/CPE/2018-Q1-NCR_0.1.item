@@ -24,7 +24,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lFFOVEeiLrKqt0XAikA" label="Model" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lFVOVEeiLrKqt0XAikA" label="eol" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lFlOVEeiLrKqt0XAikA" label="eol_date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lF1OVEeiLrKqt0XAikA" label="Maintenance_value" length="7" precision="4" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lF1OVEeiLrKqt0XAikA" label="Maintenance_value" length="-1" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lGFOVEeiLrKqt0XAikA" label="Renewal_Date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lGVOVEeiLrKqt0XAikA" label="SLA" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lGlOVEeiLrKqt0XAikA" label="Coverage" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
@@ -35,7 +35,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lH1OVEeiLrKqt0XAikA" label="Location_A" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lIFOVEeiLrKqt0XAikA" label="Previous_PO" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lIVOVEeiLrKqt0XAikA" label="Prorated_Date" length="44" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lIlOVEeiLrKqt0XAikA" label="New_renewal_amount" length="16" precision="13" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_R51lIlOVEeiLrKqt0XAikA" label="New_renewal_amount" length="-1" precision="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>
