@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_t0kPwFODEeir1LPP4jZHSw" name="hwsummary" dataPackage="_t0kPwVODEeir1LPP4jZHSw" Server="Localhost 127.0.0.1" FilePath="/home/amh/Dropbox/Companies/Vodafone/DataSource/2017_hwsummary.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_t0kPwVODEeir1LPP4jZHSw" name="default" dataManager="_t0kPwFODEeir1LPP4jZHSw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_t0kPwlODEeir1LPP4jZHSw" id="_SoLW8FODEeir1LPP4jZHSw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPw1ODEeir1LPP4jZHSw" label="THUS_QUBIC_LTD_NGN01" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPxFODEeir1LPP4jZHSw" label="zodia_iwc_g3_a825" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPxVODEeir1LPP4jZHSw" label="adva" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPxlODEeir1LPP4jZHSw" label="FSP150CC_825" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPx1ODEeir1LPP4jZHSw" label="__1_6_406" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPyFODEeir1LPP4jZHSw" label="_0_237_220_182" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPyVODEeir1LPP4jZHSw" label="LBADVA71160400897" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_t0kPylODEeir1LPP4jZHSw" label="Column7" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
