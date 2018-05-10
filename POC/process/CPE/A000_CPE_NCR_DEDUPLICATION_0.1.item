@@ -1472,7 +1472,7 @@
       <outputTables sizeState="INTERMEDIATE" name="oius">
         <mapperTableEntries name="SN" expression="row15.SN" type="id_String" nullable="true"/>
         <mapperTableEntries name="FileNames" expression="row15.FileName " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Count" expression="row15.Count" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Count" expression="row15.Count.toString() " type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA" expression="row15.SLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" expression="row15.Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="row15.Site_Address" type="id_String" nullable="true"/>
