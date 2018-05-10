@@ -314,7 +314,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="Model"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="eol"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
@@ -329,62 +329,62 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="Maintenance_value"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Renewal_Date"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SLA"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Coverage"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Site_ID"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Site_Name"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Site_Address"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ServiceID"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Location_A"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Previous_PO"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Prorated_Date"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="New_renewal_amount"/>
       <elementValue elementRef="SELECTED_TYPE" value="String"/>
       <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="NULLABLE" value="true"/>
       <elementValue elementRef="MAX_LENGTH" value="false"/>
     </elementParameter>
     <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema."/>
@@ -578,7 +578,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="NCR_used">
         <mapperTableEntries name="SN_" expression="NCR.SN_ " type="id_String" nullable="true"/>
@@ -1233,7 +1233,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="MATCH">
         <mapperTableEntries name="SN_" expression="row7.SN_ " type="id_String" nullable="true"/>
@@ -1862,7 +1862,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="MATCH3">
         <mapperTableEntries name="SN_" expression="row13.SN_" type="id_String" nullable="true"/>
@@ -2573,7 +2573,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfMATCH3">
         <mapperTableEntries name="SN_" expression="Notfound.SN_" type="id_String" nullable="true"/>
@@ -3278,7 +3278,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfMATCH3">
         <mapperTableEntries name="SN_" expression="row29.SN_" type="id_String" nullable="true"/>
