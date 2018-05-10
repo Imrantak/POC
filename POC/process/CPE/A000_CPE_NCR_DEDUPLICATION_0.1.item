@@ -1384,6 +1384,12 @@
       <elementValue elementRef="INPUT_COLUMN" value="FileName"/>
       <elementValue elementRef="DELIMITER" value="&quot;;&quot;"/>
       <elementValue elementRef="MERGE" value="false"/>
+      <elementValue elementRef="INPUT_COLUMN" value="SLA"/>
+      <elementValue elementRef="DELIMITER" value="&quot;;&quot;"/>
+      <elementValue elementRef="MERGE" value="false"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Site_Address"/>
+      <elementValue elementRef="DELIMITER" value="&quot;;&quot;"/>
+      <elementValue elementRef="MERGE" value="false"/>
     </elementParameter>
     <elementParameter field="LABEL" name="NOTE" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
