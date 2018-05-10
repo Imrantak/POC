@@ -22,7 +22,7 @@
     <contextParameter xmi:id="_kI-810LQEeiSc4ZVDlkk2A" comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-82ELQEeiSc4ZVDlkk2A" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-82ULQEeiSc4ZVDlkk2A" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_dDi-8VKZEeiqcee2aIGzEA" comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_dDi-8VKZEeiqcee2aIGzEA" comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" type="id_String" value="C:/Vodafone/"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_uPk4AFKXEeiqcee2aIGzEA" confirmationNeeded="false" name="Local_linux">
     <contextParameter xmi:id="_uPk4AVKXEeiqcee2aIGzEA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
