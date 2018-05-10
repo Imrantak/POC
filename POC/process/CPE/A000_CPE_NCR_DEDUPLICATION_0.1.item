@@ -1478,21 +1478,21 @@
         <mapperTableEntries name="Site_Address" expression="row5.Site_Address" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="OUTTT">
-        <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Model" type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol" type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Maintenance_value" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Renewal_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SLA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Coverage" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SN_" expression="row5.SN_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Model" expression="row5.Model" type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol" expression="row5.Equipment___EoL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" expression="row5.Equipment___EoL_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Maintenance_value" expression="row5.Maintenance_value" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Renewal_Date" expression="row5.Renewal_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SLA" expression="row5.SLA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coverage" expression="row5.Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Site_Name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Site_Address" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ServiceID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Name" expression="row5.Site_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Address" expression="row5.Site_Address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ServiceID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Location_A" type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Prorated_Date" expression="row5.Prorated_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
