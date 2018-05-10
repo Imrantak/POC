@@ -1453,7 +1453,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="ee">
-        <mapperTableEntries name="SN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SN" expression="row5.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="FileName" expression="row5.FIleName" type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA" expression="row5.SLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" expression="row5.Coverage" type="id_String" nullable="true"/>
