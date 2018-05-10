@@ -27,7 +27,7 @@
   <context confirmationNeeded="false" name="local">
     <contextParameter comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
     <contextParameter comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
-    <contextParameter comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
+    <contextParameter comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="C:/Vodafone/"/>
     <contextParameter comment="" name="grn_file_name" prompt="grn_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
     <contextParameter comment="" name="gtoms_file_name" prompt="gtoms_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
     <contextParameter comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="C:/poc_data"/>
@@ -1532,7 +1532,7 @@
       <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfMapping">
         <mapperTableEntries name="Attribute" type="id_String" nullable="true"/>
@@ -2328,7 +2328,7 @@
       <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfMapping">
         <mapperTableEntries name="Attribute" type="id_String" nullable="true"/>
@@ -2878,7 +2878,7 @@
       <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfMapping">
         <mapperTableEntries name="Attribute" type="id_String" nullable="true"/>
@@ -3278,7 +3278,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfMATCH3">
         <mapperTableEntries name="SN_" expression="row29.SN_" type="id_String" nullable="true"/>
@@ -3738,7 +3738,7 @@
       <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfcopyOfMapping">
         <mapperTableEntries name="Attribute" type="id_String" nullable="true"/>
