@@ -346,7 +346,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="dd" activateCondensedTool="true" rejectInnerJoin="true">
+      <outputTables sizeState="INTERMEDIATE" name="dd" activateCondensedTool="true">
         <mapperTableEntries name="SN_" expression="row4.SN_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row4.Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="row4.eol" type="id_String" nullable="true"/>
@@ -382,7 +382,7 @@
         <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row31" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row31" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="SN" expression="row4.SLA " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="FileNames" type="id_String" nullable="true"/>
         <mapperTableEntries name="Count" type="id_String" nullable="true"/>
