@@ -535,7 +535,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out" expressionFilter="row2.STANDARDIZED_FIELD !=&quot;&quot;" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="out" expressionFilter="row2.STANDARDIZED_FIELD != null" activateExpressionFilter="true">
         <mapperTableEntries name="STANDARDIZED_FIELD" expression="row2.STANDARDIZED_FIELD" type="id_String" nullable="true"/>
         <mapperTableEntries name="GTOMS_Ref" expression="row2.GTOMS_Ref" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Product" expression="row2.Product" type="id_String" nullable="true"/>
