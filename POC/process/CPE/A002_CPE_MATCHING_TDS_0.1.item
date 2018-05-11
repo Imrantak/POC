@@ -741,7 +741,7 @@
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="NCR_used">
         <mapperTableEntries name="SN_" expression="NCR.SN_ " type="id_String" nullable="true"/>
@@ -799,12 +799,12 @@
         <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="RIZZO" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="RIZZO" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Num" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Hostname" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
         <mapperTableEntries name="Column" type="id_String" nullable="true"/>
-        <mapperTableEntries name="value" type="id_String" nullable="true"/>
+        <mapperTableEntries name="value" expression="NCR.SN_ " type="id_String" nullable="true" operator="="/>
       </inputTables>
     </nodeData>
   </node>
