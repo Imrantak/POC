@@ -27,7 +27,7 @@
   <context confirmationNeeded="false" name="local">
     <contextParameter comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
     <contextParameter comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
-    <contextParameter comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
+    <contextParameter comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="C:/Vodafone/"/>
     <contextParameter comment="" name="grn_file_name" prompt="grn_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
     <contextParameter comment="" name="gtoms_file_name" prompt="gtoms_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
     <contextParameter comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="C:/poc_data"/>
@@ -38,7 +38,7 @@
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="96" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -147,7 +147,7 @@
     <routinesParameter id="_NhQGQDcwEei50Npc-g0ZOA" name="TalendStringUtil"/>
     <routinesParameter id="_NhKmsDcwEei50Npc-g0ZOA" name="TalendString"/>
   </parameters>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;DataSource/NCR/2017-Q2 BAU Renewals NCR split details(Q2 2017).xlsx&quot;"/>
@@ -301,7 +301,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -313,7 +313,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="d">
+    <metadata connector="FLOW" name="q2_2017_in">
       <column comment="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -331,9 +331,9 @@
       <column comment="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="d">
+      <outputTables sizeState="INTERMEDIATE" name="q2_2017_in">
         <mapperTableEntries name="SN_" expression="row1.SN_" type="id_String"/>
         <mapperTableEntries name="Model" expression="row1.Model" type="id_String"/>
         <mapperTableEntries name="Maintenance_value" expression="row1.Maintenance_value" type="id_String"/>
@@ -370,7 +370,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
+  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataprepRun_1" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://tdp.eu.cloud.talend.com/&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;viral.patel@eval8082.talend.com&quot;"/>
@@ -384,26 +384,27 @@
     <elementParameter field="TEXT" name="PREPARATION_VERSION" value="&quot;Current state&quot;" show="false"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
     <elementParameter field="TEXT" name="LIMIT_PREVIEW" value="1000"/>
+    <elementParameter field="TEXT" name="LABEL" value="2017-Q2-NCR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDataprepRun_1">
-      <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renew_before_30_APR_2017" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renew_before_30_APR_2017" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="64">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -462,6 +463,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="2017-Q2-NCR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputExcel_1">
       <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -481,7 +483,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;DataSource/NCR/2017-Q3 BAU Renewals Q3 NCR VGE.XLSX&quot;"/>
@@ -494,6 +496,8 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_tyFKUE-PEeiBKdkx6n_nTQ - NCR_BAU.xlsx" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_tyFKUE-PEeiBKdkx6n_nTQ - NCR_BAU.xlsx" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -599,7 +603,7 @@
       <column comment="" key="false" length="30" name="Model" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="eol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="eol_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Renewal_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="Coverage" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -610,14 +614,14 @@
       <column comment="" key="false" length="14" name="Location_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Previous_PO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="44" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="NCR_BAU.xlsx" name="REJECT">
       <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Model" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="eol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="eol_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Renewal_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="Coverage" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -628,12 +632,12 @@
       <column comment="" key="false" length="14" name="Location_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Previous_PO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="44" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -645,53 +649,53 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="ee">
-      <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_value_NCR_BAU" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_Note" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Entitlement_Note" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_ID" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Service_ID" nullable="false" originalDbColumnName="0015" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Location_A" nullable="false" originalDbColumnName="0016" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Previous_POs" nullable="false" originalDbColumnName="0017" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="New_Renew_before_01_Jul_2017" nullable="false" originalDbColumnName="0019" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="New_Renew_after_01_Jul_2017" nullable="false" originalDbColumnName="0020" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="q3_2017_in">
+      <column comment="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value_NCR_BAU" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_Note" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Entitlement_Note" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_ID" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Service_ID" nullable="false" originalDbColumnName="0015" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Location_A" nullable="false" originalDbColumnName="0016" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Previous_POs" nullable="false" originalDbColumnName="0017" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_Renew_before_01_Jul_2017" nullable="false" originalDbColumnName="0019" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_Renew_after_01_Jul_2017" nullable="false" originalDbColumnName="0020" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="ee">
-        <mapperTableEntries name="SN_" type="id_String"/>
-        <mapperTableEntries name="Model" type="id_String"/>
-        <mapperTableEntries name="Maintenance_value_NCR_BAU" type="id_String"/>
-        <mapperTableEntries name="Maintenance_Note" type="id_String"/>
-        <mapperTableEntries name="Renewal_Date" type="id_String"/>
+      <outputTables sizeState="INTERMEDIATE" name="q3_2017_in">
+        <mapperTableEntries name="SN_" expression="row2.SN_" type="id_String"/>
+        <mapperTableEntries name="Model" expression="row2.Model" type="id_String"/>
+        <mapperTableEntries name="Maintenance_value_NCR_BAU" expression="row2.Maintenance_value " type="id_String"/>
+        <mapperTableEntries name="Maintenance_Note" expression="" type="id_String"/>
+        <mapperTableEntries name="Renewal_Date" expression="row2.Renewal_Date" type="id_String"/>
         <mapperTableEntries name="NPID" type="id_String"/>
         <mapperTableEntries name="PO_Type" type="id_String"/>
         <mapperTableEntries name="Entitlement_Note" type="id_String"/>
-        <mapperTableEntries name="Equipment___EoL" type="id_String"/>
-        <mapperTableEntries name="Equipment___EoL_Date" type="id_String"/>
-        <mapperTableEntries name="SLA" type="id_String"/>
-        <mapperTableEntries name="Coverage" type="id_String"/>
-        <mapperTableEntries name="Site_ID" type="id_String"/>
-        <mapperTableEntries name="Site_Name" type="id_String"/>
-        <mapperTableEntries name="Site_Address" type="id_String"/>
+        <mapperTableEntries name="Equipment___EoL" expression="row2.eol " type="id_String"/>
+        <mapperTableEntries name="Equipment___EoL_Date" expression="row2.eol_date " type="id_String"/>
+        <mapperTableEntries name="SLA" expression="row2.SLA" type="id_String"/>
+        <mapperTableEntries name="Coverage" expression="row2.Coverage" type="id_String"/>
+        <mapperTableEntries name="Site_ID" expression="row2.Site_ID" type="id_String"/>
+        <mapperTableEntries name="Site_Name" expression="row2.Site_Name" type="id_String"/>
+        <mapperTableEntries name="Site_Address" expression="row2.Site_Address" type="id_String"/>
         <mapperTableEntries name="Service_ID" type="id_String"/>
-        <mapperTableEntries name="Location_A" type="id_String"/>
-        <mapperTableEntries name="Previous_POs" type="id_String"/>
-        <mapperTableEntries name="Prorated_Date" type="id_String"/>
-        <mapperTableEntries name="New_Renew_before_01_Jul_2017" type="id_String"/>
+        <mapperTableEntries name="Location_A" expression="row2.Location_A" type="id_String"/>
+        <mapperTableEntries name="Previous_POs" expression="row2.Previous_PO " type="id_String"/>
+        <mapperTableEntries name="Prorated_Date" expression="row2.Prorated_Date" type="id_String"/>
+        <mapperTableEntries name="New_Renew_before_01_Jul_2017" expression="row2.New_renewal_amount " type="id_String"/>
         <mapperTableEntries name="New_Renew_after_01_Jul_2017" type="id_String"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -714,7 +718,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataprepRun_2" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://tdp.eu.cloud.talend.com/&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;viral.patel@eval8082.talend.com&quot;"/>
@@ -722,36 +726,39 @@
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;fa37eff7-7322-411b-810e-1ac9303029ef&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" value="2017-Q3 BAU-Preparation" show="false"/>
+    <elementParameter field="DP_VERSION" name="VERSION_NAME" value=""/>
+    <elementParameter field="TEXT" name="VERSION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="PREPARATION_PATH" value="&quot;folder/preparation&quot;" show="false"/>
     <elementParameter field="TEXT" name="PREPARATION_VERSION" value="&quot;Current state&quot;" show="false"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
     <elementParameter field="TEXT" name="LIMIT_PREVIEW" value="1000"/>
+    <elementParameter field="TEXT" name="LABEL" value="2017-Q3-NCR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDataprepRun_2">
-      <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_value_NCR_BAU" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_Note" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Entitlement_Note" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_ID" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Service_ID" nullable="false" originalDbColumnName="0015" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Location_A" nullable="false" originalDbColumnName="0016" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Previous_POs" nullable="false" originalDbColumnName="0017" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="New_Renew_before_01_Jul_2017" nullable="false" originalDbColumnName="0019" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="New_Renew_after_01_Jul_2017" nullable="false" originalDbColumnName="0020" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value_NCR_BAU" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_Note" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Entitlement_Note" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_ID" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Service_ID" nullable="false" originalDbColumnName="0015" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Location_A" nullable="false" originalDbColumnName="0016" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Previous_POs" nullable="false" originalDbColumnName="0017" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_Renew_before_01_Jul_2017" nullable="false" originalDbColumnName="0019" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_Renew_after_01_Jul_2017" nullable="false" originalDbColumnName="0020" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="192">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -822,6 +829,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="2017-Q3-NCR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputExcel_2">
       <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -847,7 +855,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="New_Renew_after_01_Jul_2017" nullable="false" originalDbColumnName="0020" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="320">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_3" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;DataSource/NCR/2017-Q4 NCR BAU Renewals Q4 2017_original file.xlsx&quot;"/>
@@ -1022,7 +1030,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="320">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1034,40 +1042,40 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="res">
-      <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renew_before_30_APR_2017" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="q4_2017_in">
+      <column comment="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renew_before_30_APR_2017" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="res">
-        <mapperTableEntries name="SN_" type="id_String"/>
-        <mapperTableEntries name="Model" type="id_String"/>
-        <mapperTableEntries name="Maintenance_value" type="id_String"/>
-        <mapperTableEntries name="NPID" type="id_String"/>
-        <mapperTableEntries name="PO_Type" type="id_String"/>
-        <mapperTableEntries name="Renewal_Date" type="id_String"/>
-        <mapperTableEntries name="Equipment___EoL" type="id_String"/>
+      <outputTables sizeState="INTERMEDIATE" name="q4_2017_in">
+        <mapperTableEntries name="SN_" expression="row3.SN_" type="id_String"/>
+        <mapperTableEntries name="Model" expression="row3.Model" type="id_String"/>
+        <mapperTableEntries name="Maintenance_value" expression="row3.Maintenance_value" type="id_String"/>
+        <mapperTableEntries name="NPID" expression="row3.NPID" type="id_String"/>
+        <mapperTableEntries name="PO_Type" expression="row3.PO_Type" type="id_String"/>
+        <mapperTableEntries name="Renewal_Date" expression="row3.Renewal_Date" type="id_String"/>
+        <mapperTableEntries name="Equipment___EoL" expression="row3.eol " type="id_String"/>
         <mapperTableEntries name="Equipment___EoL_Date" type="id_String"/>
-        <mapperTableEntries name="SLA" type="id_String"/>
-        <mapperTableEntries name="Coverage" type="id_String"/>
-        <mapperTableEntries name="Site_Name" type="id_String"/>
-        <mapperTableEntries name="Site_Address" type="id_String"/>
-        <mapperTableEntries name="Prorated_Date" type="id_String"/>
+        <mapperTableEntries name="SLA" expression="row3.SLA" type="id_String"/>
+        <mapperTableEntries name="Coverage" expression="row3.Coverage" type="id_String"/>
+        <mapperTableEntries name="Site_Name" expression="row3.Site_Name" type="id_String"/>
+        <mapperTableEntries name="Site_Address" expression="row3.Site_Address" type="id_String"/>
+        <mapperTableEntries name="Prorated_Date" expression="row3.Prorated_Date" type="id_String"/>
         <mapperTableEntries name="Renew_before_30_APR_2017" type="id_String"/>
         <mapperTableEntries name="Renew_after_30_APR_2017" type="id_String"/>
       </outputTables>
@@ -1094,7 +1102,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="320">
+  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataprepRun_3" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://tdp.eu.cloud.talend.com/&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;viral.patel@eval8082.talend.com&quot;"/>
@@ -1102,30 +1110,33 @@
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;01c31395-257d-4c65-be35-7450c767936d&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" value="2017-Q4 BAU-Preparation" show="false"/>
+    <elementParameter field="DP_VERSION" name="VERSION_NAME" value=""/>
+    <elementParameter field="TEXT" name="VERSION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="PREPARATION_PATH" value="&quot;folder/preparation&quot;" show="false"/>
     <elementParameter field="TEXT" name="PREPARATION_VERSION" value="&quot;Current state&quot;" show="false"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
     <elementParameter field="TEXT" name="LIMIT_PREVIEW" value="1000"/>
+    <elementParameter field="TEXT" name="LABEL" value="2017-Q4-NCR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDataprepRun_3">
-      <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renew_before_30_APR_2017" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Equipment___EoL_Date" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renew_before_30_APR_2017" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="320">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_3" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -1184,6 +1195,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="2017-Q4-NCR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputExcel_3">
       <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1203,7 +1215,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="Renew_after_30_APR_2017" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="448">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_4" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;DataSource/NCR/2018-Q1 NCR BAU Renewals (Q1 2018)_original file.xlsx&quot;"/>
@@ -1357,60 +1369,60 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="448">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_gIUGkFUBEei1wsFVTrpecw-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_gIUGkFUBEei1wsFVTrpecw-tMap_4-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="eeee">
-      <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="eol" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_ID" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ServiceID" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="LocationA" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Previous_POs" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0015" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="New_renewal_amount" nullable="false" originalDbColumnName="0016" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Found_during_cleanse" nullable="false" originalDbColumnName="0017" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Searched_not_found" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" name="q1_2018_in">
+      <column comment="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="eol" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_ID" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceID" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LocationA" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Previous_POs" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0015" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="false" originalDbColumnName="0016" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Found_during_cleanse" nullable="false" originalDbColumnName="0017" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Searched_not_found" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="eeee">
-        <mapperTableEntries name="SN_" type="id_String"/>
-        <mapperTableEntries name="Model" type="id_String"/>
-        <mapperTableEntries name="eol" type="id_String"/>
-        <mapperTableEntries name="Maintenance_value" type="id_String"/>
-        <mapperTableEntries name="Renewal_Date" type="id_String"/>
-        <mapperTableEntries name="SLA" type="id_String"/>
-        <mapperTableEntries name="Coverage" type="id_String"/>
-        <mapperTableEntries name="Site_ID" type="id_String"/>
+      <outputTables sizeState="INTERMEDIATE" name="q1_2018_in">
+        <mapperTableEntries name="SN_" expression="row4.SN_" type="id_String"/>
+        <mapperTableEntries name="Model" expression="row4.Model" type="id_String"/>
+        <mapperTableEntries name="eol" expression="row4.eol" type="id_String"/>
+        <mapperTableEntries name="Maintenance_value" expression="row4.Maintenance_value" type="id_String"/>
+        <mapperTableEntries name="Renewal_Date" expression="row4.Renewal_Date" type="id_String"/>
+        <mapperTableEntries name="SLA" expression="row4.SLA" type="id_String"/>
+        <mapperTableEntries name="Coverage" expression="row4.Coverage" type="id_String"/>
+        <mapperTableEntries name="Site_ID" expression="row4.Site_ID" type="id_String"/>
         <mapperTableEntries name="NPID" type="id_String"/>
         <mapperTableEntries name="PO_Type" type="id_String"/>
-        <mapperTableEntries name="Site_Name" type="id_String"/>
-        <mapperTableEntries name="Site_Address" type="id_String"/>
-        <mapperTableEntries name="ServiceID" type="id_String"/>
-        <mapperTableEntries name="LocationA" type="id_String"/>
-        <mapperTableEntries name="Previous_POs" type="id_String"/>
-        <mapperTableEntries name="Prorated_Date" type="id_String"/>
-        <mapperTableEntries name="New_renewal_amount" type="id_String"/>
+        <mapperTableEntries name="Site_Name" expression="row4.Site_Name" type="id_String"/>
+        <mapperTableEntries name="Site_Address" expression="row4.Site_Address" type="id_String"/>
+        <mapperTableEntries name="ServiceID" expression="row4.ServiceID" type="id_String"/>
+        <mapperTableEntries name="LocationA" expression="row4.Location_A " type="id_String"/>
+        <mapperTableEntries name="Previous_POs" expression="row4.Previous_PO " type="id_String"/>
+        <mapperTableEntries name="Prorated_Date" expression="row4.Prorated_Date" type="id_String"/>
+        <mapperTableEntries name="New_renewal_amount" expression="row4.New_renewal_amount" type="id_String"/>
         <mapperTableEntries name="Found_during_cleanse" type="id_String"/>
         <mapperTableEntries name="Searched_not_found" type="id_String"/>
       </outputTables>
@@ -1434,7 +1446,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="448">
+  <node componentName="tDataprepRun" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataprepRun_4" show="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://tdp.eu.cloud.talend.com/&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;viral.patel@eval8082.talend.com&quot;"/>
@@ -1442,34 +1454,37 @@
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;01c31395-257d-4c65-be35-7450c767936d&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" value="2017-Q4 BAU-Preparation" show="false"/>
+    <elementParameter field="DP_VERSION" name="VERSION_NAME" value=""/>
+    <elementParameter field="TEXT" name="VERSION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="PREPARATION_PATH" value="&quot;folder/preparation&quot;" show="false"/>
     <elementParameter field="TEXT" name="PREPARATION_VERSION" value="&quot;Current state&quot;" show="false"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
     <elementParameter field="TEXT" name="LIMIT_PREVIEW" value="1000"/>
+    <elementParameter field="TEXT" name="LABEL" value="2018-Q1-NCR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDataprepRun_4">
-      <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="eol" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_ID" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ServiceID" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="LocationA" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Previous_POs" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0015" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="New_renewal_amount" nullable="false" originalDbColumnName="0016" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Found_during_cleanse" nullable="false" originalDbColumnName="0017" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="Searched_not_found" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Model" nullable="false" originalDbColumnName="0001" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="eol" nullable="false" originalDbColumnName="0002" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="false" originalDbColumnName="0003" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Renewal_Date" nullable="false" originalDbColumnName="0004" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SLA" nullable="false" originalDbColumnName="0005" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Coverage" nullable="false" originalDbColumnName="0006" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_ID" nullable="false" originalDbColumnName="0007" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="false" originalDbColumnName="0008" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PO_Type" nullable="false" originalDbColumnName="0009" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Name" nullable="false" originalDbColumnName="0010" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Site_Address" nullable="false" originalDbColumnName="0011" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceID" nullable="false" originalDbColumnName="0012" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LocationA" nullable="false" originalDbColumnName="0013" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Previous_POs" nullable="false" originalDbColumnName="0014" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Prorated_Date" nullable="false" originalDbColumnName="0015" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="false" originalDbColumnName="0016" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Found_during_cleanse" nullable="false" originalDbColumnName="0017" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Searched_not_found" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="448">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_4" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -1536,6 +1551,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="2018-Q1-NCR"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputExcel_4">
       <column comment="" defaultValue="" key="false" length="-1" name="SN_" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1559,6 +1575,26 @@
       <column comment="" defaultValue="" key="false" length="-1" name="Searched_not_found" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="J0001_COLLECTING_LOGS_STATS" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Stats_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="J0001_COLLECTING_LOGS_STATS"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="Stats_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_1" name="OUTPUT_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
@@ -1566,13 +1602,13 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tFileInputExcel_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="d" lineStyle="0" metaname="d" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDataprepRun_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="d" show="false"/>
+  <connection connectorName="FLOW" label="q2_2017_in" lineStyle="0" metaname="q2_2017_in" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDataprepRun_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="q2_2017_in" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDataprepRun_1" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_1" target="tFileOutputExcel_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  <connection connectorName="FLOW" label="q2_2017_out" lineStyle="0" metaname="tDataprepRun_1" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_1" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="q2_2017_out" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1581,13 +1617,13 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tFileInputExcel_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="ee" lineStyle="0" metaname="ee" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDataprepRun_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ee" show="false"/>
+  <connection connectorName="FLOW" label="q3_2017_in" lineStyle="0" metaname="q3_2017_in" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDataprepRun_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="q3_2017_in" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tDataprepRun_2" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_2" target="tFileOutputExcel_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  <connection connectorName="FLOW" label="q3_2017_out" lineStyle="0" metaname="tDataprepRun_2" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_2" target="tFileOutputExcel_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="q3_2017_out" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputExcel_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_3" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1596,26 +1632,27 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputExcel_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_3" target="tFileInputExcel_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="res" lineStyle="0" metaname="res" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tDataprepRun_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="res" show="false"/>
+  <connection connectorName="FLOW" label="q4_2017_in" lineStyle="0" metaname="q4_2017_in" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tDataprepRun_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="q4_2017_in" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tDataprepRun_3" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_3" target="tFileOutputExcel_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  <connection connectorName="FLOW" label="q4_2017_out" lineStyle="0" metaname="tDataprepRun_3" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_3" target="tFileOutputExcel_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="q4_2017_out" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputExcel_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_4" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="eeee" lineStyle="0" metaname="eeee" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDataprepRun_4">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="eeee" show="false"/>
+  <connection connectorName="FLOW" label="q1_2018_in" lineStyle="0" metaname="q1_2018_in" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDataprepRun_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="q1_2018_in" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tDataprepRun_4" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_4" target="tFileOutputExcel_4">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  <connection connectorName="FLOW" label="q1_2018_out" lineStyle="0" metaname="tDataprepRun_4" offsetLabelX="0" offsetLabelY="0" source="tDataprepRun_4" target="tFileOutputExcel_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="q1_2018_out" show="false"/>
   </connection>
+  <note opaque="true" posX="832" posY="128" sizeHeight="64" sizeWidth="96" text="add DS&#xD;&#xA;"/>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
@@ -1633,6 +1670,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Stats_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
