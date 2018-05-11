@@ -38,7 +38,7 @@
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="352" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="384" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -147,8 +147,9 @@
     <routinesParameter id="_NhQGQDcwEei50Npc-g0ZOA" name="TalendStringUtil"/>
     <routinesParameter id="_NhKmsDcwEei50Npc-g0ZOA" name="TalendString"/>
   </parameters>
-  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="-288">
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;DataSource/NCR/duplicateSN&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/workspace/delete_folder&quot;" show="false"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;C:/workspace/delete_folder or delete_file&quot;" show="false"/>
@@ -3582,6 +3583,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row30" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tUniqRow_1" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_1" target="tFileDelete_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="NCR" lineStyle="0" metaname="tSchemaComplianceCheck_5" offsetLabelX="0" offsetLabelY="0" source="tSchemaComplianceCheck_5" target="tMap_1">
