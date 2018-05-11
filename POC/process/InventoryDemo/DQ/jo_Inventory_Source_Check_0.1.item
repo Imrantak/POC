@@ -878,7 +878,7 @@
   </node>
   <node componentName="tExtractXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractXMLField_3" show="false"/>
-    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="Order_Type"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="XMLFIELD" value="STANDARDIZED_FIELD"/>
     <elementParameter field="CHECK" name="USE_ITEMS" value="false" show="false"/>
     <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/record&quot;"/>
