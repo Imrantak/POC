@@ -1045,6 +1045,7 @@
       <relatedItems xmi:id="_Zjh6EVT4EeiNAb-l-jSt3Q" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Zjh6ElT4EeiNAb-l-jSt3Q" id="__OiyQEz_EeihBPD6I1_SrQ - CSV_DS3_GTOMS" version="Latest" type="schema"/>
       <relatedItems xmi:id="_80RDwFT4EeiNAb-l-jSt3Q" id="Jo_inventory_source_checkTstandardizerow_1" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Z__uYFUKEeiNAb-l-jSt3Q" id="Jo_inventory_source_checkTstandardizerow_2" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
