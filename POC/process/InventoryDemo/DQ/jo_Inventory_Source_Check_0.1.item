@@ -111,6 +111,7 @@
     <routinesParameter id="_NhCq4DcwEei50Npc-g0ZOA" name="TalendDate"/>
     <routinesParameter id="_NhQGQDcwEei50Npc-g0ZOA" name="TalendStringUtil"/>
     <routinesParameter id="_NhKmsDcwEei50Npc-g0ZOA" name="TalendString"/>
+    <routinesParameter id="_xOFDwFT4EeiNAb-l-jSt3Q" name="Jo_inventory_source_checkTstandardizerow_1"/>
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
