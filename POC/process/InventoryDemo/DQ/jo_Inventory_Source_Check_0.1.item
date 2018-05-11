@@ -830,7 +830,7 @@
     <elementParameter field="TABLE" name="RULE_TABLE">
       <elementValue elementRef="RULE_NAME" value="&quot;Order_Type&quot;"/>
       <elementValue elementRef="RULE_TYPE" value="ENUMERATION"/>
-      <elementValue elementRef="RULE_VALUE" value="&quot;'Admin / Billing Change' | 'Admin Change' | 'Cancelled' | 'Cease' | 'Change' | 'Cleanse' | 'Feasibility' | 'Internal' | 'Migration' | 'Migration-Cease' | 'Missed Migration' | 'Pilot' | 'Project CHUG' | 'Project No NNI' | 'Provide' | 'Provide ' | 'Router Install' | 'Site Survey' | 'Tracking Only'&quot;"/>
+      <elementValue elementRef="RULE_VALUE" value="&quot;'Admin / Billing Change' | 'Admin Change' | 'Cancelled' | 'Cease' | 'cease' | 'Change' | 'Cleanse' | 'Feasibility' | 'Internal' | 'Migration' | 'Migration-Cease' | 'Missed Migration' | 'Pilot' | 'Project CHUG' | 'Project No NNI' | 'Provide' | 'provide' | 'Router Install' | 'Site Survey' | 'Tracking Only'&quot;"/>
       <elementValue elementRef="SEARCH_MODE" value="-"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SEARCH_UNDEFINED_FIELDS" value="false"/>
