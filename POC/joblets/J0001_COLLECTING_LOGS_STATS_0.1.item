@@ -185,7 +185,7 @@
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
     </subjob>
-    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="320" input="true">
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="480" input="true">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
       <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
       <elementParameter field="CHECK" name="START" value="true" show="false"/>
@@ -198,7 +198,7 @@
         <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </jobletNodes>
-    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="320">
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="480">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
       <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
       <elementParameter field="CHECK" name="START" value="false" show="false"/>
