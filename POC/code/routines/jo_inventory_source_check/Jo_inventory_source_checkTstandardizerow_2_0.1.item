@@ -1521,26 +1521,26 @@ static class CombinedLexer extends Lexer {
 		try {
 			int _type = Order_Type;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:12: ( 'Admin / Billing Change' | 'Admin Change' | 'Cancelled' | 'Cease' | 'Change' | 'Cleanse' | 'Feasibility' | 'Internal' | 'Migration' | 'Migration-Cease' | 'Missed Migration' | 'Pilot' | 'Project CHUG' | 'Project No NNI' | 'Provide' | 'Provide ' | 'Router Install' | 'Site Survey' | 'Tracking Only' )
-			int alt1=19;
+			// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:12: ( 'Admin / Billing Change' | 'Admin Change' | 'Cancelled' | 'Cease' | 'cease' | 'Change' | 'change' | 'Cleanse' | 'Feasibility' | 'Internal' | 'Migration' | 'Migration-Cease' | 'Missed Migration' | 'Pilot' | 'Project CHUG' | 'Project No NNI' | 'Provide' | 'provide' | 'Router Install' | 'Site Survey' | 'Tracking Only' )
+			int alt1=21;
 			switch ( input.LA(1) ) {
 			case 'A':
 				{
 				int LA1_1 = input.LA(2);
 				if ( (LA1_1=='d') ) {
-					int LA1_10 = input.LA(3);
-					if ( (LA1_10=='m') ) {
-						int LA1_18 = input.LA(4);
-						if ( (LA1_18=='i') ) {
-							int LA1_22 = input.LA(5);
-							if ( (LA1_22=='n') ) {
-								int LA1_26 = input.LA(6);
-								if ( (LA1_26==' ') ) {
-									int LA1_30 = input.LA(7);
-									if ( (LA1_30=='/') ) {
+					int LA1_12 = input.LA(3);
+					if ( (LA1_12=='m') ) {
+						int LA1_22 = input.LA(4);
+						if ( (LA1_22=='i') ) {
+							int LA1_26 = input.LA(5);
+							if ( (LA1_26=='n') ) {
+								int LA1_30 = input.LA(6);
+								if ( (LA1_30==' ') ) {
+									int LA1_33 = input.LA(7);
+									if ( (LA1_33=='/') ) {
 										alt1=1;
 									}
-									else if ( (LA1_30=='C') ) {
+									else if ( (LA1_33=='C') ) {
 										alt1=2;
 									}
 
@@ -1551,7 +1551,7 @@ static class CombinedLexer extends Lexer {
 												input.consume();
 											}
 											NoViableAltException nvae =
-												new NoViableAltException("", 1, 30, input);
+												new NoViableAltException("", 1, 33, input);
 											throw nvae;
 										} finally {
 											input.rewind(nvaeMark);
@@ -1567,7 +1567,7 @@ static class CombinedLexer extends Lexer {
 											input.consume();
 										}
 										NoViableAltException nvae =
-											new NoViableAltException("", 1, 26, input);
+											new NoViableAltException("", 1, 30, input);
 										throw nvae;
 									} finally {
 										input.rewind(nvaeMark);
@@ -1583,7 +1583,7 @@ static class CombinedLexer extends Lexer {
 										input.consume();
 									}
 									NoViableAltException nvae =
-										new NoViableAltException("", 1, 22, input);
+										new NoViableAltException("", 1, 26, input);
 									throw nvae;
 								} finally {
 									input.rewind(nvaeMark);
@@ -1599,7 +1599,7 @@ static class CombinedLexer extends Lexer {
 									input.consume();
 								}
 								NoViableAltException nvae =
-									new NoViableAltException("", 1, 18, input);
+									new NoViableAltException("", 1, 22, input);
 								throw nvae;
 							} finally {
 								input.rewind(nvaeMark);
@@ -1615,7 +1615,7 @@ static class CombinedLexer extends Lexer {
 								input.consume();
 							}
 							NoViableAltException nvae =
-								new NoViableAltException("", 1, 10, input);
+								new NoViableAltException("", 1, 12, input);
 							throw nvae;
 						} finally {
 							input.rewind(nvaeMark);
@@ -1653,12 +1653,12 @@ static class CombinedLexer extends Lexer {
 					break;
 				case 'h':
 					{
-					alt1=5;
+					alt1=6;
 					}
 					break;
 				case 'l':
 					{
-					alt1=6;
+					alt1=8;
 					}
 					break;
 				default:
@@ -1674,158 +1674,14 @@ static class CombinedLexer extends Lexer {
 				}
 				}
 				break;
-			case 'F':
+			case 'c':
 				{
-				alt1=7;
+				int LA1_3 = input.LA(2);
+				if ( (LA1_3=='e') ) {
+					alt1=5;
 				}
-				break;
-			case 'I':
-				{
-				alt1=8;
-				}
-				break;
-			case 'M':
-				{
-				int LA1_5 = input.LA(2);
-				if ( (LA1_5=='i') ) {
-					int LA1_15 = input.LA(3);
-					if ( (LA1_15=='g') ) {
-						int LA1_19 = input.LA(4);
-						if ( (LA1_19=='r') ) {
-							int LA1_23 = input.LA(5);
-							if ( (LA1_23=='a') ) {
-								int LA1_27 = input.LA(6);
-								if ( (LA1_27=='t') ) {
-									int LA1_31 = input.LA(7);
-									if ( (LA1_31=='i') ) {
-										int LA1_36 = input.LA(8);
-										if ( (LA1_36=='o') ) {
-											int LA1_39 = input.LA(9);
-											if ( (LA1_39=='n') ) {
-												int LA1_43 = input.LA(10);
-												if ( (LA1_43=='-') ) {
-													alt1=10;
-												}
-
-												else {
-													alt1=9;
-												}
-
-											}
-
-											else {
-												int nvaeMark = input.mark();
-												try {
-													for (int nvaeConsume = 0; nvaeConsume < 9 - 1; nvaeConsume++) {
-														input.consume();
-													}
-													NoViableAltException nvae =
-														new NoViableAltException("", 1, 39, input);
-													throw nvae;
-												} finally {
-													input.rewind(nvaeMark);
-												}
-											}
-
-										}
-
-										else {
-											int nvaeMark = input.mark();
-											try {
-												for (int nvaeConsume = 0; nvaeConsume < 8 - 1; nvaeConsume++) {
-													input.consume();
-												}
-												NoViableAltException nvae =
-													new NoViableAltException("", 1, 36, input);
-												throw nvae;
-											} finally {
-												input.rewind(nvaeMark);
-											}
-										}
-
-									}
-
-									else {
-										int nvaeMark = input.mark();
-										try {
-											for (int nvaeConsume = 0; nvaeConsume < 7 - 1; nvaeConsume++) {
-												input.consume();
-											}
-											NoViableAltException nvae =
-												new NoViableAltException("", 1, 31, input);
-											throw nvae;
-										} finally {
-											input.rewind(nvaeMark);
-										}
-									}
-
-								}
-
-								else {
-									int nvaeMark = input.mark();
-									try {
-										for (int nvaeConsume = 0; nvaeConsume < 6 - 1; nvaeConsume++) {
-											input.consume();
-										}
-										NoViableAltException nvae =
-											new NoViableAltException("", 1, 27, input);
-										throw nvae;
-									} finally {
-										input.rewind(nvaeMark);
-									}
-								}
-
-							}
-
-							else {
-								int nvaeMark = input.mark();
-								try {
-									for (int nvaeConsume = 0; nvaeConsume < 5 - 1; nvaeConsume++) {
-										input.consume();
-									}
-									NoViableAltException nvae =
-										new NoViableAltException("", 1, 23, input);
-									throw nvae;
-								} finally {
-									input.rewind(nvaeMark);
-								}
-							}
-
-						}
-
-						else {
-							int nvaeMark = input.mark();
-							try {
-								for (int nvaeConsume = 0; nvaeConsume < 4 - 1; nvaeConsume++) {
-									input.consume();
-								}
-								NoViableAltException nvae =
-									new NoViableAltException("", 1, 19, input);
-								throw nvae;
-							} finally {
-								input.rewind(nvaeMark);
-							}
-						}
-
-					}
-					else if ( (LA1_15=='s') ) {
-						alt1=11;
-					}
-
-					else {
-						int nvaeMark = input.mark();
-						try {
-							for (int nvaeConsume = 0; nvaeConsume < 3 - 1; nvaeConsume++) {
-								input.consume();
-							}
-							NoViableAltException nvae =
-								new NoViableAltException("", 1, 15, input);
-							throw nvae;
-						} finally {
-							input.rewind(nvaeMark);
-						}
-					}
-
+				else if ( (LA1_3=='h') ) {
+					alt1=7;
 				}
 
 				else {
@@ -1833,7 +1689,7 @@ static class CombinedLexer extends Lexer {
 					try {
 						input.consume();
 						NoViableAltException nvae =
-							new NoViableAltException("", 1, 5, input);
+							new NoViableAltException("", 1, 3, input);
 						throw nvae;
 					} finally {
 						input.rewind(nvaeMark);
@@ -1842,31 +1698,43 @@ static class CombinedLexer extends Lexer {
 
 				}
 				break;
-			case 'P':
+			case 'F':
+				{
+				alt1=9;
+				}
+				break;
+			case 'I':
+				{
+				alt1=10;
+				}
+				break;
+			case 'M':
 				{
 				int LA1_6 = input.LA(2);
 				if ( (LA1_6=='i') ) {
-					alt1=12;
-				}
-				else if ( (LA1_6=='r') ) {
-					int LA1_17 = input.LA(3);
-					if ( (LA1_17=='o') ) {
-						int LA1_21 = input.LA(4);
-						if ( (LA1_21=='j') ) {
-							int LA1_24 = input.LA(5);
-							if ( (LA1_24=='e') ) {
-								int LA1_28 = input.LA(6);
-								if ( (LA1_28=='c') ) {
-									int LA1_32 = input.LA(7);
-									if ( (LA1_32=='t') ) {
-										int LA1_37 = input.LA(8);
-										if ( (LA1_37==' ') ) {
+					int LA1_19 = input.LA(3);
+					if ( (LA1_19=='g') ) {
+						int LA1_23 = input.LA(4);
+						if ( (LA1_23=='r') ) {
+							int LA1_27 = input.LA(5);
+							if ( (LA1_27=='a') ) {
+								int LA1_31 = input.LA(6);
+								if ( (LA1_31=='t') ) {
+									int LA1_34 = input.LA(7);
+									if ( (LA1_34=='i') ) {
+										int LA1_38 = input.LA(8);
+										if ( (LA1_38=='o') ) {
 											int LA1_40 = input.LA(9);
-											if ( (LA1_40=='C') ) {
-												alt1=13;
-											}
-											else if ( (LA1_40=='N') ) {
-												alt1=14;
+											if ( (LA1_40=='n') ) {
+												int LA1_42 = input.LA(10);
+												if ( (LA1_42=='-') ) {
+													alt1=12;
+												}
+
+												else {
+													alt1=11;
+												}
+
 											}
 
 											else {
@@ -1892,7 +1760,7 @@ static class CombinedLexer extends Lexer {
 													input.consume();
 												}
 												NoViableAltException nvae =
-													new NoViableAltException("", 1, 37, input);
+													new NoViableAltException("", 1, 38, input);
 												throw nvae;
 											} finally {
 												input.rewind(nvaeMark);
@@ -1908,7 +1776,7 @@ static class CombinedLexer extends Lexer {
 												input.consume();
 											}
 											NoViableAltException nvae =
-												new NoViableAltException("", 1, 32, input);
+												new NoViableAltException("", 1, 34, input);
 											throw nvae;
 										} finally {
 											input.rewind(nvaeMark);
@@ -1924,7 +1792,7 @@ static class CombinedLexer extends Lexer {
 											input.consume();
 										}
 										NoViableAltException nvae =
-											new NoViableAltException("", 1, 28, input);
+											new NoViableAltException("", 1, 31, input);
 										throw nvae;
 									} finally {
 										input.rewind(nvaeMark);
@@ -1940,72 +1808,7 @@ static class CombinedLexer extends Lexer {
 										input.consume();
 									}
 									NoViableAltException nvae =
-										new NoViableAltException("", 1, 24, input);
-									throw nvae;
-								} finally {
-									input.rewind(nvaeMark);
-								}
-							}
-
-						}
-						else if ( (LA1_21=='v') ) {
-							int LA1_25 = input.LA(5);
-							if ( (LA1_25=='i') ) {
-								int LA1_29 = input.LA(6);
-								if ( (LA1_29=='d') ) {
-									int LA1_33 = input.LA(7);
-									if ( (LA1_33=='e') ) {
-										int LA1_38 = input.LA(8);
-										if ( (LA1_38==' ') ) {
-											alt1=16;
-										}
-
-										else {
-											alt1=15;
-										}
-
-									}
-
-									else {
-										int nvaeMark = input.mark();
-										try {
-											for (int nvaeConsume = 0; nvaeConsume < 7 - 1; nvaeConsume++) {
-												input.consume();
-											}
-											NoViableAltException nvae =
-												new NoViableAltException("", 1, 33, input);
-											throw nvae;
-										} finally {
-											input.rewind(nvaeMark);
-										}
-									}
-
-								}
-
-								else {
-									int nvaeMark = input.mark();
-									try {
-										for (int nvaeConsume = 0; nvaeConsume < 6 - 1; nvaeConsume++) {
-											input.consume();
-										}
-										NoViableAltException nvae =
-											new NoViableAltException("", 1, 29, input);
-										throw nvae;
-									} finally {
-										input.rewind(nvaeMark);
-									}
-								}
-
-							}
-
-							else {
-								int nvaeMark = input.mark();
-								try {
-									for (int nvaeConsume = 0; nvaeConsume < 5 - 1; nvaeConsume++) {
-										input.consume();
-									}
-									NoViableAltException nvae =
-										new NoViableAltException("", 1, 25, input);
+										new NoViableAltException("", 1, 27, input);
 									throw nvae;
 								} finally {
 									input.rewind(nvaeMark);
@@ -2021,13 +1824,16 @@ static class CombinedLexer extends Lexer {
 									input.consume();
 								}
 								NoViableAltException nvae =
-									new NoViableAltException("", 1, 21, input);
+									new NoViableAltException("", 1, 23, input);
 								throw nvae;
 							} finally {
 								input.rewind(nvaeMark);
 							}
 						}
 
+					}
+					else if ( (LA1_19=='s') ) {
+						alt1=13;
 					}
 
 					else {
@@ -2037,7 +1843,7 @@ static class CombinedLexer extends Lexer {
 								input.consume();
 							}
 							NoViableAltException nvae =
-								new NoViableAltException("", 1, 17, input);
+								new NoViableAltException("", 1, 19, input);
 							throw nvae;
 						} finally {
 							input.rewind(nvaeMark);
@@ -2060,19 +1866,180 @@ static class CombinedLexer extends Lexer {
 
 				}
 				break;
-			case 'R':
+			case 'P':
 				{
-				alt1=17;
+				int LA1_7 = input.LA(2);
+				if ( (LA1_7=='i') ) {
+					alt1=14;
+				}
+				else if ( (LA1_7=='r') ) {
+					int LA1_21 = input.LA(3);
+					if ( (LA1_21=='o') ) {
+						int LA1_25 = input.LA(4);
+						if ( (LA1_25=='j') ) {
+							int LA1_28 = input.LA(5);
+							if ( (LA1_28=='e') ) {
+								int LA1_32 = input.LA(6);
+								if ( (LA1_32=='c') ) {
+									int LA1_35 = input.LA(7);
+									if ( (LA1_35=='t') ) {
+										int LA1_39 = input.LA(8);
+										if ( (LA1_39==' ') ) {
+											int LA1_41 = input.LA(9);
+											if ( (LA1_41=='C') ) {
+												alt1=15;
+											}
+											else if ( (LA1_41=='N') ) {
+												alt1=16;
+											}
+
+											else {
+												int nvaeMark = input.mark();
+												try {
+													for (int nvaeConsume = 0; nvaeConsume < 9 - 1; nvaeConsume++) {
+														input.consume();
+													}
+													NoViableAltException nvae =
+														new NoViableAltException("", 1, 41, input);
+													throw nvae;
+												} finally {
+													input.rewind(nvaeMark);
+												}
+											}
+
+										}
+
+										else {
+											int nvaeMark = input.mark();
+											try {
+												for (int nvaeConsume = 0; nvaeConsume < 8 - 1; nvaeConsume++) {
+													input.consume();
+												}
+												NoViableAltException nvae =
+													new NoViableAltException("", 1, 39, input);
+												throw nvae;
+											} finally {
+												input.rewind(nvaeMark);
+											}
+										}
+
+									}
+
+									else {
+										int nvaeMark = input.mark();
+										try {
+											for (int nvaeConsume = 0; nvaeConsume < 7 - 1; nvaeConsume++) {
+												input.consume();
+											}
+											NoViableAltException nvae =
+												new NoViableAltException("", 1, 35, input);
+											throw nvae;
+										} finally {
+											input.rewind(nvaeMark);
+										}
+									}
+
+								}
+
+								else {
+									int nvaeMark = input.mark();
+									try {
+										for (int nvaeConsume = 0; nvaeConsume < 6 - 1; nvaeConsume++) {
+											input.consume();
+										}
+										NoViableAltException nvae =
+											new NoViableAltException("", 1, 32, input);
+										throw nvae;
+									} finally {
+										input.rewind(nvaeMark);
+									}
+								}
+
+							}
+
+							else {
+								int nvaeMark = input.mark();
+								try {
+									for (int nvaeConsume = 0; nvaeConsume < 5 - 1; nvaeConsume++) {
+										input.consume();
+									}
+									NoViableAltException nvae =
+										new NoViableAltException("", 1, 28, input);
+									throw nvae;
+								} finally {
+									input.rewind(nvaeMark);
+								}
+							}
+
+						}
+						else if ( (LA1_25=='v') ) {
+							alt1=17;
+						}
+
+						else {
+							int nvaeMark = input.mark();
+							try {
+								for (int nvaeConsume = 0; nvaeConsume < 4 - 1; nvaeConsume++) {
+									input.consume();
+								}
+								NoViableAltException nvae =
+									new NoViableAltException("", 1, 25, input);
+								throw nvae;
+							} finally {
+								input.rewind(nvaeMark);
+							}
+						}
+
+					}
+
+					else {
+						int nvaeMark = input.mark();
+						try {
+							for (int nvaeConsume = 0; nvaeConsume < 3 - 1; nvaeConsume++) {
+								input.consume();
+							}
+							NoViableAltException nvae =
+								new NoViableAltException("", 1, 21, input);
+							throw nvae;
+						} finally {
+							input.rewind(nvaeMark);
+						}
+					}
+
+				}
+
+				else {
+					int nvaeMark = input.mark();
+					try {
+						input.consume();
+						NoViableAltException nvae =
+							new NoViableAltException("", 1, 7, input);
+						throw nvae;
+					} finally {
+						input.rewind(nvaeMark);
+					}
+				}
+
 				}
 				break;
-			case 'S':
+			case 'p':
 				{
 				alt1=18;
 				}
 				break;
-			case 'T':
+			case 'R':
 				{
 				alt1=19;
+				}
+				break;
+			case 'S':
+				{
+				alt1=20;
+				}
+				break;
+			case 'T':
+				{
+				alt1=21;
 				}
 				break;
 			default:
@@ -2110,105 +2077,119 @@ static class CombinedLexer extends Lexer {
 					}
 					break;
 				case 5 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:82: 'Change'
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:82: 'cease'
+					{
+					match("cease"); 
+
+					}
+					break;
+				case 6 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:92: 'Change'
 					{
 					match("Change"); 
 
 					}
 					break;
-				case 6 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:93: 'Cleanse'
+				case 7 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:103: 'change'
+					{
+					match("change"); 
+
+					}
+					break;
+				case 8 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:114: 'Cleanse'
 					{
 					match("Cleanse"); 
 
 					}
 					break;
-				case 7 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:105: 'Feasibility'
+				case 9 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:126: 'Feasibility'
 					{
 					match("Feasibility"); 
 
 					}
 					break;
-				case 8 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:121: 'Internal'
+				case 10 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:142: 'Internal'
 					{
 					match("Internal"); 
 
 					}
 					break;
-				case 9 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:134: 'Migration'
+				case 11 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:155: 'Migration'
 					{
 					match("Migration"); 
 
 					}
 					break;
-				case 10 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:148: 'Migration-Cease'
+				case 12 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:169: 'Migration-Cease'
 					{
 					match("Migration-Cease"); 
 
 					}
 					break;
-				case 11 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:168: 'Missed Migration'
+				case 13 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:189: 'Missed Migration'
 					{
 					match("Missed Migration"); 
 
 					}
 					break;
-				case 12 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:189: 'Pilot'
+				case 14 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:210: 'Pilot'
 					{
 					match("Pilot"); 
 
 					}
 					break;
-				case 13 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:199: 'Project CHUG'
+				case 15 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:220: 'Project CHUG'
 					{
 					match("Project CHUG"); 
 
 					}
 					break;
-				case 14 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:216: 'Project No NNI'
+				case 16 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:237: 'Project No NNI'
 					{
 					match("Project No NNI"); 
 
 					}
 					break;
-				case 15 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:235: 'Provide'
+				case 17 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:256: 'Provide'
 					{
 					match("Provide"); 
 
 					}
 					break;
-				case 16 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:247: 'Provide '
+				case 18 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:268: 'provide'
 					{
-					match("Provide "); 
+					match("provide"); 
 
 					}
 					break;
-				case 17 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:260: 'Router Install'
+				case 19 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:280: 'Router Install'
 					{
 					match("Router Install"); 
 
 					}
 					break;
-				case 18 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:279: 'Site Survey'
+				case 20 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:299: 'Site Survey'
 					{
 					match("Site Survey"); 
 
 					}
 					break;
-				case 19 :
-					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:295: 'Tracking Only'
+				case 21 :
+					// C:\\talendstudio\\workspace\\.Java\\grammar\\tStandardizeRow_2_RULEFILES\\grammar\\Combined.g:53:315: 'Tracking Only'
 					{
 					match("Tracking Only"); 
 
@@ -2322,68 +2303,67 @@ static class CombinedLexer extends Lexer {
 
 	protected DFA2 dfa2 = new DFA2(this);
 	static final String DFA2_eotS =
-		"\1\uffff\11\14\1\uffff\1\15\2\uffff\54\14\1\105\6\14\1\105\3\14\1\uffff"+
-		"\2\14\1\105\12\14\1\105\4\14\1\105\3\14\1\105\2\14\1\105\1\14\1\105\2"+
-		"\14\1\105\4\14\1\105";
+		"\1\uffff\13\16\1\uffff\1\17\2\uffff\65\16\1\123\2\16\1\123\5\16\1\123"+
+		"\4\16\1\uffff\2\16\1\123\1\16\1\123\12\16\1\123\4\16\2\123\3\16\1\123"+
+		"\2\16\1\123\1\16\1\123\2\16\1\123\4\16\1\123";
 	static final String DFA2_eofS =
-		"\152\uffff";
+		"\173\uffff";
 	static final String DFA2_minS =
-		"\1\11\1\144\1\141\1\145\1\156\2\151\1\157\1\151\1\162\1\uffff\1\60\2\uffff"+
-		"\1\155\1\156\2\141\1\145\1\141\1\164\1\147\1\154\1\157\1\165\1\164\1\141"+
-		"\1\151\1\143\1\163\1\156\1\141\1\163\1\145\1\162\1\163\1\157\1\152\1\164"+
-		"\1\145\1\143\1\156\2\145\1\147\1\156\1\151\1\162\1\141\1\145\1\164\1\145"+
-		"\1\151\1\145\1\40\1\153\1\40\1\154\1\45\1\145\1\163\1\142\1\156\1\164"+
-		"\1\144\1\45\1\143\1\144\1\162\1\uffff\1\151\1\154\1\45\1\145\1\151\1\141"+
-		"\1\151\1\40\1\164\1\145\1\40\1\156\1\145\1\45\2\154\1\157\1\40\1\45\1"+
-		"\147\1\144\1\151\1\45\1\156\1\40\1\45\1\164\1\45\1\171\1\103\1\45\1\145"+
-		"\1\141\1\163\1\145\1\45";
+		"\1\11\1\144\1\141\2\145\1\156\2\151\1\162\1\157\1\151\1\162\1\uffff\1"+
+		"\60\2\uffff\1\155\1\156\2\141\1\145\3\141\1\164\1\147\1\154\2\157\1\165"+
+		"\1\164\1\141\1\151\1\143\1\163\1\156\1\141\1\163\1\156\1\163\1\145\1\162"+
+		"\1\163\1\157\1\152\1\166\1\164\1\145\1\143\1\156\2\145\1\147\1\156\1\145"+
+		"\1\147\1\151\1\162\1\141\1\145\1\164\1\145\2\151\1\145\1\40\1\153\1\40"+
+		"\1\154\1\45\1\145\1\163\1\45\1\145\1\142\1\156\1\164\1\144\1\45\1\143"+
+		"\2\144\1\162\1\uffff\1\151\1\154\1\45\1\145\1\45\1\151\1\141\1\151\1\40"+
+		"\1\164\2\145\1\40\1\156\1\145\1\45\2\154\1\157\1\40\2\45\1\147\1\144\1"+
+		"\151\1\45\1\156\1\40\1\45\1\164\1\45\1\171\1\103\1\45\1\145\1\141\1\163"+
+		"\1\145\1\45";
 	static final String DFA2_maxS =
-		"\1\u9faf\1\144\1\154\1\145\1\156\1\151\1\162\1\157\1\151\1\162\1\uffff"+
-		"\1\71\2\uffff\1\155\1\156\2\141\1\145\1\141\1\164\1\163\1\154\1\157\1"+
-		"\165\1\164\1\141\1\151\1\143\1\163\1\156\1\141\1\163\1\145\1\162\1\163"+
-		"\1\157\1\166\1\164\1\145\1\143\1\156\2\145\1\147\1\156\1\151\1\162\1\141"+
-		"\1\145\1\164\1\145\1\151\1\145\1\40\1\153\1\40\1\154\1\u00ff\1\145\1\163"+
-		"\1\142\1\156\1\164\1\144\1\u00ff\1\143\1\144\1\162\1\uffff\1\151\1\154"+
-		"\1\u00ff\1\145\1\151\1\141\1\151\1\40\1\164\1\145\1\40\1\156\1\145\1\u00ff"+
-		"\2\154\1\157\1\40\1\u00ff\1\147\1\144\1\151\1\u00ff\1\156\1\40\1\u00ff"+
-		"\1\164\1\u00ff\1\171\1\103\1\u00ff\1\145\1\141\1\163\1\145\1\u00ff";
+		"\1\u9faf\1\144\1\154\1\150\1\145\1\156\1\151\2\162\1\157\1\151\1\162\1"+
+		"\uffff\1\71\2\uffff\1\155\1\156\2\141\1\145\3\141\1\164\1\163\1\154\2"+
+		"\157\1\165\1\164\1\141\1\151\1\143\1\163\1\156\1\141\1\163\1\156\1\163"+
+		"\1\145\1\162\1\163\1\157\2\166\1\164\1\145\1\143\1\156\2\145\1\147\1\156"+
+		"\1\145\1\147\1\151\1\162\1\141\1\145\1\164\1\145\2\151\1\145\1\40\1\153"+
+		"\1\40\1\154\1\u00ff\1\145\1\163\1\u00ff\1\145\1\142\1\156\1\164\1\144"+
+		"\1\u00ff\1\143\2\144\1\162\1\uffff\1\151\1\154\1\u00ff\1\145\1\u00ff\1"+
+		"\151\1\141\1\151\1\40\1\164\2\145\1\40\1\156\1\145\1\u00ff\2\154\1\157"+
+		"\1\40\2\u00ff\1\147\1\144\1\151\1\u00ff\1\156\1\40\1\u00ff\1\164\1\u00ff"+
+		"\1\171\1\103\1\u00ff\1\145\1\141\1\163\1\145\1\u00ff";
 	static final String DFA2_acceptS =
-		"\12\uffff\1\2\1\uffff\1\4\1\3\67\uffff\1\1\44\uffff";
+		"\14\uffff\1\2\1\uffff\1\4\1\3\103\uffff\1\1\47\uffff";
 	static final String DFA2_specialS =
-		"\152\uffff}>";
+		"\173\uffff}>";
 	static final String[] DFA2_transitionS = {
-			"\2\12\1\uffff\2\12\22\uffff\1\12\2\15\4\14\3\15\2\14\1\15\1\14\1\13\13"+
-			"\14\2\15\3\14\1\15\1\14\1\1\1\14\1\2\2\14\1\3\2\14\1\4\3\14\1\5\2\14"+
-			"\1\6\1\14\1\7\1\10\1\11\52\14\41\uffff\140\14\u0490\uffff\160\14\u1aa0"+
-			"\uffff\60\14\u0083\uffff\60\14\u2c7d\uffff\u51b0\14",
-			"\1\16",
-			"\1\17\3\uffff\1\20\2\uffff\1\21\3\uffff\1\22",
-			"\1\23",
-			"\1\24",
-			"\1\25",
-			"\1\26\10\uffff\1\27",
+			"\2\14\1\uffff\2\14\22\uffff\1\14\2\17\4\16\3\17\2\16\1\17\1\16\1\15\13"+
+			"\16\2\17\3\16\1\17\1\16\1\1\1\16\1\2\2\16\1\4\2\16\1\5\3\16\1\6\2\16"+
+			"\1\7\1\16\1\11\1\12\1\13\16\16\1\3\14\16\1\10\16\16\41\uffff\140\16\u0490"+
+			"\uffff\160\16\u1aa0\uffff\60\16\u0083\uffff\60\16\u2c7d\uffff\u51b0\16",
+			"\1\20",
+			"\1\21\3\uffff\1\22\2\uffff\1\23\3\uffff\1\24",
+			"\1\25\2\uffff\1\26",
+			"\1\27",
 			"\1\30",
 			"\1\31",
-			"\1\32",
-			"",
-			"\12\14",
-			"",
-			"",
-			"\1\33",
+			"\1\32\10\uffff\1\33",
 			"\1\34",
 			"\1\35",
 			"\1\36",
 			"\1\37",
+			"",
+			"\12\16",
+			"",
+			"",
 			"\1\40",
 			"\1\41",
-			"\1\42\13\uffff\1\43",
+			"\1\42",
+			"\1\43",
 			"\1\44",
 			"\1\45",
 			"\1\46",
 			"\1\47",
 			"\1\50",
-			"\1\51",
-			"\1\52",
+			"\1\51\13\uffff\1\52",
 			"\1\53",
 			"\1\54",
 			"\1\55",
@@ -2392,7 +2372,8 @@ static class CombinedLexer extends Lexer {
 			"\1\60",
 			"\1\61",
 			"\1\62",
-			"\1\63\13\uffff\1\64",
+			"\1\63",
+			"\1\64",
 			"\1\65",
 			"\1\66",
 			"\1\67",
@@ -2401,8 +2382,7 @@ static class CombinedLexer extends Lexer {
 			"\1\72",
 			"\1\73",
 			"\1\74",
-			"\1\75",
-			"\1\76",
+			"\1\75\13\uffff\1\76",
 			"\1\77",
 			"\1\100",
 			"\1\101",
@@ -2411,66 +2391,89 @@ static class CombinedLexer extends Lexer {
 			"\1\104",
 			"\1\105",
 			"\1\106",
-			"\1\105",
 			"\1\107",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14",
 			"\1\110",
 			"\1\111",
 			"\1\112",
 			"\1\113",
 			"\1\114",
 			"\1\115",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14",
 			"\1\116",
 			"\1\117",
 			"\1\120",
-			"",
 			"\1\121",
 			"\1\122",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14",
 			"\1\123",
 			"\1\124",
+			"\1\123",
 			"\1\125",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
 			"\1\126",
-			"\1\105",
 			"\1\127",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
 			"\1\130",
-			"\1\105",
 			"\1\131",
 			"\1\132",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14",
 			"\1\133",
 			"\1\134",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
 			"\1\135",
-			"\1\105",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14",
 			"\1\136",
 			"\1\137",
 			"\1\140",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14",
+			"",
 			"\1\141",
-			"\1\105",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14",
 			"\1\142",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\1\143\15\14\5\uffff\33\14\4"+
-			"\uffff\1\14\1\uffff\32\14\45\uffff\140\14",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
+			"\1\143",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
 			"\1\144",
 			"\1\145",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14",
 			"\1\146",
+			"\1\123",
 			"\1\147",
 			"\1\150",
 			"\1\151",
-			"\1\14\1\uffff\1\14\3\uffff\1\14\1\uffff\16\14\5\uffff\33\14\4\uffff"+
-			"\1\14\1\uffff\32\14\45\uffff\140\14"
+			"\1\123",
+			"\1\152",
+			"\1\153",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
+			"\1\154",
+			"\1\155",
+			"\1\156",
+			"\1\123",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
+			"\1\157",
+			"\1\160",
+			"\1\161",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
+			"\1\162",
+			"\1\123",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
+			"\1\163",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\1\164\15\16\5\uffff\33\16\4"+
+			"\uffff\1\16\1\uffff\32\16\45\uffff\140\16",
+			"\1\165",
+			"\1\166",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16",
+			"\1\167",
+			"\1\170",
+			"\1\171",
+			"\1\172",
+			"\1\16\1\uffff\1\16\3\uffff\1\16\1\uffff\16\16\5\uffff\33\16\4\uffff"+
+			"\1\16\1\uffff\32\16\45\uffff\140\16"
 	};
 
 	static final short[] DFA2_eot = DFA.unpackEncodedString(DFA2_eotS);
@@ -3546,35 +3549,35 @@ static class CombinedParser extends Parser {
 	// $ANTLR end "order_type"
 
 	// Delegated rules
-	public Combined_BasicParser.undefined_return undefined() throws RecognitionException { return gBasicParser.undefined(); }
-
 	public Combined_BasicParser.cjk_return cjk() throws RecognitionException { return gBasicParser.cjk(); }
-
-	public Combined_BasicParser.currency_return currency() throws RecognitionException { return gBasicParser.currency(); }
-
-	public Combined_BasicParser.word_return word() throws RecognitionException { return gBasicParser.word(); }
-
-	public Combined_BasicParser.email_return email() throws RecognitionException { return gBasicParser.email(); }
-
-	public void separator() throws RecognitionException { gBasicParser.separator(); }
-
-	public Combined_BasicParser.roman_numeral_return roman_numeral() throws RecognitionException { return gBasicParser.roman_numeral(); }
-
-	public Combined_BasicParser.alphanum_return alphanum() throws RecognitionException { return gBasicParser.alphanum(); }
 
 	public Combined_BasicParser.fraction_return fraction() throws RecognitionException { return gBasicParser.fraction(); }
 
-	public Combined_BasicParser.hebrew_return hebrew() throws RecognitionException { return gBasicParser.hebrew(); }
+	public Combined_BasicParser.capword_return capword() throws RecognitionException { return gBasicParser.capword(); }
 
 	public Combined_BasicParser.decimal_return decimal() throws RecognitionException { return gBasicParser.decimal(); }
 
 	public Combined_BasicParser.integer_return integer() throws RecognitionException { return gBasicParser.integer(); }
 
+	public Combined_BasicParser.hebrew_return hebrew() throws RecognitionException { return gBasicParser.hebrew(); }
+
 	public void extended() throws RecognitionException { gBasicParser.extended(); }
 
-	public Combined_BasicParser.capword_return capword() throws RecognitionException { return gBasicParser.capword(); }
+	public Combined_BasicParser.alphanum_return alphanum() throws RecognitionException { return gBasicParser.alphanum(); }
+
+	public void separator() throws RecognitionException { gBasicParser.separator(); }
+
+	public Combined_BasicParser.word_return word() throws RecognitionException { return gBasicParser.word(); }
+
+	public Combined_BasicParser.roman_numeral_return roman_numeral() throws RecognitionException { return gBasicParser.roman_numeral(); }
 
 	public void basic() throws RecognitionException { gBasicParser.basic(); }
+
+	public Combined_BasicParser.undefined_return undefined() throws RecognitionException { return gBasicParser.undefined(); }
+
+	public Combined_BasicParser.currency_return currency() throws RecognitionException { return gBasicParser.currency(); }
+
+	public Combined_BasicParser.email_return email() throws RecognitionException { return gBasicParser.email(); }
 
 
 
