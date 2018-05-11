@@ -334,23 +334,23 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="dd">
-        <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Model" type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol" type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Maintenance_value" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Renewal_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SLA" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Coverage" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Site_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Site_Name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Site_Address" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ServiceID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Location_A" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Previous_PO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="dd" activateCondensedTool="true" rejectInnerJoin="true">
+        <mapperTableEntries name="SN_" expression="row4.SN_" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Model" expression="row4.Model" type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol" expression="row4.eol" type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" expression="row4.eol_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Maintenance_value" expression="row4.Maintenance_value" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Renewal_Date" expression="row4.Renewal_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SLA" expression="row4.SLA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coverage" expression="row4.Coverage" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_ID" expression="row4.Site_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Name" expression="row4.Site_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Site_Address" expression="row4.Site_Address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ServiceID" expression="row4.ServiceID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Location_A" expression="row4.Location_A" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Previous_PO" expression="row4.Previous_PO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Prorated_Date" expression="row4.Prorated_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="New_renewal_amount" expression="row4.New_renewal_amount" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
@@ -370,7 +370,7 @@
         <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row31" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row31" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="SN" expression="row4.SN_ " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="Count" type="id_Integer" nullable="true"/>
       </inputTables>
