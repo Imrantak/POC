@@ -1604,9 +1604,9 @@
         <mapperTableEntries name="MODEL_1" expression="row9.MODEL " type="id_String" nullable="true"/>
         <mapperTableEntries name="IOS" expression="row9.IOS" type="id_String" nullable="true"/>
         <mapperTableEntries name="Confidence_Score" expression="&quot;High&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Warranty_start_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warranty_start_date" expression="(row7.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Warranty_end_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_start" type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_start" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="po_period_end" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Name" expression="row9.SUPPLIER" type="id_String" nullable="true"/>
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="row9.ROUTER_HOSTNAME" type="id_String" nullable="true"/>
