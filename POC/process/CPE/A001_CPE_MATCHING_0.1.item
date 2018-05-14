@@ -3887,6 +3887,7 @@
       <column comment="" key="false" length="28" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIleName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -3899,7 +3900,7 @@
         <mapperTableEntries name="SLA" expression="row29.SLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" expression="row29.Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" expression="row29.Previous_PO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Filename" expression="&quot;HDSUMMARY&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Filename" expression="row29.FIleName" type="id_String" nullable="true"/>
         <mapperTableEntries name="MODEL_1" type="id_String" nullable="true"/>
         <mapperTableEntries name="IOS" type="id_String" nullable="true"/>
         <mapperTableEntries name="Confidence_Score" expression="&quot;High&quot;" type="id_String" nullable="true"/>
@@ -3939,6 +3940,7 @@
         <mapperTableEntries name="Prorated_Date" expression="row29.Prorated_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="New_renewal_amount" expression="row29.New_renewal_amount" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" expression="row25.SMARTS_DOMAIN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIleName" expression="row29.FIleName " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row29" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
@@ -4263,6 +4265,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Customer"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIleName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
@@ -4295,6 +4299,7 @@
       <column comment="" key="false" length="28" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="32" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIleName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tReplicate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="1280">
@@ -5664,6 +5669,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfMATCH3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfcopyOfNON_MATCHED_FINAL" lineStyle="0" metaname="copyOfcopyOfNON_MATCHED_FINAL" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_9" target="tFileOutputExcel_9">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="FIleName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfcopyOfNON_MATCHED_FINAL" show="false"/>
   </connection>
