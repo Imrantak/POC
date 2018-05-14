@@ -536,7 +536,7 @@
       <column comment="" key="false" length="0" name="FIleName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="total1">
         <mapperTableEntries name="SN_" expression="row1.SN_ " type="id_String" nullable="true"/>
@@ -1468,9 +1468,10 @@
       <column comment="" key="false" length="14" name="Previous_PO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="44" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FIleName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="ee">
         <mapperTableEntries name="SN" expression="row5.SN_ " type="id_String" nullable="true"/>
@@ -1496,6 +1497,7 @@
         <mapperTableEntries name="Previous_PO" type="id_String" nullable="true"/>
         <mapperTableEntries name="Prorated_Date" expression="row5.Prorated_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FIleName" expression="row5.FIleName " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
@@ -1741,9 +1743,9 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="New_renewal_amount"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIleName"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_R50-AFOVEeiLrKqt0XAikA - metadata" show="false"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
@@ -1774,6 +1776,7 @@
       <column comment="" key="false" length="14" name="Previous_PO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="44" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="FIleName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="992">
@@ -1998,6 +2001,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="ee" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="OUTTT" lineStyle="0" metaname="OUTTT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_7" target="tFileOutputExcel_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="FIleName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTTT" show="false"/>
   </connection>
