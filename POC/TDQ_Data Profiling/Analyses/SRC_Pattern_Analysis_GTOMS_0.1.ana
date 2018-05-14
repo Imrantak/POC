@@ -1,13 +1,492 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="_2nFDYFdWEeicO8-tFulvHw" name="SRC_Pattern_Analysis_GTOMS" creationDate="2018-05-14T14:41:57.749+0530">
-  <taggedValue xmi:id="_2nFDYVdWEeicO8-tFulvHw" tag="Status" value="development"/>
-  <taggedValue xmi:id="_2nFDYldWEeicO8-tFulvHw" tag="Author" value="viral.patel@eval8082.talend.com"/>
-  <taggedValue xmi:id="_2nFDY1dWEeicO8-tFulvHw" tag="Purpose"/>
-  <taggedValue xmi:id="_2nFDZFdWEeicO8-tFulvHw" tag="Description"/>
-  <taggedValue xmi:id="_2nFDZVdWEeicO8-tFulvHw" tag="Version" value="0.1"/>
-  <context xmi:id="_2nFqcFdWEeicO8-tFulvHw"/>
-  <results xmi:id="_2nFqcVdWEeicO8-tFulvHw">
-    <resultMetadata xmi:id="_2nFqcldWEeicO8-tFulvHw"/>
-  </results>
-  <parameters xmi:id="_2nFqc1dWEeicO8-tFulvHw" analysisType="Multiple Column Analysis"/>
-</dataquality.analysis:Analysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_2nFDYFdWEeicO8-tFulvHw" name="SRC_Pattern_Analysis_GTOMS" creationDate="2018-05-14T14:41:57.749+0530" defaultContext="Default">
+    <clientDependency href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#_3RFCoFdWEeicO8-tFulvHw"/>
+    <taggedValue xmi:id="_2nFDYVdWEeicO8-tFulvHw" tag="Status" value="development"/>
+    <taggedValue xmi:id="_2nFDYldWEeicO8-tFulvHw" tag="Author" value="viral.patel@eval8082.talend.com"/>
+    <taggedValue xmi:id="_2nFDY1dWEeicO8-tFulvHw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_2nFDZFdWEeicO8-tFulvHw" tag="Description" value=""/>
+    <taggedValue xmi:id="_2nFDZVdWEeicO8-tFulvHw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_3QxgoVdWEeicO8-tFulvHw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+    <taggedValue xmi:id="_3QxgoldWEeicO8-tFulvHw" tag="PREVIEW_ROW_NUMBER" value="50"/>
+    <taggedValue xmi:id="_3QyuwFdWEeicO8-tFulvHw" tag="NUMBER_OF_CONNECTIONS_PER_ANALYSIS" value="5"/>
+    <taggedValue xmi:id="_3RQBwFdWEeicO8-tFulvHw" tag="Is Use Sample Data" value="false"/>
+    <context xmi:id="_2nFqcFdWEeicO8-tFulvHw">
+      <connection href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OjZUEz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
+      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
+    </context>
+    <results xmi:id="_2nFqcVdWEeicO8-tFulvHw">
+      <resultMetadata xmi:id="_2nFqcldWEeicO8-tFulvHw"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3QzV0FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3QzV0VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3Qz84FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3Qz84VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3Qz84ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3Qz841dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3Qz85FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3Qz85VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RFpsVdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RFpsldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RFps1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RFptFdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RFptVdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RFptldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RFpt1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RFpuFdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RFpuldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RFpu1dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RFpvFdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RFpvVdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQwFdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQwVdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQwldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQw1dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQxVdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQxldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQx1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQyFdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQyVdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQyldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQy1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQzFdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQzldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQz1dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ0FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ0VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ0ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ01dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ1FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ1VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ11dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ2FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ2VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ2ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ21dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ3FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ3VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ3ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ4FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ4VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ4ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ41dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ5FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ5VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ5ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ51dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ6VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ6ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ61dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ7FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ7VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ7ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ71dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ8FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ8ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ81dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ9FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ9VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ9ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ91dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ-FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ-VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ-1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ_FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ_VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGQ_ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ_1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGRAFdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGRAVdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RGRAldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG30VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG30ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG301dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG31FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG31VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG31ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG311dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG32FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG32ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG321dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG33FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG33VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG33ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG331dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG34FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG34VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG341dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG35FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG35VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG35ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG351dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG36FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG36VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG36ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG37FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG37VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG37ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG371dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG38FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG38VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG38ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG381dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG39VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG39ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG391dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG3-FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG3-VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG3-ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG3-1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG3_FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG3_ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG3_1dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG4AFdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4AVdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG4AldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4A1dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG4BFdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4BVdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG4B1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4CFdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG4CVdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4CldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG4C1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4DFdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG4DVdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4DldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG4EFdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4EVdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG4EldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4E1dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG4FFdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4FVdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG4FldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RG4F1dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RHe4FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe4VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RHe4ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe41dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RHe5FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe5VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RHe5ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe51dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RHe6VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe6ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RHe61dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe7FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RHe7VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe7ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RHe71dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe8FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RHe8ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe81dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RHe9FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe9VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RHe9ldWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe91dWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RHe-FdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe-VdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RHe-1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe_FdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RHe_VdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHe_ldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RHe_1dWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHfAFdWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RHfAVdWEeicO8-tFulvHw">
+        <parameters xmi:id="_3RHfAldWEeicO8-tFulvHw"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+      </indicators>
+    </results>
+    <parameters xmi:id="_2nFqc1dWEeicO8-tFulvHw" dataFilter="_3RR28FdWEeicO8-tFulvHw" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
+    <contextType xmi:id="_3QxgoFdWEeicO8-tFulvHw" confirmationNeeded="false" name="Default"/>
+  </dataquality.analysis:Analysis>
+  <dataquality.domain:Domain xmi:id="_3RR28FdWEeicO8-tFulvHw" name="SRC_Pattern_Analysis_GTOMS">
+    <ranges xmi:id="_3RR28VdWEeicO8-tFulvHw">
+      <expressions xmi:id="_3RR28ldWEeicO8-tFulvHw">
+        <expression xsi:type="relational:TdExpression" xmi:id="_3RR281dWEeicO8-tFulvHw" body="" language="SQL"/>
+      </expressions>
+    </ranges>
+  </dataquality.domain:Domain>
+</xmi:XMI>
