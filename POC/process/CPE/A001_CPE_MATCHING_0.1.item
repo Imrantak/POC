@@ -338,7 +338,7 @@
       <column comment="" key="false" length="-1" name="FIleName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dd" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="SN_" expression="row4.SN_" type="id_String" nullable="true"/>
@@ -873,18 +873,18 @@
         <mapperTableEntries name="IOS" type="id_String" nullable="true"/>
         <mapperTableEntries name="Confidence_Score" expression="&quot;High&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Warranty_start_date" expression="(NCR.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Warranty_end_date" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_start" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_end" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warranty_end_date" expression="(NCR.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_start" expression="(NCR.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_end" expression="(NCR.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Name" expression="RIZZO.Customer " type="id_String" nullable="true"/>
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="RIZZO.Hostname " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Supplier_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Supplier_ID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Contract_No" type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_make" type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_invoice" type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_of_life_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="end_of_life_date" expression="NCR.eol " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_flag" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="NCR.Site_Name" type="id_String" nullable="true"/>
@@ -1611,9 +1611,9 @@
         <mapperTableEntries name="IOS" expression="row9.IOS" type="id_String" nullable="true"/>
         <mapperTableEntries name="Confidence_Score" expression="&quot;High&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Warranty_start_date" expression="(row7.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Warranty_end_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_start" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_end" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warranty_end_date" expression="(row7.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_start" expression="(row7.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_end" expression="(row7.Filename.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(row7.Filename.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(NCR.Filename.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Name" expression="row9.SUPPLIER" type="id_String" nullable="true"/>
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="row9.ROUTER_HOSTNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_ID" expression="" type="id_String" nullable="true"/>
@@ -2319,19 +2319,19 @@
         <mapperTableEntries name="Coverage" expression="row13.Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" expression="row13.Previous_PO" type="id_String" nullable="true"/>
         <mapperTableEntries name="Filename" expression="row13.FIleName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MODEL_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MODEL_1" expression="row14.MODEL " type="id_String" nullable="true"/>
         <mapperTableEntries name="IOS" type="id_String" nullable="true"/>
         <mapperTableEntries name="Confidence_Score" expression="&quot;High&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Warranty_start_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Warranty_end_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_start" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_end" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warranty_start_date" expression="(row13.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(row13.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(row13.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warranty_end_date" expression="(row13.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(row13.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(row13.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_start" expression="(row13.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(row13.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(row13.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_end" expression="(row13.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(row13.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(row13.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="row14.ROUTER_HOSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Supplier_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Supplier_ID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Contract_No" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_make" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_model_invoice" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_make" expression="row13.Model.split(&quot; &quot;,2)[0]+&quot; &quot;+ row13.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[0] " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_model_invoice" expression="row13.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] " type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" type="id_String" nullable="true"/>
@@ -3113,21 +3113,21 @@
         <mapperTableEntries name="Coverage" expression="Notfound.Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" expression="Notfound.Previous_PO" type="id_String" nullable="true"/>
         <mapperTableEntries name="Filename" expression="Notfound.FIleName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MODEL_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MODEL_1" expression="row23.MODEL " type="id_String" nullable="true"/>
         <mapperTableEntries name="IOS" type="id_String" nullable="true"/>
         <mapperTableEntries name="Confidence_Score" expression="&quot;High&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Warranty_start_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Warranty_end_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_start" type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_end" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warranty_start_date" expression="(Notfound.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(Notfound.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(Notfound.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warranty_end_date" expression="(Notfound.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(Notfound.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(Notfound.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_start" expression="(Notfound.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;1-Apr-2017&quot;:(Notfound.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;1-Jul-2016&quot;:(Notfound.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;1-Oct-2016&quot;:&quot;1-Jan-2016&quot;))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_end" expression="(Notfound.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(Notfound.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(Notfound.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ROUTER_HOSTNAME" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Supplier_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ROUTER_HOSTNAME" expression="row23.HOSTNAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Supplier_ID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Contract_No" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_make" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_model_invoice" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_make" expression="Notfound.Model.split(&quot; &quot;,2)[0]+&quot; &quot;+ Notfound.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[0] " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_model_invoice" expression="Notfound.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] " type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_model_final" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_model_final" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_flag" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
@@ -3912,7 +3912,7 @@
         <mapperTableEntries name="ROUTER_HOSTNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Contract_No" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_make" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_make" expression="row29.Model.split(&quot; &quot;,2)[0]+&quot; &quot;+ row29.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[0] " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_invoice" type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" type="id_String" nullable="true"/>
@@ -4911,7 +4911,7 @@
       <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfMapping_0">
         <mapperTableEntries name="Attribute" expression="" type="id_String" nullable="true"/>
