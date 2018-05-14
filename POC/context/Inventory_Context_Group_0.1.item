@@ -11,6 +11,8 @@
     <contextParameter xmi:id="_kI-800LQEeiSc4ZVDlkk2A" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-81ELQEeiSc4ZVDlkk2A" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_dDi-8FKZEeiqcee2aIGzEA" comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" type="id_String" value="C:/Vodafone/"/>
+    <contextParameter xmi:id="_oEdsgFdsEeicO8-tFulvHw" comment="" name="data_prep_URL" prompt="data_prep_URL?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oEdsgVdsEeicO8-tFulvHw" comment="" name="new1" prompt="new1?" promptNeeded="false" type="id_String" value="viral.patel@eval8082.talend.com"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_jp500DfzEeiFBblx5C46YA" confirmationNeeded="false" name="local">
     <contextParameter xmi:id="_jp500TfzEeiFBblx5C46YA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
@@ -23,6 +25,8 @@
     <contextParameter xmi:id="_kI-82ELQEeiSc4ZVDlkk2A" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_kI-82ULQEeiSc4ZVDlkk2A" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_dDi-8VKZEeiqcee2aIGzEA" comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" type="id_String" value="C:/Vodafone/"/>
+    <contextParameter xmi:id="_oEdsgldsEeicO8-tFulvHw" comment="" name="data_prep_URL" prompt="data_prep_URL?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oEdsg1dsEeicO8-tFulvHw" comment="" name="new1" prompt="new1?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_uPk4AFKXEeiqcee2aIGzEA" confirmationNeeded="false" name="Local_linux">
     <contextParameter xmi:id="_uPk4AVKXEeiqcee2aIGzEA" comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" type="id_String" value="https://vodafonedev7.service-now.com/"/>
@@ -35,5 +39,7 @@
     <contextParameter xmi:id="_uPlfFFKXEeiqcee2aIGzEA" comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_uPlfFVKXEeiqcee2aIGzEA" comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_dDi-8lKZEeiqcee2aIGzEA" comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" type="id_String" value="/home/amh/Dropbox/Companies/Vodafone/"/>
+    <contextParameter xmi:id="_oEeTkFdsEeicO8-tFulvHw" comment="" name="data_prep_URL" prompt="data_prep_URL?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_oEeTkVdsEeicO8-tFulvHw" comment="" name="new1" prompt="new1?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>
