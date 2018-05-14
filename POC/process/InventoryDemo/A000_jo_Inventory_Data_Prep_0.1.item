@@ -464,7 +464,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="ii">
-        <mapperTableEntries name="GTOMS_Ref" expression="row2.GTOMS != null ? row2.GTOMS_Ref.toString() : &quot;&quot;" type="id_String"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="row2.GTOMS_Ref != null ? row2.GTOMS_Ref.toString() : &quot;&quot; " type="id_String"/>
         <mapperTableEntries name="Product" expression="row2.Product" type="id_String"/>
         <mapperTableEntries name="Order_Type" expression="row2.Order_Type" type="id_String"/>
         <mapperTableEntries name="GSOS_Ref" expression="row2.GSOS_Ref" type="id_String"/>
