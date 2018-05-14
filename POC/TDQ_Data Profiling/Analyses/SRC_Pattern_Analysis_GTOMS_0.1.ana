@@ -14,469 +14,262 @@
     <context xmi:id="_2nFqcFdWEeicO8-tFulvHw">
       <connection href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OjZUEz_EeihBPD6I1_SrQ"/>
       <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
       <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
       <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
     </context>
     <results xmi:id="_2nFqcVdWEeicO8-tFulvHw">
-      <resultMetadata xmi:id="_2nFqcldWEeicO8-tFulvHw"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3QzV0FdWEeicO8-tFulvHw">
+      <resultMetadata xmi:id="_2nFqcldWEeicO8-tFulvHw" executionDate="2018-05-14T14:46:53.256+0530" executionDuration="12806" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3QzV0FdWEeicO8-tFulvHw" count="79263" nullCount="1" computed="true">
         <parameters xmi:id="_3QzV0VdWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_imktAFdXEeicO8-tFulvHw" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_imktAVdXEeicO8-tFulvHw" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_imktAldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_imktA1dXEeicO8-tFulvHw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3Qz84FdWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3Qz84FdWEeicO8-tFulvHw" count="79262" computed="true">
         <parameters xmi:id="_3Qz84VdWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_imvFEFdXEeicO8-tFulvHw" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_imvFEVdXEeicO8-tFulvHw" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_imvFEldXEeicO8-tFulvHw" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_imvFE1dXEeicO8-tFulvHw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3Qz84ldWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3Qz84ldWEeicO8-tFulvHw" count="79262" computed="true" distinctValueCount="5" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000574000239397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000005374000539393939397371007E0003000000000001139D7400033939397371007E0003000000000000030D740001397371007E00030000000000000008740004393939397371007E00030000000000001E9978">
         <parameters xmi:id="_3Qz841dWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_im1LsFdXEeicO8-tFulvHw" name="Pattern Frequency Table" label="Pattern Frequency Table">
+          <taggedValue xmi:id="_im1LsVdXEeicO8-tFulvHw" tag="Description" value="counts the number of records for each distinct pattern"/>
+          <taggedValue xmi:id="_im1LsldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the most frequent patterns"/>
+          <sqlGenericExpression xmi:id="_im1Ls1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_im1LtFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_im1LtVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_im1LtldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_im1Lt1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_im1LuFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%> , COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_im1LuVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_im1LuldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_im1Lu1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_im1LvFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_im1LvVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Netezza"/>
+          <charactersMapping xmi:id="_im1LvldXEeicO8-tFulvHw" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1Lv1dXEeicO8-tFulvHw" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1LwFdXEeicO8-tFulvHw" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1LwVdXEeicO8-tFulvHw" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1LwldXEeicO8-tFulvHw" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1Lw1dXEeicO8-tFulvHw" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1LxFdXEeicO8-tFulvHw" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1LxVdXEeicO8-tFulvHw" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1LxldXEeicO8-tFulvHw" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1Lx1dXEeicO8-tFulvHw" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1LyFdXEeicO8-tFulvHw" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im1LyVdXEeicO8-tFulvHw" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3Qz85FdWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3Qz85FdWEeicO8-tFulvHw" count="79262" computed="true" distinctValueCount="5" uniqueValueCount="0" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000574000239397372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000005374000539393939397371007E0003000000000001139D740001397371007E000300000000000000087400033939397371007E0003000000000000030D740004393939397371007E00030000000000001E9978">
         <parameters xmi:id="_3Qz85VdWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAYkz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_im7SUFdXEeicO8-tFulvHw" name="Pattern Low Frequency Table" label="Pattern Low Frequency Table">
+          <taggedValue xmi:id="_im7SUVdXEeicO8-tFulvHw" tag="Description" value="counts the number of patterns for each distinct pattern"/>
+          <taggedValue xmi:id="_im7SUldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the less frequent patterns"/>
+          <sqlGenericExpression xmi:id="_im7SU1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_im7SVFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_im7SVVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_im7SVldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_im7SV1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_im7SWFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_im7SWVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_im7SWldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_im7SW1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_im7SXFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_im7SXVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Netezza"/>
+          <charactersMapping xmi:id="_im7SXldXEeicO8-tFulvHw" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SX1dXEeicO8-tFulvHw" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SYFdXEeicO8-tFulvHw" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SYVdXEeicO8-tFulvHw" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SYldXEeicO8-tFulvHw" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SY1dXEeicO8-tFulvHw" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SZFdXEeicO8-tFulvHw" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SZVdXEeicO8-tFulvHw" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SZldXEeicO8-tFulvHw" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SZ1dXEeicO8-tFulvHw" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SaFdXEeicO8-tFulvHw" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_im7SaVdXEeicO8-tFulvHw" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RFpsVdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RFpsldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RFps1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RFptFdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RFptVdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RFptldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RFpt1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RFpuFdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAY0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RFpuldWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RFpuldWEeicO8-tFulvHw" count="79263" nullCount="1" computed="true">
         <parameters xmi:id="_3RFpu1dWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_inBY8FdXEeicO8-tFulvHw" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_inBY8VdXEeicO8-tFulvHw" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_inBY8ldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_inBY81dXEeicO8-tFulvHw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RFpvFdWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RFpvFdWEeicO8-tFulvHw" count="79263" computed="true">
         <parameters xmi:id="_3RFpvVdWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_inG4gFdXEeicO8-tFulvHw" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_inG4gVdXEeicO8-tFulvHw" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_inG4gldXEeicO8-tFulvHw" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_inG4g1dXEeicO8-tFulvHw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQwFdWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQwFdWEeicO8-tFulvHw" count="79263" computed="true" distinctValueCount="10" uniqueValueCount="3" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000541616161617372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000479B7400007371007E000300000000000003F774000841616161616161617371007E000300000000000000D974000D416161616161616120416161617371007E000300000000000004AC7400094161616161616161617371007E0003000000000000084474000E41616161616161204161204141417371007E0003000000000000005174000B41616161616161616161617371007E0003000000000000042974000F4161616161616161612D41616161617371007E0003000000000000036F740007416161616161617371007E00030000000000007E497400064161616161617371007E0003000000000000559578">
         <parameters xmi:id="_3RGQwVdWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_inNmMFdXEeicO8-tFulvHw" name="Pattern Frequency Table" label="Pattern Frequency Table">
+          <taggedValue xmi:id="_inNmMVdXEeicO8-tFulvHw" tag="Description" value="counts the number of records for each distinct pattern"/>
+          <taggedValue xmi:id="_inNmMldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the most frequent patterns"/>
+          <sqlGenericExpression xmi:id="_inNmM1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_inNmNFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_inNmNVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_inNmNldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_inNmN1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_inNmOFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%> , COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_inNmOVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_inNmOldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_inNmO1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_inNmPFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_inNmPVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Netezza"/>
+          <charactersMapping xmi:id="_inNmPldXEeicO8-tFulvHw" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmP1dXEeicO8-tFulvHw" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmQFdXEeicO8-tFulvHw" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmQVdXEeicO8-tFulvHw" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmQldXEeicO8-tFulvHw" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmQ1dXEeicO8-tFulvHw" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmRFdXEeicO8-tFulvHw" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmRVdXEeicO8-tFulvHw" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmRldXEeicO8-tFulvHw" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmR1dXEeicO8-tFulvHw" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmSFdXEeicO8-tFulvHw" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inNmSVdXEeicO8-tFulvHw" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQwldWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQwldWEeicO8-tFulvHw" count="79263" computed="true" distinctValueCount="10" uniqueValueCount="3" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A74000C4161616161204161616161617372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000561616161617371007E0003000000000000000174000C41616161616161204141414171007E000574000E41616161616120416161616161617371007E0003000000000000000D740007616161616161617371007E000300000000000000047400164161616161202F2041616161616161204161616161617371007E000300000000000000447400066161616161617371007E0003000000000000001A740010416161616161204161616161616161617371007E0003000000000000000774000B416161612041616161616171007E00077400133939393939395F39395F41393939393939202871007E000778">
         <parameters xmi:id="_3RGQw1dWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZEz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_inTs0FdXEeicO8-tFulvHw" name="Pattern Low Frequency Table" label="Pattern Low Frequency Table">
+          <taggedValue xmi:id="_inTs0VdXEeicO8-tFulvHw" tag="Description" value="counts the number of patterns for each distinct pattern"/>
+          <taggedValue xmi:id="_inTs0ldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the less frequent patterns"/>
+          <sqlGenericExpression xmi:id="_inTs01dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_inTs1FdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_inTs1VdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_inTs1ldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_inTs11dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_inTs2FdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_inTs2VdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_inTs2ldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_inTs21dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_inTs3FdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_inTs3VdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Netezza"/>
+          <charactersMapping xmi:id="_inTs3ldXEeicO8-tFulvHw" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs31dXEeicO8-tFulvHw" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs4FdXEeicO8-tFulvHw" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs4VdXEeicO8-tFulvHw" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs4ldXEeicO8-tFulvHw" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs41dXEeicO8-tFulvHw" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs5FdXEeicO8-tFulvHw" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs5VdXEeicO8-tFulvHw" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs5ldXEeicO8-tFulvHw" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs51dXEeicO8-tFulvHw" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs6FdXEeicO8-tFulvHw" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_inTs6VdXEeicO8-tFulvHw" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQxVdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQxldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQx1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQyFdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQyVdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQyldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQy1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQzFdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQzldWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQzldWEeicO8-tFulvHw" count="79263" nullCount="1" computed="true">
         <parameters xmi:id="_3RGQz1dWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_inq5MFdXEeicO8-tFulvHw" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_inq5MVdXEeicO8-tFulvHw" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_inq5MldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_inq5M1dXEeicO8-tFulvHw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ0FdWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ0FdWEeicO8-tFulvHw" count="79263" computed="true">
         <parameters xmi:id="_3RGQ0VdWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_inwYwFdXEeicO8-tFulvHw" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_inwYwVdXEeicO8-tFulvHw" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_inwYwldXEeicO8-tFulvHw" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_inwYw1dXEeicO8-tFulvHw" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ0ldWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ0ldWEeicO8-tFulvHw" count="79263" computed="true" distinctValueCount="10" uniqueValueCount="770" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A7400007372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000003C2F74000241417371007E0003000000000000032874000261617371007E0003000000000000027074001041414141412D414141392D39393939397371007E000300000000000001BC7400036161617371007E000300000000000001877400034141417371007E0003000000000000024C740003612F617371007E000300000000000001CD74001041414141412D414141412D39393939397371007E0003000000000000D27874001041414139412D414141412D39393939397371007E000300000000000001B574001741414141412D414141412D3939393939204161616161617371007E0003000000000000015978">
         <parameters xmi:id="_3RGQ01dWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_in2fYFdXEeicO8-tFulvHw" name="Pattern Frequency Table" label="Pattern Frequency Table">
+          <taggedValue xmi:id="_in2fYVdXEeicO8-tFulvHw" tag="Description" value="counts the number of records for each distinct pattern"/>
+          <taggedValue xmi:id="_in2fYldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the most frequent patterns"/>
+          <sqlGenericExpression xmi:id="_in2fY1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_in2fZFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_in2fZVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_in2fZldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_in2fZ1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_in2faFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%> , COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_in2faVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_in2faldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_in2fa1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c DESC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_in2fbFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_in2fbVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c DESC" language="Netezza"/>
+          <charactersMapping xmi:id="_in2fbldXEeicO8-tFulvHw" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fb1dXEeicO8-tFulvHw" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fcFdXEeicO8-tFulvHw" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fcVdXEeicO8-tFulvHw" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fcldXEeicO8-tFulvHw" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fc1dXEeicO8-tFulvHw" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fdFdXEeicO8-tFulvHw" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fdVdXEeicO8-tFulvHw" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fdldXEeicO8-tFulvHw" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2fd1dXEeicO8-tFulvHw" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2feFdXEeicO8-tFulvHw" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_in2feVdXEeicO8-tFulvHw" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ1FdWEeicO8-tFulvHw">
+      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ1FdWEeicO8-tFulvHw" count="79263" computed="true" distinctValueCount="10" uniqueValueCount="770" valueToFreq="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C7708000000100000000A740013282041414141412D414141412D3939393939297372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000000000001740005286161612971007E000574002B21212061616120616161206161616161612061612061616161612041414141412D414141412D393939393971007E00057400182841616161612041414141412D414141412D39393939392971007E00057400222841414141412D414141412D39393939392941414141412D414141412D393939393971007E000574002828616161612041414141412D414141412D3939393939292041414141412D414141412D393939393971007E000574001E282061616161616161613A2041414141412D414141412D3939393939202971007E000574002928416161612061616161206161616161206161204141412041414141412D414141412D39393939392971007E0005740019282061616161612041414141412D414141412D39393939392971007E000574000939392D4161612D393971007E000578">
         <parameters xmi:id="_3RGQ1VdWEeicO8-tFulvHw"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZkz_EeihBPD6I1_SrQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ11dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ2FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ2VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ2ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ21dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ3FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ3VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ3ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAZ0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ4FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ4VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ4ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ41dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ5FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ5VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ5ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ51dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ6VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ6ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ61dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ7FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ7VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ7ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ71dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ8FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAaUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ8ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ81dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ9FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ9VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ9ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ91dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGQ-FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ-VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAakz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RGQ-1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ_FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RGQ_VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGQ_ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RGQ_1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGRAFdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RGRAVdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RGRAldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAa0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG30VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG30ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG301dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG31FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG31VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG31ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG311dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG32FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG32ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG321dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG33FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG33VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG33ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG331dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG34FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG34VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG341dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG35FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG35VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG35ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG351dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG36FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG36VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG36ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAbkz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG37FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG37VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG37ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG371dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG38FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG38VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG38ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG381dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAb0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG39VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG39ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG391dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG3-FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG3-VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG3-ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG3-1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG3_FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG3_ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG3_1dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG4AFdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4AVdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG4AldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4A1dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG4BFdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4BVdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAcUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG4B1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4CFdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG4CVdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4CldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG4C1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4DFdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG4DVdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4DldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAckz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RG4EFdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4EVdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RG4EldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4E1dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RG4FFdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4FVdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RG4FldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RG4F1dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAc0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RHe4FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe4VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RHe4ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe41dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RHe5FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe5VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RHe5ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe51dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdEz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RHe6VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe6ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RHe61dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe7FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RHe7VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe7ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RHe71dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe8FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdUz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RHe8ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe81dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RHe9FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe9VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RHe9ldWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe91dWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RHe-FdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe-VdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAdkz_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_3RHe-1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe_FdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_3RHe_VdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHe_ldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternFreqIndicator" xmi:id="_3RHe_1dWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHfAFdWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Frequency_Table_0.1.definition#_kQzTsJR-Ed2XO-JvLwVAwg"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:PatternLowFreqIndicator" xmi:id="_3RHfAVdWEeicO8-tFulvHw">
-        <parameters xmi:id="_3RHfAldWEeicO8-tFulvHw"/>
-        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/CSV_DS3_GTOMS_0.1.item#__OkAd0z_EeihBPD6I1_SrQ"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Frequency Statistics/Pattern_Low_Frequency_Table_0.1.definition#_OCTbwJR_Ed2XO-JvLwVAwg"/>
+        <builtInIndicatorDefinition xmi:id="_ioNEsFdXEeicO8-tFulvHw" name="Pattern Low Frequency Table" label="Pattern Low Frequency Table">
+          <taggedValue xmi:id="_ioNEsVdXEeicO8-tFulvHw" tag="Description" value="counts the number of patterns for each distinct pattern"/>
+          <taggedValue xmi:id="_ioNEsldXEeicO8-tFulvHw" tag="Purpose" value="evaluates the less frequent patterns"/>
+          <sqlGenericExpression xmi:id="_ioNEs1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="SQL"/>
+          <sqlGenericExpression xmi:id="_ioNEtFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_ioNEtVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_ioNEtldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_ioNEt1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="DB2"/>
+          <sqlGenericExpression xmi:id="_ioNEuFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="AS/400"/>
+          <sqlGenericExpression xmi:id="_ioNEuVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_ioNEuldXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Informix"/>
+          <sqlGenericExpression xmi:id="_ioNEu1dXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_ioNEvFdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) AS c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> ORDER BY c ASC" language="Vertica Database"/>
+          <sqlGenericExpression xmi:id="_ioNEvVdXEeicO8-tFulvHw" body="SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) c FROM &lt;%=__TABLE_NAME__%> t &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__GROUP_BY_ALIAS__%> ORDER BY c ASC" language="Netezza"/>
+          <charactersMapping xmi:id="_ioNEvldXEeicO8-tFulvHw" language="SQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNEv1dXEeicO8-tFulvHw" name="Characters mapping on MySQL" language="MySQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNEwFdXEeicO8-tFulvHw" name="Characters mapping on Oracle" language="Oracle" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNEwVdXEeicO8-tFulvHw" name="Characters mapping on PostgreSQL" language="PostgreSQL" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNEwldXEeicO8-tFulvHw" name="Characters mapping on Informix" language="Informix" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNEw1dXEeicO8-tFulvHw" name="Characters mapping on Microsoft SQL Server" language="Microsoft SQL Server" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNExFdXEeicO8-tFulvHw" name="Characters mapping on DB2" language="DB2" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNExVdXEeicO8-tFulvHw" name="Characters mapping on AS/400" language="AS/400" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNExldXEeicO8-tFulvHw" name="Characters mapping on Teradata" language="Teradata" charactersToReplace="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNEx1dXEeicO8-tFulvHw" name="Characters mapping on Vertica" language="Vertica Database" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNEyFdXEeicO8-tFulvHw" language="Netezza" charactersToReplace="abcdefghijklmnopqrstuvwxyzçâêîôûéèùïöüABCDEFGHIJKLMNOPQRSTUVWXYZÇÂÊÎÔÛÉÈÙÏÖÜ0123456789" replacementCharacters="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9999999999"/>
+          <charactersMapping xmi:id="_ioNEyVdXEeicO8-tFulvHw" name="Characters mapping on Hive" language="Hive" charactersToReplace="0123456789abcdefghijklmnopqrstuvwxyz?aê???éèù??üABCDEFGHIJKLMNOPQRSTUVWXYZ??ê???éèù??ü" replacementCharacters="9999999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </builtInIndicatorDefinition>
       </indicators>
     </results>
     <parameters xmi:id="_2nFqc1dWEeicO8-tFulvHw" dataFilter="_3RR28FdWEeicO8-tFulvHw" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
