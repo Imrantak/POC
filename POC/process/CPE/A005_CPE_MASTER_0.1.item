@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="aml_npid_file_name" prompt="aml_npid_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
+    <contextParameter comment="" name="billing_file_name" prompt="billing_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
+    <contextParameter comment="" name="DataFolder" prompt="DataFolder?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="C:/Vodafone/"/>
+    <contextParameter comment="" name="grn_file_name" prompt="grn_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
+    <contextParameter comment="" name="gtoms_file_name" prompt="gtoms_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
+    <contextParameter comment="" name="root_file_path" prompt="root_file_path?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="C:/poc_data"/>
+    <contextParameter comment="" name="sn_Pwd" prompt="sn_Pwd?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_Password" value="s9afH0ZmjGUqGX0+6hyPEg=="/>
+    <contextParameter comment="" name="sn_URL" prompt="sn_URL?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="https://vodafonedev7.service-now.com/"/>
+    <contextParameter comment="" name="sn_User" prompt="sn_User?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value="talend.integration.user"/>
+    <contextParameter comment="" name="sovr_file_name" prompt="sovr_file_name?" promptNeeded="false" repositoryContextId="_HMxs4DfzEeiFBblx5C46YA" type="id_String" value=""/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
