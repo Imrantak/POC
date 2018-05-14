@@ -3502,7 +3502,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="after_product_country" show="false"/>
   </connection>
   <connection connectorName="FILTER" label="order_type" lineStyle="0" metaname="tFilterRow_7" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_7" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="order_type" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="grn_aml_lookup" lineStyle="0" metaname="grn_aml_lookup" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
