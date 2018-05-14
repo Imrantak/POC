@@ -1617,13 +1617,13 @@
         <mapperTableEntries name="Supplier_Name" expression="row9.SUPPLIER" type="id_String" nullable="true"/>
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="row9.ROUTER_HOSTNAME" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_ID" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Supplier_Contract_No" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Supplier_Contract_No" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_make" expression="row7.Model.split(&quot; &quot;,2)[0]+&quot; &quot;+ row7.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[0] " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_invoice" expression="row7.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] " type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" expression="row9.MODEL " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" expression="Relational.ISNULL(row9.MODEL)? row7.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :row9.MODEL " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" expression="row7.eol " type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_of_life_flag" type="id_String" nullable="true"/>
+        <mapperTableEntries name="end_of_life_flag" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="row7.Site_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="row7.Site_Address" type="id_String" nullable="true"/>
