@@ -1622,7 +1622,7 @@
         <mapperTableEntries name="Device_model_invoice" expression="row7.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] " type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" expression="row9.MODEL " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" expression="Relational.ISNULL(row9.MODEL)? row7.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :row9.MODEL " type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_of_life_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="end_of_life_date" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_flag" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="row7.Site_Name" type="id_String" nullable="true"/>
