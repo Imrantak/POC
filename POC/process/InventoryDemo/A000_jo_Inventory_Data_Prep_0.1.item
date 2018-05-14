@@ -464,7 +464,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="ii">
-        <mapperTableEntries name="GTOMS_Ref" expression="row2.GTOMS_Ref" type="id_String"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="row2.GTOMS_Ref.toString()" type="id_String"/>
         <mapperTableEntries name="Product" expression="row2.Product" type="id_String"/>
         <mapperTableEntries name="Order_Type" expression="row2.Order_Type" type="id_String"/>
         <mapperTableEntries name="GSOS_Ref" expression="row2.GSOS_Ref" type="id_String"/>
@@ -474,8 +474,8 @@
         <mapperTableEntries name="Status" expression="row2.Status" type="id_String"/>
         <mapperTableEntries name="DPC_Owner" expression="row2.DPC_Owner" type="id_String"/>
         <mapperTableEntries name="Carrier" expression="row2.Carrier" type="id_String"/>
-        <mapperTableEntries name="Date_Tail_Ordered" expression="row2.Date_Tail_Ordered" type="id_String"/>
-        <mapperTableEntries name="Date_Tail_Delivered" expression="row2.Date_Tail_Delivered" type="id_String"/>
+        <mapperTableEntries name="Date_Tail_Ordered" expression="row2.Date_Tail_Ordered.toString() " type="id_String"/>
+        <mapperTableEntries name="Date_Tail_Delivered" expression="row2.Date_Tail_Delivered.toString()" type="id_String"/>
         <mapperTableEntries name="D_RFS" expression="row2.D_RFS" type="id_String"/>
         <mapperTableEntries name="Cctid" expression="row2.Cctid" type="id_String"/>
         <mapperTableEntries name="Cct_Thirdparty" expression="row2.Cct_Thirdparty" type="id_String"/>
