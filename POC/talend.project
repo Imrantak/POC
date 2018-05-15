@@ -1143,7 +1143,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_Ms2-8FgsEein-LKq9h7Y1g">
       <baseItem xmi:id="_Ms2-8VgsEein-LKq9h7Y1g" id="_MqiqwFgsEein-LKq9h7Y1g" version="0.1" type="job"/>
-      <relatedItems xmi:id="_Ms2-8lgsEein-LKq9h7Y1g" id="_x9PXQFQxEeig0Zw5-SQnSw" version="Latest" type="property"/>
       <relatedItems xmi:id="_Ms2-81gsEein-LKq9h7Y1g" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Ms2-9FgsEein-LKq9h7Y1g" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Ms2-9VgsEein-LKq9h7Y1g" id="TalendString" version="Latest" type="routine"/>
@@ -1161,7 +1160,6 @@
       <relatedItems xmi:id="_Ms2_AVgsEein-LKq9h7Y1g" id="DQTechnical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Ms2_AlgsEein-LKq9h7Y1g" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Ms2_A1gsEein-LKq9h7Y1g" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_Ms2_BFgsEein-LKq9h7Y1g" id="__OiyQEz_EeihBPD6I1_SrQ - CSV_DS3_GTOMS" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
