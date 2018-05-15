@@ -2308,7 +2308,7 @@
       <column comment="" key="false" length="-1" name="FIleName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="MATCH3">
         <mapperTableEntries name="SN_" expression="row13.SN_" type="id_String" nullable="true"/>
@@ -3102,7 +3102,7 @@
       <column comment="" key="false" length="-1" name="FIleName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfMATCH3">
         <mapperTableEntries name="SN_" expression="Notfound.SN_" type="id_String" nullable="true"/>
@@ -3890,7 +3890,7 @@
       <column comment="" key="false" length="-1" name="FIleName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfMATCH3">
         <mapperTableEntries name="SN_" expression="row29.SN_" type="id_String" nullable="true"/>
@@ -4377,7 +4377,7 @@
       <column comment="" key="false" length="-1" name="ContractNumber" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfcopyOfcopyOfMapping">
         <mapperTableEntries name="Attribute" type="id_String" nullable="true"/>
