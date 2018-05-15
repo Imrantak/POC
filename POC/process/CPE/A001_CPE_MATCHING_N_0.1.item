@@ -835,6 +835,7 @@
       <column comment="" key="false" length="-1" name="end_of_life_flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FileMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="NCR_NON_USED">
@@ -878,16 +879,17 @@
         <mapperTableEntries name="po_period_end" expression="(NCR.FIleName.equalsIgnoreCase(&quot;2018-Q1-NCR&quot;)?&quot;30-Jun-2017&quot;:(NCR.FIleName.equalsIgnoreCase(&quot;2017-Q2-NCR&quot;)?&quot;30-Sep-2016&quot;:(NCR.FIleName.equalsIgnoreCase(&quot;2017-Q3-NCR&quot;)?&quot;31-Dec-2016&quot;:&quot;31-Mar-2016&quot; ))) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Name" expression="row14.SMARTS_DOMAIN " type="id_String" nullable="true"/>
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="row14.HOSTNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Supplier_ID" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Supplier_Contract_No" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_make" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_model_invoice" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Devcie_model_network" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_model_final" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Supplier_ID" expression="row17.Supplier_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Supplier_Contract_No" expression="row17.contract_no " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_make" expression="NCR.Model.split(&quot; &quot;,2)[0]+&quot; &quot;+ NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[0] " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_model_invoice" expression="NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Devcie_model_network" expression="row14.MODEL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_model_final" expression="Relational.ISNULL(NCR.MODEL)? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :NCR.MODEL " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" expression="NCR.eol " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_flag" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="NCR.Site_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FileMatch" expression="row14.FileSource " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="NCR.Site_Address" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="NCR_NON_USED" activateCondensedTool="true" rejectInnerJoin="true">
@@ -939,15 +941,15 @@
         <mapperTableEntries name="SERIAL_NUMBER" expression="NCR.SN_ " type="id_String" operator="="/>
         <mapperTableEntries name="FileSource" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row17" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="supplier_name" expression="" type="id_String" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row17" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="supplier_name" expression="&quot;NCR&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="serial_number" type="id_String" nullable="true"/>
         <mapperTableEntries name="contract_no" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1856" posY="-64">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1632" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -1066,6 +1068,7 @@
       <column comment="" key="false" length="-1" name="end_of_life_flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FileMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1140,6 +1143,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Site_Name"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FileMatch"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Site_Address"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
@@ -1184,6 +1189,7 @@
       <column comment="" key="false" length="-1" name="end_of_life_flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FileMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -1285,6 +1291,7 @@
         <mapperTableEntries name="end_of_life_flag" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FileMatch" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -1388,6 +1395,7 @@
       <column comment="" key="false" length="-1" name="end_of_life_flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FileMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -2904,6 +2912,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="FIleName_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FileMatch"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
