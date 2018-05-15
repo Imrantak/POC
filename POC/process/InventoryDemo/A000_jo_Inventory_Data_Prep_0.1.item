@@ -172,8 +172,6 @@
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="__OiyQEz_EeihBPD6I1_SrQ - CSV_DS3_GTOMS" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="__OiyQEz_EeihBPD6I1_SrQ - CSV_DS3_GTOMS" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/talendstudio/workspace&quot;" show="false"/>
@@ -316,10 +314,10 @@
       <column comment="" key="false" length="16" name="Carrier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
         <additionalField key="Content Type" value="Nominal"/>
       </column>
-      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="Content Type" value="Interval"/>
       </column>
-      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="Content Type" value="Interval"/>
       </column>
       <column comment="" key="false" length="10" name="D_RFS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -384,10 +382,10 @@
       <column comment="" key="false" length="16" name="Carrier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
         <additionalField key="Content Type" value="Nominal"/>
       </column>
-      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="Content Type" value="Interval"/>
       </column>
-      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="Content Type" value="Interval"/>
       </column>
       <column comment="" key="false" length="10" name="D_RFS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
