@@ -361,7 +361,7 @@
       <column comment="" key="false" length="-1" name="FIleName" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dd" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="SN_" expression="row4.SN_" type="id_String" nullable="true"/>
@@ -650,19 +650,19 @@
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="row14.HOSTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_ID" expression="row17.Supplier_ID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Contract_No" expression="row17.contract_no " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_make" expression="NCR.Model.split(&quot; &quot;,2)[0]+&quot; &quot;+ NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[0] " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_model_invoice" expression="NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_make" expression="NCR.Model != null ? NCR.Model.split(&quot; &quot;,2)[0]+&quot; &quot;+ NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[0] : null " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_model_invoice" expression="NCR.Model != null ? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] : null " type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" expression="row14.MODEL " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_model_final" expression="Relational.ISNULL(NCR.Model)? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :NCR.Model " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_model_final" expression="!Relational.ISNULL(NCR.Model)? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :NCR.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" expression="NCR.eol " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_flag" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="NCR.Site_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="NCR.Site_Address" type="id_String" nullable="true"/>
         <mapperTableEntries name="FileMatch" expression="row14.FileSource " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NetworkMatch" expression="row14.SERIAL_NUMBER != null ? &quot;YES&quot; : &quot;NO&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NetworkMatch" expression="row14.SERIAL_NUMBER != null ? &quot;YES&quot; : &quot;NO&quot; " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="NCR" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="NCR" expressionFilter="NCR.FIleName != null" activateExpressionFilter="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" type="id_String" nullable="true"/>
@@ -1717,7 +1717,7 @@
       <column comment="" key="false" length="-1" name="FileSource" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="SMARTS_DOMAIN" expression="row11.SMARTS_DOMAIN" type="id_String" nullable="true"/>
@@ -2004,7 +2004,7 @@
       <column comment="" key="false" length="-1" name="FileSource" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out5">
         <mapperTableEntries name="SMARTS_DOMAIN" expression="row13.SMARTS_DOMAIN" type="id_String" nullable="true"/>
@@ -2146,7 +2146,7 @@
       <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Wilm">
         <mapperTableEntries name="SN_" expression="NCR_used.SN_ " type="id_String" nullable="true"/>
@@ -2371,7 +2371,7 @@
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="GCDM">
         <mapperTableEntries name="SN_" expression="Wilm.SN_ " type="id_String" nullable="true"/>
@@ -2603,7 +2603,7 @@
       <column comment="" key="false" length="-1" name="Providername" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CPEE">
         <mapperTableEntries name="SN_" expression="GCDM.SN_ " type="id_String" nullable="true"/>
@@ -2781,7 +2781,7 @@
       <column comment="" key="false" length="-1" name="Providername" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="OUTGCD">
         <mapperTableEntries name="ItemValue" expression="row21.ItemValue " type="id_String" nullable="true"/>
