@@ -2551,10 +2551,10 @@
         <mapperTableEntries name="NetworkMatch" type="id_String" nullable="true"/>
         <mapperTableEntries name="WilmartMatch" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row5" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row5" expressionFilter="row5.ItemValue.contains(Wilm.SN_) " activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ServiceID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Name" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ItemValue" expression="row5.ItemValue.contains(Wilm.SN_) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ItemValue" expression=" " type="id_String" nullable="true"/>
         <mapperTableEntries name="GlobalSrvReference" type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceStartDate" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceEndDate" type="id_String" nullable="true"/>
