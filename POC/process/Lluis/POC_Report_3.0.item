@@ -135,6 +135,7 @@
     <routinesParameter id="_NhQGQDcwEei50Npc-g0ZOA" name="TalendStringUtil"/>
     <routinesParameter id="_NhKmsDcwEei50Npc-g0ZOA" name="TalendString"/>
     <routinesParameter id="_da9kYDMXEeOTIuq5eWZPow" name="MDM"/>
+    <routinesParameter id="_qsGG4Fj9Eei57LtZ381JEw" name="DQ"/>
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
@@ -442,7 +443,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="isNull_GSR_Ref" type="id_String"/>
+        <mapperTableEntries name="isNull_GSR_Ref" expression="DQ.isNullOrBlank(a.GSR_Ref) " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="isCorrectGSR_Ref" type="id_String"/>
         <mapperTableEntries name="ActiveCeasedCircuits" type="id_String"/>
       </varTables>
