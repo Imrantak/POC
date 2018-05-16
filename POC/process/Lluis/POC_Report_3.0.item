@@ -297,7 +297,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192" sizeX="32" sizeY="160">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192" sizeX="32" sizeY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -330,7 +330,6 @@
       <column comment="" key="false" length="-1" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -356,7 +355,6 @@
         <mapperTableEntries name="Cct_Thirdparty" expression="source_gtom.Cct_Thirdparty" type="id_String" nullable="true"/>
         <mapperTableEntries name="Circuit_Speed" expression="source_gtom.Circuit_Speed" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" expression="source_gtom.Customer" type="id_String" nullable="true"/>
-        <mapperTableEntries name="sn_product" expression="product.sn_product " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="source_gtom" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
@@ -382,34 +380,7 @@
         <mapperTableEntries name="B_End_City" type="id_String" nullable="true"/>
         <mapperTableEntries name="B_End_Country" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="product" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="product" expression="source_gtom.Product " type="id_String" nullable="true" operator="="/>
-        <mapperTableEntries name="sn_product" type="id_String" nullable="true"/>
-      </inputTables>
     </nodeData>
-  </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
-    <elementParameter field="TABLE" name="VALUES" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="product"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="sn_product"/>
-      <elementValue elementRef="VALUE" value=""/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="true"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" value=" IP-VPN QoS,IP-VPN&#xD;&#xA;Bandwidth Connect,Bandwidth Connect (BWC)&#xD;&#xA;Bandwidth Connect (BWC),Bandwidth Connect (BWC)&#xD;&#xA;Bandwidth Connect-BWC,Bandwidth Connect (BWC)&#xD;&#xA;EWL,Ethernet Wireline (EWL)&#xD;&#xA;EWL (Ethernet wire line),Ethernet Wireline (EWL)&#xD;&#xA;IP-VPN QoS LLine Acc,IP-VPN&#xD;&#xA;IP VPN,IP-VPN&#xD;&#xA;IP VPN QoS,IP-VPN&#xD;&#xA;IP- VPN QoS,IP-VPN&#xD;&#xA;IP_VPN QoS,IP-VPN&#xD;&#xA;IP-VP QoS,IP-VPN&#xD;&#xA;IPVPN,IP-VPN&#xD;&#xA;IP-VPN,IP-VPN&#xD;&#xA;IPVPN Connectivity,IP-VPN&#xD;&#xA;IP-VPN Connectivity,IP-VPN&#xD;&#xA;IPVPN QOS,IP-VPN&#xD;&#xA;IP-VPN QoS,IP-VPN&#xD;&#xA;IP-VPN QoS  Back up,IP-VPN&#xD;&#xA;IP-VPN QoS (back up),IP-VPN&#xD;&#xA;IP-VPN QoS (Primary),IP-VPN&#xD;&#xA;IP-VPN QoS Back up,IP-VPN&#xD;&#xA;IP-VPN QoS Primary,IP-VPN&#xD;&#xA;IPVPN Quos,IP-VPN&#xD;&#xA;IP-VPN Quos,IP-VPN&#xD;&#xA;IPVPNQos,IP-VPN&#xD;&#xA;IPVPN-QoS,IP-VPN&#xD;&#xA;IP-VPN-Qos,IP-VPN&#xD;&#xA;Secure Internet Site Access (SISA),Secure Internet Site Access (SISA)&#xD;&#xA;Carrier MSP,Carrier MSP&#xD;&#xA;IPVPNQos,IP-VPN&#xD;&#xA;IPVPN-QoS,IP-VPN&#xD;&#xA;IP-VPN-Qos,IP-VPN"/>
-    <elementParameter field="TEXT" name="LABEL" value="product"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_2">
-      <column comment="" key="false" length="-1" name="product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="sn_product" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-    </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192" sizeX="32" sizeY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
@@ -470,7 +441,6 @@
         <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
         <mapperTableEntries name="Circuit_Speed" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" type="id_String" nullable="true"/>
-        <mapperTableEntries name="sn_product" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
@@ -498,14 +468,13 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_3"/>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="640">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
     <elementParameter field="TABLE" name="VALUES">
       <elementValue elementRef="SCHEMA_COLUMN" value="NumRows"/>
-      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="VALUE" value="Numeric.sequence(&quot;MaxRowNum&quot;,1,0)"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NumNullGSR_Ref"/>
       <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;tFlowToIterate_1_NB_LINE&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NumCorrectGSR_Ref"/>
@@ -528,9 +497,8 @@
       <column comment="" key="false" length="-1" name="NumActiveCeasedCircuits" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="640">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="true"/>
@@ -562,19 +530,9 @@
       <column comment="" key="false" length="-1" name="NumActiveCeasedCircuits" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="480">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(Numeric.sequence(&quot;MaxRowNum&quot;,1,0));&#xA;&#xA;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
-  </node>
   <connection connectorName="FLOW" label="source_gtom" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="source_gtom" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tJava_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="a" lineStyle="0" metaname="a" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMap_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -584,15 +542,6 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="a" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="product" lineStyle="8" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tMap_4">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="sn_product"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="product" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="isNull_GSR_Ref" lineStyle="0" metaname="isNull_GSR_Ref" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tFlowToIterate_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -608,27 +557,17 @@
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFixedFlowInput_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Processing Source files, apply business rule and produce interim dataset"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Processing files GTOMS"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
