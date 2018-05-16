@@ -11,15 +11,7 @@ public class DQ {
     public static Boolean isCorrectGSR_Ref(String value) {
     	if(DQ.isNullOrBlank(value)) return false;
     	
-    	String datePattern = "\\w{5}-\\w{4}-\\d{5}";
-
-    	Boolean isCorrect = value.matches(datePattern);
-    	Boolean isDate2 = date2.matches(datePattern);
-
-    	System.out.println(isDate1);
-    	System.out.println(isDate2);
-    	
-    	
-    	else return false;
+    	String Pattern = "\\w{5}-\\w{4}-\\d{5}";
+    	return value.matches(Pattern);
     }
 }
