@@ -2679,7 +2679,7 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1696" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_4" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/inventory/input/serial from gcd.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.DataFolder +&quot;/DataSource/NCR/serial from gcd.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;New Serial Search Svc It Val 2 &quot;"/>
