@@ -1201,10 +1201,6 @@
       <relatedItems xmi:id="_ov05clj7Eei57LtZ381JEw" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ov05c1j7Eei57LtZ381JEw" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ov05dFj7Eei57LtZ381JEw" id="__OiyQEz_EeihBPD6I1_SrQ - CSV_DS3_GTOMS" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_ov05dVj7Eei57LtZ381JEw" id="_E1Du0E0AEeihBPD6I1_SrQ - CSV_DS3_BILLING" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_ov05dlj7Eei57LtZ381JEw" id="_zNbw0Ez_EeihBPD6I1_SrQ - CSV_DS3_GRN" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_ov05d1j7Eei57LtZ381JEw" id="_reQeoEz_EeihBPD6I1_SrQ - CSV_DS3_SOVR" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_ov05eFj7Eei57LtZ381JEw" id="_2VZXkDv5EeiSndQzlxS5Cg - CSV_EVO_NPIDS_AML_NPIDS" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
