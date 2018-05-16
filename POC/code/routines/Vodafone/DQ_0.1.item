@@ -14,4 +14,16 @@ public class DQ {
     	String Pattern = "\\w{5}-\\w{4}-\\d{5}";
     	return value.matches(Pattern);
     }
+    
+    public static Boolean isActiveCeasedCircuits(String OrderType,String Status) {
+    	if(DQ.isNullOrBlank(OrderType) || DQ.isNullOrBlank(Status)) return false;
+    	else if("cease".equals(OrderType.toLowerCase()) || "provide".equals(OrderType.toLowerCase())) {
+    		if("completed".equals(Status.toLowerCase()) || "delivered".equals(Status.toLowerCase())){
+    			return true;
+    		}
+    	}
+    	return false;
+    }
+    
+    
 }
