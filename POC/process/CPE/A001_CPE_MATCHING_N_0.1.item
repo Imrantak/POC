@@ -2484,7 +2484,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="GCDM" activateCondensedTool="true">
+      <outputTables sizeState="INTERMEDIATE" name="GCDM" activateCondensedTool="true" reject="true">
         <mapperTableEntries name="SN_" expression="Wilm.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="Wilm.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="Wilm.eol " type="id_String" nullable="true"/>
