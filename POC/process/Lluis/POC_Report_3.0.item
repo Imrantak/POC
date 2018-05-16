@@ -355,9 +355,11 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var"/>
-      <outputTables sizeState="INTERMEDIATE" name="a">
+      <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="RowNum" expression="Numeric.sequence(&quot;MaxRowNum&quot;,1,1) " type="id_Integer" nullable="true"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="a">
+        <mapperTableEntries name="RowNum" expression="Var.RowNum " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="GTOMS_Ref" expression="source_gtom.GTOMS_Ref" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="A_End_City" expression="source_gtom.A_End_City" type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" expression="source_gtom.A_End_Country" type="id_String" nullable="true"/>
@@ -379,7 +381,7 @@
         <mapperTableEntries name="Customer" expression="source_gtom.Customer" type="id_String" nullable="true"/>
       </outputTables>
       <outputTables sizeState="INTERMEDIATE" name="aa">
-        <mapperTableEntries name="RowNum" expression="Numeric.sequence(&quot;MaxRowNum&quot;,1,1)  " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="RowNum" expression="Var.RowNum " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="GTOMS_Ref" expression="source_gtom.GTOMS_Ref " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="A_End_City" expression="source_gtom.A_End_City " type="id_String" nullable="true"/>
         <mapperTableEntries name="A_End_Country" expression="source_gtom.A_End_Country " type="id_String" nullable="true"/>
