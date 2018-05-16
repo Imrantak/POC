@@ -2493,18 +2493,18 @@
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FileMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NetworkMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="62" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="ServiceStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="GlobalSrvReference" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Asset_installation_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Providername" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NetworkFileMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NetworkMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CPEE">
         <mapperTableEntries name="SN_" expression="GCDM.SN_ " type="id_String" nullable="true"/>
@@ -2535,15 +2535,15 @@
         <mapperTableEntries name="NPID" expression="GCDM.NPID " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="GCDM.Site_Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="GCDM.Site_Address " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FileMatch" expression="GCDM.FileMatch " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NetworkMatch" expression="GCDM.NetworkMatch " type="id_String" nullable="true"/>
-        <mapperTableEntries name="WilmartMatch" expression="GCDM.WilmartMatch " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GCDMatch" expression="GCDM.GCDMatch " type="id_String" nullable="true"/>
         <mapperTableEntries name="CustomerName" expression="OUTGCD.CustomerName" type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceStatus" expression="OUTGCD.ServiceStatus" type="id_String" nullable="true"/>
         <mapperTableEntries name="GlobalSrvReference" expression="OUTGCD.GlobalSrvReference" type="id_String" nullable="true"/>
         <mapperTableEntries name="Asset_installation_date" expression="OUTGCD.Asset_installation_date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Providername" expression="OUTGCD.Providername" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NetworkFileMatch" expression="GCDM.FileMatch " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NetworkMatch" expression="GCDM.NetworkMatch " type="id_String" nullable="true"/>
+        <mapperTableEntries name="WilmartMatch" expression="GCDM.WilmartMatch " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GCDMatch" expression="GCDM.GCDMatch " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="GCDM" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
@@ -3470,15 +3470,15 @@
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Site_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FileMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NetworkMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="62" name="CustomerName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="ServiceStatus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="GlobalSrvReference" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="Asset_installation_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Providername" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NetworkFileMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NetworkMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="-4" offsetLabelY="32" posX="1952" posY="-32">
