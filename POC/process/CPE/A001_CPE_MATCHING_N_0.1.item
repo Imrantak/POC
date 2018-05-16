@@ -2146,7 +2146,7 @@
       <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Wilm">
         <mapperTableEntries name="SN_" expression="NCR_used.SN_ " type="id_String" nullable="true"/>
@@ -2371,7 +2371,7 @@
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="GCDM">
         <mapperTableEntries name="SN_" expression="Wilm.SN_ " type="id_String" nullable="true"/>
@@ -2405,7 +2405,7 @@
         <mapperTableEntries name="FileMatch" expression="Wilm.FileMatch " type="id_String" nullable="true"/>
         <mapperTableEntries name="NetworkMatch" expression="Wilm.NetworkMatch " type="id_String" nullable="true"/>
         <mapperTableEntries name="WilmartMatch" expression="Wilm.WilmartMatch " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GCDMatch" expression="GCD.ItemValue != null ? &quot;YES&quot; : &quot;NO&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GCDMatch" expression="GCD.ItemValue != null ? &quot;YES&quot; : &quot;NO&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="Wilm" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
@@ -2440,7 +2440,7 @@
         <mapperTableEntries name="NetworkMatch" type="id_String" nullable="true"/>
         <mapperTableEntries name="WilmartMatch" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="GCD" expressionFilter="GCD.ItemValue.contains(Wilm.SN_)" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="GCD" expressionFilter="GCD.ItemValue.contains(Wilm.SN_) &amp;&amp; GCD.ItemValue != null" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ServiceID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Name" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="ItemValue" expression="" type="id_String" nullable="true"/>
