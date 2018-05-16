@@ -2259,7 +2259,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="Wilm">
+      <outputTables sizeState="INTERMEDIATE" name="Wilm" expressionFilter="row22.SN_ != null" activateExpressionFilter="true">
         <mapperTableEntries name="SN_" expression="row22.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row22.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="row22.eol " type="id_String" nullable="true"/>
