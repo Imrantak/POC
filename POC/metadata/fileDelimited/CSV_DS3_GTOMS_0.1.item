@@ -33,10 +33,10 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__OkAa0z_EeihBPD6I1_SrQ" id="Carrier" label="Carrier" length="16" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_3RG30FdWEeicO8-tFulvHw" tag="Content Type" value="Nominal"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__OkAbEz_EeihBPD6I1_SrQ" id="Date_Tail_Ordered" label="Date_Tail_Ordered" length="-1" talendType="id_Date" pattern="&quot;MM/dd/yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__OkAbEz_EeihBPD6I1_SrQ" id="Date_Tail_Ordered" label="Date_Tail_Ordered" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_3RG32VdWEeicO8-tFulvHw" tag="Content Type" value="Interval"/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__OkAbUz_EeihBPD6I1_SrQ" id="Date_Tail_Delivered" label="Date_Tail_Delivered" length="-1" talendType="id_Date" pattern="&quot;MM/dd/yyyy&quot;">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__OkAbUz_EeihBPD6I1_SrQ" id="Date_Tail_Delivered" label="Date_Tail_Delivered" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
         <taggedValue xmi:id="_3RG34ldWEeicO8-tFulvHw" tag="Content Type" value="Interval"/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__OkAbkz_EeihBPD6I1_SrQ" id="D_RFS" label="D_RFS" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
