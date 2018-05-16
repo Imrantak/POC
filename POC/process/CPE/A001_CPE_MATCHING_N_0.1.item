@@ -877,7 +877,7 @@
         <mapperTableEntries name="Device_make" expression="NCR.Model.split(&quot; &quot;,2)[0]+&quot; &quot;+ NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[0] " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_invoice" expression="NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] " type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" expression="row14.MODEL " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Device_model_final" expression="Relational.ISNULL(NCR.MODEL)? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :NCR.MODEL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Device_model_final" expression="Relational.ISNULL(NCR.Model)? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :NCR.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" expression="NCR.eol " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_flag" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
@@ -3009,7 +3009,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="OUTGCD">
         <mapperTableEntries name="ItemValue" expression="row21.ItemValue " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CustomerName" expression="row21.Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerName" expression="row18.Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceStatus" expression="(row2.ServiceStatusID==&quot;1&quot;?&quot;Active&quot;:(row2.ServiceStatusID==&quot;2&quot;?&quot;Pending&quot;:(row2.ServiceStatusID==&quot;3&quot;?&quot;Ceased&quot;:(row2.ServiceStatusID==&quot;4&quot;?&quot;Delete&quot;:&quot;&quot;)))) " type="id_String" nullable="true"/>
         <mapperTableEntries name="GlobalSrvReference" expression="row2.GlobalSrvReference " type="id_String" nullable="true"/>
         <mapperTableEntries name="Asset_installation_date" expression="Service_Item.ServiceStartDate " type="id_String" nullable="true"/>
@@ -3738,7 +3738,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_3" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/amh/Dropbox/Companies/Vodafone/RemoteWorkspace/out.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.DataFolder +&quot;/DataTarget/FileResult.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
