@@ -628,7 +628,7 @@
       <column comment="" key="false" length="-1" name="NetworkMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="NCR_used">
         <mapperTableEntries name="SN_" expression="NCR.SN_" type="id_String" nullable="true"/>
@@ -2257,7 +2257,7 @@
       <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Wilm" expressionFilter="row22.SN_ != null" activateExpressionFilter="true">
         <mapperTableEntries name="SN_" expression="row22.SN_ " type="id_String" nullable="true"/>
@@ -2481,10 +2481,14 @@
       <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
+    <metadata connector="FLOW" label="xdasd" name="xdasd">
+      <column comment="" key="false" length="-1" name="Warranty_start_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="76" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="GCDM" activateCondensedTool="true" reject="true">
+      <outputTables sizeState="INTERMEDIATE" name="GCDM" activateCondensedTool="true">
         <mapperTableEntries name="SN_" expression="Wilm.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="Wilm.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="Wilm.eol " type="id_String" nullable="true"/>
@@ -2517,6 +2521,10 @@
         <mapperTableEntries name="NetworkMatch" expression="Wilm.NetworkMatch " type="id_String" nullable="true"/>
         <mapperTableEntries name="WilmartMatch" expression="Wilm.WilmartMatch " type="id_String" nullable="true"/>
         <mapperTableEntries name="GCDMatch" expression="row5.ItemValue != null ? &quot;YES&quot; : &quot;NO&quot; " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="xdasd" activateCondensedTool="true" reject="true" rejectInnerJoin="true">
+        <mapperTableEntries name="Warranty_start_date" expression="Wilm.Warranty_start_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SN_" expression="Wilm.SN_ " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="Wilm" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
@@ -2615,7 +2623,7 @@
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CPEE">
         <mapperTableEntries name="SN_" expression="GCDM.SN_ " type="id_String" nullable="true"/>
@@ -3735,6 +3743,33 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2336" posY="-384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Warranty_start_date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SN_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="xdasd" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="Warranty_start_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="76" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_11">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="FIleName"/>
@@ -3868,9 +3903,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Wilmar" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="GCDM" lineStyle="0" metaname="GCDM" offsetLabelX="0" offsetLabelY="0" source="tMap_8" target="tMap_10">
+  <connection connectorName="FLOW" label="GCDM" lineStyle="0" metaname="GCDM" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_8" target="tMap_10">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="GCDM" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="xdasd" lineStyle="0" metaname="xdasd" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_8" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="xdasd" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="CPEE" lineStyle="0" metaname="CPEE" offsetLabelX="0" offsetLabelY="0" source="tMap_10" target="tFileOutputDelimited_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
