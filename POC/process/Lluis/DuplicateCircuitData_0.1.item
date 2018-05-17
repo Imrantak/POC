@@ -305,7 +305,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="GTOMS_Metadata" name="a">
+    <metadata connector="FLOW" label="GTOMS_Metadata" name="row2">
       <column comment="" key="false" length="-1" name="RowNum" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
@@ -332,7 +332,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="RowNum" expression="Numeric.sequence(&quot;MaxRowNum&quot;,1,1) " type="id_Integer" nullable="true"/>
       </varTables>
-      <outputTables sizeState="INTERMEDIATE" name="a">
+      <outputTables sizeState="INTERMEDIATE" name="row2">
         <mapperTableEntries name="RowNum" expression="Var.RowNum " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="GTOMS_Ref" expression="source_gtom.GTOMS_Ref" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="A_End_City" expression="source_gtom.A_End_City" type="id_String" nullable="true"/>
@@ -419,10 +419,10 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="isNull_GSR_Ref" expression="DQ.isNullOrBlank(a.GSR_Ref) " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isCorrectGSR_Ref" expression="DQ.isCorrectGSR_Ref(a.GSR_Ref) " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isActiveCeasedCircuits" expression="DQ.isActiveCeasedCircuits(a.Order_Type, a.Status) " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="isNull_Cctid" expression="DQ.isNullOrBlank(a.Cctid) " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="isNull_GSR_Ref" expression="DQ.isNullOrBlank(row2.GSR_Ref) " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="isCorrectGSR_Ref" expression="DQ.isCorrectGSR_Ref(row2.GSR_Ref) " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="isActiveCeasedCircuits" expression="DQ.isActiveCeasedCircuits(row2.Order_Type, row2.Status) " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="isNull_Cctid" expression="DQ.isNullOrBlank(row2.Cctid) " type="id_Boolean" nullable="true"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="filterOut" expressionFilter="Var.isCorrectGSR_Ref==true &amp;&amp; Var.isActiveCeasedCircuits==true" activateExpressionFilter="true" columnNameFilter="">
         <mapperTableEntries name="RowNum" expression="row2.RowNum " type="id_Integer" nullable="true"/>
@@ -447,7 +447,7 @@
         <mapperTableEntries name="Customer" expression="row2.Customer " type="id_String" nullable="true"/>
         <mapperTableEntries name="isNull_Cctid" expression="Var.isNull_Cctid " type="id_Boolean" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="a" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="RowNum" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="A_End_City" type="id_String" nullable="true"/>
@@ -786,9 +786,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tHashInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="a" lineStyle="0" metaname="a" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="row2" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="a" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="filterOut" lineStyle="0" metaname="filterOut" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tHashOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -816,9 +816,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="CountCCtId" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tFilterRow_9">
+  <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tFilterRow_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tAggregateRow_2" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_2" target="tFilterRow_12">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
