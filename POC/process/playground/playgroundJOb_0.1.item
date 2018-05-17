@@ -216,7 +216,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="Cctid" expression="StringHandling.EREPLACE(row4.A,&quot;[:,;,*,**, ]&quot;,&quot;,&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="CdbREF" expression="row4.B" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row4.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row4.E" type="id_String" nullable="true"/>
         <mapperTableEntries name="GTOMS_Ref" expression="row4.C" type="id_String" nullable="true"/>
         <mapperTableEntries name="GSR_Ref" expression="row4.D" type="id_String" nullable="true"/>
         <mapperTableEntries name="clarify_ref" expression="row4.E" type="id_String" nullable="true"/>
