@@ -257,8 +257,8 @@
       <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DPC_Owner" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Carrier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="D_RFS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
@@ -324,12 +324,80 @@
       <column comment="" key="false" length="-1" name="Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Carrier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata name="out1">
+      <column comment="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true">
+        <additionalField key="Content Type" value="Interval"/>
+      </column>
+      <column comment="" key="false" length="34" name="Product" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="9" name="Order_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="47" name="GSOS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="31" name="COMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="34" name="Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="10" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="19" name="DPC_Owner" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="16" name="Carrier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
+        <additionalField key="Content Type" value="Interval"/>
+      </column>
+      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="0" type="id_Date" usefulColumn="true">
+        <additionalField key="Content Type" value="Interval"/>
+      </column>
+      <column comment="" key="false" length="10" name="D_RFS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="15" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="21" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="9" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="4" name="Order_Type_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="37" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="9" name="A_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="14" name="A_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="9" name="B_End_City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="7" name="B_End_Country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -357,6 +425,30 @@
         <mapperTableEntries name="Cct_Thirdparty" expression="source_gtom.Cct_Thirdparty" type="id_String" nullable="true"/>
         <mapperTableEntries name="Circuit_Speed" expression="source_gtom.Circuit_Speed" type="id_String" nullable="true"/>
         <mapperTableEntries name="Customer" expression="source_gtom.Customer" type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="GTOMS_Ref" expression="source_gtom.GTOMS_Ref" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Product" expression="source_gtom.Product" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Type" expression="source_gtom.Order_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSOS_Ref" expression="source_gtom.GSOS_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="source_gtom.GSR_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMS_Ref" expression="source_gtom.COMS_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Msp_Order" expression="source_gtom.Msp_Order" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Status" expression="source_gtom.Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DPC_Owner" expression="source_gtom.DPC_Owner" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Carrier" expression="source_gtom.Carrier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Ordered" expression="source_gtom.Date_Tail_Ordered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Date_Tail_Delivered" expression="source_gtom.Date_Tail_Delivered" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="D_RFS" expression="source_gtom.D_RFS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid" expression="source_gtom.Cctid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" expression="source_gtom.Cct_Thirdparty" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Circuit_Speed" expression="source_gtom.Circuit_Speed" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Type_2" expression="source_gtom.Order_Type_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer" expression="source_gtom.Customer" type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_City" expression="source_gtom.A_End_City" type="id_String" nullable="true"/>
+        <mapperTableEntries name="A_End_Country" expression="source_gtom.A_End_Country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_End_City" expression="source_gtom.B_End_City" type="id_String" nullable="true"/>
+        <mapperTableEntries name="B_End_Country" expression="source_gtom.B_End_Country" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="source_gtom" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="GTOMS_Ref" type="id_Integer" nullable="true"/>
@@ -429,8 +521,8 @@
       <column comment="" key="false" length="-1" name="Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Carrier" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Tail_Ordered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Tail_Delivered" nullable="true" pattern="&quot;MM/dd/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Circuit_Speed" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
