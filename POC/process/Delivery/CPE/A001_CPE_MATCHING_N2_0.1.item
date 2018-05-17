@@ -2476,7 +2476,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="GCDM" activateCondensedTool="true">
+      <outputTables sizeState="INTERMEDIATE" name="GCDM" activateCondensedTool="true" reject="true" rejectInnerJoin="true">
         <mapperTableEntries name="SN_" expression="Wilm.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="Wilm.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="Wilm.eol " type="id_String" nullable="true"/>
@@ -2547,7 +2547,7 @@
         <mapperTableEntries name="NetworkMatch" type="id_String" nullable="true"/>
         <mapperTableEntries name="WilmartMatch" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row5" expressionFilter="!row5.ItemValue.contains(Wilm.SN_) " activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row5" expressionFilter="row5.ItemValue.contains(Wilm.SN_) " activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ServiceID" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Name" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="ItemValue" expression=" " type="id_String" nullable="true"/>
