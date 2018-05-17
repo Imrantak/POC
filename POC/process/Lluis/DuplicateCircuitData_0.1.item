@@ -791,7 +791,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="NumCCtidDuplic"/>
       <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;tHashOutput_3_NB_LINE&quot;))"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="NumDuplicates"/>
-      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;tHashOutput_2_NB_LINE&quot;&quot;))+((Integer)globalMap.get(&quot;tHashOutput_3_NB_LINE&quot;))"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;tHashOutput_2_NB_LINE&quot;))+((Integer)globalMap.get(&quot;tHashOutput_3_NB_LINE&quot;))"/>
     </elementParameter>
     <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
     <elementParameter field="TABLE" name="INTABLE" show="false"/>
