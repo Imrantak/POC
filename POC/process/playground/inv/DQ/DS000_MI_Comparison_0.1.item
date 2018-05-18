@@ -1850,7 +1850,7 @@
         <mapperTableEntries name="Unique_SO" expression="row11.Unique_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Number" expression="row11.PO_Number " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Line_Item" expression="row11.PO_Line_Item" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPED" expression="row11.OPED" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPED" expression="row11.OPED.toString() " type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" expression="row11.AML_NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Account_Id" expression="row11.Account_Id" type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" expression="row11.Billing_Item_service_ID" type="id_String" nullable="true"/>
