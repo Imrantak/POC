@@ -678,7 +678,6 @@
     <elementParameter field="TABLE" name="SURVIVORSHIP" show="false"/>
     <elementParameter field="TABLE" name="BLOCKING_DEFINITION" show="false">
       <elementValue elementRef="INPUT_COLUMN" value="GSR_Ref"/>
-      <elementValue elementRef="INPUT_COLUMN" value="Unique_SO"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SHOW_BASIC_PARAMETER" value="false" show="false"/>
     <elementParameter field="CHECK" name="IS_SHADOW_JOB" value="false" show="false"/>
