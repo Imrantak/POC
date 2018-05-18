@@ -1016,6 +1016,7 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;input/CSV_DS3_MI.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
@@ -1362,6 +1363,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -1467,6 +1469,7 @@
   </node>
   <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tUnite_1">
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -1488,224 +1491,9 @@
       <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
-    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;output/Active_Interim_Dataset_Cleansed.xlsx&quot;"/>
-    <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
-    <elementParameter field="TABLE" name="SHEETLIST">
-      <elementValue elementRef="SHEETNAME" value="0"/>
-      <elementValue elementRef="USE_REGEX" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="HEADER" value="1"/>
-    <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value=""/>
-    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
-    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
-    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
-    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Vendor"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cctid"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cct_Thirdparty"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C72_Reference"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Clarify_Reference_Msp_Order"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GSR_Ref"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GTOMS_Ref"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Unique_SO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Number"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OPED"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_COVER"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Account_Id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Item_service_ID"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
-    <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Vendor"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cctid"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Cct_Thirdparty"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="C72_Reference"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Clarify_Reference_Msp_Order"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GSR_Ref"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GTOMS_Ref"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Unique_SO"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Number"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OPED"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PO_COVER"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Account_Id"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Item_service_ID"/>
-      <elementValue elementRef="CONVERTDATE" value="false"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
-    </elementParameter>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
-    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
-    <elementParameter field="TEXT" name="LABEL" value="Talend_dataset"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_2">
-      <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="C72_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="C72_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="448">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_jvkNAFnWEeih1MYFxYrOYw-tMap_6-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="copyOfout2">
-      <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="Content Type" value="Nominal"/>
-      </column>
-      <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
-        <mapperTableEntries name="Vendor" expression="row5.Vendor " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cctid" expression="row5.Cctid " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cct_Thirdparty" expression="row5.Cct_Thirdparty " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row5.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" expression="row5.GSR_Ref " type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS_Ref" expression="row5.GTOMS_Ref " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Unique_SO" expression="row5.Unique_SO " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" expression="row5.PO_Number " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Line_Item" expression="row5.PO_Line_Item " type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPED" expression="row5.OPED " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PO_COVER" expression="row5.PO_COVER " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AML_NPID" expression="row5.AML_NPID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Account_Id" expression="row5.Account_Id " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Billing_Item_service_ID" expression="row5.Billing_Item_service_ID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="source" expression="&quot;Talend&quot;" type="id_String" nullable="true"/>
-      </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C72_Reference" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GSR_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GTOMS_Ref" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Unique_SO" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO_Line_Item" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="PO_COVER" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Account_Id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Billing_Item_service_ID" type="id_String" nullable="true"/>
-      </inputTables>
-    </nodeData>
-  </node>
   <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSortRow_3" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="GSR_Ref"/>
       <elementValue elementRef="SORT" value="alpha"/>
@@ -1741,6 +1529,7 @@
   </node>
   <node componentName="tMatchGroup" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMatchGroup_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="PREVIEW" value=""/>
     <elementParameter field="CHECK" name="GID_USE_STRING" value="true" show="false"/>
     <elementParameter field="CHECK" name="COMPUTE_GRP_QUALITY" value="true" show="false"/>
@@ -2024,6 +1813,7 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -2079,6 +1869,7 @@
   </node>
   <node componentName="tDataStewardshipTaskOutput" componentVersion="0.19.9" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataStewardshipTaskOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_x9PXQFQxEeig0Zw5-SQnSw" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="DataSterwardship"/>
@@ -2097,6 +1888,7 @@
   </node>
   <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -2339,7 +2131,6 @@
   </node>
   <node componentName="tDataStewardshipTaskDelete" componentVersion="0.19.9" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataStewardshipTaskDelete_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_x9PXQFQxEeig0Zw5-SQnSw" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="DataSterwardship"/>
@@ -2364,7 +2155,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -2428,7 +2218,6 @@
   </node>
   <node componentName="tDataStewardshipTaskDelete" componentVersion="0.19.9" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataStewardshipTaskDelete_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_x9PXQFQxEeig0Zw5-SQnSw" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="DataSterwardship"/>
@@ -2453,7 +2242,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -2514,6 +2302,224 @@
       <column comment="" key="false" length="-1" name="TDS_SOURCE" nullable="false" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TDS_EXTERNAL_ID" nullable="true" pattern="" precision="-1" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;output/Active_Interim_Dataset_Cleansed.xlsx&quot;"/>
+    <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
+    <elementParameter field="TABLE" name="SHEETLIST">
+      <elementValue elementRef="SHEETNAME" value="0"/>
+      <elementValue elementRef="USE_REGEX" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Vendor"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cctid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cct_Thirdparty"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C72_Reference"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Clarify_Reference_Msp_Order"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GSR_Ref"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GTOMS_Ref"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unique_SO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Number"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_COVER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Account_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Item_service_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
+    <elementParameter field="TABLE" name="DATESELECT" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Vendor"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cctid"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cct_Thirdparty"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C72_Reference"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Clarify_Reference_Msp_Order"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GSR_Ref"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GTOMS_Ref"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unique_SO"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Number"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_Line_Item"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OPED"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PO_COVER"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AML_NPID"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Account_Id"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Item_service_ID"/>
+      <elementValue elementRef="CONVERTDATE" value="false"/>
+      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="READ_REAL_VALUE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STOPREAD_ON_EMPTYROW" value="false"/>
+    <elementParameter field="CHECK" name="NOVALIDATE_ON_CELL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUPPRESS_WARN" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="USER_MODE"/>
+    <elementParameter field="TEXT" name="LABEL" value="Talend_dataset"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputExcel_2">
+      <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="C72_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="C72_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_jvkNAFnWEeih1MYFxYrOYw-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfout2">
+      <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
+        <additionalField key="Content Type" value="Nominal"/>
+      </column>
+      <column comment="" key="false" length="50" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Cct_Thirdparty" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Clarify_Reference_Msp_Order" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="54" name="GSR_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="GTOMS_Ref" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Unique_SO" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PO_Number" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PO_Line_Item" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="OPED" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PO_COVER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="AML_NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
+        <mapperTableEntries name="Vendor" expression="row5.Vendor " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid" expression="row5.Cctid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" expression="row5.Cct_Thirdparty " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" expression="row5.Clarify_Reference_Msp_Order " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" expression="row5.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" expression="row5.GTOMS_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" expression="row5.Unique_SO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" expression="row5.PO_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" expression="row5.PO_Line_Item " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPED" expression="row5.OPED " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PO_COVER" expression="row5.PO_COVER " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AML_NPID" expression="row5.AML_NPID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account_Id" expression="row5.Account_Id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Billing_Item_service_ID" expression="row5.Billing_Item_service_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="source" expression="&quot;Talend&quot;" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cctid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cct_Thirdparty" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C72_Reference" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Clarify_Reference_Msp_Order" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GTOMS_Ref" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unique_SO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO_Line_Item" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPED" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="PO_COVER" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AML_NPID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Account_Id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Billing_Item_service_ID" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
   </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -2671,6 +2677,7 @@
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="mi" lineStyle="10" mergeOrder="1" metaname="mi" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tUnite_1">
@@ -2680,50 +2687,27 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="mi" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tUnite_1" offsetLabelX="0" offsetLabelY="0" source="tUnite_1" target="tSortRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tMap_6">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="Product"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="A_End_Country"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Circuit_Speed"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="A_End_Address"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="Functional_Location_ID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="C72_Reference"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="copyOfout2" lineStyle="10" mergeOrder="2" metaname="copyOfout2" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tUnite_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tSortRow_3" offsetLabelX="0" offsetLabelY="0" source="tSortRow_3" target="tMatchGroup_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
   <connection connectorName="CONFIDENT_GROUPS" label="row7" lineStyle="0" metaname="CONFIDENT_GROUPS" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMatchGroup_1" target="tFileOutputExcel_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
   </connection>
   <connection connectorName="UNCERTAIN_GROUPS" label="row11" lineStyle="0" metaname="UNCERTAIN_GROUPS" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMatchGroup_1" target="tMap_7">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="tds" lineStyle="0" metaname="tds" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tDataStewardshipTaskOutput_1">
@@ -2733,6 +2717,7 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tds" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_3">
@@ -2762,17 +2747,44 @@
   </connection>
   <connection connectorName="MAIN" label="row8" lineStyle="0" metaname="MAIN" offsetLabelX="0" offsetLabelY="0" source="tDataStewardshipTaskDelete_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDataStewardshipTaskDelete_1" offsetLabelX="0" offsetLabelY="0" source="tDataStewardshipTaskDelete_1" target="tDataStewardshipTaskDelete_2">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="MAIN" label="row9" lineStyle="0" metaname="tDataStewardshipTaskDelete_2" offsetLabelX="0" offsetLabelY="0" source="tDataStewardshipTaskDelete_2" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tMap_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Product"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="A_End_Country"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Circuit_Speed"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="A_End_Address"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Functional_Location_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="C72_Reference"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout2" lineStyle="10" mergeOrder="2" metaname="copyOfout2" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tUnite_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout2" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -2798,6 +2810,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataStewardshipTaskDelete_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
