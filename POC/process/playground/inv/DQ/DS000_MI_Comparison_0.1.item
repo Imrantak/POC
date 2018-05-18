@@ -689,9 +689,9 @@
     <elementParameter field="TEXT" name="CONFIDENCE_THRESHOLD" value="1"/>
     <elementParameter field="CHECK" name="LINK_WITH_PREVIOUS" value="false"/>
     <elementParameter field="CHECK" name="PROPAGATE_ORIGINAL" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SORT_DATA" value="true"/>
-    <elementParameter field="CHECK" name="OUTPUTDD" value="false"/>
-    <elementParameter field="CHECK" name="DISPLAY_ATTR_LABELS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SORT_DATA" value="false"/>
+    <elementParameter field="CHECK" name="OUTPUTDD" value="true"/>
+    <elementParameter field="CHECK" name="DISPLAY_ATTR_LABELS" value="false"/>
     <elementParameter field="CHECK" name="DEACTIVATE_MATCHING_COMPUTATION" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMatchGroup_1">
@@ -717,6 +717,7 @@
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW_OUTPUT" name="FLOW_OUTPUT">
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -736,11 +737,12 @@
       <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
-      <column key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE_ROWS" name="UNIQUE_ROWS">
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -760,11 +762,12 @@
       <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
-      <column key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="CONFIDENT_GROUPS" name="CONFIDENT_GROUPS">
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -784,11 +787,12 @@
       <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
-      <column key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNCERTAIN_GROUPS" name="UNCERTAIN_GROUPS">
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -808,11 +812,12 @@
       <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
-      <column key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="VALIDATION_REJECT" name="VALIDATION_REJECT">
       <column comment="" key="false" length="9" name="Vendor" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true">
@@ -1008,6 +1013,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GRP_QUALITY"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MATCHING_DISTANCES"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
@@ -1039,11 +1046,12 @@
       <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
-      <column key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="416">
@@ -1319,6 +1327,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GRP_QUALITY"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MATCHING_DISTANCES"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
@@ -1350,11 +1360,12 @@
       <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
-      <column key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="416">
@@ -1414,6 +1425,8 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="GRP_QUALITY"/>
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MATCHING_DISTANCES"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
@@ -1445,11 +1458,12 @@
       <column comment="" key="false" length="13" name="Account_Id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="17" name="Billing_Item_service_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
-      <column key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="GID" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="GRP_SIZE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="0" name="MASTER" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="SCORE" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="20" name="GRP_QUALITY" nullable="true" precision="0" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="MATCHING_DISTANCES" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tDataStewardshipTaskDelete" componentVersion="0.19.9" offsetLabelX="0" offsetLabelY="0" posX="576" posY="576">
@@ -1705,6 +1719,7 @@
         <mapperTableEntries name="MASTER" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="SCORE" type="id_Double" nullable="true"/>
         <mapperTableEntries name="GRP_QUALITY" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MATCHING_DISTANCES" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
