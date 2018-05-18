@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx3076M&quot;]}" show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="530" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="512" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -4006,7 +4006,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="resu">
+      <outputTables sizeState="INTERMEDIATE" name="resu" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="SN_" expression="row30.SN_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row30.Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="row30.eol" type="id_String" nullable="true"/>
@@ -4078,7 +4078,7 @@
         <mapperTableEntries name="NetworkMatch" type="id_String" nullable="true"/>
         <mapperTableEntries name="WilmartMatch" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row32" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row32" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="SN_" expression="row30.SN_ " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" type="id_String" nullable="true"/>
