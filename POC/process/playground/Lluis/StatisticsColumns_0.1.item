@@ -676,7 +676,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out4" expressionFilter="row12.GRP_SIZE>0" activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="out4" expressionFilter="row12.GRP_SIZE=0" activateExpressionFilter="true">
         <mapperTableEntries name="ColumnNum" expression="row12.ColumnNum " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="value" expression="row12.value " type="id_String" nullable="true"/>
         <mapperTableEntries name="GID" expression="row12.GID " type="id_String" nullable="true"/>
