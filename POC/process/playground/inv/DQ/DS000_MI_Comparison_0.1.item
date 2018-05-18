@@ -837,7 +837,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="AML_NPID"/>
@@ -847,7 +847,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Account_Id"/>
@@ -857,7 +857,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Billing_Item_service_ID"/>
@@ -867,7 +867,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Cct_Thirdparty"/>
@@ -877,7 +877,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Fingerprintkey"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Clarify_Reference_Msp_Order"/>
@@ -887,7 +887,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="GTOMS_Ref"/>
@@ -897,7 +897,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="OPED"/>
@@ -907,7 +907,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="PO_Line_Item"/>
@@ -917,7 +917,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="PO_Number"/>
@@ -927,7 +927,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Unique_SO"/>
@@ -937,7 +937,7 @@
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Vendor"/>
@@ -1566,7 +1566,7 @@
       <column comment="" key="false" length="-1" name="TDS_SCORE" nullable="true" pattern="" precision="-1" type="id_Double" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="tds">
         <mapperTableEntries name="GSR_Reference" expression="uncertain.GSR_Ref " type="id_String" nullable="true"/>
@@ -1578,7 +1578,7 @@
         <mapperTableEntries name="Unique_SO" expression="uncertain.Unique_SO" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Number" expression="uncertain.PO_Number " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Line_Item" expression="uncertain.PO_Line_Item" type="id_String" nullable="true"/>
-        <mapperTableEntries name="OPED" expression="uncertain.OPED.toString() " type="id_String" nullable="true"/>
+        <mapperTableEntries name="OPED" expression="TalendDate.formatDate(&quot;dd-MM-yyyy&quot;,uncertain.OPED) " type="id_String" nullable="true"/>
         <mapperTableEntries name="AML_NPID" expression="uncertain.AML_NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Account_Id" expression="uncertain.Account_Id" type="id_String" nullable="true"/>
         <mapperTableEntries name="Billing_Item_service_ID" expression="uncertain.Billing_Item_service_ID" type="id_String" nullable="true"/>
