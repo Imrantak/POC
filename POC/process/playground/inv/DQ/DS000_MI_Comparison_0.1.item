@@ -2141,12 +2141,12 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="tds">
-        <mapperTableEntries name="GSR_Reference" expression="row8.GSR_Ref " type="id_String" nullable="true"/>
+        <mapperTableEntries name="GSR_Reference" expression="row11.GSR_Ref " type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Number" expression="row11.PO_Number " type="id_String" nullable="true"/>
-        <mapperTableEntries name="TDS_GID" expression="row8.GID " type="id_String" nullable="true"/>
-        <mapperTableEntries name="TDS_MASTER" expression="row8.MASTER " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="TDS_SOURCE" expression="row8.source " type="id_String" nullable="true"/>
-        <mapperTableEntries name="TDS_SCORE" expression="row8.SCORE " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="TDS_GID" expression="row11.GID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TDS_MASTER" expression="row11.MASTER " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="TDS_SOURCE" expression="row11.source " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TDS_SCORE" expression="row11.SCORE " type="id_Double" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row11" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Vendor" type="id_String" nullable="true"/>
