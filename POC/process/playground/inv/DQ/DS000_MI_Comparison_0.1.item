@@ -844,7 +844,7 @@
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
           <columnMap key="HANDLE_NULL" value="nullMatchAll"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
-          <columnMap key="CONFIDENCE_WEIGHT" value="2"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="AML_NPID"/>
           <columnMap key="TOKENIZATION_TYPE" value="No"/>
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
