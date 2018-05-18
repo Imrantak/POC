@@ -1693,8 +1693,8 @@
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Cct_Thirdparty"/>
-          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
           <columnMap key="TOKENIZATION_TYPE" value="Any order"/>
+          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
         </joinkeys>
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
@@ -1703,8 +1703,8 @@
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
           <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Clarify_Reference_Msp_Order"/>
-          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
           <columnMap key="TOKENIZATION_TYPE" value="Any order"/>
+          <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
         </joinkeys>
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
@@ -1766,7 +1766,7 @@
           <columnMap key="TOKENIZATION_TYPE" value="No"/>
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
         </joinkeys>
-        <matchParamMap key="INTERVAL_RULE" value="0.80"/>
+        <matchParamMap key="INTERVAL_RULE" value="0.85"/>
         <matchParamMap key="MATCHING_ALGORITHM" value="Simple VSR Matcher"/>
       </ruleMatchers>
     </nodeData>
