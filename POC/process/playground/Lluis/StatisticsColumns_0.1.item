@@ -584,7 +584,7 @@
       <column comment="" key="false" length="-1" name="DistincValues" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MaxValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MinValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="StandardDeviation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StandardDeviation" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="-1" name="Count" nullable="true" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
@@ -595,7 +595,7 @@
         <mapperTableEntries name="DistincValues" expression="row11.DistincValues " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MaxValue" expression="row11.MaxValue " type="id_String" nullable="true"/>
         <mapperTableEntries name="MinValue" expression="row11.MinValue " type="id_String" nullable="true"/>
-        <mapperTableEntries name="StandardDeviation" expression="row11.StandardDeviation " type="id_String" nullable="true"/>
+        <mapperTableEntries name="StandardDeviation" expression="row11.StandardDeviation " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Count" expression="row11.Count " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row11" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -643,7 +643,7 @@
       <column comment="" key="false" length="-1" name="DistincValues" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MaxValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MinValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="StandardDeviation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="StandardDeviation" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="-1" name="Count" nullable="true" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
