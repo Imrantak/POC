@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx3076M&quot;]}" show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="512" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="530" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -4384,9 +4384,6 @@
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputExcel_5" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_5" target="tMap_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileInputExcel_5" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_5" target="tHashInput_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tFileInputExcel_6" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_6" target="tMap_9">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
