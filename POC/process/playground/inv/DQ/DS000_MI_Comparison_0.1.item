@@ -1697,7 +1697,7 @@
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
         </joinkeys>
         <joinkeys>
-          <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
+          <columnMap key="MATCHING_TYPE" value="Fingerprintkey"/>
           <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
           <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
           <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
