@@ -753,7 +753,7 @@
     </elementParameter>
     <elementParameter field="TABLE" name="OPERATIONS">
       <elementValue elementRef="OUTPUT_COLUMN" value="Duplicates"/>
-      <elementValue elementRef="FUNCTION" value="count"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
       <elementValue elementRef="INPUT_COLUMN" value="Duplicates"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
     </elementParameter>
