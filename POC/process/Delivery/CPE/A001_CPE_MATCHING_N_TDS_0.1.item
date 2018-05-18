@@ -393,8 +393,8 @@
         <mapperTableEntries name="SN" expression="row4.SN_ " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="FileNames" type="id_String" nullable="true"/>
         <mapperTableEntries name="Count" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SLA" expression="row4.SLA " type="id_String" nullable="true" operator="="/>
-        <mapperTableEntries name="Coverage" expression="row4.Coverage " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="SLA" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Coverage" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" type="id_String" nullable="true"/>
         <mapperTableEntries name="TDS_ID" type="id_String"/>
         <mapperTableEntries name="TDS_STATE" type="id_String"/>
