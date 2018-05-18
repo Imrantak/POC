@@ -328,7 +328,7 @@
       <column comment="" key="false" length="-1" name="Customer" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="RowNum" expression="Numeric.sequence(&quot;MaxRowNum&quot;,1,1) " type="id_Integer" nullable="true"/>
       </varTables>
@@ -612,7 +612,7 @@
       <column comment="" key="false" length="-1" name="Cctid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CountRef">
         <mapperTableEntries name="GSR_Ref" expression="row1.GSR_Ref " type="id_String" nullable="true"/>
