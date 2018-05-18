@@ -676,9 +676,7 @@
     <elementParameter field="TABLE" name="JOIN_KEY" show="false"/>
     <elementParameter field="TEXT" name="INTERVAL_RULE" value="0.85" show="false"/>
     <elementParameter field="TABLE" name="SURVIVORSHIP" show="false"/>
-    <elementParameter field="TABLE" name="BLOCKING_DEFINITION" show="false">
-      <elementValue elementRef="INPUT_COLUMN" value="GSR_Ref"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="BLOCKING_DEFINITION" show="false"/>
     <elementParameter field="CHECK" name="SHOW_BASIC_PARAMETER" value="false" show="false"/>
     <elementParameter field="CHECK" name="IS_SHADOW_JOB" value="false" show="false"/>
     <elementParameter field="TEXT" name="INTERVAL" value="0.85" show="false"/>
