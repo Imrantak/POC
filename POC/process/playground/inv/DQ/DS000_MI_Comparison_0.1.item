@@ -1687,12 +1687,14 @@
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
         </joinkeys>
         <joinkeys>
+          <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
+          <columnMap key="SURVIVORSHIP_FUNCTION" value="Concatenate"/>
+          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
+          <columnMap key="ATTRIBUTE_THRESHOLD" value="1.0"/>
+          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
           <columnMap key="INPUT_COLUMN" value="Cct_Thirdparty"/>
-          <columnMap key="MATCHING_TYPE" value="Metaphone"/>
           <columnMap key="CUSTOM_MATCHER" value="&quot;&quot;"/>
           <columnMap key="TOKENIZATION_TYPE" value="Any order"/>
-          <columnMap key="CONFIDENCE_WEIGHT" value="1"/>
-          <columnMap key="HANDLE_NULL" value="nullMatchNull"/>
         </joinkeys>
         <joinkeys>
           <columnMap key="MATCHING_TYPE" value="Exact - ignore case"/>
