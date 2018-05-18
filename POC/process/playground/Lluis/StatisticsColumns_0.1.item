@@ -1006,7 +1006,7 @@
     <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
     <elementParameter field="FILE" name="BASE_FILE_PATH" value="&quot;/Users/lluisvi/Documents/Talend-Studio-20180116_1512-V6.5.1/workspace/in.hash&quot;" show="false"/>
-    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="Header"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tHashInput_1">
@@ -1026,26 +1026,46 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out6">
+      <column comment="" defaultValue="" key="false" length="-1" name="ColumnNum" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="-1" name="ColumnName" nullable="true" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="-1" name="Count" nullable="true" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unique" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Duplicates" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumNulls" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MaxValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MinValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out6">
+        <mapperTableEntries name="ColumnNum" expression="row8.ColumnNum " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ColumnName" expression="row8.HeaderName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Count" expression="Distinct.Count " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Unique" expression="Distinct.DistincValues " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Duplicates" expression="Duplicates.Duplicates " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NumNulls" expression="Nulls.NumNulls " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MaxValue" expression="Distinct.MaxValue " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MinValue" expression="Distinct.MinValue " type="id_String" nullable="true"/>
+      </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ColumnNum" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="HeaderName" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Distinct" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="ColumnNum" type="id_Integer" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="Distinct" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ColumnNum" expression="row8.ColumnNum " type="id_Integer" nullable="true" operator="="/>
         <mapperTableEntries name="DistincValues" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="MaxValue" type="id_String" nullable="true"/>
         <mapperTableEntries name="MinValue" type="id_String" nullable="true"/>
         <mapperTableEntries name="Count" type="id_Integer" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Duplicates" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="ColumnNum" type="id_Integer" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="Duplicates" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ColumnNum" expression="row8.ColumnNum " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Duplicates" type="id_Integer" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="Nulls" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="ColumnNum" type="id_Integer" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="Nulls" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ColumnNum" expression="row8.ColumnNum " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NumNulls" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
@@ -1090,6 +1110,51 @@
     <metadata connector="FLOW" name="tHashInput_5">
       <column comment="" defaultValue="" key="false" length="-1" name="ColumnNum" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="NumNulls" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_6" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ColumnNum"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ColumnName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Count"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unique"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Duplicates"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumNulls"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MaxValue"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MinValue"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_6">
+      <column comment="" defaultValue="" key="false" length="-1" name="ColumnNum" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="-1" name="ColumnName" nullable="true" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="-1" name="Count" nullable="true" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Unique" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Duplicates" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumNulls" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MaxValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MinValue" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputFullRow_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputFullRow_1" target="tNormalize_1">
@@ -1256,6 +1321,10 @@
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tMap_10">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out6" lineStyle="0" metaname="out6" offsetLabelX="0" offsetLabelY="0" source="tMap_10" target="tLogRow_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="Distinct" lineStyle="8" metaname="tHashInput_3" offsetLabelX="0" offsetLabelY="0" source="tHashInput_3" target="tMap_10">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
