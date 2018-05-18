@@ -3,6 +3,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="FileToProcess" prompt="FileToProcess?" promptNeeded="false" type="id_String" value="/Users/lluisvi/Desktop/Vodafone/Files/CSV_DS3_input/CSV_DS3_GRN.csv"/>
     <contextParameter comment="" name="FieldSeparator" prompt="FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="LimitRows" prompt="LimitRows?" promptNeeded="false" type="id_Integer" value="10000"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms4G&quot;,&quot;-Xmx4G&quot;]}" show="false"/>
