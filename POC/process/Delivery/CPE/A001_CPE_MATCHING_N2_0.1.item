@@ -4078,7 +4078,7 @@
         <mapperTableEntries name="NetworkMatch" type="id_String" nullable="true"/>
         <mapperTableEntries name="WilmartMatch" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row32" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row32" activateCondensedTool="true" matchingMode="FIRST_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="SN_" expression="row30.SN_ " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" type="id_String" nullable="true"/>
