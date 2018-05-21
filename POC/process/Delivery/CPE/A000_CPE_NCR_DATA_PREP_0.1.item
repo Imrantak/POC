@@ -719,8 +719,8 @@
         <mapperTableEntries name="NPID" expression="row2.NPID" type="id_String"/>
         <mapperTableEntries name="PO_Type" expression="row2.PO_Type" type="id_String"/>
         <mapperTableEntries name="Entitlement_Note" expression="row2.Entitlement_Note" type="id_String"/>
-        <mapperTableEntries name="Equipment___EoL" expression="row2.eol " type="id_String"/>
-        <mapperTableEntries name="Equipment___EoL_Date" expression="row2.eol_date " type="id_String"/>
+        <mapperTableEntries name="Equipment___EoL" expression="row2.Equipment___EoL" type="id_String"/>
+        <mapperTableEntries name="Equipment___EoL_Date" expression="row2.Equipment___EoL_Date" type="id_String"/>
         <mapperTableEntries name="SLA" expression="row2.SLA" type="id_String"/>
         <mapperTableEntries name="Coverage" expression="row2.Coverage" type="id_String"/>
         <mapperTableEntries name="Site_ID" expression="row2.Site_ID" type="id_String"/>
@@ -730,7 +730,7 @@
         <mapperTableEntries name="Location_A" expression="row2.Location_A" type="id_String"/>
         <mapperTableEntries name="Previous_POs" expression="row2.Previous_PO " type="id_String"/>
         <mapperTableEntries name="Prorated_Date" expression="row2.Prorated_Date" type="id_String"/>
-        <mapperTableEntries name="New_Renew_before_01_Jul_2017" expression="row2.New_renewal_amount " type="id_String"/>
+        <mapperTableEntries name="New_Renew_before_01_Jul_2017" expression="row2.New_Renew_before_01_Jul_2017" type="id_String"/>
         <mapperTableEntries name="New_Renew_after_01_Jul_2017" expression="row2.New_Renew_after_01_Jul_2017" type="id_String"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -1029,12 +1029,12 @@
       <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="27" name="Model" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="eol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Renewal_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="Coverage" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Site_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="PO_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Site_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="107" name="Site_Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1042,7 +1042,7 @@
       <column comment="" key="false" length="12" name="LocationA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Previous_POs" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="14" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="14" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Found_during_cleanse" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Searched_not_found" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1050,12 +1050,12 @@
       <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="27" name="Model" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="eol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Renewal_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="Coverage" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="Site_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="PO_Type" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Site_Name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="107" name="Site_Address" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1063,7 +1063,7 @@
       <column comment="" key="false" length="12" name="LocationA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Previous_POs" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="14" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="14" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="Found_during_cleanse" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="Searched_not_found" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -1123,12 +1123,12 @@
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Maintenance_value" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Maintenance_value" type="id_String" nullable="true"/>
         <mapperTableEntries name="Renewal_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_ID" type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" type="id_String" nullable="true"/>
@@ -1136,7 +1136,7 @@
         <mapperTableEntries name="LocationA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_POs" type="id_String" nullable="true"/>
         <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="New_renewal_amount" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
         <mapperTableEntries name="Found_during_cleanse" type="id_String" nullable="true"/>
         <mapperTableEntries name="Searched_not_found" type="id_String" nullable="true"/>
       </inputTables>
@@ -1375,7 +1375,7 @@
       <column comment="" key="false" length="30" name="Model" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="eol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="eol_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Renewal_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="Coverage" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1386,14 +1386,14 @@
       <column comment="" key="false" length="14" name="Location_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Previous_PO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Model" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="eol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="eol_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="4" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Renewal_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="Coverage" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1404,7 +1404,7 @@
       <column comment="" key="false" length="14" name="Location_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Previous_PO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="13" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
@@ -1471,7 +1471,7 @@
         <mapperTableEntries name="Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol_date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Maintenance_value" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Maintenance_value" type="id_String" nullable="true"/>
         <mapperTableEntries name="Renewal_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" type="id_String" nullable="true"/>
@@ -1482,7 +1482,7 @@
         <mapperTableEntries name="Location_A" type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" type="id_String" nullable="true"/>
         <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="New_renewal_amount" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
