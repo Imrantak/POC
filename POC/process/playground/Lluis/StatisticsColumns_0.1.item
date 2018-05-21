@@ -769,7 +769,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out6">
-        <mapperTableEntries name="FileName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FileName" expression="context.FileToProcess " type="id_String" nullable="true"/>
         <mapperTableEntries name="ColumnNum" expression="row8.ColumnNum " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="ColumnName" expression="row8.HeaderName " type="id_String" nullable="true"/>
         <mapperTableEntries name="Count" expression="Distinct.Count " type="id_Integer" nullable="true"/>
