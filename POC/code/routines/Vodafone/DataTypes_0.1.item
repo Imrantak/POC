@@ -12,10 +12,10 @@ public class DataTypes {
 			//System.out.println(a);
 			b=a.toString();
 			System.out.println(b);
-			c=Integer.parseInt(b.substring(b.indexOf(".")));
-			System.out.println(c);
-			if(c>0){return true;}
-			else {return false;}
+			
+			if(a % 1==0) return false;
+			else return true;
+
             }catch(NumberFormatException e){
             	return false;
         }
