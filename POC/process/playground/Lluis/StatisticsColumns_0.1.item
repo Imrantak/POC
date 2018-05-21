@@ -3,7 +3,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="InputDirectory" prompt="InputDirectory?" promptNeeded="false" type="id_String" value="/Users/lluisvi/Desktop/Vodafone/VodafoneRepo/inbound/"/>
     <contextParameter comment="" name="FieldSeparator" prompt="FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
-    <contextParameter comment="" name="LimitRows" prompt="LimitRows?" promptNeeded="false" type="id_Integer" value="13"/>
+    <contextParameter comment="" name="LimitRows" prompt="LimitRows?" promptNeeded="false" type="id_Integer" value=""/>
     <contextParameter comment="" name="OutputFilePath" prompt="OutputFilePath?" promptNeeded="false" type="id_String" value="/Users/lluisvi/Desktop/Vodafone/VodafoneRepo/outbound/OutputFile.csv"/>
     <contextParameter comment="" name="FileToProcess" prompt="FileToProcess?" promptNeeded="false" type="id_String" value="/Users/lluisvi/Desktop/Vodafone/VodafoneRepo/inbound/CSV_DS3_BILLING.csv"/>
   </context>
