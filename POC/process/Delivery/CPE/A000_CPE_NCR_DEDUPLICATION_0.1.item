@@ -962,8 +962,8 @@
         <mapperTableEntries name="NPID" expression="row2.NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Type" expression="row2.PO_Type" type="id_String" nullable="true"/>
         <mapperTableEntries name="Renewal_Date" expression="row2.Renewal_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Equipment___EoL" expression="row2.eol " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Equipment___EoL_Date" expression="row2.eol_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Equipment___EoL" expression="row2.Equipment___EoL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Equipment___EoL_Date" expression="row2.Equipment___EoL_Date " type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA" expression="row2.SLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" expression="row2.Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="row2.Site_Name" type="id_String" nullable="true"/>
