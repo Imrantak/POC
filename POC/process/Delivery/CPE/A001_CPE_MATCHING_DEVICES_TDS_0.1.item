@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx3076M&quot;]}" show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="530" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="512" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -2204,7 +2204,7 @@
       <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Wilm" expressionFilter="row22.SN_ != null" activateExpressionFilter="true">
         <mapperTableEntries name="SN_" expression="row22.SN_ " type="id_String" nullable="true"/>
@@ -2470,7 +2470,7 @@
       <column comment="" key="false" length="76" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="row27" activateCondensedTool="true" reject="true" rejectInnerJoin="true">
         <mapperTableEntries name="SN_" expression="row23.SN_ " type="id_String" nullable="true"/>
@@ -2801,7 +2801,7 @@
         <mapperTableEntries name="SN_" expression="row27.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row27.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="row27.eol " type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol_date" expression="row27.eol_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" expression="row27.eol_date != null ? ( row27.eol_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row27.eol_date.trim() )) ) : row27.eol_date " type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA_Coverage" expression="row27.SLA + &quot; &quot; + row27.Coverage " type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" expression="row27.Previous_PO " type="id_String" nullable="true"/>
         <mapperTableEntries name="Filename" expression="row27.Filename " type="id_String" nullable="true"/>
@@ -2828,7 +2828,7 @@
         <mapperTableEntries name="CustomerName" expression="row33.CustomerName" type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceStatus" expression="row33.ServiceStatus" type="id_String" nullable="true"/>
         <mapperTableEntries name="GlobalSrvReference" expression="row33.GlobalSrvReference" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Asset_installation_date" expression="row33.Asset_installation_date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Asset_installation_date" expression="row33.Asset_installation_date != null ? ( row33.Asset_installation_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row33.Asset_installation_date.trim() )) ) : row33.Asset_installation_date " type="id_String" nullable="true"/>
         <mapperTableEntries name="Providername" expression="row33.Providername" type="id_String" nullable="true"/>
         <mapperTableEntries name="NetworkFileMatch" expression="row27.FileMatch " type="id_String" nullable="true"/>
         <mapperTableEntries name="NetworkMatch" expression="row27.NetworkMatch " type="id_String" nullable="true"/>
@@ -3135,12 +3135,12 @@
       <column comment="" key="false" length="-1" name="Providername" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="OUTGCD">
         <mapperTableEntries name="ItemValue" expression="row21.ItemValue " type="id_String" nullable="true"/>
         <mapperTableEntries name="CustomerName" expression="row18.Name " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ServiceStatus" expression="(row2.ServiceStatusID==&quot;1&quot;?&quot;Active&quot;:(row2.ServiceStatusID==&quot;2&quot;?&quot;Pending&quot;:(row2.ServiceStatusID==&quot;3&quot;?&quot;Ceased&quot;:(row2.ServiceStatusID==&quot;4&quot;?&quot;Delete&quot;:&quot;&quot;)))) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ServiceStatus" expression="row2.ServiceStatusID.equals(&quot;1&quot;)? &quot;Active&quot;:&#xA;row2.ServiceStatusID.equals(&quot;2&quot;) ? &quot;Pending&quot;:&#xA;row2.ServiceStatusID.equals(&quot;3&quot;) ? &quot;Ceased&quot;:&#xA;row2.ServiceStatusID.equals(&quot;4&quot;) ? &quot;Delete&quot;:&quot;&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="GlobalSrvReference" expression="row2.GlobalSrvReference " type="id_String" nullable="true"/>
         <mapperTableEntries name="Asset_installation_date" expression="Service_Item.ServiceStartDate " type="id_String" nullable="true"/>
         <mapperTableEntries name="Providername" expression="row6.Providername " type="id_String" nullable="true"/>
@@ -4284,7 +4284,7 @@
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="diff">
         <mapperTableEntries name="SN_" expression="row35.SN_" type="id_String" nullable="true"/>
