@@ -5,10 +5,16 @@ public class DataTypes {
 	public static Boolean isDouble(Object value)
 	{
 		Double a;
+		String b;
+		int c;
 		try{
 			a=Double.valueOf(value.toString());
 			System.out.println(a);
-			return true;
+			b=a.toString();
+			c=Integer.parseInt(b.substring(b.indexOf(".")));
+			System.out.println(c);
+			if(c>0){return true;}
+			else {return false;}
             }catch(NumberFormatException e){
             	return false;
         }
