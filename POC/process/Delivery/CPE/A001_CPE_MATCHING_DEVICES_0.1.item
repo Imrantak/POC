@@ -2856,7 +2856,7 @@
       <outputTables sizeState="INTERMEDIATE" name="CPEE">
         <mapperTableEntries name="SN_" expression="row27.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row27.Model " type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol" expression="row27.eol " type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol" expression="row27.eol != null ? row27.eol : &quot;no&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol_date" expression="row27.eol_date != null ? ( row27.eol_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row27.eol_date.trim() )) ) : row27.eol_date " type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA_Coverage" expression="row27.SLA +&quot; &quot;+row27.Coverage " type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" expression="row27.Previous_PO " type="id_String" nullable="true"/>
@@ -2877,7 +2877,7 @@
         <mapperTableEntries name="Devcie_model_network" expression="row27.Devcie_model_network " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" expression="row27.Device_model_final " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" expression="row27.end_of_life_date " type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_of_life_flag" expression="row27.end_of_life_flag " type="id_String" nullable="true"/>
+        <mapperTableEntries name="end_of_life_flag" expression="row27.end_of_life_flag  != null ? row27.end_of_life_flag : &quot;no&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" expression="row27.NPID " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="row27.Site_Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="row27.Site_Address " type="id_String" nullable="true"/>
