@@ -570,7 +570,7 @@
       <column comment="" key="false" length="0" name="u_customer_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tServiceNowOutput" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="544" posY="-32">
+  <node componentName="tServiceNowOutput" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="544" posY="-96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tServiceNowOutput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tServiceNowConnection_1"/>
