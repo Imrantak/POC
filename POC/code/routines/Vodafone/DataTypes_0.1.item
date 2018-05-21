@@ -7,7 +7,6 @@ public class DataTypes {
 		Double a;
 		try{
 			a=Double.valueOf(value.toString());
-			System.out.println(a);
 			return true;
             }catch(NumberFormatException e){
             	return false;
