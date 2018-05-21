@@ -1471,6 +1471,25 @@
       <relatedItems xmi:id="_PgLjb1zbEeincrPA_9y7EA" id="ElsevierLog" version="Latest" type="routine"/>
       <relatedItems xmi:id="_PgLjcFzbEeincrPA_9y7EA" id="ElsevierUtilities" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_E7q4YFz_EeincrPA_9y7EA">
+      <baseItem xmi:id="_E7q4YVz_EeincrPA_9y7EA" id="_E6ZtEFz_EeincrPA_9y7EA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_E7q4Ylz_EeincrPA_9y7EA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4Y1z_EeincrPA_9y7EA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4ZFz_EeincrPA_9y7EA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4ZVz_EeincrPA_9y7EA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4Zlz_EeincrPA_9y7EA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4Z1z_EeincrPA_9y7EA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4aFz_EeincrPA_9y7EA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4aVz_EeincrPA_9y7EA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4alz_EeincrPA_9y7EA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4a1z_EeincrPA_9y7EA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4bFz_EeincrPA_9y7EA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4bVz_EeincrPA_9y7EA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4blz_EeincrPA_9y7EA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4b1z_EeincrPA_9y7EA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4cFz_EeincrPA_9y7EA" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_E7q4cVz_EeincrPA_9y7EA" id="DQ" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/playground/Lluis/org/elsevier/csom/Standardization/Phone</deletedFolders>
     <deletedFolders>process/playground/Lluis/org/elsevier/csom/Standardization/Email</deletedFolders>
     <deletedFolders>process/playground/Lluis/org/elsevier/csom/Standardization</deletedFolders>
