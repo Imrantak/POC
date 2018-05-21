@@ -1438,6 +1438,11 @@
       <relatedItems xmi:id="_NYN4vFzYEeincrPA_9y7EA" id="ElsevierLog" version="Latest" type="routine"/>
       <relatedItems xmi:id="_NYN4vVzYEeincrPA_9y7EA" id="ElsevierUtilities" version="Latest" type="routine"/>
     </ItemsRelations>
+    <deletedFolders>process/playground/Lluis/org/elsevier/csom/Standardization/Phone</deletedFolders>
+    <deletedFolders>process/playground/Lluis/org/elsevier/csom/Standardization</deletedFolders>
+    <deletedFolders>process/playground/Lluis/org/elsevier/csom</deletedFolders>
+    <deletedFolders>process/playground/Lluis/org/elsevier</deletedFolders>
+    <deletedFolders>process/playground/Lluis/org</deletedFolders>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8jcwEei50Npc-g0ZOA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
