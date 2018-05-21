@@ -725,8 +725,8 @@
         <mapperTableEntries name="Site_Name" expression="row2.Site_Name" type="id_String"/>
         <mapperTableEntries name="Site_Address" expression="row2.Site_Address" type="id_String"/>
         <mapperTableEntries name="Service_ID" expression="row2.Service_ID" type="id_String"/>
-        <mapperTableEntries name="Location_A" expression="row2.Location_A" type="id_String"/>
-        <mapperTableEntries name="Previous_POs" expression="row2.Previous_PO " type="id_String"/>
+        <mapperTableEntries name="Location_A" expression="row2.Location_A  " type="id_String"/>
+        <mapperTableEntries name="Previous_POs" expression="row2.Previous_POs " type="id_String"/>
         <mapperTableEntries name="Prorated_Date" expression="row2.Prorated_Date" type="id_String"/>
         <mapperTableEntries name="New_Renew_before_01_Jul_2017" expression="row2.New_Renew_before_01_Jul_2017" type="id_String"/>
         <mapperTableEntries name="New_Renew_after_01_Jul_2017" expression="row2.New_Renew_after_01_Jul_2017" type="id_String"/>
