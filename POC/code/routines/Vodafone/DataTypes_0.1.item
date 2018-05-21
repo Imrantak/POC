@@ -2,13 +2,16 @@ package routines;
 
 public class DataTypes {
 
-	public static boolean isDouble(Object value)
+	public static Boolean isDouble(Object value)
 	{
 		Double a;
-		
-		a=Double.valueOf(value.toString());
-		System.out.println(a);
-		return false;
+		try{
+			a=Double.valueOf(value.toString());
+			System.out.println(a);
+			return true;
+            }catch(NumberFormatException e){
+            	return false;
+        }
 	}
 	
 	
