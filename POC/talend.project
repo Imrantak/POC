@@ -1407,6 +1407,37 @@
       <relatedItems xmi:id="_inskoFzMEeincrPA_9y7EA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_inskoVzMEeincrPA_9y7EA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_NYN4oFzYEeincrPA_9y7EA">
+      <baseItem xmi:id="_NYN4oVzYEeincrPA_9y7EA" id="_-bESoHgBEeW8YvsL_4D3rg" version="0.3" type="job"/>
+      <relatedItems xmi:id="_NYN4olzYEeincrPA_9y7EA" id="_U38-UPcVEeWHi6AySPtlUg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_NYN4o1zYEeincrPA_9y7EA" id="_iHNH8PirEeSY4tRICUDmYQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_NYN4pFzYEeincrPA_9y7EA" id="_VatY4OnqEeW0v9u3VQIyGg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_NYN4pVzYEeincrPA_9y7EA" id="_QrwdoMBBEeW8dIL21aXkUQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_NYN4plzYEeincrPA_9y7EA" id="_I0FoYMicEeSyw-rJy4NypA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_NYN4p1zYEeincrPA_9y7EA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4qFzYEeincrPA_9y7EA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4qVzYEeincrPA_9y7EA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4qlzYEeincrPA_9y7EA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4q1zYEeincrPA_9y7EA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4rFzYEeincrPA_9y7EA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4rVzYEeincrPA_9y7EA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4rlzYEeincrPA_9y7EA" id="KurtosysLog" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4r1zYEeincrPA_9y7EA" id="ElsevierMainConductor" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4sFzYEeincrPA_9y7EA" id="Phone" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4sVzYEeincrPA_9y7EA" id="ElsevierValidation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4slzYEeincrPA_9y7EA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4s1zYEeincrPA_9y7EA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4tFzYEeincrPA_9y7EA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4tVzYEeincrPA_9y7EA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4tlzYEeincrPA_9y7EA" id="ElsevierDetermineRowAction" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4t1zYEeincrPA_9y7EA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4uFzYEeincrPA_9y7EA" id="ElsevierHash" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4uVzYEeincrPA_9y7EA" id="ElsevierConstants" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4ulzYEeincrPA_9y7EA" id="ElsevierPhone" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4u1zYEeincrPA_9y7EA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4vFzYEeincrPA_9y7EA" id="ElsevierLog" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_NYN4vVzYEeincrPA_9y7EA" id="ElsevierUtilities" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8jcwEei50Npc-g0ZOA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
