@@ -2836,13 +2836,13 @@
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CPEE">
         <mapperTableEntries name="SN_" expression="row27.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row27.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="row27.eol " type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol_date" expression="row27.eol_date != null &amp;&amp; row27.eol_date != &quot;CEASED&quot;? TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row27.eol_date.trim() ))  : row27.eol_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" expression="row27.eol_date != null ? ( row27.eol_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row27.eol_date.trim() )) ) : row27.eol_date " type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA_Coverage" expression="row27.SLA +&quot; &quot;+row27.Coverage " type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" expression="row27.Previous_PO " type="id_String" nullable="true"/>
         <mapperTableEntries name="Filename" expression="row27.Filename " type="id_String" nullable="true"/>
