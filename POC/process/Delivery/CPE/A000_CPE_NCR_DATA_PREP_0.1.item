@@ -496,8 +496,6 @@
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
     <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_tyFKUE-PEeiBKdkx6n_nTQ - NCR_BAU.xlsx" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_tyFKUE-PEeiBKdkx6n_nTQ - NCR_BAU.xlsx" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -643,8 +641,8 @@
       <column comment="" key="false" length="12" name="Location_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="Previous_POs" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Prorated_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="New_Renew_before_01_Jul_2017" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="15" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="New_Renew_after_01_Jul_2017" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="14" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="New_Renew_before_01_Jul_2017" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="15" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="New_Renew_after_01_Jul_2017" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="14" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="NCR_BAU.xlsx" name="REJECT">
       <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -753,8 +751,8 @@
         <mapperTableEntries name="Location_A" type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_POs" type="id_String" nullable="true"/>
         <mapperTableEntries name="Prorated_Date" type="id_String" nullable="true"/>
-        <mapperTableEntries name="New_Renew_before_01_Jul_2017" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="New_Renew_after_01_Jul_2017" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="New_Renew_before_01_Jul_2017" type="id_String" nullable="true"/>
+        <mapperTableEntries name="New_Renew_after_01_Jul_2017" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
