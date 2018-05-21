@@ -706,7 +706,7 @@
       <column comment="" key="false" length="-1" name="New_Renew_after_01_Jul_2017" nullable="false" originalDbColumnName="0020" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="q3_2017_in">
         <mapperTableEntries name="SN_" expression="row2.SN_" type="id_String"/>
@@ -1441,7 +1441,7 @@
       <column comment="" key="false" length="-1" name="Searched_not_found" nullable="false" originalDbColumnName="0018" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="q1_2018_in">
         <mapperTableEntries name="SN_" expression="row4.SN_" type="id_String"/>
