@@ -641,8 +641,8 @@
         <mapperTableEntries name="Device_model_invoice" expression="NCR.Model != null ? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] : null " type="id_String" nullable="true"/>
         <mapperTableEntries name="Devcie_model_network" expression="row14.MODEL " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" expression="!Relational.ISNULL(NCR.Model)? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :NCR.Model " type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_of_life_date" expression="NCR.eol " type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_of_life_flag" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="end_of_life_date" expression="NCR.eol_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="end_of_life_flag" expression="NCR.eol " type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="NCR.Site_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="NCR.Site_Address" type="id_String" nullable="true"/>
