@@ -25,7 +25,7 @@ public class DQ {
     	return false;
     }
     
-    public static boolean isMicrosoftDomain(String email)
+    public static boolean isMicrosoftEmailDomain(String email)
 	{
 		if(email==null || "".equals(email)){return false;}
 		else if(email.endsWith("hotmail.com")||
