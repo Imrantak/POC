@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx3076M&quot;]}" show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="530" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="512" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -2837,7 +2837,7 @@
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="CPEE">
         <mapperTableEntries name="SN_" expression="row27.SN_ " type="id_String" nullable="true"/>
@@ -2855,9 +2855,9 @@
         <mapperTableEntries name="Warranty_end_date" expression="row27.Warranty_end_date " type="id_String" nullable="true"/>
         <mapperTableEntries name="po_period_start" expression="row27.po_period_start " type="id_String" nullable="true"/>
         <mapperTableEntries name="po_period_end" expression="row27.po_period_end " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Supplier_Name" expression="row27.Supplier_Name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Supplier_Name" expression="&quot;NCR&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="row27.ROUTER_HOSTNAME " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Supplier_ID" expression="row27.Supplier_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Supplier_ID" expression="&quot;400114796&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Contract_No" expression="row27.Supplier_Contract_No " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_make" expression="row27.Device_make " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_invoice" expression="row27.Device_model_invoice " type="id_String" nullable="true"/>
