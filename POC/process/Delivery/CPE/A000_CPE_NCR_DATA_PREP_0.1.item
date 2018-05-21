@@ -711,7 +711,7 @@
       <outputTables sizeState="INTERMEDIATE" name="q3_2017_in">
         <mapperTableEntries name="SN_" expression="row2.SN_" type="id_String"/>
         <mapperTableEntries name="Model" expression="row2.Model" type="id_String"/>
-        <mapperTableEntries name="Maintenance_value_NCR_BAU" expression="row2.Maintenance_value " type="id_String"/>
+        <mapperTableEntries name="Maintenance_value_NCR_BAU" expression="row2.Maintenance_value_NCR_BAU " type="id_String"/>
         <mapperTableEntries name="Maintenance_Note" expression="row2.Maintenance_Note" type="id_String"/>
         <mapperTableEntries name="Renewal_Date" expression="row2.Renewal_Date" type="id_String"/>
         <mapperTableEntries name="NPID" expression="row2.NPID" type="id_String"/>
