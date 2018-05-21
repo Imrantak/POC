@@ -2852,9 +2852,9 @@
         <mapperTableEntries name="IOS" expression="row27.IOS " type="id_String" nullable="true"/>
         <mapperTableEntries name="Confidence_Score" expression="row27.Confidence_Score " type="id_String" nullable="true"/>
         <mapperTableEntries name="Warranty_start_date" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;dd-MMM-yyyy&quot;,row27.Warranty_start_date )) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Warranty_end_date" expression="row27.Warranty_end_date " type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_start" expression="row27.po_period_start " type="id_String" nullable="true"/>
-        <mapperTableEntries name="po_period_end" expression="row27.po_period_end " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Warranty_end_date" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;dd-MMM-yyyy&quot;,row27.Warranty_end_date )) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_start" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;dd-MMM-yyyy&quot;,row27.po_period_start  )) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="po_period_end" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;dd-MMM-yyyy&quot;,row27.po_period_end  )) " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_Name" expression="&quot;NCR&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="ROUTER_HOSTNAME" expression="row27.ROUTER_HOSTNAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="Supplier_ID" expression="&quot;400114796&quot;" type="id_String" nullable="true"/>
