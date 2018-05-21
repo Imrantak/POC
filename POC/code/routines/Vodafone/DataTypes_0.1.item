@@ -2,7 +2,7 @@ package routines;
 
 public class DataTypes {
 
-	public void test(Object value) {
+	public static void test(Object value) {
 
 		if (value.getClass() == Integer.class) {
 		    System.out.println("This is an Integer");
