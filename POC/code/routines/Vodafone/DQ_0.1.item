@@ -25,5 +25,21 @@ public class DQ {
     	return false;
     }
     
+    public static boolean isMicrosoftDomain(String email)
+	{
+		if(email==null || "".equals(email)){return false;}
+		else if(email.endsWith("hotmail.com")||
+			email.endsWith("hotmail.fr")||
+			email.endsWith("hotmail.co.uk")||
+			email.endsWith("live.fr")||
+			email.endsWith("windowslive.com")||
+			email.endsWith("live.com")||
+			email.endsWith("live.it")||
+			email.endsWith("live.co.uk")||
+			email.endsWith("live.cl")
+			)return true;
+		else return false;
+	}
+    
     
 }
