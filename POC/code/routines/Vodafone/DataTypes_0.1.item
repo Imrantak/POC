@@ -9,7 +9,7 @@ public class DataTypes {
 		int c;
 		try{
 			a=Double.valueOf(value.toString());
-			System.out.println(a);
+			//System.out.println(a);
 			b=a.toString();
 			c=Integer.parseInt(b.substring(b.indexOf(".")));
 			System.out.println(c);
