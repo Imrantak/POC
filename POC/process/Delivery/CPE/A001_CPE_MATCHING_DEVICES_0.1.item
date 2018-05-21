@@ -2843,7 +2843,7 @@
         <mapperTableEntries name="SN_" expression="row27.SN_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row27.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="row27.eol " type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol_date" expression="row27.eol_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;dd-MMM-yyyy&quot;,row27.eol_date )) " type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA" expression="row27.SLA " type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" expression="row27.Coverage " type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" expression="row27.Previous_PO " type="id_String" nullable="true"/>
