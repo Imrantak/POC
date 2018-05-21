@@ -3104,8 +3104,8 @@
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="','"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="'.'"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="ServiceItemValueID"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ProductAttributeID"/>
@@ -3176,7 +3176,7 @@
       <column comment="" key="false" length="-1" name="Providername" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="OUTGCD">
         <mapperTableEntries name="ItemValue" expression="row21.ItemValue " type="id_String" nullable="true"/>
@@ -3290,8 +3290,8 @@
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="','"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="'.'"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="ServiceID"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ProvisioningTypeID"/>
@@ -3531,8 +3531,8 @@
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Providerid"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Providername"/>
@@ -3588,8 +3588,8 @@
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="','"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="'.'"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CustomerStatusID"/>
@@ -3715,8 +3715,8 @@
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="true"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="','"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="'.'"/>
-    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TABLE" name="TRIMSELECT">
+    <elementParameter field="CHECK" name="TRIMALL" value="true"/>
+    <elementParameter field="TABLE" name="TRIMSELECT" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="ServiceItemID"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ServiceID"/>
