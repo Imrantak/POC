@@ -2,6 +2,13 @@ package routines;
 
 public class DataTypes {
 
+	public static String DetermineType(Object value)
+	{
+		if(DataTypes.isDecimal(value)){return "Decimal";}
+		else if(DataTypes.isInteger(value)){return "Integer";}
+		else return "Text";
+	}
+	
 	public static Boolean isDecimal(Object value)
 	{
 		Double a;
