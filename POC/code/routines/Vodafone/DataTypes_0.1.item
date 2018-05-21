@@ -13,7 +13,17 @@ public class DataTypes {
 		else if (value.getClass() == Float.class) {
 		    System.out.println("This is a Float");
 		}
+	}
+	
+	public static void test2(Object value) {
 
-}
+		if (value instanceof Integer) {
+	        System.out.println("This is an Integer");
+	    } else if(value instanceof String) {
+	        System.out.println("This is a String");
+	    } else if(value instanceof Float) {
+	        System.out.println("This is a Float");
+	    }
+	}
     
 }
