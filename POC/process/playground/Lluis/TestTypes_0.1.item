@@ -166,7 +166,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out1" expressionFilter="row2.Type " activateExpressionFilter="true">
+      <outputTables sizeState="INTERMEDIATE" name="out1" expressionFilter="row2.Type.equals(&quot;Text&quot;)" activateExpressionFilter="true">
         <mapperTableEntries name="value" expression="row2.value " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
