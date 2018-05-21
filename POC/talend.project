@@ -1436,11 +1436,41 @@
       <relatedItems xmi:id="_aawh4FzYEeincrPA_9y7EA" id="DataMasking" version="Latest" type="routine"/>
       <relatedItems xmi:id="_aawh4VzYEeincrPA_9y7EA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_PgLjUFzbEeincrPA_9y7EA">
+      <baseItem xmi:id="_PgLjUVzbEeincrPA_9y7EA" id="_Smc-sK44EeWF9qhx0DOzPg" version="0.1" type="job"/>
+      <relatedItems xmi:id="_PgLjUlzbEeincrPA_9y7EA" id="_U38-UPcVEeWHi6AySPtlUg" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PgLjU1zbEeincrPA_9y7EA" id="_iHNH8PirEeSY4tRICUDmYQ" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PgLjVFzbEeincrPA_9y7EA" id="_VatY4OnqEeW0v9u3VQIyGg" version="Latest" type="job"/>
+      <relatedItems xmi:id="_PgLjVVzbEeincrPA_9y7EA" id="_QrwdoMBBEeW8dIL21aXkUQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_PgLjVlzbEeincrPA_9y7EA" id="_I0FoYMicEeSyw-rJy4NypA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_PgLjV1zbEeincrPA_9y7EA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjWFzbEeincrPA_9y7EA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjWVzbEeincrPA_9y7EA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjWlzbEeincrPA_9y7EA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjW1zbEeincrPA_9y7EA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjXFzbEeincrPA_9y7EA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjXVzbEeincrPA_9y7EA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjXlzbEeincrPA_9y7EA" id="KurtosysLog" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjX1zbEeincrPA_9y7EA" id="Email" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjYFzbEeincrPA_9y7EA" id="ElsevierMainConductor" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjYVzbEeincrPA_9y7EA" id="Phone" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjYlzbEeincrPA_9y7EA" id="ElsevierValidation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjY1zbEeincrPA_9y7EA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjZFzbEeincrPA_9y7EA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjZVzbEeincrPA_9y7EA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjZlzbEeincrPA_9y7EA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjZ1zbEeincrPA_9y7EA" id="ElsevierCalculate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjaFzbEeincrPA_9y7EA" id="ElsevierDetermineRowAction" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjaVzbEeincrPA_9y7EA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjalzbEeincrPA_9y7EA" id="ElsevierHash" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLja1zbEeincrPA_9y7EA" id="ElsevierConstants" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjbFzbEeincrPA_9y7EA" id="ElsevierPhone" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjbVzbEeincrPA_9y7EA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjblzbEeincrPA_9y7EA" id="ElsevierEmail" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjb1zbEeincrPA_9y7EA" id="ElsevierLog" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PgLjcFzbEeincrPA_9y7EA" id="ElsevierUtilities" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/playground/Lluis/org/elsevier/csom/Standardization/Phone</deletedFolders>
-    <deletedFolders>process/playground/Lluis/org/elsevier/csom/Standardization</deletedFolders>
-    <deletedFolders>process/playground/Lluis/org/elsevier/csom</deletedFolders>
-    <deletedFolders>process/playground/Lluis/org/elsevier</deletedFolders>
-    <deletedFolders>process/playground/Lluis/org</deletedFolders>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8jcwEei50Npc-g0ZOA" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
