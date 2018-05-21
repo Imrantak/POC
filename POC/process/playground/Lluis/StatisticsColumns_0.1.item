@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:tdqmatching="http://www.talend.org/tdqmatching" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="FileToProcess" prompt="FileToProcess?" promptNeeded="false" type="id_String" value="/Users/lluisvi/Desktop/Vodafone/Files/CSV_DS3_input/CSV_DS3_GRN.csv"/>
+    <contextParameter comment="" name="FileToProcess" prompt="FileToProcess?" promptNeeded="true" type="id_String" value="/Users/lluisvi/Desktop/Vodafone/Files/CSV_DS3_input/CSV_DS3_GRN.csv"/>
     <contextParameter comment="" name="FieldSeparator" prompt="FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;,&quot;"/>
     <contextParameter comment="" name="LimitRows" prompt="LimitRows?" promptNeeded="false" type="id_Integer" value="10000"/>
     <contextParameter comment="" name="OutputFilePath" prompt="OutputFilePath?" promptNeeded="false" type="id_String" value=""/>
