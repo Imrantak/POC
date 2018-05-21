@@ -123,7 +123,7 @@
   </parameters>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="(String)globalMap.get(&quot;InputFile&quot;)"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FileToProcess"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
@@ -1101,7 +1101,7 @@
   </node>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="-32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="(String)globalMap.get(&quot;InputFile&quot;)"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FileToProcess"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
