@@ -2877,7 +2877,7 @@
         <mapperTableEntries name="Devcie_model_network" expression="row27.Devcie_model_network " type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" expression="row27.Device_model_final " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" expression="row27.end_of_life_date  != null ? ( row27.end_of_life_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row27.end_of_life_date.trim() )) ) : row27.end_of_life_date " type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_of_life_flag" expression="row27.end_of_life_flag  != null || !row27.end_of_life_flag.equals(&quot;&quot;) ? row27.end_of_life_flag : &quot;no&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="end_of_life_flag" expression="row27.end_of_life_flag  != null ? !row27.end_of_life_flag.equals(&quot;&quot;) ? row27.end_of_life_flag : &quot;no&quot; : &quot;no&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" expression="row27.NPID " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="row27.Site_Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="row27.Site_Address " type="id_String" nullable="true"/>
@@ -4341,7 +4341,7 @@
         <mapperTableEntries name="Devcie_model_network" expression="row35.Devcie_model_network" type="id_String" nullable="true"/>
         <mapperTableEntries name="Device_model_final" expression="row35.Device_model_final" type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" expression="row35.end_of_life_date != null ? ( row35.end_of_life_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row35.end_of_life_date.trim() )) ) : row35.end_of_life_date " type="id_String" nullable="true"/>
-        <mapperTableEntries name="end_of_life_flag" expression="row35.end_of_life_flag != null || !row35.end_of_life_flag.equals(&quot;&quot;) ? row35.end_of_life_flag : &quot;no&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="end_of_life_flag" expression="row35.end_of_life_flag != null &amp;&amp; !row35.end_of_life_flag.equals(&quot;&quot;) ? row35.end_of_life_flag : &quot;no&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" expression="row35.NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="row35.Site_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="row35.Site_Address" type="id_String" nullable="true"/>
