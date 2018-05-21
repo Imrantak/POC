@@ -4304,7 +4304,7 @@
         <mapperTableEntries name="SN_" expression="row35.SN_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row35.Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="row35.eol" type="id_String" nullable="true"/>
-        <mapperTableEntries name="eol_date" expression="row27.eol_date != null ? ( row35.eol_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row35.eol_date.trim() )) ) : row35.eol_date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="eol_date" expression="row35.eol_date != null ? ( row35.eol_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row35.eol_date.trim() )) ) : row35.eol_date " type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA_Coverage" expression="row35.SLA + &quot; &quot;+ row35.Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Previous_PO" expression="row35.Previous_PO" type="id_String" nullable="true"/>
         <mapperTableEntries name="Filename" expression="row35.Filename" type="id_String" nullable="true"/>
