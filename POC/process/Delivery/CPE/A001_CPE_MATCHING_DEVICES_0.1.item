@@ -616,7 +616,7 @@
       <column comment="" key="false" length="-1" name="NetworkMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="NCR_used">
         <mapperTableEntries name="SN_" expression="NCR.SN_" type="id_String" nullable="true"/>
@@ -2245,7 +2245,7 @@
       <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Wilm" expressionFilter="row22.SN_ != null" activateExpressionFilter="true">
         <mapperTableEntries name="SN_" expression="row22.SN_ " type="id_String" nullable="true"/>
