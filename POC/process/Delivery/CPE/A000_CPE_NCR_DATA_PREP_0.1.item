@@ -1025,7 +1025,7 @@
       <column comment="" key="false" length="17" name="SN_" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="27" name="Model" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="eol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="Maintenance_value" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="28" name="Renewal_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="7" name="SLA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="Coverage" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1119,7 +1119,7 @@
         <mapperTableEntries name="SN_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Maintenance_value" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="Maintenance_value" type="id_String" nullable="true"/>
         <mapperTableEntries name="Renewal_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" type="id_String" nullable="true"/>
