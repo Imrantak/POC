@@ -539,7 +539,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="value" expression="row7.value " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CountryCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CountryCode" expression="&quot;&quot; " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="value" type="id_String" nullable="true"/>
