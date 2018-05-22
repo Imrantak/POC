@@ -2262,7 +2262,7 @@
       <column comment="" key="false" length="-1" name="WilmartMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Wilm" expressionFilter="row22.SN_ != null" activateExpressionFilter="true">
         <mapperTableEntries name="SN_" expression="row22.SN_ " type="id_String" nullable="true"/>
@@ -2883,7 +2883,7 @@
         <mapperTableEntries name="NPID" expression="row27.NPID " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="row27.Site_Name " type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="row27.Site_Address " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CustomerName" expression="row33.CustomerName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerName" expression="row27.Site_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceStatus" expression="row33.ServiceStatus" type="id_String" nullable="true"/>
         <mapperTableEntries name="GlobalSrvReference" expression="row33.GlobalSrvReference" type="id_String" nullable="true"/>
         <mapperTableEntries name="Asset_installation_date" expression="row33.Asset_installation_date != null ? ( row33.Asset_installation_date.equalsIgnoreCase(&quot;CEASED&quot;) ? &quot;1999-01-01&quot; :  TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,TalendDate.parseDate(&quot;EEE MMM dd HH:mm:ss Z yyyy&quot;,row33.Asset_installation_date.trim() )) ) : row33.Asset_installation_date " type="id_String" nullable="true"/>
@@ -4051,7 +4051,7 @@
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="resu" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="SN_" expression="row30.SN_" type="id_String" nullable="true"/>
@@ -4317,7 +4317,7 @@
       <column comment="" key="false" length="-1" name="GCDMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="diff">
         <mapperTableEntries name="SN_" expression="row35.SN_" type="id_String" nullable="true"/>
