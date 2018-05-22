@@ -1,0 +1,40 @@
+package routines;
+
+public class DataTypes {
+
+	public static String DetermineType(Object value)
+	{
+		if(DataTypes.isDecimal(value)){return "Decimal";}
+		else if(DataTypes.isInteger(value)){return "Integer";}
+		else return "Text";
+	}
+	
+	public static Boolean isDecimal(Object value)
+	{
+		Double a;
+		try{
+			a=Double.valueOf(value.toString());
+			
+			if(a % 1==0) return false;
+			else return true;
+
+            }catch(NumberFormatException e){
+            	return false;
+        }
+	}
+	
+	public static Boolean isInteger(Object value)
+	{
+		Double a;
+		try{
+			a=Double.valueOf(value.toString());
+			
+			if(a % 1==0) return true;
+			else return false;
+
+            }catch(NumberFormatException e){
+            	return false;
+        }
+	}
+    
+}
