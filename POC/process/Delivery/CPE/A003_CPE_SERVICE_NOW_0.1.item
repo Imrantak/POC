@@ -570,7 +570,7 @@
       <column comment="" key="false" length="0" name="u_customer_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="160">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_QwfNcF0DEei56Z5x9yUyOA" show="false"/>
@@ -834,7 +834,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tDataStewardshipTaskOutput" componentVersion="0.19.9" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-32">
+  <node componentName="tDataStewardshipTaskOutput" componentVersion="0.19.9" offsetLabelX="0" offsetLabelY="0" posX="960" posY="-32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDataStewardshipTaskOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_x9PXQFQxEeig0Zw5-SQnSw" show="false"/>
@@ -945,7 +945,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tServiceNowOutput" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="864" posY="64">
+  <node componentName="tServiceNowOutput" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="960" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tServiceNowOutput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tServiceNowConnection_1"/>
