@@ -183,7 +183,7 @@
     <elementParameter field="TEXT" name="CUSTOM_TABLE" value="&quot;u_imp_cpe_asset&quot;"/>
     <elementParameter field="TABLE" name="CONDITIONS"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
-    <elementParameter field="TEXT" name="LIMIT" value="1000"/>
+    <elementParameter field="TEXT" name="LIMIT" value="0"/>
     <elementParameter field="LABEL" name="INFO" value="If limit set to empty &quot;&quot; string or 0 it will be disabled."/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tServiceNowInput_1">
