@@ -4,7 +4,7 @@ public class PATH {
 
 	public static String toJavaPath(String path)
 	{
-		return path.replaceAll("\\", "/");
+		return path.replace("\\", "/");
 	}
 	
 	
