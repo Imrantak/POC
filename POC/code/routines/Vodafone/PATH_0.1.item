@@ -10,12 +10,16 @@ public class PATH {
 	
 	public static String getFilePath(String path)
 	{
-		return "";
+		String p=PATH.toJavaPath(path);
+		p=p.substring(0, p.lastIndexOf('/'));
+		return p;
 	}
 	
 	public static String getFileName(String path)
 	{
-		return "";
+		String p=PATH.toJavaPath(path);
+		p=p.substring(p.lastIndexOf('/')+1,p.length());
+		return p;
 	}
 
 }
