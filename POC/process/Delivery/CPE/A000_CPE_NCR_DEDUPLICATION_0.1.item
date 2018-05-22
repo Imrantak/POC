@@ -965,7 +965,7 @@
         <mapperTableEntries name="Maintenance_value" expression="row2.Maintenance_value_NCR_BAU " type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" expression="row2.NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Type" expression="row2.PO_Type" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO" expression="row2.Previous_POs " type="id_String" nullable="true"/>
         <mapperTableEntries name="Renewal_Date" expression="row2.Renewal_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Equipment___EoL" expression="row2.Equipment___EoL " type="id_String" nullable="true"/>
         <mapperTableEntries name="Equipment___EoL_Date" expression="row2.Equipment___EoL_Date " type="id_String" nullable="true"/>
@@ -1216,7 +1216,7 @@
         <mapperTableEntries name="Maintenance_value" expression="row3.Maintenance_value" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" expression="row3.NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Type" expression="row3.PO_Type" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO" expression="row3.Previous_POs " type="id_String" nullable="true"/>
         <mapperTableEntries name="Renewal_Date" expression="row3.Renewal_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Equipment___EoL" expression="row3.eol " type="id_String" nullable="true"/>
         <mapperTableEntries name="Equipment___EoL_Date" type="id_String" nullable="true"/>
@@ -1446,7 +1446,7 @@
         <mapperTableEntries name="Maintenance_value" expression="row4.Maintenance_value" type="id_String" nullable="true"/>
         <mapperTableEntries name="NPID" type="id_String" nullable="true"/>
         <mapperTableEntries name="PO_Type" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PO" expression="row4.Previous_PO " type="id_String" nullable="true"/>
         <mapperTableEntries name="Renewal_Date" expression="row4.Renewal_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="Equipment___EoL" expression="row4.eol " type="id_String" nullable="true"/>
         <mapperTableEntries name="Equipment___EoL_Date" expression="row4.eol_date " type="id_String" nullable="true"/>
@@ -1542,7 +1542,7 @@
         <mapperTableEntries name="Site_Address" expression="row5.Site_Address" type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Location_A" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Previous_PO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Previous_PO" expression="row5.PO " type="id_String" nullable="true"/>
         <mapperTableEntries name="Prorated_Date" expression="row5.Prorated_Date" type="id_String" nullable="true"/>
         <mapperTableEntries name="New_renewal_amount" type="id_String" nullable="true"/>
         <mapperTableEntries name="FIleName" expression="row5.FIleName " type="id_String" nullable="true"/>
