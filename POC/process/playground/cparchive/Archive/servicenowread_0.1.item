@@ -318,8 +318,8 @@
     <elementParameter field="CLOSED_LIST" name="ACTION" value="update"/>
     <elementParameter field="CLOSED_LIST" name="TABLENAME" value="custom_table"/>
     <elementParameter field="TEXT" name="CUSTOM_TABLE" value="&quot;u_imp_cpe_asset&quot;"/>
-    <elementParameter field="CHECK" name="ENABLE_PAYLOAD_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="ENABLE_RESPONSE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_PAYLOAD_DEBUG_MODE" value="true"/>
+    <elementParameter field="CHECK" name="ENABLE_RESPONSE_DEBUG_MODE" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tServiceNowOutput_1">
       <column comment="" key="false" length="-1" name="u_supplier_sla" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
