@@ -23,25 +23,25 @@
   </TalendMetadata:FileExcelConnection>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_-V8kIVOTEeiLrKqt0XAikA" name="default" dataManager="_-V8kIFOTEeiLrKqt0XAikA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-V8kIlOTEeiLrKqt0XAikA" id="_Jl_cYFOREeiLrKqt0XAikA" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kI1OTEeiLrKqt0XAikA" label="SN_" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kJFOTEeiLrKqt0XAikA" label="Model" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kJVOTEeiLrKqt0XAikA" label="eol" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kJlOTEeiLrKqt0XAikA" label="Maintenance_value" length="-1" precision="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kJ1OTEeiLrKqt0XAikA" label="Renewal_Date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kKFOTEeiLrKqt0XAikA" label="SLA" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kKVOTEeiLrKqt0XAikA" label="Coverage" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kKlOTEeiLrKqt0XAikA" label="Site_ID" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kK1OTEeiLrKqt0XAikA" label="NPID" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kLFOTEeiLrKqt0XAikA" label="PO_Type" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kLVOTEeiLrKqt0XAikA" label="Site_Name" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kLlOTEeiLrKqt0XAikA" label="Site_Address" length="107" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kL1OTEeiLrKqt0XAikA" label="ServiceID" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kMFOTEeiLrKqt0XAikA" label="LocationA" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kMVOTEeiLrKqt0XAikA" label="Previous_POs" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kMlOTEeiLrKqt0XAikA" label="Prorated_Date" length="44" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kM1OTEeiLrKqt0XAikA" label="New_renewal_amount" length="-1" precision="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kNFOTEeiLrKqt0XAikA" label="Found_during_cleanse" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-V8kNVOTEeiLrKqt0XAikA" label="Searched_not_found" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzIF0NEeiuzPlXuRwSNQ" label="SN_" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzIV0NEeiuzPlXuRwSNQ" label="Model" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzIl0NEeiuzPlXuRwSNQ" label="eol" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzI10NEeiuzPlXuRwSNQ" label="Maintenance_value" length="7" precision="3" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzJF0NEeiuzPlXuRwSNQ" label="Renewal_Date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzJV0NEeiuzPlXuRwSNQ" label="SLA" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzJl0NEeiuzPlXuRwSNQ" label="Coverage" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzJ10NEeiuzPlXuRwSNQ" label="Site_ID" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzKF0NEeiuzPlXuRwSNQ" label="NPID" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzKV0NEeiuzPlXuRwSNQ" label="PO_Type" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzKl0NEeiuzPlXuRwSNQ" label="Site_Name" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzK10NEeiuzPlXuRwSNQ" label="Site_Address" length="107" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzLF0NEeiuzPlXuRwSNQ" label="ServiceID" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzLV0NEeiuzPlXuRwSNQ" label="LocationA" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzLl0NEeiuzPlXuRwSNQ" label="Previous_POs" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzL10NEeiuzPlXuRwSNQ" label="Prorated_Date" length="28" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzMF0NEeiuzPlXuRwSNQ" label="New_renewal_amount" length="18" precision="14" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzMV0NEeiuzPlXuRwSNQ" label="Found_during_cleanse" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NfUzMl0NEeiuzPlXuRwSNQ" label="Searched_not_found" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>
