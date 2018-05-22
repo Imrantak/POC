@@ -355,7 +355,7 @@
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="dd" activateCondensedTool="true" rejectInnerJoin="true">
         <mapperTableEntries name="SN_" expression="row4.SN_" type="id_String" nullable="true"/>
@@ -630,7 +630,7 @@
       <column comment="" key="false" length="-1" name="NetworkMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="NCR_used">
         <mapperTableEntries name="SN_" expression="NCR.SN_" type="id_String" nullable="true"/>
