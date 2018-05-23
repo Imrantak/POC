@@ -80,6 +80,30 @@ public class DQ_Test {
 			return data;
 			
 		}
+		else if(name.getName().equalsIgnoreCase("isActiveCeasedCircuits"))
+		{
+			Object [][] data=new Object[6][2];
+		
+			data[0][0]="12345-abcd-abcde";
+			data[0][1]=false;
+			
+			data[1][0]="12345-1234-12345";
+			data[1][1]=true;
+			
+			data[2][0]="abcde-ab-12345";
+			data[2][1]=false;
+			
+			data[3][0]="abcde-abcd-12345";
+			data[3][1]=true;
+			
+			data[4][0]="ASTFG-rowk-39402";
+			data[4][1]=true;
+			
+			data[5][0]=null;
+			data[5][1]=false;
+			
+			return data;
+		}
 		else return null;
 		
 		
