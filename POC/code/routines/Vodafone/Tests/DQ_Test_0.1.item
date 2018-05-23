@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
+
 public class DQ_Test {
 
 	@Test
@@ -13,9 +15,9 @@ public class DQ_Test {
 	}
 	
 	@DataProvider(name="DQ")
-	public Object [][] getData()
+	public Object [][] getData(Method name)
 	{
-		Object [][] data=new Object[2][2];
+		Object [][] data=new Object[6][2];
 		
 		data[0][0]="";
 		data[0][1]=true;
@@ -26,11 +28,15 @@ public class DQ_Test {
 		data[2][0]=null;
 		data[2][1]=true;
 		
-		data[3][0]=null;
-		data[3][1]=true;
+		data[3][0]="null";
+		data[3][1]=false;
+		
+		data[4][0]=" ";
+		data[4][1]=false;
+		
+		data[5][0]="testValue";
+		data[5][1]=false;
 		
 		return data;
-		
-		
 	}
 }
