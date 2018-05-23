@@ -115,8 +115,8 @@
   <node componentName="tMongoDBConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBConnection_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_3_5_X"/>
-    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="true"/>
-    <elementParameter field="TABLE" name="REPLICA_SET">
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false">
       <elementValue elementRef="REPLICA_HOST" value="&quot;cluster0-shard-00-00-h0rs5.mongodb.net&quot;"/>
       <elementValue elementRef="REPLICA_PORT" value="27017"/>
       <elementValue elementRef="REPLICA_HOST" value="&quot;cluster0-shard-00-01-h0rs5.mongodb.net&quot;"/>
@@ -124,20 +124,20 @@
       <elementValue elementRef="REPLICA_HOST" value="&quot;cluster0-shard-00-02-h0rs5.mongodb.net&quot;"/>
       <elementValue elementRef="REPLICA_PORT" value="27017"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="27017" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;cluster0-shard-00-00-h0rs5.mongodb.net&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="27017"/>
     <elementParameter field="TEXT" name="DATABASE" value="&quot;test&quot;"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
-    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="SCRAMSHA1_MEC" show="false"/>
-    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false"/>
     <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;Talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="MjwrSzIEj/Smf7Kh7FPtKQ=="/>
     <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
     <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
     <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
-    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false"/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
