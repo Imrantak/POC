@@ -82,16 +82,19 @@ public class DQ_Test {
 		}
 		else if(name.getName().equalsIgnoreCase("isActiveCeasedCircuits"))
 		{
-			Object [][] data=new Object[6][2];
+			Object [][] data=new Object[6][3];
 		
 			data[0][0]="12345-abcd-abcde";
 			data[0][1]=false;
+			data[0][2]=false;
 			
 			data[1][0]="12345-1234-12345";
 			data[1][1]=true;
+			data[1][2]=false;
 			
 			data[2][0]="abcde-ab-12345";
 			data[2][1]=false;
+			data[0][2]=false;
 			
 			data[3][0]="abcde-abcd-12345";
 			data[3][1]=true;
