@@ -1521,11 +1521,11 @@
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="ee">
         <mapperTableEntries name="SN" expression="row5.SN_ " type="id_String" nullable="true"/>
-        <mapperTableEntries name="FileName" expression="row5.FIleName + &quot;KJKJK&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FileName" expression="row5.FIleName " type="id_String" nullable="true"/>
         <mapperTableEntries name="SLA" expression="row5.SLA" type="id_String" nullable="true"/>
         <mapperTableEntries name="Coverage" expression="row5.Coverage" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="row5.Site_Address" type="id_String" nullable="true"/>
