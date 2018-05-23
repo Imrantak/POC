@@ -43,7 +43,7 @@ public class DQ_Test {
 			return data;
 			
 		}
-		else return new Object[6][2];
+		else return null;
 		
 		
 	}
