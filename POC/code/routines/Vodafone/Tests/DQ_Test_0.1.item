@@ -14,6 +14,12 @@ public class DQ_Test {
 		Assert.assertEquals(DQ.isNullOrBlank(value), expctResult);
 	}
 	
+	@Test(dataProvider="DQ")
+	public void isCorrectGSR_Ref(String value,Boolean expctResult)
+	{
+		Assert.assertEquals(DQ.isCorrectGSR_Ref(value), expctResult);
+	}
+	
 	@DataProvider(name="DQ")
 	public Object [][] getData(Method name)
 	{
@@ -41,6 +47,10 @@ public class DQ_Test {
 			data[5][1]=false;
 			
 			return data;
+			
+		}
+		else if(name.getName().equalsIgnoreCase("isCorrectGSR_Ref"))
+		{
 			
 		}
 		else return null;
