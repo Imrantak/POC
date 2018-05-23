@@ -21,9 +21,9 @@ public class DQ_Test {
 	}
 	
 	@Test(dataProvider="DQ")
-	public void isActiveCeasedCircuits(String orderType,String status,Boolean expctResult)
+	public void isMicrosoftEmailDomain(String value,Boolean expctResult)
 	{
-		Assert.assertEquals(DQ.isActiveCeasedCircuits(orderType, status), expctResult);
+		Assert.assertEquals(DQ.isMicrosoftEmailDomain(value), expctResult);
 	}
 	
 	@DataProvider(name="DQ")
