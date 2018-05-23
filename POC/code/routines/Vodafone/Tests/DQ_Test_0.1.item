@@ -57,7 +57,7 @@ public class DQ_Test {
 			data[0][1]=false;
 			
 			data[1][0]="12345-1234-12345";
-			data[1][1]=false;
+			data[1][1]=true;
 			
 			data[2][0]="abcde-ab-12345";
 			data[2][1]=false;
