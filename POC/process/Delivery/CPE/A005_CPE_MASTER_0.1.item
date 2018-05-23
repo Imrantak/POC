@@ -48,8 +48,8 @@
   <parameters>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx4096M&quot;]}" show="false"/>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="96" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="64" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="160" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -158,7 +158,7 @@
     <routinesParameter id="_NhQGQDcwEei50Npc-g0ZOA" name="TalendStringUtil"/>
     <routinesParameter id="_NhKmsDcwEei50Npc-g0ZOA" name="TalendString"/>
   </parameters>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -169,7 +169,7 @@
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
     <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -189,7 +189,7 @@
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
     <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -215,7 +215,7 @@
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
     <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -233,7 +233,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Completed job 2 : NCR DEDUPLICATION&quot;);&#xA;System.out.print(&quot;Starting job 3 : NCR MATCHING&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Completed job 2 : NCR DEDUPLICATION&quot;);&#xA;System.out.print(&quot;Starting job 3 : DEVICES MATCHING&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
@@ -245,7 +245,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
   </node>
-  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-32">
+  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStatCatcher_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tStatCatcher_1">
@@ -265,7 +265,7 @@
       <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="-32">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="-96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -313,7 +313,7 @@
       <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="J0001_COLLECTING_LOGS_STATS" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-32">
+  <node componentName="J0001_COLLECTING_LOGS_STATS" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="J0001_COLLECTING_LOGS_STATS_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -333,7 +333,7 @@
       <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="-32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Starting job 1 : NCR DATA PREP&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -353,7 +353,7 @@
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
     <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -364,7 +364,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Completed job 2 : NCR DEDUPLICATION&quot;);&#xA;System.out.print(&quot;Starting job 3 : NCR MATCHING&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Completed job 2 : DEVICES DEDUPLICATION&quot;);&#xA;System.out.print(&quot;Starting job 3 : NETWORK MATCHING&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -380,7 +380,7 @@
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
     <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
-    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
     <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
     <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
     <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
@@ -391,7 +391,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Completed job 2 : NCR DEDUPLICATION&quot;);&#xA;System.out.print(&quot;Starting job 3 : NCR MATCHING&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Completed job 2 : NETWORK DEDUPLICATION&quot;);&#xA;System.out.print(&quot;Starting job 3 : REJECTED&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
