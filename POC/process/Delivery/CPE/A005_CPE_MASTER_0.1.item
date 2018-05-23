@@ -391,7 +391,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Completed job 2 : NETWORK DEDUPLICATION&quot;);&#xA;System.out.print(&quot;Starting job 3 : REJECTED&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.print(&quot;Completed job 2 : NETWORK MATCHING&quot;);&#xA;System.out.print(&quot;Starting job 3 : REJECTED FEED for Network&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
