@@ -20,6 +20,12 @@ public class DQ_Test {
 		Assert.assertEquals(DQ.isCorrectGSR_Ref(value), expctResult);
 	}
 	
+	@Test(dataProvider="DQ")
+	public void isActiveCeasedCircuits(String orderType,String status,Boolean expctResult)
+	{
+		Assert.assertEquals(DQ.isActiveCeasedCircuits(orderType, status), expctResult);
+	}
+	
 	@DataProvider(name="DQ")
 	public Object [][] getData(Method name)
 	{
