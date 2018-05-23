@@ -18,8 +18,8 @@ public class DQ_Test {
 	public Object [][] getData(Method name)
 	{
 		
-		/*if(name.getName().equalsIgnoreCase("isNullOrBlank"))
-		{*/
+		if(name.getName().equalsIgnoreCase("isNullOrBlank"))
+		{
 			Object [][] data=new Object[1][2];
 			
 			data[0][0]="";
@@ -42,8 +42,8 @@ public class DQ_Test {
 			
 			return data;
 			
-		/*}
-		else return new Object[6][2];*/
+		}
+		else return new Object[6][2];
 		
 		
 	}
