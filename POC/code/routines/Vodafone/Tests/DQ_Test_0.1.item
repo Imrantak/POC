@@ -29,7 +29,7 @@ public class DQ_Test {
 	@Test(dataProvider="DQ")
 	public void toJavaPath(String value,String expctResult)
 	{
-		Assert.assertEquals(DQ.isMicrosoftEmailDomain(value), expctResult);
+		Assert.assertEquals(PATH.toJavaPath(value), expctResult);
 	}
 	
 	
