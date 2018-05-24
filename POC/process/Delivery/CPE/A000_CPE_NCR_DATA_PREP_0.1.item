@@ -150,7 +150,7 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;DataSource/NCR/2017-Q2 BAU Renewals NCR split details(Q2 2017).xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.DataFolder+&quot;DataSource/NCR/2017-Q2 BAU Renewals NCR split details(Q2 2017)_updated.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
