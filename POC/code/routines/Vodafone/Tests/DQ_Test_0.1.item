@@ -111,6 +111,30 @@ public class DQ_Test {
 			
 			return data;
 		}
+		else if(name.getName().equalsIgnoreCase("toJavaPath"))
+		{
+			Object [][] data=new Object[6][2];
+			
+			data[0][0]="vira.pat@gmail.com";
+			data[0][1]=false;
+			
+			data[1][0]="34@vodafone.com";
+			data[1][1]=false;
+			
+			data[2][0]="user1@windowslive.com";
+			data[2][1]=true;
+			
+			data[3][0]="user2@hotmail.com";
+			data[3][1]=true;
+			
+			data[4][0]="";
+			data[4][1]=false;
+			
+			data[5][0]=null;
+			data[5][1]=false;
+			
+			return data;
+		}
 		else return null;
 		
 		
