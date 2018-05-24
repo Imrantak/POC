@@ -26,6 +26,13 @@ public class DQ_Test {
 		Assert.assertEquals(DQ.isMicrosoftEmailDomain(value), expctResult);
 	}
 	
+	@Test(dataProvider="DQ")
+	public void isMicrosoftEmailDomain(String value,Boolean expctResult)
+	{
+		Assert.assertEquals(DQ.isMicrosoftEmailDomain(value), expctResult);
+	}
+	
+	
 	@DataProvider(name="DQ")
 	public Object [][] getData(Method name)
 	{
