@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-public class DQ_Test_Copy {
+public class DQ_Test2 {
 
 	@Test(dataProvider="DQ")
 	public void isNullOrBlank(String value,Boolean expctResult)
