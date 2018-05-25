@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 
 public class PATH_DP {
 
-	@DataProvider(name="DQ")
+	@DataProvider(name="PATH")
 	public Object [][] getData(Method name)
 	{
 		
