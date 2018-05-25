@@ -3,7 +3,7 @@ package routines;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DQ_Test2 {
+public class DQ_Test {
 
 	@Test(dataProvider="DQ",dataProviderClass=DQ_DP.class)
 	public void isNullOrBlank(String value,Boolean expctResult)
