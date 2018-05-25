@@ -1,41 +1,92 @@
 package routines;
 
-/*
- * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
- * it must be before the "{talendTypes}" key.
- * 
- * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
- * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
- * Short
- * 
- * 3. {Category} define a category for the Function. it is required. its value is user-defined .
- * 
- * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
- * 
- * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
- * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
- * added. you can have many parameters for the Function.
- * 
- * 5. {example} gives a example for the Function. it is optional.
- */
+import java.lang.reflect.Method;
+
+import org.testng.annotations.DataProvider;
+
+
 public class DQ_DP {
 
-    /**
-     * helloExample: not return value, only print "hello" + message.
-     * 
-     * 
-     * {talendTypes} String
-     * 
-     * {Category} User Defined
-     * 
-     * {param} string("world") input: The string need to be printed.
-     * 
-     * {example} helloExemple("world") # hello world !.
-     */
-    public static void helloExample(String message) {
-        if (message == null) {
-            message = "World"; //$NON-NLS-1$
-        }
-        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
-    }
+	@DataProvider(name="DQ")
+	public Object [][] getData(Method name)
+	{
+		
+		if(name.getName().equalsIgnoreCase("isNullOrBlank"))
+		{
+			Object [][] data=new Object[6][2];
+			
+			data[0][0]="";
+			data[0][1]=true;
+			
+			data[1][0]=null;
+			data[1][1]=true;
+			
+			data[2][0]=null;
+			data[2][1]=true;
+			
+			data[3][0]="null";
+			data[3][1]=false;
+			
+			data[4][0]=" ";
+			data[4][1]=false;
+			
+			data[5][0]="testValue";
+			data[5][1]=false;
+			
+			return data;
+			
+		}
+		else if(name.getName().equalsIgnoreCase("isCorrectGSR_Ref"))
+		{
+			Object [][] data=new Object[6][2];
+		
+			data[0][0]="12345-abcd-abcde";
+			data[0][1]=false;
+			
+			data[1][0]="12345-1234-12345";
+			data[1][1]=true;
+			
+			data[2][0]="abcde-ab-12345";
+			data[2][1]=false;
+			
+			data[3][0]="abcde-abcd-12345";
+			data[3][1]=true;
+			
+			data[4][0]="ASTFG-rowk-39402";
+			data[4][1]=true;
+			
+			data[5][0]=null;
+			data[5][1]=false;
+			
+			return data;
+			
+		}
+		else if(name.getName().equalsIgnoreCase("isMicrosoftEmailDomain"))
+		{
+			Object [][] data=new Object[6][2];
+			
+			data[0][0]="vira.pat@gmail.com";
+			data[0][1]=false;
+			
+			data[1][0]="34@vodafone.com";
+			data[1][1]=false;
+			
+			data[2][0]="user1@windowslive.com";
+			data[2][1]=true;
+			
+			data[3][0]="user2@hotmail.com";
+			data[3][1]=true;
+			
+			data[4][0]="";
+			data[4][1]=false;
+			
+			data[5][0]=null;
+			data[5][1]=false;
+			
+			return data;
+		}
+		else return null;
+		
+		
+	}
 }
