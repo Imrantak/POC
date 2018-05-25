@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import org.testng.annotations.DataProvider;
 
 
-public class DQ_DP_Copy {
+public class PATH_DP {
 
 	@DataProvider(name="DQ")
 	public Object [][] getData(Method name)
