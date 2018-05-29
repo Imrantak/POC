@@ -1,0 +1,26 @@
+package routines;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class DQ_Test {
+
+	@Test(dataProvider="DQ",dataProviderClass=DQ_DP.class)
+	public void isNullOrBlank(String value,Boolean expctResult)
+	{
+		Assert.assertEquals(DQ.isNullOrBlank(value), expctResult);
+	}
+	
+	@Test(dataProvider="DQ",dataProviderClass=DQ_DP.class)
+	public void isCorrectGSR_Ref(String value,Boolean expctResult)
+	{
+		Assert.assertEquals(DQ.isCorrectGSR_Ref(value), expctResult);
+	}
+	
+	@Test(dataProvider="DQ",dataProviderClass=DQ_DP.class)
+	public void isMicrosoftEmailDomain(String value,Boolean expctResult)
+	{
+		Assert.assertEquals(DQ.isMicrosoftEmailDomain(value), expctResult);
+	}
+	
+}

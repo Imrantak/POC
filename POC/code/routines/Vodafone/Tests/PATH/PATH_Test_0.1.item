@@ -1,0 +1,14 @@
+package routines;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+
+public class PATH_Test {
+	
+	@Test(dataProvider="PATH",dataProviderClass=PATH_DP.class)
+	public void toJavaPath(String value,String expctResult)
+	{
+		Assert.assertEquals(PATH.toJavaPath(value), expctResult);
+	}
+}
