@@ -537,7 +537,7 @@
       <column comment="" key="false" length="0" name="FIleName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="total1">
         <mapperTableEntries name="SN_" expression="row1.SN_ " type="id_String" nullable="true"/>
@@ -1521,7 +1521,7 @@
       <column comment="" key="false" length="-1" name="NPID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="ee">
         <mapperTableEntries name="SN" expression="row5.SN_ " type="id_String" nullable="true"/>
