@@ -2887,7 +2887,7 @@
   </node>
   <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_1" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
+    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="First"/>
     <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
