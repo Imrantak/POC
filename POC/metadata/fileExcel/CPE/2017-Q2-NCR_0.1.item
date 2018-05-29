@@ -20,7 +20,7 @@
   </TalendMetadata:FileExcelConnection>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_ow2yYVOQEei0dpJ9XJkirw" name="default" dataManager="_ow2yYFOQEei0dpJ9XJkirw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ow2yYlOQEei0dpJ9XJkirw" id="_kiJLsFOPEei0dpJ9XJkirw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yY1OQEei0dpJ9XJkirw" label="SN_" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yY1OQEei0dpJ9XJkirw" label="SN_" length="17" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZFOQEei0dpJ9XJkirw" label="Model" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZVOQEei0dpJ9XJkirw" label="Maintenance_value" length="-1" precision="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ow2yZlOQEei0dpJ9XJkirw" label="NPID" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
