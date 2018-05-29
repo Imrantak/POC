@@ -1370,7 +1370,7 @@
       <column comment="" key="false" length="-1" name="NetworkMatch" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="NCR_used">
         <mapperTableEntries name="SN_" expression="NCR.SN_" type="id_String" nullable="true"/>
@@ -1398,7 +1398,7 @@
         <mapperTableEntries name="Device_model_final" expression="!Relational.ISNULL(NCR.Model)? NCR.Model.split(&quot; &quot;,2)[1].split(&quot; &quot;,2)[1] :NCR.Model " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_date" expression="NCR.eol_date " type="id_String" nullable="true"/>
         <mapperTableEntries name="end_of_life_flag" expression="NCR.eol " type="id_String" nullable="true"/>
-        <mapperTableEntries name="NPID" expression="NCR.NPID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NPID" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Name" expression="NCR.Site_Name" type="id_String" nullable="true"/>
         <mapperTableEntries name="Site_Address" expression="NCR.Site_Address" type="id_String" nullable="true"/>
         <mapperTableEntries name="FileMatch" expression="row14.FileSource " type="id_String" nullable="true"/>
