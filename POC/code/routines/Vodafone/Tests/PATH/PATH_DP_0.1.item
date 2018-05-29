@@ -1,0 +1,42 @@
+package routines;
+
+import java.lang.reflect.Method;
+
+import org.testng.annotations.DataProvider;
+
+
+public class PATH_DP {
+
+	@DataProvider(name="PATH")
+	public Object [][] getData(Method name)
+	{
+		
+		if(name.getName().equalsIgnoreCase("toJavaPath"))
+		{
+			Object [][] data=new Object[6][2];
+			
+			data[0][0]="C:\\Program Files\\Java\\jdk1.8.0_65";
+			data[0][1]="C:/Program Files/Java/jdk1.8.0_65";
+			
+			data[1][0]="C:\\Program Files/Java\\jdk1.8.0_65";
+			data[1][1]="C:/Program Files/Java/jdk1.8.0_65";
+			
+			data[2][0]="C:\\Program Files/Java/jdk1.8.0_65";
+			data[2][1]="C:/Program Files/Java/jdk1.8.0_65";;
+			
+			data[3][0]="a/b/c";
+			data[3][1]="a/b/c";
+			
+			data[4][0]="";
+			data[4][1]="";
+			
+			data[5][0]=null;
+			data[5][1]="";
+			
+			return data;
+		}
+		else return null;
+		
+		
+	}
+}

@@ -1,0 +1,25 @@
+package routines;
+
+public class PATH {
+
+	public static String toJavaPath(String path)
+	{
+		if(DQ.isNullOrBlank(path)) return "";
+		return path.replace("\\", "/");
+	}
+	
+	public static String getFilePath(String path)
+	{
+		String p=PATH.toJavaPath(path);
+		p=p.substring(0, p.lastIndexOf('/'));
+		return p;
+	}
+	
+	public static String getFileName(String path)
+	{
+		String p=PATH.toJavaPath(path);
+		p=p.substring(p.lastIndexOf('/')+1,p.length());
+		return p;
+	}
+
+}
