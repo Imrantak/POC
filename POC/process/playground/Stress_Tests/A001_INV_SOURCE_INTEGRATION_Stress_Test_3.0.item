@@ -3529,6 +3529,14 @@
   </node>
   <connection connectorName="FLOW" label="source_gtom" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="3"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
+    <elementParameter field="TABLE" name="HASH_KEYS">
+      <elementValue elementRef="KEY_COLUMN" value="Product"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="source_gtom" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFileInputExcel_1">
@@ -3555,6 +3563,14 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="3"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
+    <elementParameter field="TABLE" name="HASH_KEYS">
+      <elementValue elementRef="KEY_COLUMN" value="Cctid"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="grn_aml_lookup" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="processed_data" lineStyle="0" metaname="processed_data" offsetLabelX="14" offsetLabelY="1" source="tMap_2" target="tMap_6">
@@ -3665,10 +3681,20 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="100000"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="po_cover" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="3"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
+    <elementParameter field="TABLE" name="HASH_KEYS">
+      <elementValue elementRef="KEY_COLUMN" value="Service_Order"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="billreport" lineStyle="0" metaname="tFileInputDelimited_5" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_5" target="tMap_5">
@@ -3677,6 +3703,13 @@
   </connection>
   <connection connectorName="FLOW" label="grnfiledata" lineStyle="0" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_7">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="3"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
+    <elementParameter field="TABLE" name="HASH_KEYS">
+      <elementValue elementRef="KEY_COLUMN" value="PO_Vendor"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="grnfiledata" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="grn" lineStyle="8" metaname="grn" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tMap_1">
