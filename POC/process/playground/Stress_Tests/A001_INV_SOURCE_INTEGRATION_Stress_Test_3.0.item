@@ -3562,12 +3562,10 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
-    <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
-    <elementParameter field="RADIO" name="NONE" value="false"/>
-    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="3"/>
-    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="10000"/>
-    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
-    <elementParameter field="TABLE" name="HASH_KEYS">
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="3" show="false"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="true" show="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS" show="false">
       <elementValue elementRef="KEY_COLUMN" value="Cctid"/>
     </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="grn_aml_lookup" show="false"/>
@@ -3680,9 +3678,7 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
-    <elementParameter field="RADIO" name="DEPARTITIONER" value="true"/>
-    <elementParameter field="RADIO" name="NONE" value="false"/>
-    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="100000"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="100000" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="po_cover" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_3">
