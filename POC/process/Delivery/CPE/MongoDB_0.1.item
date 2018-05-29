@@ -124,7 +124,7 @@
       <elementValue elementRef="REPLICA_HOST" value="&quot;cluster0-shard-00-02-h0rs5.mongodb.net&quot;"/>
       <elementValue elementRef="REPLICA_PORT" value="27017"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="HOST" value="&quot;cluster0-shard-00-00-h0rs5.mongodb.net&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;vodafonecluster-shard-00-00-h0rs5.mongodb.net&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="27017"/>
     <elementParameter field="TEXT" name="DATABASE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
