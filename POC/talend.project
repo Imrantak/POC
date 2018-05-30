@@ -1889,7 +1889,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_tpR9YGNIEei6v9DbH-f_Mw">
       <baseItem xmi:id="_tpR9YWNIEei6v9DbH-f_Mw" id="_oC0EIGNIEei6v9DbH-f_Mw" version="0.1" type="job"/>
-      <relatedItems xmi:id="_tpR9YmNIEei6v9DbH-f_Mw" id="_YhDnQGMYEeiRmfdjM_Xd-A" version="Latest" type="property"/>
       <relatedItems xmi:id="_tpR9Y2NIEei6v9DbH-f_Mw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_tpR9ZGNIEei6v9DbH-f_Mw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_tpR9ZWNIEei6v9DbH-f_Mw" id="TalendString" version="Latest" type="routine"/>
@@ -1921,6 +1920,7 @@
       <relatedItems xmi:id="_tTiPjWNLEei6v9DbH-f_Mw" id="_e76K0E-QEeiBKdkx6n_nTQ - Rizzo" version="Latest" type="schema"/>
       <relatedItems xmi:id="_tTiPjmNLEei6v9DbH-f_Mw" id="_VwQXkFRGEei-0_IzW02agQ - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="__l5zoGNLEei6v9DbH-f_Mw" id="_HMxs4DfzEeiFBblx5C46YA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_92QPIGP0Eeiil-GxFpELKw" id="_z8t-MGP0Eeiil-GxFpELKw" version="Latest" type="property"/>
     </ItemsRelations>
     <migrationTask xmi:id="_NWhc8DcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_NWhc8TcwEei50Npc-g0ZOA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
