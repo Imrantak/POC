@@ -776,7 +776,7 @@
       <column comment="" key="false" length="18" name="New_Renew_after_01_Jul_2017" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="14" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="SN_" expression="row2.SN_ " type="id_String"/>
@@ -1226,7 +1226,7 @@
       <column comment="" key="false" length="1" name="Searched_not_found" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out3">
         <mapperTableEntries name="SN_" expression="row3.SN_ " type="id_String"/>
@@ -1634,7 +1634,7 @@
       <column comment="" key="false" length="25" name="New_renewal_amount" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out4">
         <mapperTableEntries name="SN_" expression="row4.SN_ " type="id_String"/>
