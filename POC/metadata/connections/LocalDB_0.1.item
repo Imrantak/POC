@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
-  <TalendMetadata:DatabaseConnection xmi:id="_kV_08GMYEeiRmfdjM_Xd-A" name="LocalDB" id="_YhDnQGMYEeiRmfdjM_Xd-A" label="LocalDB" dataPackage="_jGdywGP0Eeiil-GxFpELKw" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/POCDB?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="Talend" Password="Cack6B4knMt9+1vR3ovYbA==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="POCDB" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
-    <taggedValue xmi:id="_kV_08WMYEeiRmfdjM_Xd-A" tag="Is Conn Need Reload" value="false"/>
-    <taggedValue xmi:id="_kWY2gGMYEeiRmfdjM_Xd-A" tag="package filter" value=""/>
-    <taggedValue xmi:id="_kWdvAGMYEeiRmfdjM_Xd-A" tag="Status" value=""/>
-    <taggedValue xmi:id="_kWdvAWMYEeiRmfdjM_Xd-A" tag="Version" value="0.1"/>
-    <taggedValue xmi:id="_kWdvAmMYEeiRmfdjM_Xd-A" tag="Purpose" value=""/>
-    <taggedValue xmi:id="_kWdvA2MYEeiRmfdjM_Xd-A" tag="Description" value=""/>
-    <taggedValue xmi:id="_kWdvBGMYEeiRmfdjM_Xd-A" tag="Author" value=""/>
-    <taggedValue xmi:id="_kWdvBWMYEeiRmfdjM_Xd-A" tag="otherParameter"/>
-    <taggedValue xmi:id="_ks3c0GMYEeiRmfdjM_Xd-A" tag="DB ProductName" value="MySQL"/>
-    <taggedValue xmi:id="_ks3c0WMYEeiRmfdjM_Xd-A" tag="DB ProductVersion" value="5.7.19-log"/>
-    <taggedValue xmi:id="_ks3c0mMYEeiRmfdjM_Xd-A" tag="DB IdentifierQuoteString" value="`"/>
-    <parameters xmi:id="_kV_08mMYEeiRmfdjM_Xd-A" key="CONN_PARA_KEY_USERNAME" value="Talend"/>
-    <parameters xmi:id="_QfifsGNLEei6v9DbH-f_Mw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  <TalendMetadata:DatabaseConnection xmi:id="_48CX4GP0Eeiil-GxFpELKw" name="LocalDB" id="_z8t-MGP0Eeiil-GxFpELKw" label="LocalDB" dataPackage="_5jW2kGP0Eeiil-GxFpELKw" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/pocdb?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="Talend" Password="Cack6B4knMt9+1vR3ovYbA==" ServerName="localhost" DatasourceName="" FileFieldName="" SID="pocdb" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_48CX4WP0Eeiil-GxFpELKw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_48MI4GP0Eeiil-GxFpELKw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_48Mv8GP0Eeiil-GxFpELKw" tag="Status" value=""/>
+    <taggedValue xmi:id="_48Mv8WP0Eeiil-GxFpELKw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_48Mv8mP0Eeiil-GxFpELKw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_48Mv82P0Eeiil-GxFpELKw" tag="Description" value=""/>
+    <taggedValue xmi:id="_48Mv9GP0Eeiil-GxFpELKw" tag="Author" value=""/>
+    <taggedValue xmi:id="_48Mv9WP0Eeiil-GxFpELKw" tag="otherParameter"/>
+    <taggedValue xmi:id="_5P5IAGP0Eeiil-GxFpELKw" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_5P5IAWP0Eeiil-GxFpELKw" tag="DB ProductVersion" value="5.7.19-log"/>
+    <taggedValue xmi:id="_5P5IAmP0Eeiil-GxFpELKw" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_48CX4mP0Eeiil-GxFpELKw" key="CONN_PARA_KEY_USERNAME" value="Talend"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_jGdywGP0Eeiil-GxFpELKw" name="POCDB" dataManager="_kV_08GMYEeiRmfdjM_Xd-A"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_5jW2kGP0Eeiil-GxFpELKw" name="pocdb" dataManager="_48CX4GP0Eeiil-GxFpELKw"/>
 </xmi:XMI>
