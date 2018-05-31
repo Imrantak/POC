@@ -3557,6 +3557,7 @@
     <elementParameter field="RADIO" name="DEPARTITIONER" value="true"/>
     <elementParameter field="RADIO" name="NONE" value="false"/>
     <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="order_type" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="grn_aml_lookup" lineStyle="0" metaname="grn_aml_lookup" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
