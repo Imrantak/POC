@@ -1458,7 +1458,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-320" sizeX="64" sizeY="32">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-384" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder +&quot;/DataSource/SRC_RIZZO.csv&quot;"/>
@@ -1536,7 +1536,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="-320" sizeX="64" sizeY="32">
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="-384" sizeX="64" sizeY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_1" show="false"/>
     <elementParameter field="RADIO" name="CHECK_ALL" value="false"/>
     <elementParameter field="RADIO" name="CUSTOMER" value="true"/>
@@ -1610,7 +1610,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-256" sizeX="64" sizeY="32">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="-320" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -1651,7 +1651,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="-320" sizeX="64" sizeY="32">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="-384" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1709,7 +1709,7 @@
       <column comment="" key="false" length="-1" name="FileSource" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-128" sizeX="64" sizeY="32">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-224" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder +&quot;/DataSource/2016_ANIMAL_RIZZO.csv&quot;"/>
@@ -1791,7 +1791,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="-128" sizeX="64" sizeY="32">
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="-224" sizeX="64" sizeY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_2" show="false"/>
     <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
     <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
@@ -1873,7 +1873,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="-64" sizeX="64" sizeY="32">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="-160" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_5" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -1915,7 +1915,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="-128" sizeX="64" sizeY="32">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="-224" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -1960,7 +1960,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64" sizeX="64" sizeY="32">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="-32" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder +&quot;/DataSource/2016_ANIMAL_RIZZO_DEC16.csv&quot;"/>
@@ -2042,7 +2042,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64" sizeX="64" sizeY="32">
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="-32" sizeX="64" sizeY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_3" show="false"/>
     <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
     <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
@@ -2124,7 +2124,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224" sizeX="64" sizeY="32">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="32" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_6" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -2166,7 +2166,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="64" sizeX="64" sizeY="32">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="-32" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -2211,7 +2211,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="352" sizeX="64" sizeY="32">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="context.DataFolder +&quot;/DataSource/2017_hwsummary.csv&quot;"/>
@@ -2307,7 +2307,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="352" sizeX="64" sizeY="32">
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128" sizeX="64" sizeY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_4" show="false"/>
     <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
     <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
@@ -2407,7 +2407,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="10" offsetLabelY="8" posX="640" posY="448" sizeX="64" sizeY="32">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="10" offsetLabelY="8" posX="672" posY="192" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_8" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -2451,7 +2451,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="352" sizeX="64" sizeY="32">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -5017,7 +5017,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tFileInputDelimited_3" offsetLabelX="-50" offsetLabelY="50" source="tFileInputDelimited_3" target="tSchemaComplianceCheck_3">
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tFileInputDelimited_3" offsetLabelX="1" offsetLabelY="-14" source="tFileInputDelimited_3" target="tSchemaComplianceCheck_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
   </connection>
