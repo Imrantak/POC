@@ -3218,8 +3218,8 @@
     <elementParameter field="TEXT" name="LABEL" value="GCD_Attr_val"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_6">
-      <column comment="" key="false" length="9" name="ServiceItemValueID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="ProductAttributeID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="ServiceItemValueID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="ProductAttributeID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="9" name="ServiceItemID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="ItemValue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -3245,23 +3245,23 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out13">
-      <column comment="" defaultValue="" key="false" length="-1" name="ServiceItemValueID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ProductAttributeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceItemValueID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProductAttributeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ServiceItemID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ItemValue" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out13">
-        <mapperTableEntries name="ServiceItemValueID" expression="row15.ServiceItemValueID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="ProductAttributeID" expression="row15.ProductAttributeID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ServiceItemValueID" expression="row15.ServiceItemValueID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ProductAttributeID" expression="row15.ProductAttributeID" type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceItemID" expression="row15.ServiceItemID" type="id_String" nullable="true"/>
         <mapperTableEntries name="ItemValue" expression="row15.ItemValue" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row15" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="ServiceItemValueID" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="ProductAttributeID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ServiceItemValueID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ProductAttributeID" type="id_String" nullable="true"/>
         <mapperTableEntries name="ServiceItemID" type="id_String" nullable="true"/>
         <mapperTableEntries name="ItemValue" type="id_String" nullable="true"/>
       </inputTables>
@@ -3327,14 +3327,14 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tMysqlOutput_15">
-      <column comment="" defaultValue="" key="false" length="-1" name="ServiceItemValueID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ProductAttributeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceItemValueID" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProductAttributeID" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ServiceItemID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ItemValue" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" defaultValue="" key="false" length="-1" name="ServiceItemValueID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="ProductAttributeID" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ServiceItemValueID" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ProductAttributeID" nullable="true" pattern="" precision="-1" sourceType="TEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ServiceItemID" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ItemValue" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
