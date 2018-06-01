@@ -12,7 +12,7 @@
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="160" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="384" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="192" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -121,7 +121,7 @@
     <routinesParameter id="_NhQGQDcwEei50Npc-g0ZOA" name="TalendStringUtil"/>
     <routinesParameter id="_NhKmsDcwEei50Npc-g0ZOA" name="TalendString"/>
   </parameters>
-  <node componentName="tServiceNowConnection" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="-96" posY="-320">
+  <node componentName="tServiceNowConnection" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="-128" posY="-128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tServiceNowConnection_1" show="false"/>
     <elementParameter field="TEXT" name="SERVICENOWURL" value="context.sn_URL"/>
     <elementParameter field="TEXT" name="USERNAME" value="context.sn_User"/>
@@ -129,7 +129,7 @@
     <elementParameter field="TEXT" name="LABEL" value="SN_Connection"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-96" posY="-128">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;ServiceNow Connection Successful&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
