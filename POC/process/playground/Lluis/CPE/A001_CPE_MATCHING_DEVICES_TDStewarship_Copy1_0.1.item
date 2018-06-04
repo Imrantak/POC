@@ -47,8 +47,8 @@
   </context>
   <parameters>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="544" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="97" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="546" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -1154,7 +1154,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="dd" activateCondensedTool="true">
+      <outputTables sizeState="INTERMEDIATE" name="dd">
         <mapperTableEntries name="SN_" expression="row4.SN_" type="id_String" nullable="true"/>
         <mapperTableEntries name="Model" expression="row4.Model" type="id_String" nullable="true"/>
         <mapperTableEntries name="eol" expression="row4.eol" type="id_String" nullable="true"/>
