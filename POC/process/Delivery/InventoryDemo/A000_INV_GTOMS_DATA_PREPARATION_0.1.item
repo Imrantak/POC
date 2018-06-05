@@ -525,6 +525,7 @@
     <elementParameter field="TEXT" name="PREPARATION_VERSION" value="&quot;Current state&quot;" show="false"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
     <elementParameter field="TEXT" name="LIMIT_PREVIEW" value="1000"/>
+    <elementParameter field="TEXT" name="LABEL" value="GTOMS Data Prep"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="CSV_DS3_GTOMS" name="tDataprepRun_1">
       <column comment="" key="false" length="-1" name="GTOMS_Ref" nullable="false" originalDbColumnName="0000" pattern="" precision="-1" sourceType="String" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -713,8 +714,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
   </connection>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Apply Business Rules on GTOMS source file"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
 </talendfile:ProcessType>

@@ -3529,10 +3529,12 @@
   </node>
   <connection connectorName="FLOW" label="source_gtom" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
-    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="3" show="false"/>
-    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="10000" show="false"/>
-    <elementParameter field="CHECK" name="HASH_PARTITION" value="true" show="false"/>
-    <elementParameter field="TABLE" name="HASH_KEYS" show="false">
+    <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="3"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
+    <elementParameter field="TABLE" name="HASH_KEYS">
       <elementValue elementRef="KEY_COLUMN" value="Product"/>
     </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="source_gtom" show="false"/>
@@ -3547,12 +3549,16 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="10000"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="after_product_country" show="false"/>
   </connection>
   <connection connectorName="FILTER" label="order_type" lineStyle="0" metaname="tFilterRow_7" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_7" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false" show="false"/>
     <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="order_type" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="grn_aml_lookup" lineStyle="0" metaname="grn_aml_lookup" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">

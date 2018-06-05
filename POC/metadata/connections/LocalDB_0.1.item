@@ -13,6 +13,7 @@
     <taggedValue xmi:id="_5P5IAWP0Eeiil-GxFpELKw" tag="DB ProductVersion" value="5.7.19-log"/>
     <taggedValue xmi:id="_5P5IAmP0Eeiil-GxFpELKw" tag="DB IdentifierQuoteString" value="`"/>
     <parameters xmi:id="_48CX4mP0Eeiil-GxFpELKw" key="CONN_PARA_KEY_USERNAME" value="Talend"/>
+    <parameters xmi:id="_Mc0VAGSnEeiYBpsjuuruRg" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_5jW2kGP0Eeiil-GxFpELKw" name="pocdb" dataManager="_48CX4GP0Eeiil-GxFpELKw"/>
 </xmi:XMI>
