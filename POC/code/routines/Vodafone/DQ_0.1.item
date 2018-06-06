@@ -4,9 +4,17 @@ package routines;
 public class DQ {
 
     
-	public static Boolean confidenceScore(Boolean MatchNetworkFile,Boolean MatchCMDB,Boolean MatchGCD)
+	public static String confidenceScore(Boolean MatchNetworkFile,Boolean MatchCMDB,Boolean MatchGCD)
 	{
-		
+		if(MatchNetworkFile && MatchCMDB && MatchGCD){return "Top";}
+		else if(MatchNetworkFile && MatchCMDB && MatchGCD==false){return "High ++";}
+		else if(MatchNetworkFile && MatchCMDB==false && MatchGCD){return "High +";}
+		else if(MatchNetworkFile && MatchCMDB==false && MatchGCD==false){return "High";}
+		else if(MatchNetworkFile==false && MatchCMDB && MatchGCD){return "Medium +";}
+		else if(MatchNetworkFile==false && MatchCMDB && MatchGCD==false){return "Medium";}
+		else if(MatchNetworkFile==false && MatchCMDB && MatchGCD==false){return "Medium";}
+		else if(MatchNetworkFile==false && MatchCMDB==false && MatchGCD){return "Low";}
+		else{return "Not found";}
 		return false;
 	}
 	
