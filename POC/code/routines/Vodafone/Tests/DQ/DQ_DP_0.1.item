@@ -10,7 +10,7 @@ public class DQ_DP {
 	@DataProvider(name="DQ")
 	public Object [][] getData(Method name)
 	{
-		
+			
 		if(name.getName().equalsIgnoreCase("isNullOrBlank"))
 		{
 			Object [][] data=new Object[6][2];
@@ -96,37 +96,37 @@ public class DQ_DP {
 			
 			data[1][0]=true;
 			data[1][1]=true;
-			data[1][2]=true;
+			data[1][2]=false;
 			data[1][3]="High ++";
 			
 			data[2][0]=true;
-			data[2][1]=true;
+			data[2][1]=false;
 			data[2][2]=true;
 			data[2][3]="High +";
 			
 			data[3][0]=true;
-			data[3][1]=true;
-			data[3][2]=true;
+			data[3][1]=false;
+			data[3][2]=false;
 			data[3][3]="High";
 			
-			data[4][0]=true;
+			data[4][0]=false;
 			data[4][1]=true;
 			data[4][2]=true;
 			data[4][3]="Medium +";
 			
-			data[5][0]=true;
+			data[5][0]=false;
 			data[5][1]=true;
-			data[5][2]=true;
+			data[5][2]=false;
 			data[5][3]="Medium";
 			
-			data[6][0]=true;
-			data[6][1]=true;
+			data[6][0]=false;
+			data[6][1]=false;
 			data[6][2]=true;
 			data[6][3]="Low";
 			
-			data[7][0]=true;
-			data[7][1]=true;
-			data[7][2]=true;
+			data[7][0]=false;
+			data[7][1]=false;
+			data[7][2]=false;
 			data[7][3]="Not Found";
 			
 			return data;
