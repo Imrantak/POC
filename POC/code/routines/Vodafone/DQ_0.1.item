@@ -3,7 +3,13 @@ package routines;
 
 public class DQ {
 
-    public static Boolean isNullOrBlank(String value) {
+    
+	public static Boolean confidenceScore(Boolean MatchNetworkFile,Boolean MatchCMDB,Boolean MatchGCD)
+	{
+		
+	}
+	
+	public static Boolean isNullOrBlank(String value) {
     	if(value==null || "".equals(value)) return true;
     	else return false;
     }
