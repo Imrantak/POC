@@ -4,7 +4,7 @@ package routines;
 public class DQ {
 
     
-	public static String confidenceScore(Boolean MatchNetworkFile,Boolean MatchCMDB,Boolean MatchGCD)
+	public static String getConfidenceScore(Boolean MatchNetworkFile,Boolean MatchCMDB,Boolean MatchGCD)
 	{
 		if(MatchNetworkFile && MatchCMDB && MatchGCD){return "Top";}
 		else if(MatchNetworkFile && MatchCMDB && MatchGCD==false){return "High ++";}
