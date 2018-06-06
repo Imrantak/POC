@@ -6,6 +6,12 @@ import org.testng.annotations.Test;
 public class DQ_Test {
 
 	@Test(dataProvider="DQ",dataProviderClass=DQ_DP.class)
+	public void getConfidenceScore(Boolean MatchNetworkFile,Boolean MatchCMDB,Boolean MatchGCD,String expctResult)
+	{
+		Assert.assertEquals(DQ.getConfidenceScore(MatchNetworkFile,MatchCMDB,MatchGCD), expctResult);
+	}
+	
+	@Test(dataProvider="DQ",dataProviderClass=DQ_DP.class)
 	public void isNullOrBlank(String value,Boolean expctResult)
 	{
 		Assert.assertEquals(DQ.isNullOrBlank(value), expctResult);
