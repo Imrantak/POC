@@ -15,7 +15,6 @@ public class DQ {
 		else if(MatchNetworkFile==false && MatchCMDB && MatchGCD==false){return "Medium";}
 		else if(MatchNetworkFile==false && MatchCMDB==false && MatchGCD){return "Low";}
 		else{return "Not found";}
-		return false;
 	}
 	
 	public static Boolean isNullOrBlank(String value) {
